@@ -17,3 +17,5 @@
 /Users/localadmin/Dropbox/Public/Dropbox/Resources/Frameworks/DropboxSDK.framework/.DS_Store
 
 Xcode/Dropbox.xcodeproj/ericgallager.perspectivev3
+
+*.DS_Store

@@ -13,6 +13,172 @@
 		A52612FC150CC079001C727E /* Dropbox.h in Headers */ = {isa = PBXBuildFile; fileRef = A52612FA150CC079001C727E /* Dropbox.h */; };
 		A52612FD150CC079001C727E /* Dropbox.c in Sources */ = {isa = PBXBuildFile; fileRef = A52612FB150CC079001C727E /* Dropbox.c */; };
 		A5261303150CC304001C727E /* Dropbox.m in Sources */ = {isa = PBXBuildFile; fileRef = A5261302150CC304001C727E /* Dropbox.m */; };
+		A559D40B150CF34600B9EEF9 /* NSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D3FB150CF34600B9EEF9 /* NSButton.h */; };
+		A559D40C150CF34600B9EEF9 /* NSCell-OAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D3FC150CF34600B9EEF9 /* NSCell-OAExtensions.h */; };
+		A559D40D150CF34600B9EEF9 /* NSCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D3FD150CF34600B9EEF9 /* NSCell.h */; };
+		A559D40E150CF34600B9EEF9 /* NSImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D3FE150CF34600B9EEF9 /* NSImageView.h */; };
+		A559D40F150CF34600B9EEF9 /* NSMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D3FF150CF34600B9EEF9 /* NSMenu.h */; };
+		A559D410150CF34600B9EEF9 /* NSMenuItem+Hackery.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D400150CF34600B9EEF9 /* NSMenuItem+Hackery.h */; };
+		A559D411150CF34600B9EEF9 /* NSMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D401150CF34600B9EEF9 /* NSMenuItem.h */; };
+		A559D412150CF34600B9EEF9 /* NSObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D402150CF34600B9EEF9 /* NSObject.h */; };
+		A559D413150CF34600B9EEF9 /* NSToolbar-OAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D403150CF34600B9EEF9 /* NSToolbar-OAExtensions.h */; };
+		A559D414150CF34600B9EEF9 /* NSToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D404150CF34600B9EEF9 /* NSToolbar.h */; };
+		A559D415150CF34600B9EEF9 /* NSToolbarAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D405150CF34600B9EEF9 /* NSToolbarAdditions.h */; };
+		A559D416150CF34600B9EEF9 /* NSToolbarFrameworkPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D406150CF34600B9EEF9 /* NSToolbarFrameworkPrivate.h */; };
+		A559D417150CF34600B9EEF9 /* NSToolbarItem-OAExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D407150CF34600B9EEF9 /* NSToolbarItem-OAExtensions.h */; };
+		A559D418150CF34600B9EEF9 /* NSToolbarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D408150CF34600B9EEF9 /* NSToolbarItem.h */; };
+		A559D419150CF34600B9EEF9 /* NSToolbarItemGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D409150CF34600B9EEF9 /* NSToolbarItemGroup.h */; };
+		A559D41A150CF34600B9EEF9 /* NSToolbarPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D40A150CF34600B9EEF9 /* NSToolbarPrivate.h */; };
+		A559D424150CF4C100B9EEF9 /* libSDropboxSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A559D423150CF4C100B9EEF9 /* libSDropboxSDK.a */; };
+		A559D426150CF4D400B9EEF9 /* libSDropboxSDKDisasm.s in Sources */ = {isa = PBXBuildFile; fileRef = A559D425150CF4D400B9EEF9 /* libSDropboxSDKDisasm.s */; };
+		A559D428150CF4DE00B9EEF9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A559D427150CF4DE00B9EEF9 /* README.md */; };
+		A559D433150CFFA800B9EEF9 /* NSMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D42E150CFFA800B9EEF9 /* NSMenu.h */; };
+		A559D434150CFFA800B9EEF9 /* objc_uniquifying.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D42F150CFFA800B9EEF9 /* objc_uniquifying.h */; };
+		A559D435150CFFA800B9EEF9 /* hashmap.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D430150CFFA800B9EEF9 /* hashmap.h */; };
+		A559D44E150CFFEC00B9EEF9 /* ObjcAssociate.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D44C150CFFEC00B9EEF9 /* ObjcAssociate.h */; };
+		A559D44F150CFFEC00B9EEF9 /* ObjcRef.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D44D150CFFEC00B9EEF9 /* ObjcRef.h */; };
+		A559D4E5150D00B000B9EEF9 /* ObjcAssociate.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D458150D00AF00B9EEF9 /* ObjcAssociate.h */; };
+		A559D4E6150D00B000B9EEF9 /* accel.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D45A150D00AF00B9EEF9 /* accel.h */; };
+		A559D4E7150D00B000B9EEF9 /* anybutton.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D45B150D00AF00B9EEF9 /* anybutton.h */; };
+		A559D4E8150D00B000B9EEF9 /* app.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D45C150D00AF00B9EEF9 /* app.h */; };
+		A559D4E9150D00B000B9EEF9 /* bitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D45D150D00AF00B9EEF9 /* bitmap.h */; };
+		A559D4EA150D00B000B9EEF9 /* bmpbuttn.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D45E150D00AF00B9EEF9 /* bmpbuttn.h */; };
+		A559D4EB150D00B000B9EEF9 /* brush.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D45F150D00AF00B9EEF9 /* brush.h */; };
+		A559D4EC150D00B000B9EEF9 /* button.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D460150D00AF00B9EEF9 /* button.h */; };
+		A559D4ED150D00B000B9EEF9 /* chkconf.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D462150D00AF00B9EEF9 /* chkconf.h */; };
+		A559D4EE150D00B000B9EEF9 /* dataview.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D463150D00AF00B9EEF9 /* dataview.h */; };
+		A559D4EF150D00B000B9EEF9 /* drawer.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D464150D00AF00B9EEF9 /* drawer.h */; };
+		A559D4F0150D00B000B9EEF9 /* evtloop.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D465150D00AF00B9EEF9 /* evtloop.h */; };
+		A559D4F1150D00B000B9EEF9 /* mimetype.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D466150D00AF00B9EEF9 /* mimetype.h */; };
+		A559D4F2150D00B000B9EEF9 /* mactext.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D468150D00AF00B9EEF9 /* mactext.h */; };
+		A559D4F3150D00B000B9EEF9 /* overlay.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D469150D00AF00B9EEF9 /* overlay.h */; };
+		A559D4F4150D00B000B9EEF9 /* print.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D46A150D00AF00B9EEF9 /* print.h */; };
+		A559D4F5150D00B000B9EEF9 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D46B150D00AF00B9EEF9 /* timer.h */; };
+		A559D4F6150D00B000B9EEF9 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D46C150D00AF00B9EEF9 /* private.h */; };
+		A559D4F7150D00B000B9EEF9 /* region.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D46D150D00AF00B9EEF9 /* region.h */; };
+		A559D4F8150D00B000B9EEF9 /* statbmp.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D46E150D00AF00B9EEF9 /* statbmp.h */; };
+		A559D4F9150D00B000B9EEF9 /* uma.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D46F150D00AF00B9EEF9 /* uma.h */; };
+		A559D4FA150D00B000B9EEF9 /* checkbox.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D470150D00AF00B9EEF9 /* checkbox.h */; };
+		A559D4FB150D00B000B9EEF9 /* checklst.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D471150D00AF00B9EEF9 /* checklst.h */; };
+		A559D4FC150D00B000B9EEF9 /* chkconf.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D472150D00AF00B9EEF9 /* chkconf.h */; };
+		A559D4FD150D00B000B9EEF9 /* choice.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D473150D00AF00B9EEF9 /* choice.h */; };
+		A559D4FE150D00B000B9EEF9 /* clipbrd.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D474150D00AF00B9EEF9 /* clipbrd.h */; };
+		A559D4FF150D00B000B9EEF9 /* chkconf.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D476150D00AF00B9EEF9 /* chkconf.h */; };
+		A559D500150D00B000B9EEF9 /* dataview.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D477150D00AF00B9EEF9 /* dataview.h */; };
+		A559D501150D00B000B9EEF9 /* evtloop.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D478150D00AF00B9EEF9 /* evtloop.h */; };
+		A559D502150D00B000B9EEF9 /* markuptoattr.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D47A150D00AF00B9EEF9 /* markuptoattr.h */; };
+		A559D503150D00B000B9EEF9 /* overlay.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D47B150D00AF00B9EEF9 /* overlay.h */; };
+		A559D504150D00B000B9EEF9 /* textimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D47C150D00AF00B9EEF9 /* textimpl.h */; };
+		A559D505150D00B000B9EEF9 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D47D150D00AF00B9EEF9 /* private.h */; };
+		A559D506150D00B000B9EEF9 /* colordlg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D47E150D00AF00B9EEF9 /* colordlg.h */; };
+		A559D507150D00B000B9EEF9 /* colour.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D47F150D00AF00B9EEF9 /* colour.h */; };
+		A559D508150D00B000B9EEF9 /* combobox.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D480150D00AF00B9EEF9 /* combobox.h */; };
+		A559D509150D00B000B9EEF9 /* config_xcode.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D481150D00AF00B9EEF9 /* config_xcode.h */; };
+		A559D50A150D00B000B9EEF9 /* control.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D482150D00AF00B9EEF9 /* control.h */; };
+		A559D50B150D00B000B9EEF9 /* cfdataref.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D484150D00AF00B9EEF9 /* cfdataref.h */; };
+		A559D50C150D00B000B9EEF9 /* cfref.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D485150D00AF00B9EEF9 /* cfref.h */; };
+		A559D50D150D00B000B9EEF9 /* cfstring.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D486150D00AF00B9EEF9 /* cfstring.h */; };
+		A559D50E150D00B000B9EEF9 /* colour.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D487150D00AF00B9EEF9 /* colour.h */; };
+		A559D50F150D00B000B9EEF9 /* dataview.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D488150D00AF00B9EEF9 /* dataview.h */; };
+		A559D510150D00B000B9EEF9 /* hid.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D489150D00AF00B9EEF9 /* hid.h */; };
+		A559D511150D00B000B9EEF9 /* joystick.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D48A150D00AF00B9EEF9 /* joystick.h */; };
+		A559D512150D00B000B9EEF9 /* mimetype.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D48B150D00AF00B9EEF9 /* mimetype.h */; };
+		A559D513150D00B000B9EEF9 /* strconv_cf.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D48D150D00AF00B9EEF9 /* strconv_cf.h */; };
+		A559D514150D00B000B9EEF9 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D48E150D00AF00B9EEF9 /* timer.h */; };
+		A559D515150D00B000B9EEF9 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D48F150D00AF00B9EEF9 /* private.h */; };
+		A559D516150D00B000B9EEF9 /* stdpaths.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D490150D00AF00B9EEF9 /* stdpaths.h */; };
+		A559D517150D00B000B9EEF9 /* cursor.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D491150D00AF00B9EEF9 /* cursor.h */; };
+		A559D518150D00B000B9EEF9 /* dataform.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D492150D00AF00B9EEF9 /* dataform.h */; };
+		A559D519150D00B000B9EEF9 /* dataobj.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D493150D00AF00B9EEF9 /* dataobj.h */; };
+		A559D51A150D00B000B9EEF9 /* dataobj2.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D494150D00AF00B9EEF9 /* dataobj2.h */; };
+		A559D51B150D00B000B9EEF9 /* dataview.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D495150D00AF00B9EEF9 /* dataview.h */; };
+		A559D51C150D00B000B9EEF9 /* dc.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D496150D00AF00B9EEF9 /* dc.h */; };
+		A559D51D150D00B000B9EEF9 /* dcclient.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D497150D00AF00B9EEF9 /* dcclient.h */; };
+		A559D51E150D00B000B9EEF9 /* dcmemory.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D498150D00AF00B9EEF9 /* dcmemory.h */; };
+		A559D51F150D00B000B9EEF9 /* dcprint.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D499150D00AF00B9EEF9 /* dcprint.h */; };
+		A559D520150D00B000B9EEF9 /* dcscreen.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D49A150D00AF00B9EEF9 /* dcscreen.h */; };
+		A559D521150D00B000B9EEF9 /* dialog.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D49B150D00AF00B9EEF9 /* dialog.h */; };
+		A559D522150D00B000B9EEF9 /* dirdlg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D49C150D00AF00B9EEF9 /* dirdlg.h */; };
+		A559D523150D00B000B9EEF9 /* dnd.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D49D150D00AF00B9EEF9 /* dnd.h */; };
+		A559D524150D00B000B9EEF9 /* dvrenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D49E150D00AF00B9EEF9 /* dvrenderer.h */; };
+		A559D525150D00B000B9EEF9 /* dvrenderers.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D49F150D00AF00B9EEF9 /* dvrenderers.h */; };
+		A559D526150D00B000B9EEF9 /* evtloop.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A0150D00AF00B9EEF9 /* evtloop.h */; };
+		A559D527150D00B000B9EEF9 /* evtloopsrc.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A1150D00AF00B9EEF9 /* evtloopsrc.h */; };
+		A559D528150D00B000B9EEF9 /* filedlg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A2150D00AF00B9EEF9 /* filedlg.h */; };
+		A559D529150D00B000B9EEF9 /* font.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A3150D00AF00B9EEF9 /* font.h */; };
+		A559D52A150D00B000B9EEF9 /* fontdlg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A4150D00AF00B9EEF9 /* fontdlg.h */; };
+		A559D52B150D00B000B9EEF9 /* frame.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A5150D00AF00B9EEF9 /* frame.h */; };
+		A559D52C150D00B000B9EEF9 /* gauge.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A6150D00AF00B9EEF9 /* gauge.h */; };
+		A559D52D150D00B000B9EEF9 /* glcanvas.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A7150D00AF00B9EEF9 /* glcanvas.h */; };
+		A559D52E150D00B000B9EEF9 /* helpxxxx.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A8150D00AF00B9EEF9 /* helpxxxx.h */; };
+		A559D52F150D00B000B9EEF9 /* icon.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4A9150D00AF00B9EEF9 /* icon.h */; };
+		A559D530150D00B000B9EEF9 /* imaglist.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4AA150D00AF00B9EEF9 /* imaglist.h */; };
+		A559D531150D00B000B9EEF9 /* chkconf.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4AC150D00AF00B9EEF9 /* chkconf.h */; };
+		A559D532150D00B000B9EEF9 /* textimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4AE150D00AF00B9EEF9 /* textimpl.h */; };
+		A559D533150D00B000B9EEF9 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4AF150D00AF00B9EEF9 /* private.h */; };
+		A559D534150D00B000B9EEF9 /* joystick.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B0150D00AF00B9EEF9 /* joystick.h */; };
+		A559D535150D00B000B9EEF9 /* listbox.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B1150D00AF00B9EEF9 /* listbox.h */; };
+		A559D536150D00B000B9EEF9 /* listctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B2150D00AF00B9EEF9 /* listctrl.h */; };
+		A559D537150D00B000B9EEF9 /* mdi.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B3150D00AF00B9EEF9 /* mdi.h */; };
+		A559D538150D00B000B9EEF9 /* menu.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B4150D00AF00B9EEF9 /* menu.h */; };
+		A559D539150D00B000B9EEF9 /* menuitem.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B5150D00AF00B9EEF9 /* menuitem.h */; };
+		A559D53A150D00B000B9EEF9 /* metafile.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B6150D00AF00B9EEF9 /* metafile.h */; };
+		A559D53B150D00B000B9EEF9 /* mimetype.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B7150D00AF00B9EEF9 /* mimetype.h */; };
+		A559D53C150D00B000B9EEF9 /* minifram.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B8150D00B000B9EEF9 /* minifram.h */; };
+		A559D53D150D00B000B9EEF9 /* msgdlg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4B9150D00B000B9EEF9 /* msgdlg.h */; };
+		A559D53E150D00B000B9EEF9 /* nonownedwnd.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4BA150D00B000B9EEF9 /* nonownedwnd.h */; };
+		A559D53F150D00B000B9EEF9 /* notebook.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4BB150D00B000B9EEF9 /* notebook.h */; };
+		A559D540150D00B000B9EEF9 /* palette.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4BC150D00B000B9EEF9 /* palette.h */; };
+		A559D541150D00B000B9EEF9 /* pen.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4BD150D00B000B9EEF9 /* pen.h */; };
+		A559D542150D00B000B9EEF9 /* pnghand.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4BE150D00B000B9EEF9 /* pnghand.h */; };
+		A559D543150D00B000B9EEF9 /* pngread.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4BF150D00B000B9EEF9 /* pngread.h */; };
+		A559D544150D00B000B9EEF9 /* popupwin.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C0150D00B000B9EEF9 /* popupwin.h */; };
+		A559D545150D00B000B9EEF9 /* printdlg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C1150D00B000B9EEF9 /* printdlg.h */; };
+		A559D546150D00B000B9EEF9 /* printmac.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C2150D00B000B9EEF9 /* printmac.h */; };
+		A559D547150D00B000B9EEF9 /* glgrab.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C4150D00B000B9EEF9 /* glgrab.h */; };
+		A559D548150D00B000B9EEF9 /* print.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C5150D00B000B9EEF9 /* print.h */; };
+		A559D549150D00B000B9EEF9 /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C6150D00B000B9EEF9 /* timer.h */; };
+		A559D54A150D00B000B9EEF9 /* private.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C7150D00B000B9EEF9 /* private.h */; };
+		A559D54B150D00B000B9EEF9 /* radiobox.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C8150D00B000B9EEF9 /* radiobox.h */; };
+		A559D54C150D00B000B9EEF9 /* radiobut.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4C9150D00B000B9EEF9 /* radiobut.h */; };
+		A559D54D150D00B000B9EEF9 /* region.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4CA150D00B000B9EEF9 /* region.h */; };
+		A559D54E150D00B000B9EEF9 /* scrolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4CB150D00B000B9EEF9 /* scrolbar.h */; };
+		A559D54F150D00B000B9EEF9 /* setup0.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4CC150D00B000B9EEF9 /* setup0.h */; };
+		A559D550150D00B000B9EEF9 /* slider.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4CD150D00B000B9EEF9 /* slider.h */; };
+		A559D551150D00B000B9EEF9 /* sound.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4CE150D00B000B9EEF9 /* sound.h */; };
+		A559D552150D00B000B9EEF9 /* spinbutt.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4CF150D00B000B9EEF9 /* spinbutt.h */; };
+		A559D553150D00B000B9EEF9 /* spinctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D0150D00B000B9EEF9 /* spinctrl.h */; };
+		A559D554150D00B000B9EEF9 /* srchctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D1150D00B000B9EEF9 /* srchctrl.h */; };
+		A559D555150D00B000B9EEF9 /* statbmp.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D2150D00B000B9EEF9 /* statbmp.h */; };
+		A559D556150D00B000B9EEF9 /* statbox.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D3150D00B000B9EEF9 /* statbox.h */; };
+		A559D557150D00B000B9EEF9 /* statline.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D4150D00B000B9EEF9 /* statline.h */; };
+		A559D558150D00B000B9EEF9 /* stattext.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D5150D00B000B9EEF9 /* stattext.h */; };
+		A559D559150D00B000B9EEF9 /* statusbr.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D6150D00B000B9EEF9 /* statusbr.h */; };
+		A559D55A150D00B000B9EEF9 /* taskbarosx.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D7150D00B000B9EEF9 /* taskbarosx.h */; };
+		A559D55B150D00B000B9EEF9 /* textctrl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D8150D00B000B9EEF9 /* textctrl.h */; };
+		A559D55C150D00B000B9EEF9 /* textentry.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4D9150D00B000B9EEF9 /* textentry.h */; };
+		A559D55D150D00B000B9EEF9 /* tglbtn.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4DA150D00B000B9EEF9 /* tglbtn.h */; };
+		A559D55E150D00B000B9EEF9 /* toolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4DB150D00B000B9EEF9 /* toolbar.h */; };
+		A559D55F150D00B000B9EEF9 /* tooltip.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4DC150D00B000B9EEF9 /* tooltip.h */; };
+		A559D560150D00B000B9EEF9 /* toplevel.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4DD150D00B000B9EEF9 /* toplevel.h */; };
+		A559D561150D00B000B9EEF9 /* treectrl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4DE150D00B000B9EEF9 /* treectrl.h */; };
+		A559D562150D00B000B9EEF9 /* uma.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4DF150D00B000B9EEF9 /* uma.h */; };
+		A559D563150D00B000B9EEF9 /* webview_webkit.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4E0150D00B000B9EEF9 /* webview_webkit.h */; };
+		A559D564150D00B000B9EEF9 /* webviewhistoryitem_webkit.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4E1150D00B000B9EEF9 /* webviewhistoryitem_webkit.h */; };
+		A559D565150D00B000B9EEF9 /* window.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4E2150D00B000B9EEF9 /* window.h */; };
+		A559D566150D00B000B9EEF9 /* string.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4E3150D00B000B9EEF9 /* string.h */; };
+		A559D567150D00B000B9EEF9 /* wxcrt.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D4E4150D00B000B9EEF9 /* wxcrt.h */; };
+		A559D56B150D00C900B9EEF9 /* NSSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D568150D00C900B9EEF9 /* NSSlider.h */; };
+		A559D56C150D00C900B9EEF9 /* NSView.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D569150D00C900B9EEF9 /* NSView.h */; };
+		A559D56D150D00C900B9EEF9 /* NSWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D56A150D00C900B9EEF9 /* NSWindow.h */; };
+		A559D579150D018900B9EEF9 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D572150D018900B9EEF9 /* buffer.h */; };
+		A559D57A150D018900B9EEF9 /* strconv.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D573150D018900B9EEF9 /* strconv.h */; };
+		A559D57B150D018900B9EEF9 /* stringimpl.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D574150D018900B9EEF9 /* stringimpl.h */; };
+		A559D57C150D018900B9EEF9 /* stringops.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D575150D018900B9EEF9 /* stringops.h */; };
+		A559D57D150D018900B9EEF9 /* strvararg.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D576150D018900B9EEF9 /* strvararg.h */; };
+		A559D57E150D018900B9EEF9 /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D577150D018900B9EEF9 /* unichar.h */; };
+		A559D57F150D018900B9EEF9 /* wxcrtbase.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D578150D018900B9EEF9 /* wxcrtbase.h */; };
+		A559D585150D020B00B9EEF9 /* defs.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D584150D020B00B9EEF9 /* defs.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +246,172 @@
 		A52612FA150CC079001C727E /* Dropbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dropbox.h; sourceTree = "<group>"; };
 		A52612FB150CC079001C727E /* Dropbox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Dropbox.c; sourceTree = "<group>"; };
 		A5261302150CC304001C727E /* Dropbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dropbox.m; sourceTree = "<group>"; };
+		A559D3FB150CF34600B9EEF9 /* NSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSButton.h; sourceTree = "<group>"; };
+		A559D3FC150CF34600B9EEF9 /* NSCell-OAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCell-OAExtensions.h"; sourceTree = "<group>"; };
+		A559D3FD150CF34600B9EEF9 /* NSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCell.h; sourceTree = "<group>"; };
+		A559D3FE150CF34600B9EEF9 /* NSImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImageView.h; sourceTree = "<group>"; };
+		A559D3FF150CF34600B9EEF9 /* NSMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMenu.h; sourceTree = "<group>"; };
+		A559D400150CF34600B9EEF9 /* NSMenuItem+Hackery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMenuItem+Hackery.h"; sourceTree = "<group>"; };
+		A559D401150CF34600B9EEF9 /* NSMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMenuItem.h; sourceTree = "<group>"; };
+		A559D402150CF34600B9EEF9 /* NSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject.h; sourceTree = "<group>"; };
+		A559D403150CF34600B9EEF9 /* NSToolbar-OAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSToolbar-OAExtensions.h"; sourceTree = "<group>"; };
+		A559D404150CF34600B9EEF9 /* NSToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbar.h; sourceTree = "<group>"; };
+		A559D405150CF34600B9EEF9 /* NSToolbarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarAdditions.h; sourceTree = "<group>"; };
+		A559D406150CF34600B9EEF9 /* NSToolbarFrameworkPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarFrameworkPrivate.h; sourceTree = "<group>"; };
+		A559D407150CF34600B9EEF9 /* NSToolbarItem-OAExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSToolbarItem-OAExtensions.h"; sourceTree = "<group>"; };
+		A559D408150CF34600B9EEF9 /* NSToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarItem.h; sourceTree = "<group>"; };
+		A559D409150CF34600B9EEF9 /* NSToolbarItemGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarItemGroup.h; sourceTree = "<group>"; };
+		A559D40A150CF34600B9EEF9 /* NSToolbarPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSToolbarPrivate.h; sourceTree = "<group>"; };
+		A559D423150CF4C100B9EEF9 /* libSDropboxSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDropboxSDK.a; path = ../libSDropboxSDK.a; sourceTree = SOURCE_ROOT; };
+		A559D425150CF4D400B9EEF9 /* libSDropboxSDKDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = libSDropboxSDKDisasm.s; path = ../libSDropboxSDKDisasm.s; sourceTree = SOURCE_ROOT; };
+		A559D427150CF4DE00B9EEF9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = SOURCE_ROOT; };
+		A559D42E150CFFA800B9EEF9 /* NSMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMenu.h; sourceTree = "<group>"; };
+		A559D42F150CFFA800B9EEF9 /* objc_uniquifying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objc_uniquifying.h; sourceTree = "<group>"; };
+		A559D430150CFFA800B9EEF9 /* hashmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hashmap.h; sourceTree = "<group>"; };
+		A559D44C150CFFEC00B9EEF9 /* ObjcAssociate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociate.h; sourceTree = "<group>"; };
+		A559D44D150CFFEC00B9EEF9 /* ObjcRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRef.h; sourceTree = "<group>"; };
+		A559D458150D00AF00B9EEF9 /* ObjcAssociate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcAssociate.h; sourceTree = "<group>"; };
+		A559D45A150D00AF00B9EEF9 /* accel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = accel.h; sourceTree = "<group>"; };
+		A559D45B150D00AF00B9EEF9 /* anybutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anybutton.h; sourceTree = "<group>"; };
+		A559D45C150D00AF00B9EEF9 /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = app.h; sourceTree = "<group>"; };
+		A559D45D150D00AF00B9EEF9 /* bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitmap.h; sourceTree = "<group>"; };
+		A559D45E150D00AF00B9EEF9 /* bmpbuttn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmpbuttn.h; sourceTree = "<group>"; };
+		A559D45F150D00AF00B9EEF9 /* brush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brush.h; sourceTree = "<group>"; };
+		A559D460150D00AF00B9EEF9 /* button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = button.h; sourceTree = "<group>"; };
+		A559D462150D00AF00B9EEF9 /* chkconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chkconf.h; sourceTree = "<group>"; };
+		A559D463150D00AF00B9EEF9 /* dataview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataview.h; sourceTree = "<group>"; };
+		A559D464150D00AF00B9EEF9 /* drawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = drawer.h; sourceTree = "<group>"; };
+		A559D465150D00AF00B9EEF9 /* evtloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evtloop.h; sourceTree = "<group>"; };
+		A559D466150D00AF00B9EEF9 /* mimetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimetype.h; sourceTree = "<group>"; };
+		A559D468150D00AF00B9EEF9 /* mactext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mactext.h; sourceTree = "<group>"; };
+		A559D469150D00AF00B9EEF9 /* overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overlay.h; sourceTree = "<group>"; };
+		A559D46A150D00AF00B9EEF9 /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
+		A559D46B150D00AF00B9EEF9 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		A559D46C150D00AF00B9EEF9 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		A559D46D150D00AF00B9EEF9 /* region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = region.h; sourceTree = "<group>"; };
+		A559D46E150D00AF00B9EEF9 /* statbmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statbmp.h; sourceTree = "<group>"; };
+		A559D46F150D00AF00B9EEF9 /* uma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uma.h; sourceTree = "<group>"; };
+		A559D470150D00AF00B9EEF9 /* checkbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkbox.h; sourceTree = "<group>"; };
+		A559D471150D00AF00B9EEF9 /* checklst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checklst.h; sourceTree = "<group>"; };
+		A559D472150D00AF00B9EEF9 /* chkconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chkconf.h; sourceTree = "<group>"; };
+		A559D473150D00AF00B9EEF9 /* choice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = choice.h; sourceTree = "<group>"; };
+		A559D474150D00AF00B9EEF9 /* clipbrd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clipbrd.h; sourceTree = "<group>"; };
+		A559D476150D00AF00B9EEF9 /* chkconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chkconf.h; sourceTree = "<group>"; };
+		A559D477150D00AF00B9EEF9 /* dataview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataview.h; sourceTree = "<group>"; };
+		A559D478150D00AF00B9EEF9 /* evtloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evtloop.h; sourceTree = "<group>"; };
+		A559D47A150D00AF00B9EEF9 /* markuptoattr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markuptoattr.h; sourceTree = "<group>"; };
+		A559D47B150D00AF00B9EEF9 /* overlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = overlay.h; sourceTree = "<group>"; };
+		A559D47C150D00AF00B9EEF9 /* textimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textimpl.h; sourceTree = "<group>"; };
+		A559D47D150D00AF00B9EEF9 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		A559D47E150D00AF00B9EEF9 /* colordlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colordlg.h; sourceTree = "<group>"; };
+		A559D47F150D00AF00B9EEF9 /* colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colour.h; sourceTree = "<group>"; };
+		A559D480150D00AF00B9EEF9 /* combobox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = combobox.h; sourceTree = "<group>"; };
+		A559D481150D00AF00B9EEF9 /* config_xcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_xcode.h; sourceTree = "<group>"; };
+		A559D482150D00AF00B9EEF9 /* control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = control.h; sourceTree = "<group>"; };
+		A559D484150D00AF00B9EEF9 /* cfdataref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfdataref.h; sourceTree = "<group>"; };
+		A559D485150D00AF00B9EEF9 /* cfref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfref.h; sourceTree = "<group>"; };
+		A559D486150D00AF00B9EEF9 /* cfstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfstring.h; sourceTree = "<group>"; };
+		A559D487150D00AF00B9EEF9 /* colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colour.h; sourceTree = "<group>"; };
+		A559D488150D00AF00B9EEF9 /* dataview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataview.h; sourceTree = "<group>"; };
+		A559D489150D00AF00B9EEF9 /* hid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hid.h; sourceTree = "<group>"; };
+		A559D48A150D00AF00B9EEF9 /* joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joystick.h; sourceTree = "<group>"; };
+		A559D48B150D00AF00B9EEF9 /* mimetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimetype.h; sourceTree = "<group>"; };
+		A559D48D150D00AF00B9EEF9 /* strconv_cf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strconv_cf.h; sourceTree = "<group>"; };
+		A559D48E150D00AF00B9EEF9 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		A559D48F150D00AF00B9EEF9 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		A559D490150D00AF00B9EEF9 /* stdpaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdpaths.h; sourceTree = "<group>"; };
+		A559D491150D00AF00B9EEF9 /* cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cursor.h; sourceTree = "<group>"; };
+		A559D492150D00AF00B9EEF9 /* dataform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataform.h; sourceTree = "<group>"; };
+		A559D493150D00AF00B9EEF9 /* dataobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataobj.h; sourceTree = "<group>"; };
+		A559D494150D00AF00B9EEF9 /* dataobj2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataobj2.h; sourceTree = "<group>"; };
+		A559D495150D00AF00B9EEF9 /* dataview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataview.h; sourceTree = "<group>"; };
+		A559D496150D00AF00B9EEF9 /* dc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dc.h; sourceTree = "<group>"; };
+		A559D497150D00AF00B9EEF9 /* dcclient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcclient.h; sourceTree = "<group>"; };
+		A559D498150D00AF00B9EEF9 /* dcmemory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcmemory.h; sourceTree = "<group>"; };
+		A559D499150D00AF00B9EEF9 /* dcprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcprint.h; sourceTree = "<group>"; };
+		A559D49A150D00AF00B9EEF9 /* dcscreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dcscreen.h; sourceTree = "<group>"; };
+		A559D49B150D00AF00B9EEF9 /* dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dialog.h; sourceTree = "<group>"; };
+		A559D49C150D00AF00B9EEF9 /* dirdlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dirdlg.h; sourceTree = "<group>"; };
+		A559D49D150D00AF00B9EEF9 /* dnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dnd.h; sourceTree = "<group>"; };
+		A559D49E150D00AF00B9EEF9 /* dvrenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dvrenderer.h; sourceTree = "<group>"; };
+		A559D49F150D00AF00B9EEF9 /* dvrenderers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dvrenderers.h; sourceTree = "<group>"; };
+		A559D4A0150D00AF00B9EEF9 /* evtloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evtloop.h; sourceTree = "<group>"; };
+		A559D4A1150D00AF00B9EEF9 /* evtloopsrc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evtloopsrc.h; sourceTree = "<group>"; };
+		A559D4A2150D00AF00B9EEF9 /* filedlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filedlg.h; sourceTree = "<group>"; };
+		A559D4A3150D00AF00B9EEF9 /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = font.h; sourceTree = "<group>"; };
+		A559D4A4150D00AF00B9EEF9 /* fontdlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fontdlg.h; sourceTree = "<group>"; };
+		A559D4A5150D00AF00B9EEF9 /* frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		A559D4A6150D00AF00B9EEF9 /* gauge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gauge.h; sourceTree = "<group>"; };
+		A559D4A7150D00AF00B9EEF9 /* glcanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glcanvas.h; sourceTree = "<group>"; };
+		A559D4A8150D00AF00B9EEF9 /* helpxxxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpxxxx.h; sourceTree = "<group>"; };
+		A559D4A9150D00AF00B9EEF9 /* icon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icon.h; sourceTree = "<group>"; };
+		A559D4AA150D00AF00B9EEF9 /* imaglist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imaglist.h; sourceTree = "<group>"; };
+		A559D4AC150D00AF00B9EEF9 /* chkconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chkconf.h; sourceTree = "<group>"; };
+		A559D4AE150D00AF00B9EEF9 /* textimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textimpl.h; sourceTree = "<group>"; };
+		A559D4AF150D00AF00B9EEF9 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		A559D4B0150D00AF00B9EEF9 /* joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = joystick.h; sourceTree = "<group>"; };
+		A559D4B1150D00AF00B9EEF9 /* listbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listbox.h; sourceTree = "<group>"; };
+		A559D4B2150D00AF00B9EEF9 /* listctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = listctrl.h; sourceTree = "<group>"; };
+		A559D4B3150D00AF00B9EEF9 /* mdi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdi.h; sourceTree = "<group>"; };
+		A559D4B4150D00AF00B9EEF9 /* menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menu.h; sourceTree = "<group>"; };
+		A559D4B5150D00AF00B9EEF9 /* menuitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menuitem.h; sourceTree = "<group>"; };
+		A559D4B6150D00AF00B9EEF9 /* metafile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metafile.h; sourceTree = "<group>"; };
+		A559D4B7150D00AF00B9EEF9 /* mimetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mimetype.h; sourceTree = "<group>"; };
+		A559D4B8150D00B000B9EEF9 /* minifram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minifram.h; sourceTree = "<group>"; };
+		A559D4B9150D00B000B9EEF9 /* msgdlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgdlg.h; sourceTree = "<group>"; };
+		A559D4BA150D00B000B9EEF9 /* nonownedwnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nonownedwnd.h; sourceTree = "<group>"; };
+		A559D4BB150D00B000B9EEF9 /* notebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notebook.h; sourceTree = "<group>"; };
+		A559D4BC150D00B000B9EEF9 /* palette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = palette.h; sourceTree = "<group>"; };
+		A559D4BD150D00B000B9EEF9 /* pen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pen.h; sourceTree = "<group>"; };
+		A559D4BE150D00B000B9EEF9 /* pnghand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnghand.h; sourceTree = "<group>"; };
+		A559D4BF150D00B000B9EEF9 /* pngread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngread.h; sourceTree = "<group>"; };
+		A559D4C0150D00B000B9EEF9 /* popupwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popupwin.h; sourceTree = "<group>"; };
+		A559D4C1150D00B000B9EEF9 /* printdlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printdlg.h; sourceTree = "<group>"; };
+		A559D4C2150D00B000B9EEF9 /* printmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = printmac.h; sourceTree = "<group>"; };
+		A559D4C4150D00B000B9EEF9 /* glgrab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glgrab.h; sourceTree = "<group>"; };
+		A559D4C5150D00B000B9EEF9 /* print.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = print.h; sourceTree = "<group>"; };
+		A559D4C6150D00B000B9EEF9 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		A559D4C7150D00B000B9EEF9 /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		A559D4C8150D00B000B9EEF9 /* radiobox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiobox.h; sourceTree = "<group>"; };
+		A559D4C9150D00B000B9EEF9 /* radiobut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = radiobut.h; sourceTree = "<group>"; };
+		A559D4CA150D00B000B9EEF9 /* region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = region.h; sourceTree = "<group>"; };
+		A559D4CB150D00B000B9EEF9 /* scrolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrolbar.h; sourceTree = "<group>"; };
+		A559D4CC150D00B000B9EEF9 /* setup0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup0.h; sourceTree = "<group>"; };
+		A559D4CD150D00B000B9EEF9 /* slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slider.h; sourceTree = "<group>"; };
+		A559D4CE150D00B000B9EEF9 /* sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
+		A559D4CF150D00B000B9EEF9 /* spinbutt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spinbutt.h; sourceTree = "<group>"; };
+		A559D4D0150D00B000B9EEF9 /* spinctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spinctrl.h; sourceTree = "<group>"; };
+		A559D4D1150D00B000B9EEF9 /* srchctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srchctrl.h; sourceTree = "<group>"; };
+		A559D4D2150D00B000B9EEF9 /* statbmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statbmp.h; sourceTree = "<group>"; };
+		A559D4D3150D00B000B9EEF9 /* statbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statbox.h; sourceTree = "<group>"; };
+		A559D4D4150D00B000B9EEF9 /* statline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statline.h; sourceTree = "<group>"; };
+		A559D4D5150D00B000B9EEF9 /* stattext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stattext.h; sourceTree = "<group>"; };
+		A559D4D6150D00B000B9EEF9 /* statusbr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statusbr.h; sourceTree = "<group>"; };
+		A559D4D7150D00B000B9EEF9 /* taskbarosx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = taskbarosx.h; sourceTree = "<group>"; };
+		A559D4D8150D00B000B9EEF9 /* textctrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textctrl.h; sourceTree = "<group>"; };
+		A559D4D9150D00B000B9EEF9 /* textentry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = textentry.h; sourceTree = "<group>"; };
+		A559D4DA150D00B000B9EEF9 /* tglbtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tglbtn.h; sourceTree = "<group>"; };
+		A559D4DB150D00B000B9EEF9 /* toolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toolbar.h; sourceTree = "<group>"; };
+		A559D4DC150D00B000B9EEF9 /* tooltip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tooltip.h; sourceTree = "<group>"; };
+		A559D4DD150D00B000B9EEF9 /* toplevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toplevel.h; sourceTree = "<group>"; };
+		A559D4DE150D00B000B9EEF9 /* treectrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = treectrl.h; sourceTree = "<group>"; };
+		A559D4DF150D00B000B9EEF9 /* uma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uma.h; sourceTree = "<group>"; };
+		A559D4E0150D00B000B9EEF9 /* webview_webkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webview_webkit.h; sourceTree = "<group>"; };
+		A559D4E1150D00B000B9EEF9 /* webviewhistoryitem_webkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webviewhistoryitem_webkit.h; sourceTree = "<group>"; };
+		A559D4E2150D00B000B9EEF9 /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
+		A559D4E3150D00B000B9EEF9 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
+		A559D4E4150D00B000B9EEF9 /* wxcrt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wxcrt.h; sourceTree = "<group>"; };
+		A559D568150D00C900B9EEF9 /* NSSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSlider.h; sourceTree = "<group>"; };
+		A559D569150D00C900B9EEF9 /* NSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSView.h; sourceTree = "<group>"; };
+		A559D56A150D00C900B9EEF9 /* NSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSWindow.h; sourceTree = "<group>"; };
+		A559D572150D018900B9EEF9 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		A559D573150D018900B9EEF9 /* strconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strconv.h; sourceTree = "<group>"; };
+		A559D574150D018900B9EEF9 /* stringimpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringimpl.h; sourceTree = "<group>"; };
+		A559D575150D018900B9EEF9 /* stringops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringops.h; sourceTree = "<group>"; };
+		A559D576150D018900B9EEF9 /* strvararg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strvararg.h; sourceTree = "<group>"; };
+		A559D577150D018900B9EEF9 /* unichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unichar.h; sourceTree = "<group>"; };
+		A559D578150D018900B9EEF9 /* wxcrtbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wxcrtbase.h; sourceTree = "<group>"; };
+		A559D584150D020B00B9EEF9 /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +422,7 @@
 				A515EE4B150CA075005473E3 /* crt1.10.6.o in Frameworks */,
 				A515EE4D150CA096005473E3 /* Python.framework in Frameworks */,
 				A52612F1150CC002001C727E /* DropboxSDK.framework in Frameworks */,
+				A559D424150CF4C100B9EEF9 /* libSDropboxSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +432,8 @@
 		A515EDFA150C9E48005473E3 = {
 			isa = PBXGroup;
 			children = (
+				A559D427150CF4DE00B9EEF9 /* README.md */,
+				A559D423150CF4C100B9EEF9 /* libSDropboxSDK.a */,
 				A5261302150CC304001C727E /* Dropbox.m */,
 				A519EE59150CB3F200E36575 /* Resources */,
 				A515EE39150C9F6F005473E3 /* assembly */,
@@ -115,6 +450,7 @@
 		A515EE2C150C9EF3005473E3 /* headers */ = {
 			isa = PBXGroup;
 			children = (
+				A559D3FA150CF34600B9EEF9 /* External Headers */,
 				A515EE18150C9E77005473E3 /* CDStructures.h */,
 				A515EE19150C9E77005473E3 /* DropboxContextMenuState.h */,
 				A515EE1A150C9E77005473E3 /* DropboxIKImageBrowserCell.h */,
@@ -138,6 +474,7 @@
 		A515EE39150C9F6F005473E3 /* assembly */ = {
 			isa = PBXGroup;
 			children = (
+				A559D425150CF4D400B9EEF9 /* libSDropboxSDKDisasm.s */,
 				A515EE0C150C9E68005473E3 /* dbfseventsddisasm.s */,
 				A515EE0D150C9E68005473E3 /* DropboxBundleDisasm.s */,
 				A515EE0E150C9E68005473E3 /* DropboxDisasm.s */,
@@ -231,6 +568,281 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		A559D3FA150CF34600B9EEF9 /* External Headers */ = {
+			isa = PBXGroup;
+			children = (
+				A559D42B150CFFA800B9EEF9 /* wx */,
+				A559D3FB150CF34600B9EEF9 /* NSButton.h */,
+				A559D3FC150CF34600B9EEF9 /* NSCell-OAExtensions.h */,
+				A559D3FD150CF34600B9EEF9 /* NSCell.h */,
+				A559D3FE150CF34600B9EEF9 /* NSImageView.h */,
+				A559D3FF150CF34600B9EEF9 /* NSMenu.h */,
+				A559D400150CF34600B9EEF9 /* NSMenuItem+Hackery.h */,
+				A559D401150CF34600B9EEF9 /* NSMenuItem.h */,
+				A559D402150CF34600B9EEF9 /* NSObject.h */,
+				A559D403150CF34600B9EEF9 /* NSToolbar-OAExtensions.h */,
+				A559D404150CF34600B9EEF9 /* NSToolbar.h */,
+				A559D405150CF34600B9EEF9 /* NSToolbarAdditions.h */,
+				A559D406150CF34600B9EEF9 /* NSToolbarFrameworkPrivate.h */,
+				A559D407150CF34600B9EEF9 /* NSToolbarItem-OAExtensions.h */,
+				A559D408150CF34600B9EEF9 /* NSToolbarItem.h */,
+				A559D409150CF34600B9EEF9 /* NSToolbarItemGroup.h */,
+				A559D40A150CF34600B9EEF9 /* NSToolbarPrivate.h */,
+			);
+			name = "External Headers";
+			path = "../External Headers";
+			sourceTree = SOURCE_ROOT;
+		};
+		A559D42B150CFFA800B9EEF9 /* wx */ = {
+			isa = PBXGroup;
+			children = (
+				A559D584150D020B00B9EEF9 /* defs.h */,
+				A559D572150D018900B9EEF9 /* buffer.h */,
+				A559D573150D018900B9EEF9 /* strconv.h */,
+				A559D574150D018900B9EEF9 /* stringimpl.h */,
+				A559D575150D018900B9EEF9 /* stringops.h */,
+				A559D576150D018900B9EEF9 /* strvararg.h */,
+				A559D577150D018900B9EEF9 /* unichar.h */,
+				A559D578150D018900B9EEF9 /* wxcrtbase.h */,
+				A559D458150D00AF00B9EEF9 /* ObjcAssociate.h */,
+				A559D459150D00AF00B9EEF9 /* osx */,
+				A559D4E3150D00B000B9EEF9 /* string.h */,
+				A559D4E4150D00B000B9EEF9 /* wxcrt.h */,
+				A559D42C150CFFA800B9EEF9 /* cocoa */,
+				A559D430150CFFA800B9EEF9 /* hashmap.h */,
+			);
+			path = wx;
+			sourceTree = "<group>";
+		};
+		A559D42C150CFFA800B9EEF9 /* cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				A559D44C150CFFEC00B9EEF9 /* ObjcAssociate.h */,
+				A559D44D150CFFEC00B9EEF9 /* ObjcRef.h */,
+				A559D42D150CFFA800B9EEF9 /* objc */,
+			);
+			path = cocoa;
+			sourceTree = "<group>";
+		};
+		A559D42D150CFFA800B9EEF9 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				A559D568150D00C900B9EEF9 /* NSSlider.h */,
+				A559D569150D00C900B9EEF9 /* NSView.h */,
+				A559D56A150D00C900B9EEF9 /* NSWindow.h */,
+				A559D42E150CFFA800B9EEF9 /* NSMenu.h */,
+				A559D42F150CFFA800B9EEF9 /* objc_uniquifying.h */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		A559D459150D00AF00B9EEF9 /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				A559D45A150D00AF00B9EEF9 /* accel.h */,
+				A559D45B150D00AF00B9EEF9 /* anybutton.h */,
+				A559D45C150D00AF00B9EEF9 /* app.h */,
+				A559D45D150D00AF00B9EEF9 /* bitmap.h */,
+				A559D45E150D00AF00B9EEF9 /* bmpbuttn.h */,
+				A559D45F150D00AF00B9EEF9 /* brush.h */,
+				A559D460150D00AF00B9EEF9 /* button.h */,
+				A559D461150D00AF00B9EEF9 /* carbon */,
+				A559D470150D00AF00B9EEF9 /* checkbox.h */,
+				A559D471150D00AF00B9EEF9 /* checklst.h */,
+				A559D472150D00AF00B9EEF9 /* chkconf.h */,
+				A559D473150D00AF00B9EEF9 /* choice.h */,
+				A559D474150D00AF00B9EEF9 /* clipbrd.h */,
+				A559D475150D00AF00B9EEF9 /* cocoa */,
+				A559D47E150D00AF00B9EEF9 /* colordlg.h */,
+				A559D47F150D00AF00B9EEF9 /* colour.h */,
+				A559D480150D00AF00B9EEF9 /* combobox.h */,
+				A559D481150D00AF00B9EEF9 /* config_xcode.h */,
+				A559D482150D00AF00B9EEF9 /* control.h */,
+				A559D483150D00AF00B9EEF9 /* core */,
+				A559D491150D00AF00B9EEF9 /* cursor.h */,
+				A559D492150D00AF00B9EEF9 /* dataform.h */,
+				A559D493150D00AF00B9EEF9 /* dataobj.h */,
+				A559D494150D00AF00B9EEF9 /* dataobj2.h */,
+				A559D495150D00AF00B9EEF9 /* dataview.h */,
+				A559D496150D00AF00B9EEF9 /* dc.h */,
+				A559D497150D00AF00B9EEF9 /* dcclient.h */,
+				A559D498150D00AF00B9EEF9 /* dcmemory.h */,
+				A559D499150D00AF00B9EEF9 /* dcprint.h */,
+				A559D49A150D00AF00B9EEF9 /* dcscreen.h */,
+				A559D49B150D00AF00B9EEF9 /* dialog.h */,
+				A559D49C150D00AF00B9EEF9 /* dirdlg.h */,
+				A559D49D150D00AF00B9EEF9 /* dnd.h */,
+				A559D49E150D00AF00B9EEF9 /* dvrenderer.h */,
+				A559D49F150D00AF00B9EEF9 /* dvrenderers.h */,
+				A559D4A0150D00AF00B9EEF9 /* evtloop.h */,
+				A559D4A1150D00AF00B9EEF9 /* evtloopsrc.h */,
+				A559D4A2150D00AF00B9EEF9 /* filedlg.h */,
+				A559D4A3150D00AF00B9EEF9 /* font.h */,
+				A559D4A4150D00AF00B9EEF9 /* fontdlg.h */,
+				A559D4A5150D00AF00B9EEF9 /* frame.h */,
+				A559D4A6150D00AF00B9EEF9 /* gauge.h */,
+				A559D4A7150D00AF00B9EEF9 /* glcanvas.h */,
+				A559D4A8150D00AF00B9EEF9 /* helpxxxx.h */,
+				A559D4A9150D00AF00B9EEF9 /* icon.h */,
+				A559D4AA150D00AF00B9EEF9 /* imaglist.h */,
+				A559D4AB150D00AF00B9EEF9 /* iphone */,
+				A559D4B0150D00AF00B9EEF9 /* joystick.h */,
+				A559D4B1150D00AF00B9EEF9 /* listbox.h */,
+				A559D4B2150D00AF00B9EEF9 /* listctrl.h */,
+				A559D4B3150D00AF00B9EEF9 /* mdi.h */,
+				A559D4B4150D00AF00B9EEF9 /* menu.h */,
+				A559D4B5150D00AF00B9EEF9 /* menuitem.h */,
+				A559D4B6150D00AF00B9EEF9 /* metafile.h */,
+				A559D4B7150D00AF00B9EEF9 /* mimetype.h */,
+				A559D4B8150D00B000B9EEF9 /* minifram.h */,
+				A559D4B9150D00B000B9EEF9 /* msgdlg.h */,
+				A559D4BA150D00B000B9EEF9 /* nonownedwnd.h */,
+				A559D4BB150D00B000B9EEF9 /* notebook.h */,
+				A559D4BC150D00B000B9EEF9 /* palette.h */,
+				A559D4BD150D00B000B9EEF9 /* pen.h */,
+				A559D4BE150D00B000B9EEF9 /* pnghand.h */,
+				A559D4BF150D00B000B9EEF9 /* pngread.h */,
+				A559D4C0150D00B000B9EEF9 /* popupwin.h */,
+				A559D4C1150D00B000B9EEF9 /* printdlg.h */,
+				A559D4C2150D00B000B9EEF9 /* printmac.h */,
+				A559D4C3150D00B000B9EEF9 /* private */,
+				A559D4C7150D00B000B9EEF9 /* private.h */,
+				A559D4C8150D00B000B9EEF9 /* radiobox.h */,
+				A559D4C9150D00B000B9EEF9 /* radiobut.h */,
+				A559D4CA150D00B000B9EEF9 /* region.h */,
+				A559D4CB150D00B000B9EEF9 /* scrolbar.h */,
+				A559D4CC150D00B000B9EEF9 /* setup0.h */,
+				A559D4CD150D00B000B9EEF9 /* slider.h */,
+				A559D4CE150D00B000B9EEF9 /* sound.h */,
+				A559D4CF150D00B000B9EEF9 /* spinbutt.h */,
+				A559D4D0150D00B000B9EEF9 /* spinctrl.h */,
+				A559D4D1150D00B000B9EEF9 /* srchctrl.h */,
+				A559D4D2150D00B000B9EEF9 /* statbmp.h */,
+				A559D4D3150D00B000B9EEF9 /* statbox.h */,
+				A559D4D4150D00B000B9EEF9 /* statline.h */,
+				A559D4D5150D00B000B9EEF9 /* stattext.h */,
+				A559D4D6150D00B000B9EEF9 /* statusbr.h */,
+				A559D4D7150D00B000B9EEF9 /* taskbarosx.h */,
+				A559D4D8150D00B000B9EEF9 /* textctrl.h */,
+				A559D4D9150D00B000B9EEF9 /* textentry.h */,
+				A559D4DA150D00B000B9EEF9 /* tglbtn.h */,
+				A559D4DB150D00B000B9EEF9 /* toolbar.h */,
+				A559D4DC150D00B000B9EEF9 /* tooltip.h */,
+				A559D4DD150D00B000B9EEF9 /* toplevel.h */,
+				A559D4DE150D00B000B9EEF9 /* treectrl.h */,
+				A559D4DF150D00B000B9EEF9 /* uma.h */,
+				A559D4E0150D00B000B9EEF9 /* webview_webkit.h */,
+				A559D4E1150D00B000B9EEF9 /* webviewhistoryitem_webkit.h */,
+				A559D4E2150D00B000B9EEF9 /* window.h */,
+			);
+			path = osx;
+			sourceTree = "<group>";
+		};
+		A559D461150D00AF00B9EEF9 /* carbon */ = {
+			isa = PBXGroup;
+			children = (
+				A559D462150D00AF00B9EEF9 /* chkconf.h */,
+				A559D463150D00AF00B9EEF9 /* dataview.h */,
+				A559D464150D00AF00B9EEF9 /* drawer.h */,
+				A559D465150D00AF00B9EEF9 /* evtloop.h */,
+				A559D466150D00AF00B9EEF9 /* mimetype.h */,
+				A559D467150D00AF00B9EEF9 /* private */,
+				A559D46C150D00AF00B9EEF9 /* private.h */,
+				A559D46D150D00AF00B9EEF9 /* region.h */,
+				A559D46E150D00AF00B9EEF9 /* statbmp.h */,
+				A559D46F150D00AF00B9EEF9 /* uma.h */,
+			);
+			path = carbon;
+			sourceTree = "<group>";
+		};
+		A559D467150D00AF00B9EEF9 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				A559D468150D00AF00B9EEF9 /* mactext.h */,
+				A559D469150D00AF00B9EEF9 /* overlay.h */,
+				A559D46A150D00AF00B9EEF9 /* print.h */,
+				A559D46B150D00AF00B9EEF9 /* timer.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		A559D475150D00AF00B9EEF9 /* cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				A559D476150D00AF00B9EEF9 /* chkconf.h */,
+				A559D477150D00AF00B9EEF9 /* dataview.h */,
+				A559D478150D00AF00B9EEF9 /* evtloop.h */,
+				A559D479150D00AF00B9EEF9 /* private */,
+				A559D47D150D00AF00B9EEF9 /* private.h */,
+			);
+			path = cocoa;
+			sourceTree = "<group>";
+		};
+		A559D479150D00AF00B9EEF9 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				A559D47A150D00AF00B9EEF9 /* markuptoattr.h */,
+				A559D47B150D00AF00B9EEF9 /* overlay.h */,
+				A559D47C150D00AF00B9EEF9 /* textimpl.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		A559D483150D00AF00B9EEF9 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A559D484150D00AF00B9EEF9 /* cfdataref.h */,
+				A559D485150D00AF00B9EEF9 /* cfref.h */,
+				A559D486150D00AF00B9EEF9 /* cfstring.h */,
+				A559D487150D00AF00B9EEF9 /* colour.h */,
+				A559D488150D00AF00B9EEF9 /* dataview.h */,
+				A559D489150D00AF00B9EEF9 /* hid.h */,
+				A559D48A150D00AF00B9EEF9 /* joystick.h */,
+				A559D48B150D00AF00B9EEF9 /* mimetype.h */,
+				A559D48C150D00AF00B9EEF9 /* private */,
+				A559D48F150D00AF00B9EEF9 /* private.h */,
+				A559D490150D00AF00B9EEF9 /* stdpaths.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A559D48C150D00AF00B9EEF9 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				A559D48D150D00AF00B9EEF9 /* strconv_cf.h */,
+				A559D48E150D00AF00B9EEF9 /* timer.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		A559D4AB150D00AF00B9EEF9 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				A559D4AC150D00AF00B9EEF9 /* chkconf.h */,
+				A559D4AD150D00AF00B9EEF9 /* private */,
+				A559D4AF150D00AF00B9EEF9 /* private.h */,
+			);
+			path = iphone;
+			sourceTree = "<group>";
+		};
+		A559D4AD150D00AF00B9EEF9 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				A559D4AE150D00AF00B9EEF9 /* textimpl.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
+		A559D4C3150D00B000B9EEF9 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				A559D4C4150D00B000B9EEF9 /* glgrab.h */,
+				A559D4C5150D00B000B9EEF9 /* print.h */,
+				A559D4C6150D00B000B9EEF9 /* timer.h */,
+			);
+			path = private;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -239,6 +851,169 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52612FC150CC079001C727E /* Dropbox.h in Headers */,
+				A559D40B150CF34600B9EEF9 /* NSButton.h in Headers */,
+				A559D40C150CF34600B9EEF9 /* NSCell-OAExtensions.h in Headers */,
+				A559D40D150CF34600B9EEF9 /* NSCell.h in Headers */,
+				A559D40E150CF34600B9EEF9 /* NSImageView.h in Headers */,
+				A559D40F150CF34600B9EEF9 /* NSMenu.h in Headers */,
+				A559D410150CF34600B9EEF9 /* NSMenuItem+Hackery.h in Headers */,
+				A559D411150CF34600B9EEF9 /* NSMenuItem.h in Headers */,
+				A559D412150CF34600B9EEF9 /* NSObject.h in Headers */,
+				A559D413150CF34600B9EEF9 /* NSToolbar-OAExtensions.h in Headers */,
+				A559D414150CF34600B9EEF9 /* NSToolbar.h in Headers */,
+				A559D415150CF34600B9EEF9 /* NSToolbarAdditions.h in Headers */,
+				A559D416150CF34600B9EEF9 /* NSToolbarFrameworkPrivate.h in Headers */,
+				A559D417150CF34600B9EEF9 /* NSToolbarItem-OAExtensions.h in Headers */,
+				A559D418150CF34600B9EEF9 /* NSToolbarItem.h in Headers */,
+				A559D419150CF34600B9EEF9 /* NSToolbarItemGroup.h in Headers */,
+				A559D41A150CF34600B9EEF9 /* NSToolbarPrivate.h in Headers */,
+				A559D433150CFFA800B9EEF9 /* NSMenu.h in Headers */,
+				A559D434150CFFA800B9EEF9 /* objc_uniquifying.h in Headers */,
+				A559D435150CFFA800B9EEF9 /* hashmap.h in Headers */,
+				A559D44E150CFFEC00B9EEF9 /* ObjcAssociate.h in Headers */,
+				A559D44F150CFFEC00B9EEF9 /* ObjcRef.h in Headers */,
+				A559D4E5150D00B000B9EEF9 /* ObjcAssociate.h in Headers */,
+				A559D4E6150D00B000B9EEF9 /* accel.h in Headers */,
+				A559D4E7150D00B000B9EEF9 /* anybutton.h in Headers */,
+				A559D4E8150D00B000B9EEF9 /* app.h in Headers */,
+				A559D4E9150D00B000B9EEF9 /* bitmap.h in Headers */,
+				A559D4EA150D00B000B9EEF9 /* bmpbuttn.h in Headers */,
+				A559D4EB150D00B000B9EEF9 /* brush.h in Headers */,
+				A559D4EC150D00B000B9EEF9 /* button.h in Headers */,
+				A559D4ED150D00B000B9EEF9 /* chkconf.h in Headers */,
+				A559D4EE150D00B000B9EEF9 /* dataview.h in Headers */,
+				A559D4EF150D00B000B9EEF9 /* drawer.h in Headers */,
+				A559D4F0150D00B000B9EEF9 /* evtloop.h in Headers */,
+				A559D4F1150D00B000B9EEF9 /* mimetype.h in Headers */,
+				A559D4F2150D00B000B9EEF9 /* mactext.h in Headers */,
+				A559D4F3150D00B000B9EEF9 /* overlay.h in Headers */,
+				A559D4F4150D00B000B9EEF9 /* print.h in Headers */,
+				A559D4F5150D00B000B9EEF9 /* timer.h in Headers */,
+				A559D4F6150D00B000B9EEF9 /* private.h in Headers */,
+				A559D4F7150D00B000B9EEF9 /* region.h in Headers */,
+				A559D4F8150D00B000B9EEF9 /* statbmp.h in Headers */,
+				A559D4F9150D00B000B9EEF9 /* uma.h in Headers */,
+				A559D4FA150D00B000B9EEF9 /* checkbox.h in Headers */,
+				A559D4FB150D00B000B9EEF9 /* checklst.h in Headers */,
+				A559D4FC150D00B000B9EEF9 /* chkconf.h in Headers */,
+				A559D4FD150D00B000B9EEF9 /* choice.h in Headers */,
+				A559D4FE150D00B000B9EEF9 /* clipbrd.h in Headers */,
+				A559D4FF150D00B000B9EEF9 /* chkconf.h in Headers */,
+				A559D500150D00B000B9EEF9 /* dataview.h in Headers */,
+				A559D501150D00B000B9EEF9 /* evtloop.h in Headers */,
+				A559D502150D00B000B9EEF9 /* markuptoattr.h in Headers */,
+				A559D503150D00B000B9EEF9 /* overlay.h in Headers */,
+				A559D504150D00B000B9EEF9 /* textimpl.h in Headers */,
+				A559D505150D00B000B9EEF9 /* private.h in Headers */,
+				A559D506150D00B000B9EEF9 /* colordlg.h in Headers */,
+				A559D507150D00B000B9EEF9 /* colour.h in Headers */,
+				A559D508150D00B000B9EEF9 /* combobox.h in Headers */,
+				A559D509150D00B000B9EEF9 /* config_xcode.h in Headers */,
+				A559D50A150D00B000B9EEF9 /* control.h in Headers */,
+				A559D50B150D00B000B9EEF9 /* cfdataref.h in Headers */,
+				A559D50C150D00B000B9EEF9 /* cfref.h in Headers */,
+				A559D50D150D00B000B9EEF9 /* cfstring.h in Headers */,
+				A559D50E150D00B000B9EEF9 /* colour.h in Headers */,
+				A559D50F150D00B000B9EEF9 /* dataview.h in Headers */,
+				A559D510150D00B000B9EEF9 /* hid.h in Headers */,
+				A559D511150D00B000B9EEF9 /* joystick.h in Headers */,
+				A559D512150D00B000B9EEF9 /* mimetype.h in Headers */,
+				A559D513150D00B000B9EEF9 /* strconv_cf.h in Headers */,
+				A559D514150D00B000B9EEF9 /* timer.h in Headers */,
+				A559D515150D00B000B9EEF9 /* private.h in Headers */,
+				A559D516150D00B000B9EEF9 /* stdpaths.h in Headers */,
+				A559D517150D00B000B9EEF9 /* cursor.h in Headers */,
+				A559D518150D00B000B9EEF9 /* dataform.h in Headers */,
+				A559D519150D00B000B9EEF9 /* dataobj.h in Headers */,
+				A559D51A150D00B000B9EEF9 /* dataobj2.h in Headers */,
+				A559D51B150D00B000B9EEF9 /* dataview.h in Headers */,
+				A559D51C150D00B000B9EEF9 /* dc.h in Headers */,
+				A559D51D150D00B000B9EEF9 /* dcclient.h in Headers */,
+				A559D51E150D00B000B9EEF9 /* dcmemory.h in Headers */,
+				A559D51F150D00B000B9EEF9 /* dcprint.h in Headers */,
+				A559D520150D00B000B9EEF9 /* dcscreen.h in Headers */,
+				A559D521150D00B000B9EEF9 /* dialog.h in Headers */,
+				A559D522150D00B000B9EEF9 /* dirdlg.h in Headers */,
+				A559D523150D00B000B9EEF9 /* dnd.h in Headers */,
+				A559D524150D00B000B9EEF9 /* dvrenderer.h in Headers */,
+				A559D525150D00B000B9EEF9 /* dvrenderers.h in Headers */,
+				A559D526150D00B000B9EEF9 /* evtloop.h in Headers */,
+				A559D527150D00B000B9EEF9 /* evtloopsrc.h in Headers */,
+				A559D528150D00B000B9EEF9 /* filedlg.h in Headers */,
+				A559D529150D00B000B9EEF9 /* font.h in Headers */,
+				A559D52A150D00B000B9EEF9 /* fontdlg.h in Headers */,
+				A559D52B150D00B000B9EEF9 /* frame.h in Headers */,
+				A559D52C150D00B000B9EEF9 /* gauge.h in Headers */,
+				A559D52D150D00B000B9EEF9 /* glcanvas.h in Headers */,
+				A559D52E150D00B000B9EEF9 /* helpxxxx.h in Headers */,
+				A559D52F150D00B000B9EEF9 /* icon.h in Headers */,
+				A559D530150D00B000B9EEF9 /* imaglist.h in Headers */,
+				A559D531150D00B000B9EEF9 /* chkconf.h in Headers */,
+				A559D532150D00B000B9EEF9 /* textimpl.h in Headers */,
+				A559D533150D00B000B9EEF9 /* private.h in Headers */,
+				A559D534150D00B000B9EEF9 /* joystick.h in Headers */,
+				A559D535150D00B000B9EEF9 /* listbox.h in Headers */,
+				A559D536150D00B000B9EEF9 /* listctrl.h in Headers */,
+				A559D537150D00B000B9EEF9 /* mdi.h in Headers */,
+				A559D538150D00B000B9EEF9 /* menu.h in Headers */,
+				A559D539150D00B000B9EEF9 /* menuitem.h in Headers */,
+				A559D53A150D00B000B9EEF9 /* metafile.h in Headers */,
+				A559D53B150D00B000B9EEF9 /* mimetype.h in Headers */,
+				A559D53C150D00B000B9EEF9 /* minifram.h in Headers */,
+				A559D53D150D00B000B9EEF9 /* msgdlg.h in Headers */,
+				A559D53E150D00B000B9EEF9 /* nonownedwnd.h in Headers */,
+				A559D53F150D00B000B9EEF9 /* notebook.h in Headers */,
+				A559D540150D00B000B9EEF9 /* palette.h in Headers */,
+				A559D541150D00B000B9EEF9 /* pen.h in Headers */,
+				A559D542150D00B000B9EEF9 /* pnghand.h in Headers */,
+				A559D543150D00B000B9EEF9 /* pngread.h in Headers */,
+				A559D544150D00B000B9EEF9 /* popupwin.h in Headers */,
+				A559D545150D00B000B9EEF9 /* printdlg.h in Headers */,
+				A559D546150D00B000B9EEF9 /* printmac.h in Headers */,
+				A559D547150D00B000B9EEF9 /* glgrab.h in Headers */,
+				A559D548150D00B000B9EEF9 /* print.h in Headers */,
+				A559D549150D00B000B9EEF9 /* timer.h in Headers */,
+				A559D54A150D00B000B9EEF9 /* private.h in Headers */,
+				A559D54B150D00B000B9EEF9 /* radiobox.h in Headers */,
+				A559D54C150D00B000B9EEF9 /* radiobut.h in Headers */,
+				A559D54D150D00B000B9EEF9 /* region.h in Headers */,
+				A559D54E150D00B000B9EEF9 /* scrolbar.h in Headers */,
+				A559D54F150D00B000B9EEF9 /* setup0.h in Headers */,
+				A559D550150D00B000B9EEF9 /* slider.h in Headers */,
+				A559D551150D00B000B9EEF9 /* sound.h in Headers */,
+				A559D552150D00B000B9EEF9 /* spinbutt.h in Headers */,
+				A559D553150D00B000B9EEF9 /* spinctrl.h in Headers */,
+				A559D554150D00B000B9EEF9 /* srchctrl.h in Headers */,
+				A559D555150D00B000B9EEF9 /* statbmp.h in Headers */,
+				A559D556150D00B000B9EEF9 /* statbox.h in Headers */,
+				A559D557150D00B000B9EEF9 /* statline.h in Headers */,
+				A559D558150D00B000B9EEF9 /* stattext.h in Headers */,
+				A559D559150D00B000B9EEF9 /* statusbr.h in Headers */,
+				A559D55A150D00B000B9EEF9 /* taskbarosx.h in Headers */,
+				A559D55B150D00B000B9EEF9 /* textctrl.h in Headers */,
+				A559D55C150D00B000B9EEF9 /* textentry.h in Headers */,
+				A559D55D150D00B000B9EEF9 /* tglbtn.h in Headers */,
+				A559D55E150D00B000B9EEF9 /* toolbar.h in Headers */,
+				A559D55F150D00B000B9EEF9 /* tooltip.h in Headers */,
+				A559D560150D00B000B9EEF9 /* toplevel.h in Headers */,
+				A559D561150D00B000B9EEF9 /* treectrl.h in Headers */,
+				A559D562150D00B000B9EEF9 /* uma.h in Headers */,
+				A559D563150D00B000B9EEF9 /* webview_webkit.h in Headers */,
+				A559D564150D00B000B9EEF9 /* webviewhistoryitem_webkit.h in Headers */,
+				A559D565150D00B000B9EEF9 /* window.h in Headers */,
+				A559D566150D00B000B9EEF9 /* string.h in Headers */,
+				A559D567150D00B000B9EEF9 /* wxcrt.h in Headers */,
+				A559D56B150D00C900B9EEF9 /* NSSlider.h in Headers */,
+				A559D56C150D00C900B9EEF9 /* NSView.h in Headers */,
+				A559D56D150D00C900B9EEF9 /* NSWindow.h in Headers */,
+				A559D579150D018900B9EEF9 /* buffer.h in Headers */,
+				A559D57A150D018900B9EEF9 /* strconv.h in Headers */,
+				A559D57B150D018900B9EEF9 /* stringimpl.h in Headers */,
+				A559D57C150D018900B9EEF9 /* stringops.h in Headers */,
+				A559D57D150D018900B9EEF9 /* strvararg.h in Headers */,
+				A559D57E150D018900B9EEF9 /* unichar.h in Headers */,
+				A559D57F150D018900B9EEF9 /* wxcrtbase.h in Headers */,
+				A559D585150D020B00B9EEF9 /* defs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +1071,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A559D428150CF4DE00B9EEF9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +1084,7 @@
 			files = (
 				A52612FD150CC079001C727E /* Dropbox.c in Sources */,
 				A5261303150CC304001C727E /* Dropbox.m in Sources */,
+				A559D426150CF4D400B9EEF9 /* libSDropboxSDKDisasm.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +1163,10 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = dropbox.o;
 			};
@@ -403,6 +1184,10 @@
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = dropbox.o;
 				ZERO_LINK = NO;
