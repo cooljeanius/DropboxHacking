@@ -1,0 +1,20 @@
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:12:26: error: CDStructures.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:13:37: error: DropboxContextMenuState.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:14:39: error: DropboxIKImageBrowserCell.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:15:39: error: DropboxLargeToolbarButton.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:16:25: error: DropboxMenu.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:17:32: error: DropboxMenuContext.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:18:29: error: DropboxMenuItem.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:19:27: error: DropboxNSMenu.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:20:42: error: DropboxSmallToolbarImageView.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:21:45: error: DropboxTListViewIconAndTextCell.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:22:28: error: DropboxToolbar.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:23:38: error: DropboxToolbarController.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:24:32: error: DropboxToolbarItem.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:25:24: error: DummyClass.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:26:37: error: NSMenuDelegate-Protocol.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:27:31: error: NSObject-Protocol.h: No such file or directory
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c: In function 'main':
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:31: error: expected expression before 'const'
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:31: warning: format not a string literal and no format arguments
+/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.c:32: error: expected ';' before '}' token
