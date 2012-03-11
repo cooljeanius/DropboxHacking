@@ -1,0 +1,777 @@
+/Users/ericgallager/.dropbox/finderplugin/mach_inject_bundle_stub.bundle/Contents/MacOS/mach_inject_bundle_stub:
+(__TEXT,__text) section
+_my_strcmp:
+0000000000000a66	nop
+0000000000000a67	nop
+0000000000000a68	nop
+0000000000000a69	nop
+0000000000000a6a	nop
+0000000000000a6b	nop
+0000000000000a6c	pushq	%rbp
+0000000000000a6d	movq	%rsp,%rbp
+0000000000000a70	movq	%rdi,0xe8(%rbp)
+0000000000000a74	movq	%rsi,0xe0(%rbp)
+0000000000000a78	movq	0xe8(%rbp),%rax
+0000000000000a7c	movq	%rax,0xf8(%rbp)
+0000000000000a80	movq	0xe0(%rbp),%rax
+0000000000000a84	movq	%rax,0xf0(%rbp)
+0000000000000a88	movq	0xf8(%rbp),%rax
+0000000000000a8c	movzbl	(%rax),%eax
+0000000000000a8f	testb	%al,%al
+0000000000000a91	jne	0x00000ab0
+0000000000000a93	movq	0xf0(%rbp),%rax
+0000000000000a97	movzbl	(%rax),%eax
+0000000000000a9a	testb	%al,%al
+0000000000000a9c	jne	0x00000aa7
+0000000000000a9e	movl	$__mh_bundle_header,0xdc(%rbp)
+0000000000000aa5	jmp	0x00000b04
+0000000000000aa7	movl	$0x00000001,0xdc(%rbp)
+0000000000000aae	jmp	0x00000b04
+0000000000000ab0	movq	0xf0(%rbp),%rax
+0000000000000ab4	movzbl	(%rax),%eax
+0000000000000ab7	testb	%al,%al
+0000000000000ab9	jne	0x00000ac4
+0000000000000abb	movl	$0xffffffff,0xdc(%rbp)
+0000000000000ac2	jmp	0x00000b04
+0000000000000ac4	movq	0xf8(%rbp),%rax
+0000000000000ac8	movzbl	(%rax),%edx
+0000000000000acb	movq	0xf0(%rbp),%rax
+0000000000000acf	movzbl	(%rax),%eax
+0000000000000ad2	cmpb	%al,%dl
+0000000000000ad4	jle	0x00000adf
+0000000000000ad6	movl	$0xffffffff,0xdc(%rbp)
+0000000000000add	jmp	0x00000b04
+0000000000000adf	movq	0xf0(%rbp),%rax
+0000000000000ae3	movzbl	(%rax),%edx
+0000000000000ae6	movq	0xf8(%rbp),%rax
+0000000000000aea	movzbl	(%rax),%eax
+0000000000000aed	cmpb	%al,%dl
+0000000000000aef	jle	0x00000afa
+0000000000000af1	movl	$0x00000001,0xdc(%rbp)
+0000000000000af8	jmp	0x00000b04
+0000000000000afa	incq	0xf8(%rbp)
+0000000000000afe	incq	0xf0(%rbp)
+0000000000000b02	jmp	0x00000a88
+0000000000000b04	movl	0xdc(%rbp),%eax
+0000000000000b07	leave
+0000000000000b08	ret
+_injectEntry:
+0000000000000b09	nop
+0000000000000b0a	nop
+0000000000000b0b	nop
+0000000000000b0c	nop
+0000000000000b0d	nop
+0000000000000b0e	nop
+0000000000000b0f	pushq	%rbp
+0000000000000b10	movq	%rsp,%rbp
+0000000000000b13	pushq	%r14
+0000000000000b15	pushq	%r13
+0000000000000b17	pushq	%r12
+0000000000000b19	pushq	%rbx
+0000000000000b1a	subq	$0x00000240,%rsp
+0000000000000b21	movq	%rdi,0xfffffdb8(%rbp)
+0000000000000b28	movq	%rsi,0xfffffdb0(%rbp)
+0000000000000b2f	movq	%rdx,0xfffffda8(%rbp)
+0000000000000b36	movq	%rcx,0xfffffda0(%rbp)
+0000000000000b3d	movq	0x000014bc(%rip),%rax
+0000000000000b44	movq	(%rax),%rdx
+0000000000000b47	movq	%rdx,0xd8(%rbp)
+0000000000000b4b	xorl	%edx,%edx
+0000000000000b4d	movq	0xfffffdb0(%rbp),%rdx
+0000000000000b54	movq	0xfffffdb8(%rbp),%rax
+0000000000000b5b	movq	%rax,(%rdx)
+0000000000000b5e	movl	$0x5fc01008,0xffffff70(%rbp)
+0000000000000b68	movl	$0x00007fff,0xffffff74(%rbp)
+0000000000000b72	movq	$__mh_bundle_header,0xffffff68(%rbp)
+0000000000000b7d	movq	$__mh_bundle_header,0xffffff60(%rbp)
+0000000000000b88	movq	$__mh_bundle_header,0xffffff58(%rbp)
+0000000000000b93	movq	$__mh_bundle_header,0xffffff50(%rbp)
+0000000000000b9e	movq	$__mh_bundle_header,0xffffff48(%rbp)
+0000000000000ba9	movq	$__mh_bundle_header,0xffffff40(%rbp)
+0000000000000bb4	leaq	0xffffff68(%rbp),%rsi
+0000000000000bbb	movq	0xffffff70(%rbp),%rax
+0000000000000bc2	leaq	0x00000d8f(%rip),%rdi
+0000000000000bc9	call	*%rax
+0000000000000bcb	movl	%eax,0x8c(%rbp)
+0000000000000bce	leaq	0xffffff60(%rbp),%rsi
+0000000000000bd5	movq	0xffffff70(%rbp),%rax
+0000000000000bdc	leaq	0x00000d8d(%rip),%rdi
+0000000000000be3	call	*%rax
+0000000000000be5	movl	%eax,0x8c(%rbp)
+0000000000000be8	leaq	0xffffff58(%rbp),%rsi
+0000000000000bef	movq	0xffffff70(%rbp),%rax
+0000000000000bf6	leaq	0x00000d89(%rip),%rdi
+0000000000000bfd	call	*%rax
+0000000000000bff	movl	%eax,0x8c(%rbp)
+0000000000000c02	leaq	0xffffff50(%rbp),%rsi
+0000000000000c09	movq	0xffffff70(%rbp),%rax
+0000000000000c10	leaq	0x00000d82(%rip),%rdi
+0000000000000c17	call	*%rax
+0000000000000c19	movl	%eax,0x8c(%rbp)
+0000000000000c1c	leaq	0xffffff48(%rbp),%rsi
+0000000000000c23	movq	0xffffff70(%rbp),%rax
+0000000000000c2a	leaq	0x00000d75(%rip),%rdi
+0000000000000c31	call	*%rax
+0000000000000c33	movl	%eax,0x8c(%rbp)
+0000000000000c36	leaq	0xffffff40(%rbp),%rsi
+0000000000000c3d	movq	0xffffff70(%rbp),%rax
+0000000000000c44	leaq	0x00000d78(%rip),%rdi
+0000000000000c4b	call	*%rax
+0000000000000c4d	movl	%eax,0x8c(%rbp)
+0000000000000c50	movq	0xfffffdb0(%rbp),%rax
+0000000000000c57	movq	(%rax),%rax
+0000000000000c5a	movq	%rax,%rdx
+0000000000000c5d	leaq	0x0000148c(%rip),%rax
+0000000000000c64	leaq	(%rdx,%rax),%rax
+0000000000000c68	movq	%rax,%rcx
+0000000000000c6b	movq	0xfffffdb0(%rbp),%rax
+0000000000000c72	movq	(%rax),%rax
+0000000000000c75	movq	%rax,%rdx
+0000000000000c78	leaq	0x00001449(%rip),%rax
+0000000000000c7f	leaq	(%rdx,%rax),%rax
+0000000000000c83	movq	%rax,%rsi
+0000000000000c86	movq	0xfffffdb0(%rbp),%rax
+0000000000000c8d	movq	(%rax),%rax
+0000000000000c90	movq	%rax,%rdx
+0000000000000c93	leaq	0x00001426(%rip),%rax
+0000000000000c9a	leaq	(%rdx,%rax),%rax
+0000000000000c9e	movq	%rax,%rdi
+0000000000000ca1	movq	0xfffffdb0(%rbp),%rax
+0000000000000ca8	movq	(%rax),%rax
+0000000000000cab	movq	%rax,%rdx
+0000000000000cae	leaq	0x0000141b(%rip),%rax
+0000000000000cb5	leaq	(%rdx,%rax),%rax
+0000000000000cb9	movq	%rax,%r8
+0000000000000cbc	movq	0xfffffdb0(%rbp),%rax
+0000000000000cc3	movq	(%rax),%rax
+0000000000000cc6	movq	%rax,%rdx
+0000000000000cc9	leaq	0x00001408(%rip),%rax
+0000000000000cd0	leaq	(%rdx,%rax),%rax
+0000000000000cd4	movq	%rax,%r9
+0000000000000cd7	movq	0xfffffdb0(%rbp),%rax
+0000000000000cde	movq	(%rax),%rax
+0000000000000ce1	movq	%rax,%rdx
+0000000000000ce4	leaq	0x0000140d(%rip),%rax
+0000000000000ceb	leaq	(%rdx,%rax),%rax
+0000000000000cef	movq	%rax,%r10
+0000000000000cf2	movq	0xfffffdb0(%rbp),%rax
+0000000000000cf9	movq	(%rax),%rax
+0000000000000cfc	movq	%rax,%rdx
+0000000000000cff	leaq	0x000013da(%rip),%rax
+0000000000000d06	leaq	(%rdx,%rax),%rax
+0000000000000d0a	movq	%rax,%r11
+0000000000000d0d	movq	0xfffffdb0(%rbp),%rax
+0000000000000d14	movq	(%rax),%rax
+0000000000000d17	movq	%rax,%rdx
+0000000000000d1a	leaq	0x000013c7(%rip),%rax
+0000000000000d21	leaq	(%rdx,%rax),%rax
+0000000000000d25	movq	%rax,%rbx
+0000000000000d28	movq	0xfffffdb0(%rbp),%rax
+0000000000000d2f	movq	(%rax),%rax
+0000000000000d32	movq	%rax,%rdx
+0000000000000d35	leaq	0x0000137c(%rip),%rax
+0000000000000d3c	leaq	(%rdx,%rax),%rax
+0000000000000d40	movq	%rax,%r12
+0000000000000d43	movq	0xfffffdb0(%rbp),%rax
+0000000000000d4a	movq	(%rax),%rax
+0000000000000d4d	movq	%rax,%rdx
+0000000000000d50	leaq	0x000013a9(%rip),%rax
+0000000000000d57	leaq	(%rdx,%rax),%rax
+0000000000000d5b	movq	%rax,%r13
+0000000000000d5e	movq	0xfffffdb0(%rbp),%rax
+0000000000000d65	movq	(%rax),%rax
+0000000000000d68	movq	%rax,%rdx
+0000000000000d6b	leaq	0x0000133e(%rip),%rax
+0000000000000d72	leaq	(%rdx,%rax),%rax
+0000000000000d76	movq	%rax,%r14
+0000000000000d79	movq	0xfffffdb0(%rbp),%rax
+0000000000000d80	movq	(%rax),%rax
+0000000000000d83	movq	%rax,%rdx
+0000000000000d86	leaq	0x0000131b(%rip),%rax
+0000000000000d8d	leaq	(%rdx,%rax),%rax
+0000000000000d91	movq	%rcx,0xfffffe30(%rbp)
+0000000000000d98	movq	%rsi,0xfffffe38(%rbp)
+0000000000000d9f	movq	%rdi,0xfffffe40(%rbp)
+0000000000000da6	movq	%r8,0xfffffe48(%rbp)
+0000000000000dad	movq	%r9,0xfffffe50(%rbp)
+0000000000000db4	movq	%r10,0xfffffe58(%rbp)
+0000000000000dbb	movq	%r11,0xfffffe60(%rbp)
+0000000000000dc2	movq	%rbx,0xfffffe68(%rbp)
+0000000000000dc9	movq	%r12,0xfffffe70(%rbp)
+0000000000000dd0	movq	%r13,0xfffffe78(%rbp)
+0000000000000dd7	movq	%r14,0xfffffe80(%rbp)
+0000000000000dde	movq	%rax,0xfffffe88(%rbp)
+0000000000000de5	movq	$__mh_bundle_header,0xfffffe90(%rbp)
+0000000000000df0	leaq	0x00000be5(%rip),%rax
+0000000000000df7	movq	%rax,0xfffffdc0(%rbp)
+0000000000000dfe	leaq	0x00000beb(%rip),%rax
+0000000000000e05	movq	%rax,0xfffffdc8(%rbp)
+0000000000000e0c	leaq	0x00000bf0(%rip),%rax
+0000000000000e13	movq	%rax,0xfffffdd0(%rbp)
+0000000000000e1a	leaq	0x00000bff(%rip),%rax
+0000000000000e21	movq	%rax,0xfffffdd8(%rbp)
+0000000000000e28	leaq	0x00000c0e(%rip),%rax
+0000000000000e2f	movq	%rax,0xfffffde0(%rbp)
+0000000000000e36	leaq	0x00000c1e(%rip),%rax
+0000000000000e3d	movq	%rax,0xfffffde8(%rbp)
+0000000000000e44	leaq	0x00000c28(%rip),%rax
+0000000000000e4b	movq	%rax,0xfffffdf0(%rbp)
+0000000000000e52	leaq	0x00000c36(%rip),%rax
+0000000000000e59	movq	%rax,0xfffffdf8(%rbp)
+0000000000000e60	leaq	0x00000c38(%rip),%rax
+0000000000000e67	movq	%rax,0xfffffe00(%rbp)
+0000000000000e6e	leaq	0x00000c40(%rip),%rax
+0000000000000e75	movq	%rax,0xfffffe08(%rbp)
+0000000000000e7c	leaq	0x00000c42(%rip),%rax
+0000000000000e83	movq	%rax,0xfffffe10(%rbp)
+0000000000000e8a	leaq	0x00000c46(%rip),%rax
+0000000000000e91	movq	%rax,0xfffffe18(%rbp)
+0000000000000e98	movq	$__mh_bundle_header,0xfffffe20(%rbp)
+0000000000000ea3	movq	0xfffffdb0(%rbp),%rax
+0000000000000eaa	movq	(%rax),%rax
+0000000000000ead	movq	%rax,%rdx
+0000000000000eb0	leaq	0x000011e1(%rip),%rax
+0000000000000eb7	leaq	(%rdx,%rax),%rax
+0000000000000ebb	movq	%rax,%rsi
+0000000000000ebe	movq	0xfffffdb0(%rbp),%rax
+0000000000000ec5	movq	(%rax),%rax
+0000000000000ec8	movq	%rax,%rdx
+0000000000000ecb	leaq	0x000011ce(%rip),%rax
+0000000000000ed2	leaq	(%rdx,%rax),%rax
+0000000000000ed6	movq	%rax,%rcx
+0000000000000ed9	movq	0xfffffdb0(%rbp),%rax
+0000000000000ee0	movq	(%rax),%rax
+0000000000000ee3	movq	%rax,%rdx
+0000000000000ee6	leaq	0x000011a3(%rip),%rax
+0000000000000eed	leaq	(%rdx,%rax),%rax
+0000000000000ef1	movq	%rsi,0xfffffec0(%rbp)
+0000000000000ef8	movq	%rcx,0xfffffec8(%rbp)
+0000000000000eff	movq	%rax,0xfffffed0(%rbp)
+0000000000000f06	movq	$__mh_bundle_header,0xfffffed8(%rbp)
+0000000000000f11	leaq	0x00000bc7(%rip),%rax
+0000000000000f18	movq	%rax,0xfffffea0(%rbp)
+0000000000000f1f	leaq	0x00000bd0(%rip),%rax
+0000000000000f26	movq	%rax,0xfffffea8(%rbp)
+0000000000000f2d	leaq	0x00000bd8(%rip),%rax
+0000000000000f34	movq	%rax,0xfffffeb0(%rbp)
+0000000000000f3b	movq	$__mh_bundle_header,0xfffffeb8(%rbp)
+0000000000000f46	movq	0xffffff58(%rbp),%rax
+0000000000000f4d	call	*%rax
+0000000000000f4f	movq	%rax,0xffffff30(%rbp)
+0000000000000f56	movl	$__mh_bundle_header,0x88(%rbp)
+0000000000000f5d	movl	$__mh_bundle_header,0x84(%rbp)
+0000000000000f64	movq	$__mh_bundle_header,0xffffff38(%rbp)
+0000000000000f6f	jmp	0x00001117
+0000000000000f74	movq	0xffffff68(%rbp),%rax
+0000000000000f7b	movq	0xffffff38(%rbp),%rdi
+0000000000000f82	call	*%rax
+0000000000000f84	movq	%rax,0xffffff28(%rbp)
+0000000000000f8b	cmpq	$__mh_bundle_header,0xffffff28(%rbp)
+0000000000000f93	je	0x00001110
+0000000000000f99	movq	0xffffff60(%rbp),%rax
+0000000000000fa0	movq	0xffffff38(%rbp),%rdi
+0000000000000fa7	call	*%rax
+0000000000000fa9	movq	%rax,0xffffff20(%rbp)
+0000000000000fb0	cmpq	$__mh_bundle_header,0xffffff20(%rbp)
+0000000000000fb8	je	0x00001110
+0000000000000fbe	movq	$__mh_bundle_header,0xffffff18(%rbp)
+0000000000000fc9	movq	$__mh_bundle_header,0xffffff10(%rbp)
+0000000000000fd4	movq	0xfffffdb0(%rbp),%rax
+0000000000000fdb	movq	(%rax),%rax
+0000000000000fde	movq	%rax,%rdx
+0000000000000fe1	leaq	0xfffffa7e(%rip),%rax
+0000000000000fe8	leaq	(%rdx,%rax),%rax
+0000000000000fec	movq	0xffffff20(%rbp),%rdi
+0000000000000ff3	leaq	0x00000b24(%rip),%rsi
+0000000000000ffa	call	*%rax
+0000000000000ffc	testl	%eax,%eax
+0000000000000ffe	jne	0x00001025
+0000000000001000	leaq	0xfffffe30(%rbp),%rax
+0000000000001007	movq	%rax,0xffffff10(%rbp)
+000000000000100e	leaq	0xfffffdc0(%rbp),%rax
+0000000000001015	movq	%rax,0xffffff18(%rbp)
+000000000000101c	movl	$0x00000001,0x88(%rbp)
+0000000000001023	jmp	0x00001074
+0000000000001025	movq	0xfffffdb0(%rbp),%rax
+000000000000102c	movq	(%rax),%rax
+000000000000102f	movq	%rax,%rdx
+0000000000001032	leaq	0xfffffa2d(%rip),%rax
+0000000000001039	leaq	(%rdx,%rax),%rax
+000000000000103d	movq	0xffffff20(%rbp),%rdi
+0000000000001044	leaq	0x00000af5(%rip),%rsi
+000000000000104b	call	*%rax
+000000000000104d	testl	%eax,%eax
+000000000000104f	jne	0x00001074
+0000000000001051	leaq	0xfffffec0(%rbp),%rax
+0000000000001058	movq	%rax,0xffffff10(%rbp)
+000000000000105f	leaq	0xfffffea0(%rbp),%rax
+0000000000001066	movq	%rax,0xffffff18(%rbp)
+000000000000106d	movl	$0x00000001,0x84(%rbp)
+0000000000001074	cmpq	$__mh_bundle_header,0xffffff10(%rbp)
+000000000000107c	je	0x00001110
+0000000000001082	movl	$__mh_bundle_header,0x80(%rbp)
+0000000000001089	movl	$__mh_bundle_header,0x80(%rbp)
+0000000000001090	movl	0x80(%rbp),%eax
+0000000000001093	cdqe
+0000000000001095	shlq	$0x03,%rax
+0000000000001099	addq	0xffffff10(%rbp),%rax
+00000000000010a0	movq	(%rax),%rax
+00000000000010a3	testq	%rax,%rax
+00000000000010a6	je	0x00001110
+00000000000010a8	movq	0xffffff48(%rbp),%rcx
+00000000000010af	movl	0x80(%rbp),%eax
+00000000000010b2	cdqe
+00000000000010b4	shlq	$0x03,%rax
+00000000000010b8	addq	0xffffff18(%rbp),%rax
+00000000000010bf	movq	(%rax),%rsi
+00000000000010c2	movq	0xffffff28(%rbp),%rdi
+00000000000010c9	movl	$0x00000004,%edx
+00000000000010ce	call	*%rcx
+00000000000010d0	movq	%rax,0xffffff08(%rbp)
+00000000000010d7	movq	0xffffff40(%rbp),%rax
+00000000000010de	movq	0xffffff08(%rbp),%rdi
+00000000000010e5	call	*%rax
+00000000000010e7	movq	%rax,0xffffff00(%rbp)
+00000000000010ee	movl	0x80(%rbp),%eax
+00000000000010f1	cdqe
+00000000000010f3	shlq	$0x03,%rax
+00000000000010f7	addq	0xffffff10(%rbp),%rax
+00000000000010fe	movq	(%rax),%rdx
+0000000000001101	movq	0xffffff00(%rbp),%rax
+0000000000001108	movq	%rax,(%rdx)
+000000000000110b	incl	0x80(%rbp)
+000000000000110e	jmp	0x00001090
+0000000000001110	incq	0xffffff38(%rbp)
+0000000000001117	movq	0xffffff38(%rbp),%rax
+000000000000111e	cmpq	0xffffff30(%rbp),%rax
+0000000000001125	jb	0x100000f74
+000000000000112b	movq	0xfffffdb0(%rbp),%rax
+0000000000001132	movq	(%rax),%rax
+0000000000001135	movq	%rax,%rdx
+0000000000001138	leaq	0x00000fb1(%rip),%rax
+000000000000113f	leaq	(%rdx,%rax),%rax
+0000000000001143	movq	(%rax),%rax
+0000000000001146	movq	0xfffffda0(%rbp),%rdi
+000000000000114d	call	*%rax
+000000000000114f	movq	0xfffffdb0(%rbp),%rax
+0000000000001156	movq	(%rax),%rax
+0000000000001159	movq	%rax,%rdx
+000000000000115c	leaq	0x00000f65(%rip),%rax
+0000000000001163	leaq	(%rdx,%rax),%rax
+0000000000001167	movq	(%rax),%rax
+000000000000116a	leaq	0x90(%rbp),%rdi
+000000000000116e	call	*%rax
+0000000000001170	movq	0xfffffdb0(%rbp),%rax
+0000000000001177	movq	(%rax),%rax
+000000000000117a	movq	%rax,%rdx
+000000000000117d	leaq	0x00000f3c(%rip),%rax
+0000000000001184	leaq	(%rdx,%rax),%rax
+0000000000001188	movq	(%rax),%rax
+000000000000118b	leaq	0xffffff7c(%rbp),%rsi
+0000000000001192	leaq	0x90(%rbp),%rdi
+0000000000001196	call	*%rax
+0000000000001198	movq	0xfffffdb0(%rbp),%rax
+000000000000119f	movq	(%rax),%rax
+00000000000011a2	movq	%rax,%rdx
+00000000000011a5	leaq	0x00000f24(%rip),%rax
+00000000000011ac	leaq	(%rdx,%rax),%rax
+00000000000011b0	movq	(%rax),%rax
+00000000000011b3	leaq	0x90(%rbp),%rdi
+00000000000011b7	movl	$0x00000002,%esi
+00000000000011bc	call	*%rax
+00000000000011be	movq	0xfffffdb0(%rbp),%rax
+00000000000011c5	movq	(%rax),%rax
+00000000000011c8	movq	%rax,%rdx
+00000000000011cb	leaq	0x00000f06(%rip),%rax
+00000000000011d2	leaq	(%rdx,%rax),%rax
+00000000000011d6	movq	(%rax),%rax
+00000000000011d9	leaq	0x90(%rbp),%rdi
+00000000000011dd	movl	$0x00000002,%esi
+00000000000011e2	call	*%rax
+00000000000011e4	movq	0xfffffdb0(%rbp),%rax
+00000000000011eb	movq	(%rax),%rax
+00000000000011ee	movq	%rax,%rdx
+00000000000011f1	leaq	0x00000f00(%rip),%rax
+00000000000011f8	leaq	(%rdx,%rax),%rax
+00000000000011fc	movq	(%rax),%rax
+00000000000011ff	movl	0xffffff7c(%rbp),%edi
+0000000000001205	call	*%rax
+0000000000001207	movl	%eax,0xfffffef0(%rbp)
+000000000000120d	movq	0xfffffdb0(%rbp),%rax
+0000000000001214	movq	(%rax),%rax
+0000000000001217	movq	%rax,%rdx
+000000000000121a	leaq	0x00000ebf(%rip),%rax
+0000000000001221	leaq	(%rdx,%rax),%rax
+0000000000001225	movq	(%rax),%rax
+0000000000001228	leaq	0xfffffef0(%rbp),%rsi
+000000000000122f	leaq	0x90(%rbp),%rdi
+0000000000001233	call	*%rax
+0000000000001235	movq	0xfffffdb0(%rbp),%rax
+000000000000123c	movq	(%rax),%rax
+000000000000123f	movq	%rax,%rdx
+0000000000001242	leaq	0x00000e9f(%rip),%rax
+0000000000001249	leaq	(%rdx,%rax),%rax
+000000000000124d	movq	(%rax),%r8
+0000000000001250	movq	0xfffffdb0(%rbp),%rax
+0000000000001257	movq	(%rax),%rax
+000000000000125a	movq	%rax,%rdx
+000000000000125d	leaq	0x0000009e(%rip),%rax
+0000000000001264	leaq	(%rdx,%rax),%rax
+0000000000001268	movq	%rax,%rdx
+000000000000126b	movq	0xfffffdb0(%rbp),%rcx
+0000000000001272	leaq	0x90(%rbp),%rsi
+0000000000001276	leaq	0xfffffee8(%rbp),%rdi
+000000000000127d	call	*%r8
+0000000000001280	movq	0xfffffdb0(%rbp),%rax
+0000000000001287	movq	(%rax),%rax
+000000000000128a	movq	%rax,%rdx
+000000000000128d	leaq	0x00000e24(%rip),%rax
+0000000000001294	leaq	(%rdx,%rax),%rax
+0000000000001298	movq	(%rax),%rax
+000000000000129b	leaq	0x90(%rbp),%rdi
+000000000000129f	call	*%rax
+00000000000012a1	movq	0xfffffdb0(%rbp),%rax
+00000000000012a8	movq	(%rax),%rax
+00000000000012ab	movq	%rax,%rdx
+00000000000012ae	leaq	0x00000e4b(%rip),%rax
+00000000000012b5	leaq	(%rdx,%rax),%rax
+00000000000012b9	movq	(%rax),%rbx
+00000000000012bc	movq	0xfffffdb0(%rbp),%rax
+00000000000012c3	movq	(%rax),%rax
+00000000000012c6	movq	%rax,%rdx
+00000000000012c9	leaq	0x00000de0(%rip),%rax
+00000000000012d0	leaq	(%rdx,%rax),%rax
+00000000000012d4	movq	(%rax),%rax
+00000000000012d7	call	*%rax
+00000000000012d9	movl	%eax,%edi
+00000000000012db	call	*%rbx
+00000000000012dd	movq	0x00000d1c(%rip),%rax
+00000000000012e4	movq	0xd8(%rbp),%rdx
+00000000000012e8	xorq	(%rax),%rdx
+00000000000012eb	je	0x000012f2
+00000000000012ed	callq	0x00001892	; symbol stub for: ___stack_chk_fail
+00000000000012f2	addq	$0x00000240,%rsp
+00000000000012f9	popq	%rbx
+00000000000012fa	popq	%r12
+00000000000012fc	popq	%r13
+00000000000012fe	popq	%r14
+0000000000001300	leave
+0000000000001301	ret
+_pthread_entry:
+0000000000001302	nop
+0000000000001303	nop
+0000000000001304	nop
+0000000000001305	nop
+0000000000001306	nop
+0000000000001307	nop
+0000000000001308	pushq	%rbp
+0000000000001309	movq	%rsp,%rbp
+000000000000130c	pushq	%rbx
+000000000000130d	subq	$0x28,%rsp
+0000000000001311	movq	%rdi,0xd8(%rbp)
+0000000000001315	movq	0xd8(%rbp),%rax
+0000000000001319	movq	(%rax),%rax
+000000000000131c	movq	%rax,%rdx
+000000000000131f	leaq	0x000000ae(%rip),%rax
+0000000000001326	leaq	(%rdx,%rax),%rax
+000000000000132a	movq	%rax,0xe8(%rbp)
+000000000000132e	movq	0xd8(%rbp),%rax
+0000000000001332	movq	(%rax),%rax
+0000000000001335	movq	%rax,%rdx
+0000000000001338	leaq	0x00000d61(%rip),%rax
+000000000000133f	leaq	(%rdx,%rax),%rax
+0000000000001343	movq	(%rax),%rax
+0000000000001346	testq	%rax,%rax
+0000000000001349	jne	0x00001355
+000000000000134b	movq	0xe8(%rbp),%rax
+000000000000134f	movq	%rax,0xe0(%rbp)
+0000000000001353	jmp	0x00001377
+0000000000001355	movq	0xd8(%rbp),%rax
+0000000000001359	movq	(%rax),%rax
+000000000000135c	movq	%rax,%rdx
+000000000000135f	leaq	0x00000d3a(%rip),%rax
+0000000000001366	leaq	(%rdx,%rax),%rax
+000000000000136a	movq	(%rax),%rax
+000000000000136d	movq	0xe8(%rbp),%rdi
+0000000000001371	call	*%rax
+0000000000001373	movq	%rax,0xe0(%rbp)
+0000000000001377	movq	0xd8(%rbp),%rax
+000000000000137b	movq	(%rax),%rax
+000000000000137e	movq	%rax,%rdx
+0000000000001381	leaq	0x00000d10(%rip),%rax
+0000000000001388	leaq	(%rdx,%rax),%rax
+000000000000138c	movq	(%rax),%rbx
+000000000000138f	movq	0xd8(%rbp),%rax
+0000000000001393	movq	(%rax),%rax
+0000000000001396	movq	%rax,%rdx
+0000000000001399	leaq	0x00000cf0(%rip),%rax
+00000000000013a0	leaq	(%rdx,%rax),%rax
+00000000000013a4	movq	(%rax),%rdx
+00000000000013a7	movl	$__mh_bundle_header,%eax
+00000000000013ac	call	*%rdx
+00000000000013ae	movq	%rax,%rdi
+00000000000013b1	movq	0xd8(%rbp),%rdx
+00000000000013b5	movq	0xe0(%rbp),%rsi
+00000000000013b9	movl	$__mh_bundle_header,%ecx
+00000000000013be	xorpd	%xmm1,%xmm1
+00000000000013c2	xorpd	%xmm0,%xmm0
+00000000000013c6	call	*%rbx
+00000000000013c8	movl	$__mh_bundle_header,%eax
+00000000000013cd	addq	$0x28,%rsp
+00000000000013d1	popq	%rbx
+00000000000013d2	leave
+00000000000013d3	ret
+_EventLoopTimerEntry:
+00000000000013d4	nop
+00000000000013d5	nop
+00000000000013d6	nop
+00000000000013d7	nop
+00000000000013d8	nop
+00000000000013d9	nop
+00000000000013da	pushq	%rbp
+00000000000013db	movq	%rsp,%rbp
+00000000000013de	subq	$0x10,%rsp
+00000000000013e2	movq	%rdi,0xf8(%rbp)
+00000000000013e6	movq	%rsi,0xf0(%rbp)
+00000000000013ea	cmpq	$__mh_bundle_header,0xf8(%rbp)
+00000000000013ef	sete	%al
+00000000000013f2	movzbl	%al,%eax
+00000000000013f5	testq	%rax,%rax
+00000000000013f8	je	0x00001419
+00000000000013fa	leaq	0x000007be(%rip),%rcx
+0000000000001401	movl	$0x0000011c,%edx
+0000000000001406	leaq	0x000007bb(%rip),%rsi
+000000000000140d	leaq	0x00000797(%rip),%rdi
+0000000000001414	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001419	cmpq	$__mh_bundle_header,0xf0(%rbp)
+000000000000141e	sete	%al
+0000000000001421	movzbl	%al,%eax
+0000000000001424	testq	%rax,%rax
+0000000000001427	je	0x00001448
+0000000000001429	leaq	0x000007e0(%rip),%rcx
+0000000000001430	movl	$0x0000011d,%edx
+0000000000001435	leaq	0x0000078c(%rip),%rsi
+000000000000143c	leaq	0x00000768(%rip),%rdi
+0000000000001443	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001448	movq	0xf0(%rbp),%rax
+000000000000144c	movq	(%rax),%rax
+000000000000144f	movq	%rax,%rdx
+0000000000001452	leaq	0x00000c4f(%rip),%rax
+0000000000001459	leaq	(%rdx,%rax),%rax
+000000000000145d	movq	(%rax),%rax
+0000000000001460	movq	0xf0(%rbp),%rdi
+0000000000001464	addq	$0x08,%rdi
+0000000000001468	movl	$0x00000002,%esi
+000000000000146d	call	*%rax
+000000000000146f	leave
+0000000000001470	ret
+_load_bundle_package:
+0000000000001471	nop
+0000000000001472	nop
+0000000000001473	nop
+0000000000001474	nop
+0000000000001475	nop
+0000000000001476	nop
+0000000000001477	pushq	%rbp
+0000000000001478	movq	%rsp,%rbp
+000000000000147b	subq	$0x00000440,%rsp
+0000000000001482	movq	%rdi,0xfffffbc8(%rbp)
+0000000000001489	movq	0x00000b70(%rip),%rax
+0000000000001490	movq	(%rax),%rdx
+0000000000001493	movq	%rdx,0xf8(%rbp)
+0000000000001497	xorl	%edx,%edx
+0000000000001499	leaq	0x0000078c(%rip),%rsi
+00000000000014a0	leaq	0x0000078e(%rip),%rdi
+00000000000014a7	movl	$__mh_bundle_header,%eax
+00000000000014ac	callq	0x000018aa	; symbol stub for: _printf
+00000000000014b1	cmpq	$__mh_bundle_header,0xfffffbc8(%rbp)
+00000000000014b9	sete	%al
+00000000000014bc	movzbl	%al,%eax
+00000000000014bf	testq	%rax,%rax
+00000000000014c2	je	0x000014e3
+00000000000014c4	leaq	0x00000775(%rip),%rcx
+00000000000014cb	movl	$0x00000013,%edx
+00000000000014d0	leaq	0x00000791(%rip),%rsi
+00000000000014d7	leaq	0x0000073a(%rip),%rdi
+00000000000014de	callq	0x0000188c	; symbol stub for: ___assert_rtn
+00000000000014e3	movq	0xfffffbc8(%rbp),%rax
+00000000000014ea	movzbl	(%rax),%eax
+00000000000014ed	testb	%al,%al
+00000000000014ef	sete	%al
+00000000000014f2	movzbl	%al,%eax
+00000000000014f5	testq	%rax,%rax
+00000000000014f8	je	0x00001519
+00000000000014fa	leaq	0x000007a7(%rip),%rcx
+0000000000001501	movl	$0x00000014,%edx
+0000000000001506	leaq	0x0000075b(%rip),%rsi
+000000000000150d	leaq	0x00000704(%rip),%rdi
+0000000000001514	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001519	movl	$__mh_bundle_header,0xfffffbec(%rbp)
+0000000000001523	movl	0xfffffbec(%rbp),%esi
+0000000000001529	leaq	0x000007a8(%rip),%rdi
+0000000000001530	movl	$__mh_bundle_header,%eax
+0000000000001535	callq	0x000018a4	; symbol stub for: _mach_error
+000000000000153a	movq	$__mh_bundle_header,0xfffffbe0(%rbp)
+0000000000001545	cmpl	$__mh_bundle_header,0xfffffbec(%rbp)
+000000000000154c	jne	0x00001595
+000000000000154e	movq	0xfffffbc8(%rbp),%rdi
+0000000000001555	callq	0x000018b6	; symbol stub for: _strlen
+000000000000155a	movq	%rax,%rdx
+000000000000155d	movq	0xfffffbc8(%rbp),%rsi
+0000000000001564	movq	0x00000aad(%rip),%rax
+000000000000156b	movq	(%rax),%rdi
+000000000000156e	movl	$0x00000001,%ecx
+0000000000001573	callq	0x00001880	; symbol stub for: _CFURLCreateFromFileSystemRepresentation
+0000000000001578	movq	%rax,0xfffffbe0(%rbp)
+000000000000157f	movq	0xfffffbe0(%rbp),%rax
+0000000000001586	testq	%rax,%rax
+0000000000001589	jne	0x00001595
+000000000000158b	movl	$0xf8000003,0xfffffbec(%rbp)
+0000000000001595	movl	0xfffffbec(%rbp),%esi
+000000000000159b	leaq	0x00000752(%rip),%rdi
+00000000000015a2	movl	$__mh_bundle_header,%eax
+00000000000015a7	callq	0x000018a4	; symbol stub for: _mach_error
+00000000000015ac	movq	$__mh_bundle_header,0xfffffbd8(%rbp)
+00000000000015b7	cmpl	$__mh_bundle_header,0xfffffbec(%rbp)
+00000000000015be	jne	0x00001629
+00000000000015c0	leaq	0x00000749(%rip),%rdi
+00000000000015c7	movl	$__mh_bundle_header,%eax
+00000000000015cc	callq	0x000018aa	; symbol stub for: _printf
+00000000000015d1	movq	0xfffffbe0(%rbp),%rdi
+00000000000015d8	callq	0x0000187a	; symbol stub for: _CFShow
+00000000000015dd	movl	$0x0000000a,%edi
+00000000000015e2	callq	0x000018b0	; symbol stub for: _putchar
+00000000000015e7	movq	0x00000a2a(%rip),%rax
+00000000000015ee	movq	(%rax),%rdi
+00000000000015f1	movq	0xfffffbe0(%rbp),%rsi
+00000000000015f8	callq	0x0000186e	; symbol stub for: _CFBundleCreate
+00000000000015fd	movq	%rax,0xfffffbd8(%rbp)
+0000000000001604	cmpq	$__mh_bundle_header,0xfffffbd8(%rbp)
+000000000000160c	jne	0x00001629
+000000000000160e	movl	$0xf8000004,0xfffffbec(%rbp)
+0000000000001618	leaq	0x0000070e(%rip),%rdi
+000000000000161f	movl	$__mh_bundle_header,%eax
+0000000000001624	callq	0x000018aa	; symbol stub for: _printf
+0000000000001629	movl	0xfffffbec(%rbp),%esi
+000000000000162f	leaq	0x00000701(%rip),%rdi
+0000000000001636	movl	$__mh_bundle_header,%eax
+000000000000163b	callq	0x000018a4	; symbol stub for: _mach_error
+0000000000001640	movq	$__mh_bundle_header,0xfffffbd0(%rbp)
+000000000000164b	cmpl	$__mh_bundle_header,0xfffffbec(%rbp)
+0000000000001652	jne	0x000016af
+0000000000001654	cmpq	$__mh_bundle_header,0xfffffbd8(%rbp)
+000000000000165c	sete	%al
+000000000000165f	movzbl	%al,%eax
+0000000000001662	testq	%rax,%rax
+0000000000001665	je	0x00001686
+0000000000001667	leaq	0x000006e5(%rip),%rcx
+000000000000166e	movl	$0x00000037,%edx
+0000000000001673	leaq	0x000005ee(%rip),%rsi
+000000000000167a	leaq	0x00000597(%rip),%rdi
+0000000000001681	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001686	movq	0xfffffbd8(%rbp),%rdi
+000000000000168d	callq	0x00001868	; symbol stub for: _CFBundleCopyExecutableURL
+0000000000001692	movq	%rax,0xfffffbd0(%rbp)
+0000000000001699	movq	0xfffffbd0(%rbp),%rax
+00000000000016a0	testq	%rax,%rax
+00000000000016a3	jne	0x000016af
+00000000000016a5	movl	$0xf8000005,0xfffffbec(%rbp)
+00000000000016af	movl	0xfffffbec(%rbp),%esi
+00000000000016b5	leaq	0x0000069e(%rip),%rdi
+00000000000016bc	movl	$__mh_bundle_header,%eax
+00000000000016c1	callq	0x000018a4	; symbol stub for: _mach_error
+00000000000016c6	cmpl	$__mh_bundle_header,0xfffffbec(%rbp)
+00000000000016cd	jne	0x0000172c
+00000000000016cf	cmpq	$__mh_bundle_header,0xfffffbd0(%rbp)
+00000000000016d7	sete	%al
+00000000000016da	movzbl	%al,%eax
+00000000000016dd	testq	%rax,%rax
+00000000000016e0	je	0x00001701
+00000000000016e2	leaq	0x0000068d(%rip),%rcx
+00000000000016e9	movl	$0x00000041,%edx
+00000000000016ee	leaq	0x00000573(%rip),%rsi
+00000000000016f5	leaq	0x0000051c(%rip),%rdi
+00000000000016fc	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001701	leaq	0xfffffbf0(%rbp),%rdx
+0000000000001708	movq	0xfffffbd0(%rbp),%rdi
+000000000000170f	movl	$0x00000400,%ecx
+0000000000001714	movl	$0x00000001,%esi
+0000000000001719	callq	0x00001886	; symbol stub for: _CFURLGetFileSystemRepresentation
+000000000000171e	testb	%al,%al
+0000000000001720	jne	0x0000172c
+0000000000001722	movl	$0xf8000006,0xfffffbec(%rbp)
+000000000000172c	movl	0xfffffbec(%rbp),%esi
+0000000000001732	leaq	0x00000651(%rip),%rdi
+0000000000001739	movl	$__mh_bundle_header,%eax
+000000000000173e	callq	0x000018a4	; symbol stub for: _mach_error
+0000000000001743	cmpl	$__mh_bundle_header,0xfffffbec(%rbp)
+000000000000174a	jne	0x00001794
+000000000000174c	leaq	0xfffffbf0(%rbp),%rax
+0000000000001753	movzbl	(%rax),%eax
+0000000000001756	testb	%al,%al
+0000000000001758	sete	%al
+000000000000175b	movzbl	%al,%eax
+000000000000175e	testq	%rax,%rax
+0000000000001761	je	0x00001782
+0000000000001763	leaq	0x0000063e(%rip),%rcx
+000000000000176a	movl	$0x0000004f,%edx
+000000000000176f	leaq	0x000004f2(%rip),%rsi
+0000000000001776	leaq	0x0000049b(%rip),%rdi
+000000000000177d	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001782	leaq	0xfffffbf0(%rbp),%rdi
+0000000000001789	callq	_load_bundle_executable
+000000000000178e	movl	%eax,0xfffffbec(%rbp)
+0000000000001794	cmpq	$__mh_bundle_header,0xfffffbd0(%rbp)
+000000000000179c	je	0x000017aa
+000000000000179e	movq	0xfffffbd0(%rbp),%rdi
+00000000000017a5	callq	0x00001874	; symbol stub for: _CFRelease
+00000000000017aa	cmpq	$__mh_bundle_header,0xfffffbe0(%rbp)
+00000000000017b2	je	0x000017c0
+00000000000017b4	movq	0xfffffbe0(%rbp),%rdi
+00000000000017bb	callq	0x00001874	; symbol stub for: _CFRelease
+00000000000017c0	movl	0xfffffbec(%rbp),%esi
+00000000000017c6	leaq	0x0000060c(%rip),%rdi
+00000000000017cd	movl	$__mh_bundle_header,%eax
+00000000000017d2	callq	0x000018a4	; symbol stub for: _mach_error
+00000000000017d7	movl	0xfffffbec(%rbp),%eax
+00000000000017dd	movq	0x0000081c(%rip),%rdx
+00000000000017e4	movq	0xf8(%rbp),%rcx
+00000000000017e8	xorq	(%rdx),%rcx
+00000000000017eb	je	0x000017f2
+00000000000017ed	callq	0x00001892	; symbol stub for: ___stack_chk_fail
+00000000000017f2	leave
+00000000000017f3	ret
+_load_bundle_executable:
+00000000000017f4	nop
+00000000000017f5	nop
+00000000000017f6	nop
+00000000000017f7	nop
+00000000000017f8	nop
+00000000000017f9	nop
+00000000000017fa	pushq	%rbp
+00000000000017fb	movq	%rsp,%rbp
+00000000000017fe	subq	$0x20,%rsp
+0000000000001802	movq	%rdi,0xe8(%rbp)
+0000000000001806	cmpq	$__mh_bundle_header,0xe8(%rbp)
+000000000000180b	sete	%al
+000000000000180e	movzbl	%al,%eax
+0000000000001811	testq	%rax,%rax
+0000000000001814	je	0x00001835
+0000000000001816	leaq	0x000005f3(%rip),%rcx
+000000000000181d	movl	$0x00000064,%edx
+0000000000001822	leaq	0x0000043f(%rip),%rsi
+0000000000001829	leaq	0x000005c5(%rip),%rdi
+0000000000001830	callq	0x0000188c	; symbol stub for: ___assert_rtn
+0000000000001835	movq	0xe8(%rbp),%rdi
+0000000000001839	movl	$0x00000002,%esi
+000000000000183e	callq	0x0000189e	; symbol stub for: _dlopen
+0000000000001843	movq	%rax,0xf8(%rbp)
+0000000000001847	cmpq	$__mh_bundle_header,0xf8(%rbp)
+000000000000184c	jne	0x0000185c
+000000000000184e	callq	0x00001898	; symbol stub for: _dlerror
+0000000000001853	movl	$0xf8000007,0xe4(%rbp)
+000000000000185a	jmp	0x00001863
+000000000000185c	movl	$__mh_bundle_header,0xe4(%rbp)
+0000000000001863	movl	0xe4(%rbp),%eax
+0000000000001866	leave
+0000000000001867	ret

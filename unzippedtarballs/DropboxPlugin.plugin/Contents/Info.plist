@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>DropboxPlugin</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.getdropbox.finderplugin</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>Plug</string>
+	<key>CFBundleVersion</key>
+	<string>169</string>
+	<key>CFPlugInDynamicRegisterFunction</key>
+	<string></string>
+	<key>CFPlugInDynamicRegistration</key>
+	<string>NO</string>
+	<key>CFPlugInFactories</key>
+	<dict>
+		<key>27174BC7-8D26-4EE2-8844-84C257FC3844</key>
+		<string>DropboxPluginFactory</string>
+	</dict>
+	<key>CFPlugInTypes</key>
+	<dict>
+		<key>2F6522E9-3E66-11D5-80A7-003065B300BC</key>
+		<array>
+			<string>27174BC7-8D26-4EE2-8844-84C257FC3844</string>
+		</array>
+	</dict>
+	<key>CFPlugInUnloadFunction</key>
+	<string></string>
+</dict>
+</plist>

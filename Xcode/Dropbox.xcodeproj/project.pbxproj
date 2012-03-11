@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A515EE4B150CA075005473E3 /* crt1.10.6.o in Frameworks */ = {isa = PBXBuildFile; fileRef = A515EE4A150CA075005473E3 /* crt1.10.6.o */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A515EE4D150CA096005473E3 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A515EE4C150CA096005473E3 /* Python.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A515EE0C150C9E68005473E3 /* dbfseventsddisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = dbfseventsddisasm.s; path = ../dbfseventsddisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE0D150C9E68005473E3 /* DropboxBundleDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = DropboxBundleDisasm.s; path = ../DropboxBundleDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE0E150C9E68005473E3 /* DropboxDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = DropboxDisasm.s; path = ../DropboxDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE0F150C9E68005473E3 /* DropboxHelperInstallerDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = DropboxHelperInstallerDisasm.s; path = ../DropboxHelperInstallerDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE10150C9E68005473E3 /* DropboxPluginDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = DropboxPluginDisasm.s; path = ../DropboxPluginDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE11150C9E68005473E3 /* dropboxpythondisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = dropboxpythondisasm.s; path = ../dropboxpythondisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE12150C9E68005473E3 /* FinderLoadBundleDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = FinderLoadBundleDisasm.s; path = ../FinderLoadBundleDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE13150C9E68005473E3 /* FinderLoadCMDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = FinderLoadCMDisasm.s; path = ../FinderLoadCMDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE14150C9E68005473E3 /* FinderLoadCMStubDisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = FinderLoadCMStubDisasm.s; path = ../FinderLoadCMStubDisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE15150C9E68005473E3 /* libQCRdisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = libQCRdisasm.s; path = ../libQCRdisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE16150C9E68005473E3 /* mach_inject_bundle_stub_disasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = mach_inject_bundle_stub_disasm.s; path = ../mach_inject_bundle_stub_disasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE17150C9E68005473E3 /* symdisasm.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = symdisasm.s; path = ../symdisasm.s; sourceTree = SOURCE_ROOT; };
+		A515EE18150C9E77005473E3 /* CDStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDStructures.h; path = ../CDStructures.h; sourceTree = SOURCE_ROOT; };
+		A515EE19150C9E77005473E3 /* DropboxContextMenuState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxContextMenuState.h; path = ../DropboxContextMenuState.h; sourceTree = SOURCE_ROOT; };
+		A515EE1A150C9E77005473E3 /* DropboxIKImageBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxIKImageBrowserCell.h; path = ../DropboxIKImageBrowserCell.h; sourceTree = SOURCE_ROOT; };
+		A515EE1B150C9E77005473E3 /* DropboxLargeToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxLargeToolbarButton.h; path = ../DropboxLargeToolbarButton.h; sourceTree = SOURCE_ROOT; };
+		A515EE1C150C9E77005473E3 /* DropboxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxMenu.h; path = ../DropboxMenu.h; sourceTree = SOURCE_ROOT; };
+		A515EE1D150C9E77005473E3 /* DropboxMenuContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxMenuContext.h; path = ../DropboxMenuContext.h; sourceTree = SOURCE_ROOT; };
+		A515EE1E150C9E77005473E3 /* DropboxMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxMenuItem.h; path = ../DropboxMenuItem.h; sourceTree = SOURCE_ROOT; };
+		A515EE1F150C9E77005473E3 /* DropboxNSMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxNSMenu.h; path = ../DropboxNSMenu.h; sourceTree = SOURCE_ROOT; };
+		A515EE20150C9E77005473E3 /* DropboxSmallToolbarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxSmallToolbarImageView.h; path = ../DropboxSmallToolbarImageView.h; sourceTree = SOURCE_ROOT; };
+		A515EE21150C9E77005473E3 /* DropboxTListViewIconAndTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxTListViewIconAndTextCell.h; path = ../DropboxTListViewIconAndTextCell.h; sourceTree = SOURCE_ROOT; };
+		A515EE22150C9E77005473E3 /* DropboxToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxToolbar.h; path = ../DropboxToolbar.h; sourceTree = SOURCE_ROOT; };
+		A515EE23150C9E77005473E3 /* DropboxToolbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxToolbarController.h; path = ../DropboxToolbarController.h; sourceTree = SOURCE_ROOT; };
+		A515EE24150C9E77005473E3 /* DropboxToolbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropboxToolbarItem.h; path = ../DropboxToolbarItem.h; sourceTree = SOURCE_ROOT; };
+		A515EE25150C9E77005473E3 /* DummyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DummyClass.h; path = ../DummyClass.h; sourceTree = SOURCE_ROOT; };
+		A515EE26150C9E77005473E3 /* NSMenuDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMenuDelegate-Protocol.h"; path = "../NSMenuDelegate-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		A515EE27150C9E77005473E3 /* NSObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject-Protocol.h"; path = "../NSObject-Protocol.h"; sourceTree = SOURCE_ROOT; };
+		A515EE45150CA005005473E3 /* dropbox.o.o */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.objfile"; includeInIndex = 0; path = dropbox.o.o; sourceTree = BUILT_PRODUCTS_DIR; };
+		A515EE4A150CA075005473E3 /* crt1.10.6.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = crt1.10.6.o; path = /usr/lib/crt1.10.6.o; sourceTree = "<absolute>"; };
+		A515EE4C150CA096005473E3 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /System/Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
+		A515EE82150CA2A2005473E3 /* Dropbox_1.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = Dropbox_1.xcclassmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A515EE43150CA005005473E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A515EE4B150CA075005473E3 /* crt1.10.6.o in Frameworks */,
+				A515EE4D150CA096005473E3 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A515EDFA150C9E48005473E3 = {
+			isa = PBXGroup;
+			children = (
+				A515EE39150C9F6F005473E3 /* assembly */,
+				A515EE2C150C9EF3005473E3 /* headers */,
+				A515EE46150CA005005473E3 /* Products */,
+				A515EE4A150CA075005473E3 /* crt1.10.6.o */,
+				A515EE4C150CA096005473E3 /* Python.framework */,
+				A515EE82150CA2A2005473E3 /* Dropbox_1.xcclassmodel */,
+			);
+			sourceTree = "<group>";
+		};
+		A515EE2C150C9EF3005473E3 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				A515EE18150C9E77005473E3 /* CDStructures.h */,
+				A515EE19150C9E77005473E3 /* DropboxContextMenuState.h */,
+				A515EE1A150C9E77005473E3 /* DropboxIKImageBrowserCell.h */,
+				A515EE1B150C9E77005473E3 /* DropboxLargeToolbarButton.h */,
+				A515EE1C150C9E77005473E3 /* DropboxMenu.h */,
+				A515EE1D150C9E77005473E3 /* DropboxMenuContext.h */,
+				A515EE1E150C9E77005473E3 /* DropboxMenuItem.h */,
+				A515EE1F150C9E77005473E3 /* DropboxNSMenu.h */,
+				A515EE20150C9E77005473E3 /* DropboxSmallToolbarImageView.h */,
+				A515EE21150C9E77005473E3 /* DropboxTListViewIconAndTextCell.h */,
+				A515EE22150C9E77005473E3 /* DropboxToolbar.h */,
+				A515EE23150C9E77005473E3 /* DropboxToolbarController.h */,
+				A515EE24150C9E77005473E3 /* DropboxToolbarItem.h */,
+				A515EE25150C9E77005473E3 /* DummyClass.h */,
+				A515EE26150C9E77005473E3 /* NSMenuDelegate-Protocol.h */,
+				A515EE27150C9E77005473E3 /* NSObject-Protocol.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		A515EE39150C9F6F005473E3 /* assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A515EE0C150C9E68005473E3 /* dbfseventsddisasm.s */,
+				A515EE0D150C9E68005473E3 /* DropboxBundleDisasm.s */,
+				A515EE0E150C9E68005473E3 /* DropboxDisasm.s */,
+				A515EE0F150C9E68005473E3 /* DropboxHelperInstallerDisasm.s */,
+				A515EE10150C9E68005473E3 /* DropboxPluginDisasm.s */,
+				A515EE11150C9E68005473E3 /* dropboxpythondisasm.s */,
+				A515EE12150C9E68005473E3 /* FinderLoadBundleDisasm.s */,
+				A515EE13150C9E68005473E3 /* FinderLoadCMDisasm.s */,
+				A515EE14150C9E68005473E3 /* FinderLoadCMStubDisasm.s */,
+				A515EE15150C9E68005473E3 /* libQCRdisasm.s */,
+				A515EE16150C9E68005473E3 /* mach_inject_bundle_stub_disasm.s */,
+				A515EE17150C9E68005473E3 /* symdisasm.s */,
+			);
+			name = assembly;
+			sourceTree = "<group>";
+		};
+		A515EE46150CA005005473E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A515EE45150CA005005473E3 /* dropbox.o.o */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A515EE6A150CA133005473E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A515EE44150CA005005473E3 /* dropbox.o */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A515EE49150CA006005473E3 /* Build configuration list for PBXNativeTarget "dropbox.o" */;
+			buildPhases = (
+				A515EE42150CA005005473E3 /* Sources */,
+				A515EE43150CA005005473E3 /* Frameworks */,
+				A515EE6A150CA133005473E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dropbox.o;
+			productName = dropbox.o;
+			productReference = A515EE45150CA005005473E3 /* dropbox.o.o */;
+			productType = "com.apple.product-type.objfile";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A515EDFC150C9E48005473E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "George Washington University";
+			};
+			buildConfigurationList = A515EDFF150C9E48005473E3 /* Build configuration list for PBXProject "Dropbox" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = A515EDFA150C9E48005473E3;
+			productRefGroup = A515EE46150CA005005473E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A515EE44150CA005005473E3 /* dropbox.o */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A515EE42150CA005005473E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A515EDFD150C9E48005473E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "10.4u 10.5 10.6";
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A515EDFE150C9E48005473E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		A515EE47150CA006005473E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = dropbox.o;
+			};
+			name = Debug;
+		};
+		A515EE48150CA006005473E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = dropbox.o;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A515EDFF150C9E48005473E3 /* Build configuration list for PBXProject "Dropbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A515EDFD150C9E48005473E3 /* Debug */,
+				A515EDFE150C9E48005473E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A515EE49150CA006005473E3 /* Build configuration list for PBXNativeTarget "dropbox.o" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A515EE47150CA006005473E3 /* Debug */,
+				A515EE48150CA006005473E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A515EDFC150C9E48005473E3 /* Project object */;
+}

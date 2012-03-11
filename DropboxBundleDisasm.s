@@ -1,0 +1,7503 @@
+/Users/ericgallager/.dropbox/finderplugin/DropboxBundle.bundle/Contents/MacOS/DropboxBundle:
+(__TEXT,__text) section
+_reconnect:
+0000000000001748	nop
+0000000000001749	nop
+000000000000174a	nop
+000000000000174b	nop
+000000000000174c	nop
+000000000000174d	nop
+000000000000174e	pushq	%rbp
+000000000000174f	movq	%rsp,%rbp
+0000000000001752	subq	$0x000004e0,%rsp
+0000000000001759	movq	0x0000a8a0(%rip),%rax
+0000000000001760	movq	(%rax),%rdx
+0000000000001763	movq	%rdx,0xf8(%rbp)
+0000000000001767	xorl	%edx,%edx
+0000000000001769	leaq	0xe0(%rbp),%rdi
+000000000000176d	movl	$0x00000010,%esi
+0000000000001772	callq	0x00009050	; symbol stub for: _bzero
+0000000000001777	leaq	0x0000cd0a(%rip),%rax
+000000000000177e	movl	(%rax),%eax
+0000000000001780	testl	%eax,%eax
+0000000000001782	js	0x0000179f
+0000000000001784	leaq	0x0000ccfd(%rip),%rax
+000000000000178b	movl	(%rax),%edi
+000000000000178d	callq	0x00009080	; symbol stub for: _close
+0000000000001792	leaq	0x0000ccef(%rip),%rax
+0000000000001799	movl	$0xffffffff,(%rax)
+000000000000179f	movl	$__mh_bundle_header,%edx
+00000000000017a4	movl	$0x00000001,%esi
+00000000000017a9	movl	$0x00000002,%edi
+00000000000017ae	callq	0x00009164	; symbol stub for: _socket
+00000000000017b3	movl	%eax,%edx
+00000000000017b5	leaq	0x0000cccc(%rip),%rax
+00000000000017bc	movl	%edx,(%rax)
+00000000000017be	leaq	0x0000ccc3(%rip),%rax
+00000000000017c5	movl	(%rax),%eax
+00000000000017c7	testl	%eax,%eax
+00000000000017c9	js	0x00001a2b
+00000000000017cf	movb	$0x02,0xe1(%rbp)
+00000000000017d3	callq	0x000090d4	; symbol stub for: _getuid
+00000000000017d8	movl	%eax,%ecx
+00000000000017da	movl	$0x10624dd3,0xfffffb2c(%rbp)
+00000000000017e4	movl	0xfffffb2c(%rbp),%eax
+00000000000017ea	mull	%ecx
+00000000000017ec	movl	%edx,%eax
+00000000000017ee	shrl	$0x06,%eax
+00000000000017f1	movl	%eax,0xfffffb38(%rbp)
+00000000000017f7	imull	$0x000003e8,0xfffffb38(%rbp),%eax
+0000000000001801	movl	%ecx,%edx
+0000000000001803	subl	%eax,%edx
+0000000000001805	movl	%edx,0xfffffb38(%rbp)
+000000000000180b	movzwl	0xfffffb38(%rbp),%eax
+0000000000001812	addw	$0x643f,%ax
+0000000000001816	movzwl	%ax,%edi
+0000000000001819	callq	__OSSwapInt16
+000000000000181e	movw	%ax,0xe2(%rbp)
+0000000000001822	leaq	0x00007e57(%rip),%rdi
+0000000000001829	callq	0x000090da	; symbol stub for: _inet_addr
+000000000000182e	movl	%eax,0xe4(%rbp)
+0000000000001831	leaq	0x0000cc50(%rip),%rax
+0000000000001838	movl	(%rax),%edi
+000000000000183a	movl	$__mh_bundle_header,%edx
+000000000000183f	movl	$0x00000003,%esi
+0000000000001844	movl	$__mh_bundle_header,%eax
+0000000000001849	callq	0x00009098	; symbol stub for: _fcntl
+000000000000184e	movl	%eax,0xfffffbdc(%rbp)
+0000000000001854	cmpl	$__mh_bundle_header,0xfffffbdc(%rbp)
+000000000000185b	js	0x00001a2b
+0000000000001861	movl	0xfffffbdc(%rbp),%edx
+0000000000001867	orl	$0x04,%edx
+000000000000186a	leaq	0x0000cc17(%rip),%rax
+0000000000001871	movl	(%rax),%edi
+0000000000001873	movl	$0x00000004,%esi
+0000000000001878	movl	$__mh_bundle_header,%eax
+000000000000187d	callq	0x00009098	; symbol stub for: _fcntl
+0000000000001882	testl	%eax,%eax
+0000000000001884	js	0x00001a2b
+000000000000188a	leaq	0xe0(%rbp),%rsi
+000000000000188e	leaq	0x0000cbf3(%rip),%rax
+0000000000001895	movl	(%rax),%edi
+0000000000001897	movl	$0x00000010,%edx
+000000000000189c	callq	0x00009086	; symbol stub for: _connect
+00000000000018a1	testl	%eax,%eax
+00000000000018a3	jns	0x0000199b
+00000000000018a9	callq	0x0000902c	; symbol stub for: ___error
+00000000000018ae	movl	(%rax),%eax
+00000000000018b0	cmpl	$0x24,%eax
+00000000000018b3	jne	0x00001a2b
+00000000000018b9	movq	$__mh_bundle_header,0xfffffbc0(%rbp)
+00000000000018c4	movl	$0x0003d090,0xfffffbc8(%rbp)
+00000000000018ce	leaq	0xfffffb40(%rbp),%rdi
+00000000000018d5	movl	$0x00000080,%esi
+00000000000018da	callq	0x00009050	; symbol stub for: _bzero
+00000000000018df	leaq	0x0000cba2(%rip),%rax
+00000000000018e6	movl	(%rax),%eax
+00000000000018e8	movl	%eax,0xfffffbd8(%rbp)
+00000000000018ee	movl	0xfffffbd8(%rbp),%eax
+00000000000018f4	cdqe
+00000000000018f6	shrq	$0x05,%rax
+00000000000018fa	movq	%rax,%rsi
+00000000000018fd	movl	0xfffffb40(%rbp,%rax,4),%edx
+0000000000001904	movl	0xfffffbd8(%rbp),%ecx
+000000000000190a	andl	$0x1f,%ecx
+000000000000190d	movl	$0x00000001,%eax
+0000000000001912	shll	%cl,%eax
+0000000000001914	orl	%edx,%eax
+0000000000001916	movl	%eax,0xfffffb40(%rbp,%rsi,4)
+000000000000191d	leaq	0x0000cb64(%rip),%rax
+0000000000001924	movl	(%rax),%eax
+0000000000001926	leal	0x01(%rax),%edi
+0000000000001929	leaq	0xfffffbc0(%rbp),%rax
+0000000000001930	leaq	0xfffffb40(%rbp),%rdx
+0000000000001937	movq	%rax,%r8
+000000000000193a	movl	$__mh_bundle_header,%ecx
+000000000000193f	movl	$__mh_bundle_header,%esi
+0000000000001944	callq	0x00009158	; symbol stub for: _select$1050
+0000000000001949	cmpl	$0x01,%eax
+000000000000194c	jne	0x00001a2b
+0000000000001952	movl	$0x00000004,0xfffffbd0(%rbp)
+000000000000195c	leaq	0x0000cb25(%rip),%rax
+0000000000001963	movl	(%rax),%edi
+0000000000001965	leaq	0xfffffbd0(%rbp),%rax
+000000000000196c	leaq	0xfffffbd4(%rbp),%rcx
+0000000000001973	movq	%rax,%r8
+0000000000001976	movl	$0x00001007,%edx
+000000000000197b	movl	$0x0000ffff,%esi
+0000000000001980	callq	0x000090c8	; symbol stub for: _getsockopt
+0000000000001985	testl	%eax,%eax
+0000000000001987	js	0x00001a2b
+000000000000198d	movl	0xfffffbd4(%rbp),%eax
+0000000000001993	testl	%eax,%eax
+0000000000001995	jne	0x00001a2b
+000000000000199b	leaq	0x0000cae6(%rip),%rax
+00000000000019a2	movl	(%rax),%edi
+00000000000019a4	movl	0xfffffbdc(%rbp),%edx
+00000000000019aa	movl	$0x00000004,%esi
+00000000000019af	movl	$__mh_bundle_header,%eax
+00000000000019b4	callq	0x00009098	; symbol stub for: _fcntl
+00000000000019b9	testl	%eax,%eax
+00000000000019bb	js	0x00001a2b
+00000000000019bd	movl	$0x00000001,0xfffffbd0(%rbp)
+00000000000019c7	leaq	0x0000caba(%rip),%rax
+00000000000019ce	movl	(%rax),%edi
+00000000000019d0	leaq	0xfffffbd0(%rbp),%rcx
+00000000000019d7	movl	$0x00000004,%r8d
+00000000000019dd	movl	$0x00001022,%edx
+00000000000019e2	movl	$0x0000ffff,%esi
+00000000000019e7	callq	0x0000915e	; symbol stub for: _setsockopt
+00000000000019ec	testl	%eax,%eax
+00000000000019ee	js	0x00001a2b
+00000000000019f0	leaq	0x00007dcd(%rip),%rsi
+00000000000019f7	movl	$__mh_bundle_header,%edx
+00000000000019fc	movl	$__mh_bundle_header,%edi
+0000000000001a01	callq	_sendRequest
+0000000000001a06	testb	%al,%al
+0000000000001a08	je	0x00001a2b
+0000000000001a0a	leaq	0xfffffbe0(%rbp),%rdi
+0000000000001a11	movl	$0x00000400,%esi
+0000000000001a16	callq	_getResponse
+0000000000001a1b	testl	%eax,%eax
+0000000000001a1d	js	0x00001a2b
+0000000000001a1f	movl	$0x00000001,0xfffffb3c(%rbp)
+0000000000001a29	jmp	0x00001a5d
+0000000000001a2b	leaq	0x0000ca56(%rip),%rax
+0000000000001a32	movl	(%rax),%eax
+0000000000001a34	testl	%eax,%eax
+0000000000001a36	js	0x00001a53
+0000000000001a38	leaq	0x0000ca49(%rip),%rax
+0000000000001a3f	movl	(%rax),%edi
+0000000000001a41	callq	0x00009080	; symbol stub for: _close
+0000000000001a46	leaq	0x0000ca3b(%rip),%rax
+0000000000001a4d	movl	$0xffffffff,(%rax)
+0000000000001a53	movl	$__mh_bundle_header,0xfffffb3c(%rbp)
+0000000000001a5d	movl	0xfffffb3c(%rbp),%eax
+0000000000001a63	movq	0x0000a596(%rip),%rdx
+0000000000001a6a	movq	0xf8(%rbp),%rcx
+0000000000001a6e	xorq	(%rdx),%rcx
+0000000000001a71	je	0x00001a78
+0000000000001a73	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000001a78	leave
+0000000000001a79	ret
+__OSSwapInt16:
+0000000000001a7a	nop
+0000000000001a7b	nop
+0000000000001a7c	nop
+0000000000001a7d	nop
+0000000000001a7e	nop
+0000000000001a7f	nop
+0000000000001a80	pushq	%rbp
+0000000000001a81	movq	%rsp,%rbp
+0000000000001a84	movw	%di,0xfc(%rbp)
+0000000000001a88	movzwl	0xfc(%rbp),%eax
+0000000000001a8c	shll	$0x08,%eax
+0000000000001a8f	movl	%eax,%edx
+0000000000001a91	movzwl	0xfc(%rbp),%eax
+0000000000001a95	shrw	$0x08,%ax
+0000000000001a99	orl	%edx,%eax
+0000000000001a9b	movzwl	%ax,%eax
+0000000000001a9e	leave
+0000000000001a9f	ret
+_sendall:
+0000000000001aa0	nop
+0000000000001aa1	nop
+0000000000001aa2	nop
+0000000000001aa3	nop
+0000000000001aa4	nop
+0000000000001aa5	nop
+0000000000001aa6	pushq	%rbp
+0000000000001aa7	movq	%rsp,%rbp
+0000000000001aaa	subq	$0x40,%rsp
+0000000000001aae	movl	%edi,0xdc(%rbp)
+0000000000001ab1	movq	%rsi,0xd0(%rbp)
+0000000000001ab5	movl	%edx,0xcc(%rbp)
+0000000000001ab8	movq	0xd0(%rbp),%rax
+0000000000001abc	movq	%rax,0xf8(%rbp)
+0000000000001ac0	movl	0xcc(%rbp),%eax
+0000000000001ac3	cdqe
+0000000000001ac5	shlq	$0x04,%rax
+0000000000001ac9	addq	0xd0(%rbp),%rax
+0000000000001acd	movq	%rax,0xf0(%rbp)
+0000000000001ad1	jmp	0x00001bab
+0000000000001ad6	movq	0xf0(%rbp),%rdx
+0000000000001ada	movq	0xf8(%rbp),%rax
+0000000000001ade	movq	%rdx,%rcx
+0000000000001ae1	subq	%rax,%rcx
+0000000000001ae4	movq	%rcx,%rax
+0000000000001ae7	sarq	$0x04,%rax
+0000000000001aeb	movl	%eax,%edx
+0000000000001aed	movq	0xf8(%rbp),%rsi
+0000000000001af1	movl	0xdc(%rbp),%edi
+0000000000001af4	callq	0x000091a6	; symbol stub for: _writev
+0000000000001af9	movq	%rax,0xe8(%rbp)
+0000000000001afd	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000001b02	jns	0x00001b29
+0000000000001b04	callq	0x0000902c	; symbol stub for: ___error
+0000000000001b09	movl	(%rax),%eax
+0000000000001b0b	cmpl	$0x04,%eax
+0000000000001b0e	jne	0x00001b1d
+0000000000001b10	movq	$__mh_bundle_header,0xe8(%rbp)
+0000000000001b18	jmp	0x00001ba4
+0000000000001b1d	movl	$__mh_bundle_header,0xc8(%rbp)
+0000000000001b24	jmp	0x00001bc0
+0000000000001b29	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000001b2e	jne	0x00001ba4
+0000000000001b30	movl	$__mh_bundle_header,0xc8(%rbp)
+0000000000001b37	jmp	0x00001bc0
+0000000000001b3c	movq	0xe8(%rbp),%rax
+0000000000001b40	movq	0xf8(%rbp),%rdx
+0000000000001b44	movq	0x08(%rdx),%rdx
+0000000000001b48	cmpq	%rdx,%rax
+0000000000001b4b	jb	0x00001b6d
+0000000000001b4d	movq	0xe8(%rbp),%rdx
+0000000000001b51	movq	0xf8(%rbp),%rax
+0000000000001b55	movq	0x08(%rax),%rax
+0000000000001b59	movq	%rdx,%rcx
+0000000000001b5c	subq	%rax,%rcx
+0000000000001b5f	movq	%rcx,%rax
+0000000000001b62	movq	%rax,0xe8(%rbp)
+0000000000001b66	addq	$0x10,0xf8(%rbp)
+0000000000001b6b	jmp	0x00001ba4
+0000000000001b6d	movq	0xf8(%rbp),%rax
+0000000000001b71	movq	(%rax),%rax
+0000000000001b74	movq	%rax,%rdx
+0000000000001b77	movq	0xe8(%rbp),%rax
+0000000000001b7b	addq	%rax,%rdx
+0000000000001b7e	movq	0xf8(%rbp),%rax
+0000000000001b82	movq	%rdx,(%rax)
+0000000000001b85	movq	0xf8(%rbp),%rax
+0000000000001b89	movq	0x08(%rax),%rdx
+0000000000001b8d	movq	0xe8(%rbp),%rax
+0000000000001b91	subq	%rax,%rdx
+0000000000001b94	movq	0xf8(%rbp),%rax
+0000000000001b98	movq	%rdx,0x08(%rax)
+0000000000001b9c	movq	$__mh_bundle_header,0xe8(%rbp)
+0000000000001ba4	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000001ba9	jne	0x00001b3c
+0000000000001bab	movq	0xf8(%rbp),%rax
+0000000000001baf	cmpq	0xf0(%rbp),%rax
+0000000000001bb3	jb	0x100001ad6
+0000000000001bb9	movl	$0x00000001,0xc8(%rbp)
+0000000000001bc0	movl	0xc8(%rbp),%eax
+0000000000001bc3	leave
+0000000000001bc4	ret
+_subtract_timevals:
+0000000000001bc5	nop
+0000000000001bc6	nop
+0000000000001bc7	nop
+0000000000001bc8	nop
+0000000000001bc9	nop
+0000000000001bca	nop
+0000000000001bcb	pushq	%rbp
+0000000000001bcc	movq	%rsp,%rbp
+0000000000001bcf	movq	%rdi,0xf8(%rbp)
+0000000000001bd3	movq	%rsi,0xf0(%rbp)
+0000000000001bd7	movq	0xf8(%rbp),%rax
+0000000000001bdb	movl	0x08(%rax),%edx
+0000000000001bde	movq	0xf0(%rbp),%rax
+0000000000001be2	movl	0x08(%rax),%eax
+0000000000001be5	cmpl	%eax,%edx
+0000000000001be7	jge	0x00001c10
+0000000000001be9	movq	0xf8(%rbp),%rax
+0000000000001bed	movq	(%rax),%rax
+0000000000001bf0	leaq	0xff(%rax),%rdx
+0000000000001bf4	movq	0xf8(%rbp),%rax
+0000000000001bf8	movq	%rdx,(%rax)
+0000000000001bfb	movq	0xf8(%rbp),%rax
+0000000000001bff	movl	0x08(%rax),%eax
+0000000000001c02	addl	$0x000f4240,%eax
+0000000000001c07	movl	%eax,%edx
+0000000000001c09	movq	0xf8(%rbp),%rax
+0000000000001c0d	movl	%edx,0x08(%rax)
+0000000000001c10	movq	0xf8(%rbp),%rax
+0000000000001c14	movl	0x08(%rax),%edx
+0000000000001c17	movq	0xf0(%rbp),%rax
+0000000000001c1b	movl	0x08(%rax),%eax
+0000000000001c1e	subl	%eax,%edx
+0000000000001c20	movq	0xf8(%rbp),%rax
+0000000000001c24	movl	%edx,0x08(%rax)
+0000000000001c27	movq	0xf8(%rbp),%rax
+0000000000001c2b	movq	(%rax),%rdx
+0000000000001c2e	movq	0xf0(%rbp),%rax
+0000000000001c32	movq	(%rax),%rax
+0000000000001c35	subq	%rax,%rdx
+0000000000001c38	movq	0xf8(%rbp),%rax
+0000000000001c3c	movq	%rdx,(%rax)
+0000000000001c3f	leave
+0000000000001c40	ret
+_sendRequest:
+0000000000001c41	nop
+0000000000001c42	nop
+0000000000001c43	nop
+0000000000001c44	nop
+0000000000001c45	nop
+0000000000001c46	nop
+0000000000001c47	pushq	%rbp
+0000000000001c48	movq	%rsp,%rbp
+0000000000001c4b	subq	$0x60,%rsp
+0000000000001c4f	movl	%edi,0xbc(%rbp)
+0000000000001c52	movq	%rsi,0xb0(%rbp)
+0000000000001c56	movl	%edx,0xac(%rbp)
+0000000000001c59	cmpl	$__mh_bundle_header,0xac(%rbp)
+0000000000001c5d	jns	0x00001c7f
+0000000000001c5f	movl	0xac(%rbp),%esi
+0000000000001c62	leaq	0x00007a22(%rip),%rdi
+0000000000001c69	movl	$__mh_bundle_header,%eax
+0000000000001c6e	callq	_dbtrace
+0000000000001c73	movl	$__mh_bundle_header,0xa8(%rbp)
+0000000000001c7a	jmp	0x00001d65
+0000000000001c7f	leaq	0x0000c802(%rip),%rax
+0000000000001c86	movl	(%rax),%eax
+0000000000001c88	testl	%eax,%eax
+0000000000001c8a	jns	0x00001cb2
+0000000000001c8c	leaq	0x0000c7f5(%rip),%rax
+0000000000001c93	movl	(%rax),%esi
+0000000000001c95	leaq	0x000079ff(%rip),%rdi
+0000000000001c9c	movl	$__mh_bundle_header,%eax
+0000000000001ca1	callq	_dbtrace
+0000000000001ca6	movl	$__mh_bundle_header,0xa8(%rbp)
+0000000000001cad	jmp	0x00001d65
+0000000000001cb2	movl	$0xa0830403,0xe0(%rbp)
+0000000000001cb9	leaq	0x0000c8a0(%rip),%rax
+0000000000001cc0	movl	(%rax),%eax
+0000000000001cc2	leal	0x01(%rax),%edx
+0000000000001cc5	leaq	0x0000c894(%rip),%rax
+0000000000001ccc	movl	%edx,(%rax)
+0000000000001cce	leaq	0x0000c88b(%rip),%rax
+0000000000001cd5	movl	(%rax),%eax
+0000000000001cd7	movl	%eax,%edi
+0000000000001cd9	callq	__OSSwapInt32
+0000000000001cde	movl	%eax,0xe4(%rbp)
+0000000000001ce1	movl	0xbc(%rbp),%edi
+0000000000001ce4	callq	__OSSwapInt32
+0000000000001ce9	movl	%eax,0xe8(%rbp)
+0000000000001cec	leaq	0xe0(%rbp),%rax
+0000000000001cf0	movq	%rax,0xc0(%rbp)
+0000000000001cf4	cmpl	$__mh_bundle_header,0xac(%rbp)
+0000000000001cf8	je	0x00001d34
+0000000000001cfa	movq	$0x00000012,0xc8(%rbp)
+0000000000001d02	movl	0xac(%rbp),%eax
+0000000000001d05	incl	%eax
+0000000000001d07	movl	%eax,%edi
+0000000000001d09	callq	__OSSwapInt32
+0000000000001d0e	movl	%eax,0xec(%rbp)
+0000000000001d11	movw	$0xfeff,0xf0(%rbp)
+0000000000001d17	movq	0xb0(%rbp),%rax
+0000000000001d1b	movq	%rax,0xd0(%rbp)
+0000000000001d1f	movl	0xac(%rbp),%eax
+0000000000001d22	cdqe
+0000000000001d24	addq	%rax,%rax
+0000000000001d27	movq	%rax,0xd8(%rbp)
+0000000000001d2b	movl	$0x00000002,0xfc(%rbp)
+0000000000001d32	jmp	0x00001d4a
+0000000000001d34	movq	$0x00000010,0xc8(%rbp)
+0000000000001d3c	movl	$__mh_bundle_header,0xec(%rbp)
+0000000000001d43	movl	$0x00000001,0xfc(%rbp)
+0000000000001d4a	leaq	0x0000c737(%rip),%rax
+0000000000001d51	movl	(%rax),%edi
+0000000000001d53	movl	0xfc(%rbp),%edx
+0000000000001d56	leaq	0xc0(%rbp),%rsi
+0000000000001d5a	callq	_sendall
+0000000000001d5f	movzbl	%al,%eax
+0000000000001d62	movl	%eax,0xa8(%rbp)
+0000000000001d65	movl	0xa8(%rbp),%eax
+0000000000001d68	leave
+0000000000001d69	ret
+__OSSwapInt32:
+0000000000001d6a	nop
+0000000000001d6b	nop
+0000000000001d6c	nop
+0000000000001d6d	nop
+0000000000001d6e	nop
+0000000000001d6f	nop
+0000000000001d70	pushq	%rbp
+0000000000001d71	movq	%rsp,%rbp
+0000000000001d74	movl	%edi,0xfc(%rbp)
+0000000000001d77	movl	0xfc(%rbp),%eax
+0000000000001d7a	bswap	%eax
+0000000000001d7c	movl	%eax,0xfc(%rbp)
+0000000000001d7f	movl	0xfc(%rbp),%eax
+0000000000001d82	leave
+0000000000001d83	ret
+_recvall:
+0000000000001d84	nop
+0000000000001d85	nop
+0000000000001d86	nop
+0000000000001d87	nop
+0000000000001d88	nop
+0000000000001d89	nop
+0000000000001d8a	pushq	%rbp
+0000000000001d8b	movq	%rsp,%rbp
+0000000000001d8e	pushq	%r12
+0000000000001d90	pushq	%rbx
+0000000000001d91	subq	$0x000080f0,%rsp
+0000000000001d98	movl	%edi,0xffff7f2c(%rbp)
+0000000000001d9e	movq	%rsi,0xffff7f20(%rbp)
+0000000000001da5	movq	%rdx,0xffff7f18(%rbp)
+0000000000001dac	movl	%ecx,0xffff7f14(%rbp)
+0000000000001db2	movq	%r8,0xffff7f08(%rbp)
+0000000000001db9	movq	0xffff7f20(%rbp),%rax
+0000000000001dc0	movq	%rax,0xe0(%rbp)
+0000000000001dc4	movq	0xffff7f18(%rbp),%rax
+0000000000001dcb	movq	%rax,0xd8(%rbp)
+0000000000001dcf	jmp	0x00001fbd
+0000000000001dd4	leaq	0xffffff30(%rbp),%rdi
+0000000000001ddb	movl	$0x00000080,%esi
+0000000000001de0	callq	0x00009050	; symbol stub for: _bzero
+0000000000001de5	leaq	0x0000c69c(%rip),%rax
+0000000000001dec	movl	(%rax),%eax
+0000000000001dee	movl	%eax,0xe8(%rbp)
+0000000000001df1	movl	0xe8(%rbp),%eax
+0000000000001df4	cdqe
+0000000000001df6	shrq	$0x05,%rax
+0000000000001dfa	movq	%rax,%rsi
+0000000000001dfd	movl	0xffffff30(%rbp,%rax,4),%edx
+0000000000001e04	movl	0xe8(%rbp),%ecx
+0000000000001e07	andl	$0x1f,%ecx
+0000000000001e0a	movl	$0x00000001,%eax
+0000000000001e0f	shll	%cl,%eax
+0000000000001e11	orl	%edx,%eax
+0000000000001e13	movl	%eax,0xffffff30(%rbp,%rsi,4)
+0000000000001e1a	leaq	0xc0(%rbp),%rdi
+0000000000001e1e	movl	$__mh_bundle_header,%esi
+0000000000001e23	callq	0x000090ce	; symbol stub for: _gettimeofday
+0000000000001e28	leaq	0x0000c659(%rip),%rax
+0000000000001e2f	movl	(%rax),%eax
+0000000000001e31	leal	0x01(%rax),%edi
+0000000000001e34	movq	0xffff7f08(%rbp),%rax
+0000000000001e3b	leaq	0xffffff30(%rbp),%rsi
+0000000000001e42	movq	%rax,%r8
+0000000000001e45	movl	$__mh_bundle_header,%ecx
+0000000000001e4a	movl	$__mh_bundle_header,%edx
+0000000000001e4f	callq	0x00009158	; symbol stub for: _select$1050
+0000000000001e54	movl	%eax,0xec(%rbp)
+0000000000001e57	cmpl	$__mh_bundle_header,0xec(%rbp)
+0000000000001e5b	jns	0x00001eb1
+0000000000001e5d	callq	0x0000902c	; symbol stub for: ___error
+0000000000001e62	movl	(%rax),%eax
+0000000000001e64	cmpl	$0x04,%eax
+0000000000001e67	je	0x00001eb1
+0000000000001e69	movq	0xffff7f08(%rbp),%rax
+0000000000001e70	movl	0x08(%rax),%ebx
+0000000000001e73	movq	0xffff7f08(%rbp),%rax
+0000000000001e7a	movq	(%rax),%r12
+0000000000001e7d	callq	0x0000902c	; symbol stub for: ___error
+0000000000001e82	movl	(%rax),%edi
+0000000000001e84	callq	0x0000917c	; symbol stub for: _strerror
+0000000000001e89	movq	%rax,%rsi
+0000000000001e8c	movl	%ebx,%ecx
+0000000000001e8e	movq	%r12,%rdx
+0000000000001e91	leaq	0x00007814(%rip),%rdi
+0000000000001e98	movl	$__mh_bundle_header,%eax
+0000000000001e9d	callq	_dbtrace
+0000000000001ea2	movl	$__mh_bundle_header,0xffff7f04(%rbp)
+0000000000001eac	jmp	0x00002022
+0000000000001eb1	leaq	0xb0(%rbp),%rdi
+0000000000001eb5	movl	$__mh_bundle_header,%esi
+0000000000001eba	callq	0x000090ce	; symbol stub for: _gettimeofday
+0000000000001ebf	leaq	0xc0(%rbp),%rsi
+0000000000001ec3	leaq	0xb0(%rbp),%rdi
+0000000000001ec7	callq	_subtract_timevals
+0000000000001ecc	leaq	0xb0(%rbp),%rsi
+0000000000001ed0	movq	0xffff7f08(%rbp),%rdi
+0000000000001ed7	callq	_subtract_timevals
+0000000000001edc	cmpl	$__mh_bundle_header,0xec(%rbp)
+0000000000001ee0	jle	0x00001fbd
+0000000000001ee6	cmpq	$__mh_bundle_header,0xffff7f20(%rbp)
+0000000000001eee	jne	0x00001f5b
+0000000000001ef0	movl	$0x00008000,%eax
+0000000000001ef5	cmpq	$0x00008000,0xd8(%rbp)
+0000000000001efd	movq	%rax,%rdx
+0000000000001f00	cmovbeq	0xd8(%rbp),%rdx
+0000000000001f05	leaq	0x0000c57c(%rip),%rax
+0000000000001f0c	movl	(%rax),%edi
+0000000000001f0e	leaq	0xffff7f30(%rbp),%rsi
+0000000000001f15	movl	$__mh_bundle_header,%ecx
+0000000000001f1a	callq	0x00009152	; symbol stub for: _recv
+0000000000001f1f	movl	%eax,0xec(%rbp)
+0000000000001f22	cmpl	$__mh_bundle_header,0xec(%rbp)
+0000000000001f26	jg	0x00001fb4
+0000000000001f2c	callq	0x0000902c	; symbol stub for: ___error
+0000000000001f31	movl	(%rax),%edi
+0000000000001f33	callq	0x0000917c	; symbol stub for: _strerror
+0000000000001f38	movq	%rax,%rsi
+0000000000001f3b	leaq	0x00007786(%rip),%rdi
+0000000000001f42	movl	$__mh_bundle_header,%eax
+0000000000001f47	callq	_dbtrace
+0000000000001f4c	movl	$__mh_bundle_header,0xffff7f04(%rbp)
+0000000000001f56	jmp	0x00002022
+0000000000001f5b	leaq	0x0000c526(%rip),%rax
+0000000000001f62	movl	(%rax),%edi
+0000000000001f64	movq	0xd8(%rbp),%rdx
+0000000000001f68	movq	0xe0(%rbp),%rsi
+0000000000001f6c	movl	$__mh_bundle_header,%ecx
+0000000000001f71	callq	0x00009152	; symbol stub for: _recv
+0000000000001f76	movl	%eax,0xec(%rbp)
+0000000000001f79	cmpl	$__mh_bundle_header,0xec(%rbp)
+0000000000001f7d	jg	0x00001fab
+0000000000001f7f	callq	0x0000902c	; symbol stub for: ___error
+0000000000001f84	movl	(%rax),%edi
+0000000000001f86	callq	0x0000917c	; symbol stub for: _strerror
+0000000000001f8b	movq	%rax,%rsi
+0000000000001f8e	leaq	0x00007747(%rip),%rdi
+0000000000001f95	movl	$__mh_bundle_header,%eax
+0000000000001f9a	callq	_dbtrace
+0000000000001f9f	movl	$__mh_bundle_header,0xffff7f04(%rbp)
+0000000000001fa9	jmp	0x00002022
+0000000000001fab	movl	0xec(%rbp),%eax
+0000000000001fae	cdqe
+0000000000001fb0	addq	%rax,0xe0(%rbp)
+0000000000001fb4	movl	0xec(%rbp),%eax
+0000000000001fb7	cdqe
+0000000000001fb9	subq	%rax,0xd8(%rbp)
+0000000000001fbd	movq	0xffff7f08(%rbp),%rax
+0000000000001fc4	movq	(%rax),%rax
+0000000000001fc7	testq	%rax,%rax
+0000000000001fca	js	0x00001fe5
+0000000000001fcc	movq	0xffff7f08(%rbp),%rax
+0000000000001fd3	movl	0x08(%rax),%eax
+0000000000001fd6	testl	%eax,%eax
+0000000000001fd8	js	0x00001fe5
+0000000000001fda	cmpq	$__mh_bundle_header,0xd8(%rbp)
+0000000000001fdf	jne	0x100001dd4
+0000000000001fe5	cmpq	$__mh_bundle_header,0xd8(%rbp)
+0000000000001fea	je	0x00002011
+0000000000001fec	movq	0xffff7f08(%rbp),%rax
+0000000000001ff3	movl	0x08(%rax),%edx
+0000000000001ff6	movq	0xffff7f08(%rbp),%rax
+0000000000001ffd	movq	(%rax),%rsi
+0000000000002000	leaq	0x000076e8(%rip),%rdi
+0000000000002007	movl	$__mh_bundle_header,%eax
+000000000000200c	callq	_dbtrace
+0000000000002011	cmpq	$__mh_bundle_header,0xd8(%rbp)
+0000000000002016	sete	%al
+0000000000002019	movzbl	%al,%eax
+000000000000201c	movl	%eax,0xffff7f04(%rbp)
+0000000000002022	movl	0xffff7f04(%rbp),%eax
+0000000000002028	addq	$0x000080f0,%rsp
+000000000000202f	popq	%rbx
+0000000000002030	popq	%r12
+0000000000002032	leave
+0000000000002033	ret
+_getResponse:
+0000000000002034	nop
+0000000000002035	nop
+0000000000002036	nop
+0000000000002037	nop
+0000000000002038	nop
+0000000000002039	nop
+000000000000203a	pushq	%rbp
+000000000000203b	movq	%rsp,%rbp
+000000000000203e	subq	$0x50,%rsp
+0000000000002042	movq	%rdi,0xc8(%rbp)
+0000000000002046	movq	%rsi,0xc0(%rbp)
+000000000000204a	movq	$0x00000001,0xd0(%rbp)
+0000000000002052	movl	$__mh_bundle_header,0xd8(%rbp)
+0000000000002059	leaq	0x0000c428(%rip),%rax
+0000000000002060	movl	(%rax),%eax
+0000000000002062	testl	%eax,%eax
+0000000000002064	jns	0x0000208c
+0000000000002066	leaq	0x0000c41b(%rip),%rax
+000000000000206d	movl	(%rax),%esi
+000000000000206f	leaq	0x00007625(%rip),%rdi
+0000000000002076	movl	$__mh_bundle_header,%eax
+000000000000207b	callq	_dbtrace
+0000000000002080	movl	$__mh_bundle_header,0xbc(%rbp)
+0000000000002087	jmp	0x00002192
+000000000000208c	leaq	0x0000c3f5(%rip),%rax
+0000000000002093	movl	(%rax),%edi
+0000000000002095	leaq	0xd0(%rbp),%rax
+0000000000002099	leaq	0xe0(%rbp),%rsi
+000000000000209d	movq	%rax,%r8
+00000000000020a0	movl	$__mh_bundle_header,%ecx
+00000000000020a5	movl	$0x0000000c,%edx
+00000000000020aa	callq	_recvall
+00000000000020af	testb	%al,%al
+00000000000020b1	jne	0x000020bf
+00000000000020b3	movl	$0xffffffff,0xbc(%rbp)
+00000000000020ba	jmp	0x00002192
+00000000000020bf	movl	0xe4(%rbp),%eax
+00000000000020c2	movl	%eax,%edi
+00000000000020c4	callq	__OSSwapInt32
+00000000000020c9	movl	%eax,%edx
+00000000000020cb	leaq	0x0000c48e(%rip),%rax
+00000000000020d2	movl	(%rax),%eax
+00000000000020d4	cmpl	%eax,%edx
+00000000000020d6	jne	0x0000208c
+00000000000020d8	movl	0xe8(%rbp),%eax
+00000000000020db	movl	%eax,%edi
+00000000000020dd	callq	__OSSwapInt32
+00000000000020e2	movl	%eax,%eax
+00000000000020e4	movq	%rax,0xf0(%rbp)
+00000000000020e8	movq	0xc0(%rbp),%rax
+00000000000020ec	cmpq	%rax,0xf0(%rbp)
+00000000000020f0	cmovbeq	0xf0(%rbp),%rax
+00000000000020f5	movl	%eax,0xfc(%rbp)
+00000000000020f8	cmpl	$__mh_bundle_header,0xfc(%rbp)
+00000000000020fc	je	0x0000218c
+0000000000002102	movl	0xfc(%rbp),%eax
+0000000000002105	movslq	%eax,%rdx
+0000000000002108	leaq	0x0000c379(%rip),%rax
+000000000000210f	movl	(%rax),%edi
+0000000000002111	leaq	0xd0(%rbp),%rax
+0000000000002115	movq	0xc8(%rbp),%rsi
+0000000000002119	movq	%rax,%r8
+000000000000211c	movl	$__mh_bundle_header,%ecx
+0000000000002121	callq	_recvall
+0000000000002126	testb	%al,%al
+0000000000002128	jne	0x00002133
+000000000000212a	movl	$0xffffffff,0xbc(%rbp)
+0000000000002131	jmp	0x00002192
+0000000000002133	movq	0xf0(%rbp),%rax
+0000000000002137	cmpq	0xc0(%rbp),%rax
+000000000000213b	jbe	0x0000218c
+000000000000213d	movq	0xc0(%rbp),%rdx
+0000000000002141	movq	0xf0(%rbp),%rax
+0000000000002145	movq	%rax,%rcx
+0000000000002148	subq	%rdx,%rcx
+000000000000214b	movq	%rcx,%rdx
+000000000000214e	leaq	0x0000c333(%rip),%rax
+0000000000002155	movl	(%rax),%edi
+0000000000002157	leaq	0xd0(%rbp),%rax
+000000000000215b	movq	%rax,%r8
+000000000000215e	movl	$__mh_bundle_header,%ecx
+0000000000002163	movl	$__mh_bundle_header,%esi
+0000000000002168	callq	_recvall
+000000000000216d	testb	%al,%al
+000000000000216f	jne	0x0000218c
+0000000000002171	leaq	0x0000c310(%rip),%rax
+0000000000002178	movl	(%rax),%edi
+000000000000217a	callq	0x00009080	; symbol stub for: _close
+000000000000217f	leaq	0x0000c302(%rip),%rax
+0000000000002186	movl	$0xffffffff,(%rax)
+000000000000218c	movl	0xfc(%rbp),%eax
+000000000000218f	movl	%eax,0xbc(%rbp)
+0000000000002192	movl	0xbc(%rbp),%eax
+0000000000002195	leave
+0000000000002196	ret
+_DropboxCommunication:
+0000000000002197	nop
+0000000000002198	nop
+0000000000002199	nop
+000000000000219a	nop
+000000000000219b	nop
+000000000000219c	nop
+000000000000219d	pushq	%rbp
+000000000000219e	movq	%rsp,%rbp
+00000000000021a1	subq	$0x20,%rsp
+00000000000021a5	movl	$__mh_bundle_header,0xfc(%rbp)
+00000000000021ac	movl	$__mh_bundle_header,%esi
+00000000000021b1	leaq	0x0000c368(%rip),%rdi
+00000000000021b8	callq	0x00009140	; symbol stub for: _pthread_mutex_init
+00000000000021bd	movl	%eax,0xfc(%rbp)
+00000000000021c0	cmpl	$__mh_bundle_header,0xfc(%rbp)
+00000000000021c4	je	0x000021ec
+00000000000021c6	movq	0x00009e4b(%rip),%rax
+00000000000021cd	movq	(%rax),%rdi
+00000000000021d0	movl	0xfc(%rbp),%edx
+00000000000021d3	leaq	0x0000752e(%rip),%rsi
+00000000000021da	movl	$__mh_bundle_header,%eax
+00000000000021df	callq	0x000090aa	; symbol stub for: _fprintf
+00000000000021e4	movl	0xfc(%rbp),%eax
+00000000000021e7	movl	%eax,0xec(%rbp)
+00000000000021ea	jmp	0x00002205
+00000000000021ec	leaq	0x0000c295(%rip),%rax
+00000000000021f3	movl	$0xffffffff,(%rax)
+00000000000021f9	callq	_reconnect
+00000000000021fe	movl	$__mh_bundle_header,0xec(%rbp)
+0000000000002205	movl	0xec(%rbp),%eax
+0000000000002208	leave
+0000000000002209	ret
+_ModuleInitializer:
+000000000000220a	nop
+000000000000220b	nop
+000000000000220c	nop
+000000000000220d	nop
+000000000000220e	nop
+000000000000220f	nop
+0000000000002210	pushq	%rbp
+0000000000002211	movq	%rsp,%rbp
+0000000000002214	subq	$0x10,%rsp
+0000000000002218	movl	$__mh_bundle_header,0xfc(%rbp)
+000000000000221f	movl	$__mh_bundle_header,%eax
+0000000000002224	callq	_DidInjectAlready
+0000000000002229	movl	%eax,0xfc(%rbp)
+000000000000222c	cmpl	$__mh_bundle_header,0xfc(%rbp)
+0000000000002230	jne	0x0000232a
+0000000000002236	callq	_dbtrace_init
+000000000000223b	movl	%eax,0xfc(%rbp)
+000000000000223e	cmpl	$__mh_bundle_header,0xfc(%rbp)
+0000000000002242	je	0x00002262
+0000000000002244	movq	0x00009dcd(%rip),%rax
+000000000000224b	movq	(%rax),%rdi
+000000000000224e	movl	0xfc(%rbp),%edx
+0000000000002251	leaq	0x000074e0(%rip),%rsi
+0000000000002258	movl	$__mh_bundle_header,%eax
+000000000000225d	callq	0x000090aa	; symbol stub for: _fprintf
+0000000000002262	movl	$__mh_bundle_header,%eax
+0000000000002267	callq	_DropboxCommunication
+000000000000226c	movl	%eax,0xfc(%rbp)
+000000000000226f	cmpl	$__mh_bundle_header,0xfc(%rbp)
+0000000000002273	je	0x0000228e
+0000000000002275	movl	0xfc(%rbp),%esi
+0000000000002278	leaq	0x000074e1(%rip),%rdi
+000000000000227f	movl	$__mh_bundle_header,%eax
+0000000000002284	callq	_dbtrace
+0000000000002289	jmp	0x0000232a
+000000000000228e	movl	$__mh_bundle_header,%eax
+0000000000002293	callq	_MenuOverride
+0000000000002298	movl	%eax,0xfc(%rbp)
+000000000000229b	cmpl	$__mh_bundle_header,0xfc(%rbp)
+000000000000229f	je	0x000022b5
+00000000000022a1	movl	0xfc(%rbp),%esi
+00000000000022a4	leaq	0x000074e5(%rip),%rdi
+00000000000022ab	movl	$__mh_bundle_header,%eax
+00000000000022b0	callq	_dbtrace
+00000000000022b5	movl	$__mh_bundle_header,%eax
+00000000000022ba	callq	_ToolbarOverride
+00000000000022bf	movl	%eax,0xfc(%rbp)
+00000000000022c2	cmpl	$__mh_bundle_header,0xfc(%rbp)
+00000000000022c6	je	0x000022dc
+00000000000022c8	movl	0xfc(%rbp),%esi
+00000000000022cb	leaq	0x000074f6(%rip),%rdi
+00000000000022d2	movl	$__mh_bundle_header,%eax
+00000000000022d7	callq	_dbtrace
+00000000000022dc	movl	$__mh_bundle_header,%eax
+00000000000022e1	callq	_ThumbnailBuilderOverride
+00000000000022e6	movl	%eax,0xfc(%rbp)
+00000000000022e9	cmpl	$__mh_bundle_header,0xfc(%rbp)
+00000000000022ed	je	0x00002303
+00000000000022ef	movl	0xfc(%rbp),%esi
+00000000000022f2	leaq	0x000074ff(%rip),%rdi
+00000000000022f9	movl	$__mh_bundle_header,%eax
+00000000000022fe	callq	_dbtrace
+0000000000002303	movl	$__mh_bundle_header,%eax
+0000000000002308	callq	_BrowserOverride
+000000000000230d	movl	%eax,0xfc(%rbp)
+0000000000002310	cmpl	$__mh_bundle_header,0xfc(%rbp)
+0000000000002314	je	0x0000232a
+0000000000002316	movl	0xfc(%rbp),%esi
+0000000000002319	leaq	0x00007508(%rip),%rdi
+0000000000002320	movl	$__mh_bundle_header,%eax
+0000000000002325	callq	_dbtrace
+000000000000232a	leave
+000000000000232b	ret
+_MenuOverride:
+000000000000232c	nop
+000000000000232d	nop
+000000000000232e	nop
+000000000000232f	nop
+0000000000002330	nop
+0000000000002331	nop
+0000000000002332	pushq	%rbp
+0000000000002333	movq	%rsp,%rbp
+0000000000002336	pushq	%rbx
+0000000000002337	subq	$0x18,%rsp
+000000000000233b	movq	0x0000aa36(%rip),%rbx
+0000000000002342	leaq	0x000075d8(%rip),%rdi
+0000000000002349	callq	0x00009128	; symbol stub for: _objc_getClass
+000000000000234e	movq	%rax,%rdi
+0000000000002351	movq	%rbx,%rsi
+0000000000002354	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002359	movq	%rax,0xe8(%rbp)
+000000000000235d	movq	0x0000aa14(%rip),%rbx
+0000000000002364	movq	0x0000adad(%rip),%rax
+000000000000236b	movq	%rax,%rdi
+000000000000236e	leaq	0x0000a98b(%rip),%rax
+0000000000002375	movq	(%rax),%rax
+0000000000002378	leaq	0x0000a981(%rip),%rsi
+000000000000237f	call	*%rax
+0000000000002381	movq	%rax,%rdi
+0000000000002384	movq	%rbx,%rsi
+0000000000002387	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+000000000000238c	movq	%rax,0xe0(%rbp)
+0000000000002390	movq	0xe8(%rbp),%rdi
+0000000000002394	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002399	movq	%rax,%rdx
+000000000000239c	leaq	0x0000c1ed(%rip),%rax
+00000000000023a3	movq	%rdx,(%rax)
+00000000000023a6	movq	0xe8(%rbp),%rsi
+00000000000023aa	movq	0xe0(%rbp),%rdi
+00000000000023ae	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+00000000000023b3	movq	0x0000a996(%rip),%rbx
+00000000000023ba	movq	0x0000ad5f(%rip),%rax
+00000000000023c1	movq	%rax,%rdi
+00000000000023c4	leaq	0x0000a935(%rip),%rax
+00000000000023cb	movq	(%rax),%rax
+00000000000023ce	leaq	0x0000a92b(%rip),%rsi
+00000000000023d5	call	*%rax
+00000000000023d7	movq	%rax,%rdi
+00000000000023da	movq	%rbx,%rsi
+00000000000023dd	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000023e2	movq	%rax,0xe8(%rbp)
+00000000000023e6	movq	0x0000a963(%rip),%rbx
+00000000000023ed	movq	0x0000ad34(%rip),%rax
+00000000000023f4	movq	%rax,%rdi
+00000000000023f7	leaq	0x0000a902(%rip),%rax
+00000000000023fe	movq	(%rax),%rax
+0000000000002401	leaq	0x0000a8f8(%rip),%rsi
+0000000000002408	call	*%rax
+000000000000240a	movq	%rax,%rdi
+000000000000240d	movq	%rbx,%rsi
+0000000000002410	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002415	movq	%rax,0xe0(%rbp)
+0000000000002419	movq	0xe8(%rbp),%rdi
+000000000000241d	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002422	movq	%rax,%rdx
+0000000000002425	leaq	0x0000c154(%rip),%rax
+000000000000242c	movq	%rdx,(%rax)
+000000000000242f	movq	0xe8(%rbp),%rsi
+0000000000002433	movq	0xe0(%rbp),%rdi
+0000000000002437	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+000000000000243c	movq	0x0000aced(%rip),%rax
+0000000000002443	movq	%rax,%rdi
+0000000000002446	leaq	0x0000a843(%rip),%rax
+000000000000244d	movq	(%rax),%rax
+0000000000002450	leaq	0x0000a839(%rip),%rsi
+0000000000002457	call	*%rax
+0000000000002459	movq	%rax,%rdi
+000000000000245c	movq	0x0000a975(%rip),%rsi
+0000000000002463	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000002468	movq	%rax,%rdi
+000000000000246b	leaq	0x0000a82e(%rip),%rax
+0000000000002472	movq	(%rax),%rax
+0000000000002475	leaq	0x0000a824(%rip),%rsi
+000000000000247c	call	*%rax
+000000000000247e	movq	%rax,%rdx
+0000000000002481	leaq	0x0000c100(%rip),%rax
+0000000000002488	movq	%rdx,(%rax)
+000000000000248b	movl	$__mh_bundle_header,%eax
+0000000000002490	addq	$0x18,%rsp
+0000000000002494	popq	%rbx
+0000000000002495	leave
+0000000000002496	ret
+_ToolbarOverride:
+0000000000002497	nop
+0000000000002498	nop
+0000000000002499	nop
+000000000000249a	nop
+000000000000249b	nop
+000000000000249c	nop
+000000000000249d	pushq	%rbp
+000000000000249e	movq	%rsp,%rbp
+00000000000024a1	pushq	%rbx
+00000000000024a2	subq	$0x18,%rsp
+00000000000024a6	movq	0x0000a963(%rip),%rbx
+00000000000024ad	movq	0x0000acdc(%rip),%rax
+00000000000024b4	movq	%rax,%rdi
+00000000000024b7	leaq	0x0000a842(%rip),%rax
+00000000000024be	movq	(%rax),%rax
+00000000000024c1	leaq	0x0000a838(%rip),%rsi
+00000000000024c8	call	*%rax
+00000000000024ca	movq	%rax,%rdi
+00000000000024cd	movq	%rbx,%rsi
+00000000000024d0	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000024d5	movq	%rax,0xe8(%rbp)
+00000000000024d9	movq	0x0000a930(%rip),%rbx
+00000000000024e0	movq	0x0000acb1(%rip),%rax
+00000000000024e7	movq	%rax,%rdi
+00000000000024ea	leaq	0x0000a80f(%rip),%rax
+00000000000024f1	movq	(%rax),%rax
+00000000000024f4	leaq	0x0000a805(%rip),%rsi
+00000000000024fb	call	*%rax
+00000000000024fd	movq	%rax,%rdi
+0000000000002500	movq	%rbx,%rsi
+0000000000002503	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002508	movq	%rax,0xe0(%rbp)
+000000000000250c	movq	0xe8(%rbp),%rdi
+0000000000002510	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002515	movq	%rax,%rdx
+0000000000002518	leaq	0x0000c079(%rip),%rax
+000000000000251f	movq	%rdx,(%rax)
+0000000000002522	movq	0xe8(%rbp),%rsi
+0000000000002526	movq	0xe0(%rbp),%rdi
+000000000000252a	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+000000000000252f	movq	0x0000aa7a(%rip),%rbx
+0000000000002536	leaq	0x00007724(%rip),%rdi
+000000000000253d	callq	0x00009128	; symbol stub for: _objc_getClass
+0000000000002542	movq	%rax,%rdi
+0000000000002545	movq	%rbx,%rsi
+0000000000002548	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+000000000000254d	movq	%rax,0xe8(%rbp)
+0000000000002551	movq	0x0000aa58(%rip),%rbx
+0000000000002558	movq	0x0000ac41(%rip),%rax
+000000000000255f	movq	%rax,%rdi
+0000000000002562	leaq	0x0000a797(%rip),%rax
+0000000000002569	movq	(%rax),%rax
+000000000000256c	leaq	0x0000a78d(%rip),%rsi
+0000000000002573	call	*%rax
+0000000000002575	movq	%rax,%rdi
+0000000000002578	movq	%rbx,%rsi
+000000000000257b	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002580	movq	%rax,0xe0(%rbp)
+0000000000002584	movq	0xe8(%rbp),%rdi
+0000000000002588	callq	0x0000910a	; symbol stub for: _method_getImplementation
+000000000000258d	movq	%rax,%rdx
+0000000000002590	leaq	0x0000c019(%rip),%rax
+0000000000002597	movq	%rdx,(%rax)
+000000000000259a	movq	0xe8(%rbp),%rsi
+000000000000259e	movq	0xe0(%rbp),%rdi
+00000000000025a2	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+00000000000025a7	movq	0x0000a87a(%rip),%rbx
+00000000000025ae	movq	0x0000abdb(%rip),%rax
+00000000000025b5	movq	%rax,%rdi
+00000000000025b8	leaq	0x0000a741(%rip),%rax
+00000000000025bf	movq	(%rax),%rax
+00000000000025c2	leaq	0x0000a737(%rip),%rsi
+00000000000025c9	call	*%rax
+00000000000025cb	movq	%rax,%rdi
+00000000000025ce	movq	%rbx,%rsi
+00000000000025d1	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000025d6	movq	%rax,0xe8(%rbp)
+00000000000025da	movq	0x0000a847(%rip),%rbx
+00000000000025e1	movq	0x0000abb0(%rip),%rax
+00000000000025e8	movq	%rax,%rdi
+00000000000025eb	leaq	0x0000a70e(%rip),%rax
+00000000000025f2	movq	(%rax),%rax
+00000000000025f5	leaq	0x0000a704(%rip),%rsi
+00000000000025fc	call	*%rax
+00000000000025fe	movq	%rax,%rdi
+0000000000002601	movq	%rbx,%rsi
+0000000000002604	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002609	movq	%rax,0xe0(%rbp)
+000000000000260d	movq	0xe8(%rbp),%rdi
+0000000000002611	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002616	movq	%rax,%rdx
+0000000000002619	leaq	0x0000bf80(%rip),%rax
+0000000000002620	movq	%rdx,(%rax)
+0000000000002623	movq	0xe8(%rbp),%rsi
+0000000000002627	movq	0xe0(%rbp),%rdi
+000000000000262b	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+0000000000002630	movq	0x0000a999(%rip),%rbx
+0000000000002637	leaq	0x00007623(%rip),%rdi
+000000000000263e	callq	0x00009128	; symbol stub for: _objc_getClass
+0000000000002643	movq	%rax,%rdi
+0000000000002646	movq	%rbx,%rsi
+0000000000002649	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+000000000000264e	movq	%rax,0xe8(%rbp)
+0000000000002652	movq	0x0000a977(%rip),%rbx
+0000000000002659	movq	0x0000ab40(%rip),%rax
+0000000000002660	movq	%rax,%rdi
+0000000000002663	leaq	0x0000a696(%rip),%rax
+000000000000266a	movq	(%rax),%rax
+000000000000266d	leaq	0x0000a68c(%rip),%rsi
+0000000000002674	call	*%rax
+0000000000002676	movq	%rax,%rdi
+0000000000002679	movq	%rbx,%rsi
+000000000000267c	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002681	movq	%rax,0xe0(%rbp)
+0000000000002685	movq	0xe8(%rbp),%rdi
+0000000000002689	callq	0x0000910a	; symbol stub for: _method_getImplementation
+000000000000268e	movq	%rax,%rdx
+0000000000002691	leaq	0x0000bf28(%rip),%rax
+0000000000002698	movq	%rdx,(%rax)
+000000000000269b	movq	0xe8(%rbp),%rsi
+000000000000269f	movq	0xe0(%rbp),%rdi
+00000000000026a3	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+00000000000026a8	movq	0x0000a741(%rip),%rbx
+00000000000026af	leaq	0x000075ab(%rip),%rdi
+00000000000026b6	callq	0x00009128	; symbol stub for: _objc_getClass
+00000000000026bb	movq	%rax,%rdi
+00000000000026be	movq	%rbx,%rsi
+00000000000026c1	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000026c6	movq	%rax,0xe8(%rbp)
+00000000000026ca	movq	0x0000a71f(%rip),%rbx
+00000000000026d1	movq	0x0000aac8(%rip),%rax
+00000000000026d8	movq	%rax,%rdi
+00000000000026db	leaq	0x0000a61e(%rip),%rax
+00000000000026e2	movq	(%rax),%rax
+00000000000026e5	leaq	0x0000a614(%rip),%rsi
+00000000000026ec	call	*%rax
+00000000000026ee	movq	%rax,%rdi
+00000000000026f1	movq	%rbx,%rsi
+00000000000026f4	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000026f9	movq	%rax,0xe0(%rbp)
+00000000000026fd	movq	0xe8(%rbp),%rdi
+0000000000002701	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002706	movq	%rax,%rdx
+0000000000002709	leaq	0x0000bea8(%rip),%rax
+0000000000002710	movq	%rdx,(%rax)
+0000000000002713	movq	0xe8(%rbp),%rsi
+0000000000002717	movq	0xe0(%rbp),%rdi
+000000000000271b	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+0000000000002720	movq	0x0000a711(%rip),%rbx
+0000000000002727	movq	0x0000aa62(%rip),%rax
+000000000000272e	movq	%rax,%rdi
+0000000000002731	leaq	0x0000a5c8(%rip),%rax
+0000000000002738	movq	(%rax),%rax
+000000000000273b	leaq	0x0000a5be(%rip),%rsi
+0000000000002742	call	*%rax
+0000000000002744	movq	%rax,%rdi
+0000000000002747	movq	%rbx,%rsi
+000000000000274a	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+000000000000274f	movq	%rax,0xe8(%rbp)
+0000000000002753	movq	0x0000a6de(%rip),%rbx
+000000000000275a	movq	0x0000aa37(%rip),%rax
+0000000000002761	movq	%rax,%rdi
+0000000000002764	leaq	0x0000a595(%rip),%rax
+000000000000276b	movq	(%rax),%rax
+000000000000276e	leaq	0x0000a58b(%rip),%rsi
+0000000000002775	call	*%rax
+0000000000002777	movq	%rax,%rdi
+000000000000277a	movq	%rbx,%rsi
+000000000000277d	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002782	movq	%rax,0xe0(%rbp)
+0000000000002786	movq	0xe8(%rbp),%rdi
+000000000000278a	callq	0x0000910a	; symbol stub for: _method_getImplementation
+000000000000278f	movq	%rax,%rdx
+0000000000002792	leaq	0x0000be0f(%rip),%rax
+0000000000002799	movq	%rdx,(%rax)
+000000000000279c	movq	0xe8(%rbp),%rsi
+00000000000027a0	movq	0xe0(%rbp),%rdi
+00000000000027a4	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+00000000000027a9	movq	0x0000a9f8(%rip),%rax
+00000000000027b0	movq	%rax,%rdi
+00000000000027b3	movq	0x0000a62e(%rip),%rsi
+00000000000027ba	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000027bf	movq	%rax,%rdi
+00000000000027c2	leaq	0x0000bbb7(%rip),%rax
+00000000000027c9	movq	%rax,%rdx
+00000000000027cc	movq	0x0000a60d(%rip),%rsi
+00000000000027d3	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000027d8	movl	$__mh_bundle_header,%eax
+00000000000027dd	addq	$0x18,%rsp
+00000000000027e1	popq	%rbx
+00000000000027e2	leave
+00000000000027e3	ret
+_ThumbnailBuilderOverride:
+00000000000027e4	nop
+00000000000027e5	nop
+00000000000027e6	nop
+00000000000027e7	nop
+00000000000027e8	nop
+00000000000027e9	nop
+00000000000027ea	pushq	%rbp
+00000000000027eb	movq	%rsp,%rbp
+00000000000027ee	pushq	%rbx
+00000000000027ef	subq	$0x18,%rsp
+00000000000027f3	leaq	0x0000bc66(%rip),%rcx
+00000000000027fa	movl	$__mh_bundle_header,%edx
+00000000000027ff	movl	$__mh_bundle_header,%esi
+0000000000002804	movl	$__mh_bundle_header,%edi
+0000000000002809	callq	0x00008f54	; symbol stub for: _CFDictionaryCreateMutable
+000000000000280e	movq	%rax,%rdx
+0000000000002811	leaq	0x0000bdb8(%rip),%rax
+0000000000002818	movq	%rdx,(%rax)
+000000000000281b	movq	0x0000a87e(%rip),%rbx
+0000000000002822	leaq	0x0000800f(%rip),%rdi
+0000000000002829	callq	0x00009128	; symbol stub for: _objc_getClass
+000000000000282e	movq	%rax,%rdi
+0000000000002831	movq	%rbx,%rsi
+0000000000002834	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002839	movq	%rax,0xe8(%rbp)
+000000000000283d	movq	0x0000a85c(%rip),%rbx
+0000000000002844	movq	0x0000a985(%rip),%rax
+000000000000284b	movq	%rax,%rdi
+000000000000284e	leaq	0x0000a4ab(%rip),%rax
+0000000000002855	movq	(%rax),%rax
+0000000000002858	leaq	0x0000a4a1(%rip),%rsi
+000000000000285f	call	*%rax
+0000000000002861	movq	%rax,%rdi
+0000000000002864	movq	%rbx,%rsi
+0000000000002867	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+000000000000286c	movq	%rax,0xe0(%rbp)
+0000000000002870	movq	0xe8(%rbp),%rdi
+0000000000002874	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002879	movq	%rax,%rdx
+000000000000287c	leaq	0x0000bd45(%rip),%rax
+0000000000002883	movq	%rdx,(%rax)
+0000000000002886	movq	0xe8(%rbp),%rsi
+000000000000288a	movq	0xe0(%rbp),%rdi
+000000000000288e	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+0000000000002893	movl	$__mh_bundle_header,%eax
+0000000000002898	addq	$0x18,%rsp
+000000000000289c	popq	%rbx
+000000000000289d	leave
+000000000000289e	ret
+_DidInjectAlready:
+000000000000289f	nop
+00000000000028a0	nop
+00000000000028a1	nop
+00000000000028a2	nop
+00000000000028a3	nop
+00000000000028a4	nop
+00000000000028a5	pushq	%rbp
+00000000000028a6	movq	%rsp,%rbp
+00000000000028a9	pushq	%rbx
+00000000000028aa	subq	$0x38,%rsp
+00000000000028ae	movq	0x0000a7f3(%rip),%rbx
+00000000000028b5	movq	0x0000a91c(%rip),%rax
+00000000000028bc	movq	%rax,%rdi
+00000000000028bf	leaq	0x0000a43a(%rip),%rax
+00000000000028c6	movq	(%rax),%rax
+00000000000028c9	leaq	0x0000a430(%rip),%rsi
+00000000000028d0	call	*%rax
+00000000000028d2	movq	%rax,%rdi
+00000000000028d5	movq	%rbx,%rsi
+00000000000028d8	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000028dd	movq	%rax,0xe8(%rbp)
+00000000000028e1	cmpq	$__mh_bundle_header,0xe8(%rbp)
+00000000000028e6	je	0x000028f4
+00000000000028e8	movl	$0x00000001,0xcc(%rbp)
+00000000000028ef	jmp	0x00002975
+00000000000028f4	movq	0x0000a7ad(%rip),%rbx
+00000000000028fb	movq	0x0000a8de(%rip),%rax
+0000000000002902	movq	%rax,%rdi
+0000000000002905	leaq	0x0000a3f4(%rip),%rax
+000000000000290c	movq	(%rax),%rax
+000000000000290f	leaq	0x0000a3ea(%rip),%rsi
+0000000000002916	call	*%rax
+0000000000002918	movq	%rax,%rdi
+000000000000291b	movq	%rbx,%rsi
+000000000000291e	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+0000000000002923	movq	%rax,0xe0(%rbp)
+0000000000002927	movq	0xe0(%rbp),%rdi
+000000000000292b	callq	0x0000910a	; symbol stub for: _method_getImplementation
+0000000000002930	movq	%rax,0xd8(%rbp)
+0000000000002934	movq	0x0000a76d(%rip),%rbx
+000000000000293b	movq	0x0000a896(%rip),%rax
+0000000000002942	movq	%rax,%rdi
+0000000000002945	leaq	0x0000a3b4(%rip),%rax
+000000000000294c	movq	(%rax),%rax
+000000000000294f	leaq	0x0000a3aa(%rip),%rsi
+0000000000002956	call	*%rax
+0000000000002958	movq	%rax,%rdi
+000000000000295b	movq	0xd8(%rbp),%rdx
+000000000000295f	leaq	0x00007fbb(%rip),%rcx
+0000000000002966	movq	%rbx,%rsi
+0000000000002969	callq	0x0000905c	; symbol stub for: _class_addMethod
+000000000000296e	movl	$__mh_bundle_header,0xcc(%rbp)
+0000000000002975	movl	0xcc(%rbp),%eax
+0000000000002978	addq	$0x38,%rsp
+000000000000297c	popq	%rbx
+000000000000297d	leave
+000000000000297e	ret
+_BrowserOverride:
+000000000000297f	nop
+0000000000002980	nop
+0000000000002981	nop
+0000000000002982	nop
+0000000000002983	nop
+0000000000002984	nop
+0000000000002985	pushq	%rbp
+0000000000002986	movq	%rsp,%rbp
+0000000000002989	pushq	%rbx
+000000000000298a	subq	$0x18,%rsp
+000000000000298e	movq	0x0000a73b(%rip),%rbx
+0000000000002995	leaq	0x00007fad(%rip),%rdi
+000000000000299c	callq	0x00009128	; symbol stub for: _objc_getClass
+00000000000029a1	movq	%rax,%rdi
+00000000000029a4	movq	%rbx,%rsi
+00000000000029a7	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000029ac	movq	%rax,0xe8(%rbp)
+00000000000029b0	movq	0x0000a719(%rip),%rbx
+00000000000029b7	movq	0x0000a832(%rip),%rax
+00000000000029be	movq	%rax,%rdi
+00000000000029c1	leaq	0x0000a338(%rip),%rax
+00000000000029c8	movq	(%rax),%rax
+00000000000029cb	leaq	0x0000a32e(%rip),%rsi
+00000000000029d2	call	*%rax
+00000000000029d4	movq	%rax,%rdi
+00000000000029d7	movq	%rbx,%rsi
+00000000000029da	callq	0x0000906e	; symbol stub for: _class_getInstanceMethod
+00000000000029df	movq	%rax,0xe0(%rbp)
+00000000000029e3	movq	0xe8(%rbp),%rdi
+00000000000029e7	callq	0x0000910a	; symbol stub for: _method_getImplementation
+00000000000029ec	movq	%rax,%rdx
+00000000000029ef	leaq	0x0000bbe2(%rip),%rax
+00000000000029f6	movq	%rdx,(%rax)
+00000000000029f9	movq	0xe8(%rbp),%rsi
+00000000000029fd	movq	0xe0(%rbp),%rdi
+0000000000002a01	callq	0x00009104	; symbol stub for: _method_exchangeImplementations
+0000000000002a06	movl	$__mh_bundle_header,%eax
+0000000000002a0b	addq	$0x18,%rsp
+0000000000002a0f	popq	%rbx
+0000000000002a10	leave
+0000000000002a11	ret
+_myrand:
+0000000000002a12	nop
+0000000000002a13	nop
+0000000000002a14	nop
+0000000000002a15	nop
+0000000000002a16	nop
+0000000000002a17	nop
+0000000000002a18	pushq	%rbp
+0000000000002a19	movq	%rsp,%rbp
+0000000000002a1c	movq	%rdi,0xf8(%rbp)
+0000000000002a20	movq	0xf8(%rbp),%rax
+0000000000002a24	movl	(%rax),%eax
+0000000000002a26	imull	$0x41c64e6d,%eax,%eax
+0000000000002a2c	leal	0x00003039(%rax),%edx
+0000000000002a32	movq	0xf8(%rbp),%rax
+0000000000002a36	movl	%edx,(%rax)
+0000000000002a38	movq	0xf8(%rbp),%rax
+0000000000002a3c	movl	(%rax),%eax
+0000000000002a3e	leave
+0000000000002a3f	ret
+_htole:
+0000000000002a40	nop
+0000000000002a41	nop
+0000000000002a42	nop
+0000000000002a43	nop
+0000000000002a44	nop
+0000000000002a45	nop
+0000000000002a46	pushq	%rbp
+0000000000002a47	movq	%rsp,%rbp
+0000000000002a4a	movl	%edi,0xec(%rbp)
+0000000000002a4d	movl	$0xcafebabe,0xfc(%rbp)
+0000000000002a54	leaq	0xfc(%rbp),%rax
+0000000000002a58	movzbl	(%rax),%eax
+0000000000002a5b	cmpb	$0xbe,%al
+0000000000002a5d	jne	0x00002a67
+0000000000002a5f	movl	0xec(%rbp),%eax
+0000000000002a62	movl	%eax,0xe8(%rbp)
+0000000000002a65	jmp	0x00002aa2
+0000000000002a67	movl	$__mh_bundle_header,0xf8(%rbp)
+0000000000002a6e	jmp	0x00002a96
+0000000000002a70	leaq	0xf4(%rbp),%rdx
+0000000000002a74	movl	0xf8(%rbp),%eax
+0000000000002a77	leaq	(%rdx,%rax),%rsi
+0000000000002a7b	leaq	0xec(%rbp),%rcx
+0000000000002a7f	movl	0xf8(%rbp),%edx
+0000000000002a82	movl	$0x00000003,%eax
+0000000000002a87	subq	%rdx,%rax
+0000000000002a8a	leaq	(%rcx,%rax),%rax
+0000000000002a8e	movzbl	(%rax),%eax
+0000000000002a91	movb	%al,(%rsi)
+0000000000002a93	incl	0xf8(%rbp)
+0000000000002a96	cmpl	$0x03,0xf8(%rbp)
+0000000000002a9a	jbe	0x00002a70
+0000000000002a9c	movl	0xf4(%rbp),%eax
+0000000000002a9f	movl	%eax,0xe8(%rbp)
+0000000000002aa2	movl	0xe8(%rbp),%eax
+0000000000002aa5	leave
+0000000000002aa6	ret
+_makeparentdirs:
+0000000000002aa7	nop
+0000000000002aa8	nop
+0000000000002aa9	nop
+0000000000002aaa	nop
+0000000000002aab	nop
+0000000000002aac	nop
+0000000000002aad	pushq	%rbp
+0000000000002aae	movq	%rsp,%rbp
+0000000000002ab1	subq	$0x000000b0,%rsp
+0000000000002ab8	movq	%rdi,0xffffff58(%rbp)
+0000000000002abf	movl	$__mh_bundle_header,0xfc(%rbp)
+0000000000002ac6	movq	0xffffff58(%rbp),%rax
+0000000000002acd	movq	%rax,0xf0(%rbp)
+0000000000002ad1	jmp	0x00002b0a
+0000000000002ad3	leaq	0xffffff60(%rbp),%rsi
+0000000000002ada	movq	0xf0(%rbp),%rdi
+0000000000002ade	callq	0x0000916a	; symbol stub for: _stat$INODE64
+0000000000002ae3	testl	%eax,%eax
+0000000000002ae5	jns	0x00002b0a
+0000000000002ae7	callq	0x0000902c	; symbol stub for: ___error
+0000000000002aec	movl	(%rax),%eax
+0000000000002aee	cmpl	$0x02,%eax
+0000000000002af1	jne	0x00002b03
+0000000000002af3	movq	0xf0(%rbp),%rdi
+0000000000002af7	movl	$0x000001ed,%esi
+0000000000002afc	callq	0x0000911c	; symbol stub for: _mkdir
+0000000000002b01	jmp	0x00002b0a
+0000000000002b03	movl	$0x00000001,0xfc(%rbp)
+0000000000002b0a	movq	0xf0(%rbp),%rdi
+0000000000002b0e	callq	0x0000908c	; symbol stub for: _dirname
+0000000000002b13	movq	%rax,0xf0(%rbp)
+0000000000002b17	movq	0xf0(%rbp),%rax
+0000000000002b1b	incq	%rax
+0000000000002b1e	movzbl	(%rax),%eax
+0000000000002b21	testb	%al,%al
+0000000000002b23	jne	0x00002ad3
+0000000000002b25	movl	0xfc(%rbp),%eax
+0000000000002b28	leave
+0000000000002b29	ret
+_dbtrace_init_low:
+0000000000002b2a	nop
+0000000000002b2b	nop
+0000000000002b2c	nop
+0000000000002b2d	nop
+0000000000002b2e	nop
+0000000000002b2f	nop
+0000000000002b30	pushq	%rbp
+0000000000002b31	movq	%rsp,%rbp
+0000000000002b34	pushq	%rbx
+0000000000002b35	subq	$0x68,%rsp
+0000000000002b39	movq	%rdi,0xa8(%rbp)
+0000000000002b3d	leaq	0x00007eb4(%rip),%rax
+0000000000002b44	movq	%rax,0xb0(%rbp)
+0000000000002b48	leaq	0x0000baf9(%rip),%rax
+0000000000002b4f	movq	%rax,0xb8(%rbp)
+0000000000002b53	leaq	0x00007ea9(%rip),%rax
+0000000000002b5a	movq	%rax,0xc0(%rbp)
+0000000000002b5e	leaq	0x0000baeb(%rip),%rax
+0000000000002b65	movq	%rax,0xc8(%rbp)
+0000000000002b69	movl	$__mh_bundle_header,%esi
+0000000000002b6e	leaq	0x0000ba8b(%rip),%rdi
+0000000000002b75	callq	0x00009140	; symbol stub for: _pthread_mutex_init
+0000000000002b7a	testl	%eax,%eax
+0000000000002b7c	je	0x00002b8a
+0000000000002b7e	movl	$0x00000001,0xa4(%rbp)
+0000000000002b85	jmp	0x00002ca7
+0000000000002b8a	movq	0xa8(%rbp),%rdi
+0000000000002b8e	callq	0x00009182	; symbol stub for: _strlen
+0000000000002b93	movq	%rax,0xe0(%rbp)
+0000000000002b97	movl	$__mh_bundle_header,0xec(%rbp)
+0000000000002b9e	jmp	0x00002c96
+0000000000002ba3	movl	0xec(%rbp),%eax
+0000000000002ba6	movl	%eax,%eax
+0000000000002ba8	shlq	$0x04,%rax
+0000000000002bac	leaq	0xf0(%rbp),%rdx
+0000000000002bb0	addq	%rdx,%rax
+0000000000002bb3	subq	$0x40,%rax
+0000000000002bb7	movq	0x08(%rax),%rbx
+0000000000002bbb	movl	0xec(%rbp),%eax
+0000000000002bbe	movl	%eax,%eax
+0000000000002bc0	shlq	$0x04,%rax
+0000000000002bc4	leaq	0xf0(%rbp),%rdx
+0000000000002bc8	addq	%rdx,%rax
+0000000000002bcb	subq	$0x40,%rax
+0000000000002bcf	movq	(%rax),%rdi
+0000000000002bd2	callq	0x00009182	; symbol stub for: _strlen
+0000000000002bd7	addq	0xe0(%rbp),%rax
+0000000000002bdb	incq	%rax
+0000000000002bde	movq	%rax,0xd8(%rbp)
+0000000000002be2	movq	0xd8(%rbp),%rdi
+0000000000002be6	callq	0x000090ec	; symbol stub for: _malloc
+0000000000002beb	movq	%rax,(%rbx)
+0000000000002bee	movq	(%rbx),%rax
+0000000000002bf1	testq	%rax,%rax
+0000000000002bf4	je	0x00002c59
+0000000000002bf6	movl	0xec(%rbp),%eax
+0000000000002bf9	movl	%eax,%eax
+0000000000002bfb	shlq	$0x04,%rax
+0000000000002bff	leaq	0xf0(%rbp),%rbx
+0000000000002c03	addq	%rbx,%rax
+0000000000002c06	subq	$0x40,%rax
+0000000000002c0a	movq	(%rax),%rdx
+0000000000002c0d	movq	$0xffffffff,%rcx
+0000000000002c14	movl	0xec(%rbp),%eax
+0000000000002c17	movl	%eax,%eax
+0000000000002c19	shlq	$0x04,%rax
+0000000000002c1d	leaq	0xf0(%rbp),%rbx
+0000000000002c21	addq	%rbx,%rax
+0000000000002c24	subq	$0x40,%rax
+0000000000002c28	movq	0x08(%rax),%rax
+0000000000002c2c	movq	(%rax),%rdi
+0000000000002c2f	movq	0xa8(%rbp),%rax
+0000000000002c33	movq	0xd8(%rbp),%rsi
+0000000000002c37	movq	%rdx,(%rsp)
+0000000000002c3b	movq	%rax,%r9
+0000000000002c3e	leaq	0x00007740(%rip),%r8
+0000000000002c45	movl	$__mh_bundle_header,%edx
+0000000000002c4a	movl	$__mh_bundle_header,%eax
+0000000000002c4f	callq	0x00009038	; symbol stub for: ___snprintf_chk
+0000000000002c54	incl	0xec(%rbp)
+0000000000002c57	jmp	0x00002c96
+0000000000002c59	movl	$__mh_bundle_header,0xe8(%rbp)
+0000000000002c60	jmp	0x00002c85
+0000000000002c62	movl	0xec(%rbp),%eax
+0000000000002c65	movl	%eax,%eax
+0000000000002c67	shlq	$0x04,%rax
+0000000000002c6b	leaq	0xf0(%rbp),%rdx
+0000000000002c6f	addq	%rdx,%rax
+0000000000002c72	subq	$0x40,%rax
+0000000000002c76	movq	0x08(%rax),%rax
+0000000000002c7a	movq	(%rax),%rdi
+0000000000002c7d	callq	0x000090b0	; symbol stub for: _free
+0000000000002c82	incl	0xe8(%rbp)
+0000000000002c85	movl	0xe8(%rbp),%eax
+0000000000002c88	cmpl	0xec(%rbp),%eax
+0000000000002c8b	jb	0x00002c62
+0000000000002c8d	movl	$0x00000001,0xa4(%rbp)
+0000000000002c94	jmp	0x00002ca7
+0000000000002c96	cmpl	$0x01,0xec(%rbp)
+0000000000002c9a	jbe	0x100002ba3
+0000000000002ca0	movl	$__mh_bundle_header,0xa4(%rbp)
+0000000000002ca7	movl	0xa4(%rbp),%eax
+0000000000002caa	addq	$0x68,%rsp
+0000000000002cae	popq	%rbx
+0000000000002caf	leave
+0000000000002cb0	ret
+_dbtrace_init:
+0000000000002cb1	nop
+0000000000002cb2	nop
+0000000000002cb3	nop
+0000000000002cb4	nop
+0000000000002cb5	nop
+0000000000002cb6	nop
+0000000000002cb7	pushq	%rbp
+0000000000002cb8	movq	%rsp,%rbp
+0000000000002cbb	subq	$0x60,%rsp
+0000000000002cbf	movq	0x0000933a(%rip),%rax
+0000000000002cc6	movq	(%rax),%rdx
+0000000000002cc9	movq	%rdx,0xf8(%rbp)
+0000000000002ccd	xorl	%edx,%edx
+0000000000002ccf	leaq	0x00007682(%rip),%rdi
+0000000000002cd6	callq	0x000090c2	; symbol stub for: _getenv
+0000000000002cdb	movq	%rax,0xd0(%rbp)
+0000000000002cdf	cmpq	$__mh_bundle_header,0xd0(%rbp)
+0000000000002ce4	je	0x00002d9d
+0000000000002cea	movq	0x00007d1a(%rip),%rax
+0000000000002cf1	movq	%rax,0xe0(%rbp)
+0000000000002cf5	movq	0x00007d17(%rip),%rax
+0000000000002cfc	movq	%rax,0xe8(%rbp)
+0000000000002d00	movl	0x00007d15(%rip),%eax
+0000000000002d06	movl	%eax,0xf0(%rbp)
+0000000000002d09	movzwl	0x00007d0f(%rip),%eax
+0000000000002d10	movw	%ax,0xf4(%rbp)
+0000000000002d14	movzbl	0x00007d06(%rip),%eax
+0000000000002d1b	movb	%al,0xf6(%rbp)
+0000000000002d1e	movq	0xd0(%rbp),%rdi
+0000000000002d22	callq	0x00009182	; symbol stub for: _strlen
+0000000000002d27	addq	$0x17,%rax
+0000000000002d2b	movq	%rax,0xc8(%rbp)
+0000000000002d2f	movq	0xc8(%rbp),%rdi
+0000000000002d33	callq	0x000090ec	; symbol stub for: _malloc
+0000000000002d38	movq	%rax,0xc0(%rbp)
+0000000000002d3c	cmpq	$__mh_bundle_header,0xc0(%rbp)
+0000000000002d41	je	0x00002d94
+0000000000002d43	movq	$0xffffffff,%rcx
+0000000000002d4a	movq	0xd0(%rbp),%rdx
+0000000000002d4e	movq	0xc8(%rbp),%rsi
+0000000000002d52	movq	0xc0(%rbp),%rdi
+0000000000002d56	leaq	0xe0(%rbp),%rax
+0000000000002d5a	movq	%rax,(%rsp)
+0000000000002d5e	movq	%rdx,%r9
+0000000000002d61	leaq	0x0000761d(%rip),%r8
+0000000000002d68	movl	$__mh_bundle_header,%edx
+0000000000002d6d	movl	$__mh_bundle_header,%eax
+0000000000002d72	callq	0x00009038	; symbol stub for: ___snprintf_chk
+0000000000002d77	movq	0xc0(%rbp),%rdi
+0000000000002d7b	callq	_dbtrace_init_low
+0000000000002d80	movl	%eax,0xdc(%rbp)
+0000000000002d83	movq	0xc0(%rbp),%rdi
+0000000000002d87	callq	0x000090b0	; symbol stub for: _free
+0000000000002d8c	movl	0xdc(%rbp),%ecx
+0000000000002d8f	movl	%ecx,0xbc(%rbp)
+0000000000002d92	jmp	0x00002da4
+0000000000002d94	movl	$0xffffffff,0xbc(%rbp)
+0000000000002d9b	jmp	0x00002da4
+0000000000002d9d	movl	$0xffffffff,0xbc(%rbp)
+0000000000002da4	movl	0xbc(%rbp),%eax
+0000000000002da7	movq	0x00009252(%rip),%rdx
+0000000000002dae	movq	0xf8(%rbp),%rcx
+0000000000002db2	xorq	(%rdx),%rcx
+0000000000002db5	je	0x00002dbc
+0000000000002db7	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000002dbc	leave
+0000000000002dbd	ret
+_dbtrace:
+0000000000002dbe	nop
+0000000000002dbf	nop
+0000000000002dc0	nop
+0000000000002dc1	nop
+0000000000002dc2	nop
+0000000000002dc3	nop
+0000000000002dc4	pushq	%rbp
+0000000000002dc5	movq	%rsp,%rbp
+0000000000002dc8	subq	$0x000001a0,%rsp
+0000000000002dcf	movq	%rsi,0xffffff58(%rbp)
+0000000000002dd6	movq	%rdx,0xffffff60(%rbp)
+0000000000002ddd	movq	%rcx,0xffffff68(%rbp)
+0000000000002de4	movq	%r8,0xffffff70(%rbp)
+0000000000002deb	movq	%r9,0xffffff78(%rbp)
+0000000000002df2	movzbl	%al,%eax
+0000000000002df5	movq	%rax,0xfffffe60(%rbp)
+0000000000002dfc	movq	0xfffffe60(%rbp),%rdx
+0000000000002e03	leaq	__mh_bundle_header(,%rdx,4),%rax
+0000000000002e0b	leaq	0x0000003b(%rip),%rdx
+0000000000002e12	movq	%rdx,0xfffffe60(%rbp)
+0000000000002e19	subq	%rax,0xfffffe60(%rbp)
+0000000000002e20	leaq	0xff(%rbp),%rax
+0000000000002e24	movq	0xfffffe60(%rbp),%rdx
+0000000000002e2b	jmp	*%rdx
+0000000000002e2d	movaps	%xmm7,0xf1(%rax)
+0000000000002e31	movaps	%xmm6,0xe1(%rax)
+0000000000002e35	movaps	%xmm5,0xd1(%rax)
+0000000000002e39	movaps	%xmm4,0xc1(%rax)
+0000000000002e3d	movaps	%xmm3,0xb1(%rax)
+0000000000002e41	movaps	%xmm2,0xa1(%rax)
+0000000000002e45	movaps	%xmm1,0x91(%rax)
+0000000000002e49	movaps	%xmm0,0x81(%rax)
+0000000000002e4d	movq	%rdi,0xfffffe68(%rbp)
+0000000000002e54	leaq	0x0000b7a5(%rip),%rdi
+0000000000002e5b	callq	0x00009146	; symbol stub for: _pthread_mutex_lock
+0000000000002e60	testl	%eax,%eax
+0000000000002e62	jne	0x00003382
+0000000000002e68	leaq	0x0000b7d9(%rip),%rax
+0000000000002e6f	movq	(%rax),%rdi
+0000000000002e72	leaq	0xfffffe70(%rbp),%rsi
+0000000000002e79	callq	0x0000916a	; symbol stub for: _stat$INODE64
+0000000000002e7e	testl	%eax,%eax
+0000000000002e80	jne	0x00002ebd
+0000000000002e82	leaq	0x0000b7bf(%rip),%rax
+0000000000002e89	movq	(%rax),%rdi
+0000000000002e8c	callq	0x00009194	; symbol stub for: _unlink
+0000000000002e91	leaq	0x0000b7b0(%rip),%rax
+0000000000002e98	movq	(%rax),%rax
+0000000000002e9b	testq	%rax,%rax
+0000000000002e9e	je	0x00002ebd
+0000000000002ea0	leaq	0x0000b799(%rip),%rax
+0000000000002ea7	movq	(%rax),%rdi
+0000000000002eaa	callq	0x00009092	; symbol stub for: _fclose
+0000000000002eaf	leaq	0x0000b78a(%rip),%rax
+0000000000002eb6	movq	$__mh_bundle_header,(%rax)
+0000000000002ebd	leaq	0x0000b77c(%rip),%rax
+0000000000002ec4	movq	(%rax),%rax
+0000000000002ec7	testq	%rax,%rax
+0000000000002eca	jne	0x00002f8e
+0000000000002ed0	movl	$__mh_bundle_header,%edi
+0000000000002ed5	callq	0x0000918e	; symbol stub for: _time
+0000000000002eda	movl	%eax,0xffffff48(%rbp)
+0000000000002ee0	leaq	0x0000b769(%rip),%rax
+0000000000002ee7	movq	(%rax),%rsi
+0000000000002eea	movl	0xffffff48(%rbp),%edx
+0000000000002ef0	leaq	0xffffff28(%rbp),%rdi
+0000000000002ef7	movl	$__mh_bundle_header,%eax
+0000000000002efc	callq	0x0000904a	; symbol stub for: _asprintf
+0000000000002f01	testl	%eax,%eax
+0000000000002f03	js	0x00003376
+0000000000002f09	movq	0xffffff28(%rbp),%rdi
+0000000000002f10	callq	_makeparentdirs
+0000000000002f15	movq	0xffffff28(%rbp),%rdi
+0000000000002f1c	leaq	0x00007aff(%rip),%rsi
+0000000000002f23	callq	0x000090a4	; symbol stub for: _fopen
+0000000000002f28	movq	%rax,%rdx
+0000000000002f2b	leaq	0x0000b70e(%rip),%rax
+0000000000002f32	movq	%rdx,(%rax)
+0000000000002f35	movq	0xffffff28(%rbp),%rdi
+0000000000002f3c	callq	0x000090b0	; symbol stub for: _free
+0000000000002f41	leaq	0x0000b6f8(%rip),%rax
+0000000000002f48	movq	(%rax),%rax
+0000000000002f4b	testq	%rax,%rax
+0000000000002f4e	je	0x00003376
+0000000000002f54	leaq	0x0000b701(%rip),%rdx
+0000000000002f5b	movl	0xffffff48(%rbp),%eax
+0000000000002f61	movl	%eax,(%rdx)
+0000000000002f63	leaq	0x0000b6f2(%rip),%rdi
+0000000000002f6a	callq	_myrand
+0000000000002f6f	movl	%eax,%edi
+0000000000002f71	callq	_htole
+0000000000002f76	movl	%eax,%edx
+0000000000002f78	leaq	0x0000b6d9(%rip),%rax
+0000000000002f7f	movl	%edx,(%rax)
+0000000000002f81	leaq	0x0000b6dc(%rip),%rax
+0000000000002f88	movl	$__mh_bundle_header,(%rax)
+0000000000002f8e	leaq	0xffffff00(%rbp),%rax
+0000000000002f95	movl	$0x00000008,(%rax)
+0000000000002f9b	leaq	0xffffff00(%rbp),%rax
+0000000000002fa2	movl	$0x00000030,0x04(%rax)
+0000000000002fa9	leaq	0xffffff00(%rbp),%rax
+0000000000002fb0	leaq	0x10(%rbp),%rdx
+0000000000002fb4	movq	%rdx,0x08(%rax)
+0000000000002fb8	leaq	0xffffff00(%rbp),%rax
+0000000000002fbf	leaq	0xffffff50(%rbp),%rdx
+0000000000002fc6	movq	%rdx,0x10(%rax)
+0000000000002fca	leaq	0xffffff00(%rbp),%rdx
+0000000000002fd1	movq	0xfffffe68(%rbp),%rsi
+0000000000002fd8	leaq	0xffffff38(%rbp),%rdi
+0000000000002fdf	callq	0x0000919a	; symbol stub for: _vasprintf
+0000000000002fe4	movl	%eax,0xffffff4c(%rbp)
+0000000000002fea	movq	0xffffff38(%rbp),%rax
+0000000000002ff1	movq	%rax,0xffffff30(%rbp)
+0000000000002ff8	cmpl	$__mh_bundle_header,0xffffff4c(%rbp)
+0000000000002fff	js	0x0000336a
+0000000000003005	leaq	0x0000b658(%rip),%rax
+000000000000300c	movl	(%rax),%eax
+000000000000300e	testl	%eax,%eax
+0000000000003010	je	0x0000323c
+0000000000003016	movl	0xffffff4c(%rbp),%eax
+000000000000301c	movslq	%eax,%rcx
+000000000000301f	leaq	0x0000b63e(%rip),%rax
+0000000000003026	movl	(%rax),%eax
+0000000000003028	movl	%eax,%edx
+000000000000302a	movl	$0x00000004,%eax
+000000000000302f	subq	%rdx,%rax
+0000000000003032	cmpq	%rax,%rcx
+0000000000003035	jae	0x000030fc
+000000000000303b	movq	$0xffffffff,%rax
+0000000000003042	cmpq	$0xff,%rax
+0000000000003046	je	0x00003085
+0000000000003048	movq	$0xffffffff,%rcx
+000000000000304f	movl	0xffffff4c(%rbp),%eax
+0000000000003055	movslq	%eax,%rsi
+0000000000003058	movq	0xffffff38(%rbp),%r8
+000000000000305f	leaq	0x0000b5fe(%rip),%rax
+0000000000003066	movl	(%rax),%eax
+0000000000003068	movl	%eax,%eax
+000000000000306a	movq	%rax,%rdx
+000000000000306d	leaq	0x0000b5ec(%rip),%rax
+0000000000003074	leaq	(%rdx,%rax),%rdi
+0000000000003078	movq	%rsi,%rdx
+000000000000307b	movq	%r8,%rsi
+000000000000307e	callq	0x00009032	; symbol stub for: ___memcpy_chk
+0000000000003083	jmp	0x000030b6
+0000000000003085	movl	0xffffff4c(%rbp),%eax
+000000000000308b	movslq	%eax,%rcx
+000000000000308e	movq	0xffffff38(%rbp),%rsi
+0000000000003095	leaq	0x0000b5c8(%rip),%rax
+000000000000309c	movl	(%rax),%eax
+000000000000309e	movl	%eax,%eax
+00000000000030a0	movq	%rax,%rdx
+00000000000030a3	leaq	0x0000b5b6(%rip),%rax
+00000000000030aa	leaq	(%rdx,%rax),%rdi
+00000000000030ae	movq	%rcx,%rdx
+00000000000030b1	callq	___inline_memcpy_chk
+00000000000030b6	leaq	0x0000b5a7(%rip),%rax
+00000000000030bd	movl	(%rax),%edx
+00000000000030bf	movl	0xffffff4c(%rbp),%eax
+00000000000030c5	addl	%eax,%edx
+00000000000030c7	leaq	0x0000b596(%rip),%rax
+00000000000030ce	movl	%edx,(%rax)
+00000000000030d0	movl	0xffffff4c(%rbp),%eax
+00000000000030d6	cdqe
+00000000000030d8	movq	%rax,%rdx
+00000000000030db	movq	0xffffff38(%rbp),%rax
+00000000000030e2	leaq	(%rdx,%rax),%rax
+00000000000030e6	movq	%rax,0xffffff38(%rbp)
+00000000000030ed	movl	$__mh_bundle_header,0xffffff4c(%rbp)
+00000000000030f7	jmp	0x0000323c
+00000000000030fc	movq	$0xffffffff,%rax
+0000000000003103	cmpq	$0xff,%rax
+0000000000003107	je	0x00003153
+0000000000003109	movq	$0xffffffff,%rcx
+0000000000003110	leaq	0x0000b54d(%rip),%rax
+0000000000003117	movl	(%rax),%eax
+0000000000003119	movl	%eax,%edx
+000000000000311b	movl	$0x00000004,%eax
+0000000000003120	movq	%rax,%rsi
+0000000000003123	subq	%rdx,%rsi
+0000000000003126	movq	0xffffff38(%rbp),%r8
+000000000000312d	leaq	0x0000b530(%rip),%rax
+0000000000003134	movl	(%rax),%eax
+0000000000003136	movl	%eax,%eax
+0000000000003138	movq	%rax,%rdx
+000000000000313b	leaq	0x0000b51e(%rip),%rax
+0000000000003142	leaq	(%rdx,%rax),%rdi
+0000000000003146	movq	%rsi,%rdx
+0000000000003149	movq	%r8,%rsi
+000000000000314c	callq	0x00009032	; symbol stub for: ___memcpy_chk
+0000000000003151	jmp	0x00003191
+0000000000003153	leaq	0x0000b50a(%rip),%rax
+000000000000315a	movl	(%rax),%eax
+000000000000315c	movl	%eax,%edx
+000000000000315e	movl	$0x00000004,%eax
+0000000000003163	movq	%rax,%rcx
+0000000000003166	subq	%rdx,%rcx
+0000000000003169	movq	0xffffff38(%rbp),%rsi
+0000000000003170	leaq	0x0000b4ed(%rip),%rax
+0000000000003177	movl	(%rax),%eax
+0000000000003179	movl	%eax,%eax
+000000000000317b	movq	%rax,%rdx
+000000000000317e	leaq	0x0000b4db(%rip),%rax
+0000000000003185	leaq	(%rdx,%rax),%rdi
+0000000000003189	movq	%rcx,%rdx
+000000000000318c	callq	___inline_memcpy_chk
+0000000000003191	leaq	0x0000b4c8(%rip),%rax
+0000000000003198	movl	(%rax),%edx
+000000000000319a	leaq	0x0000b4b7(%rip),%rax
+00000000000031a1	movl	(%rax),%eax
+00000000000031a3	xorl	%eax,%edx
+00000000000031a5	leaq	0x0000b4b4(%rip),%rax
+00000000000031ac	movl	%edx,(%rax)
+00000000000031ae	leaq	0x0000b48b(%rip),%rax
+00000000000031b5	movq	(%rax),%rcx
+00000000000031b8	movl	$0x00000001,%edx
+00000000000031bd	movl	$0x00000004,%esi
+00000000000031c2	leaq	0x0000b497(%rip),%rdi
+00000000000031c9	callq	0x000090bc	; symbol stub for: _fwrite
+00000000000031ce	leaq	0x0000b48f(%rip),%rax
+00000000000031d5	movl	(%rax),%eax
+00000000000031d7	movl	%eax,%edx
+00000000000031d9	movl	$0x00000004,%eax
+00000000000031de	subq	%rdx,%rax
+00000000000031e1	movq	%rax,%rdx
+00000000000031e4	movq	0xffffff38(%rbp),%rax
+00000000000031eb	leaq	(%rdx,%rax),%rax
+00000000000031ef	movq	%rax,0xffffff38(%rbp)
+00000000000031f6	movl	0xffffff4c(%rbp),%edx
+00000000000031fc	leaq	0x0000b461(%rip),%rax
+0000000000003203	movl	(%rax),%eax
+0000000000003205	leal	(%rdx,%rax),%eax
+0000000000003208	subl	$0x04,%eax
+000000000000320b	movl	%eax,0xffffff4c(%rbp)
+0000000000003211	leaq	0x0000b44c(%rip),%rax
+0000000000003218	movl	$__mh_bundle_header,(%rax)
+000000000000321e	leaq	0x0000b437(%rip),%rdi
+0000000000003225	callq	_myrand
+000000000000322a	movl	%eax,%edi
+000000000000322c	callq	_htole
+0000000000003231	movl	%eax,%edx
+0000000000003233	leaq	0x0000b41e(%rip),%rax
+000000000000323a	movl	%edx,(%rax)
+000000000000323c	movl	0xffffff4c(%rbp),%eax
+0000000000003242	cmpl	$0x03,%eax
+0000000000003245	jbe	0x000032fb
+000000000000324b	movq	0xffffff38(%rbp),%rax
+0000000000003252	movq	%rax,0xffffff20(%rbp)
+0000000000003259	movl	0xffffff4c(%rbp),%eax
+000000000000325f	movl	%eax,0xffffff44(%rbp)
+0000000000003265	movq	0xffffff38(%rbp),%rax
+000000000000326c	movq	%rax,%rcx
+000000000000326f	movq	0xffffff38(%rbp),%rax
+0000000000003276	movl	(%rax),%edx
+0000000000003278	leaq	0x0000b3d9(%rip),%rax
+000000000000327f	movl	(%rax),%eax
+0000000000003281	xorl	%edx,%eax
+0000000000003283	movl	%eax,(%rcx)
+0000000000003285	movl	0xffffff4c(%rbp),%eax
+000000000000328b	subl	$0x04,%eax
+000000000000328e	movl	%eax,0xffffff4c(%rbp)
+0000000000003294	movq	0xffffff38(%rbp),%rax
+000000000000329b	addq	$0x04,%rax
+000000000000329f	movq	%rax,0xffffff38(%rbp)
+00000000000032a6	leaq	0x0000b3af(%rip),%rdi
+00000000000032ad	callq	_myrand
+00000000000032b2	movl	%eax,%edi
+00000000000032b4	callq	_htole
+00000000000032b9	movl	%eax,%edx
+00000000000032bb	leaq	0x0000b396(%rip),%rax
+00000000000032c2	movl	%edx,(%rax)
+00000000000032c4	movl	0xffffff4c(%rbp),%eax
+00000000000032ca	cmpl	$0x03,%eax
+00000000000032cd	ja	0x00003265
+00000000000032cf	leaq	0x0000b36a(%rip),%rax
+00000000000032d6	movq	(%rax),%rcx
+00000000000032d9	movl	0xffffff4c(%rbp),%edx
+00000000000032df	movl	0xffffff44(%rbp),%eax
+00000000000032e5	subl	%edx,%eax
+00000000000032e7	movslq	%eax,%rsi
+00000000000032ea	movq	0xffffff20(%rbp),%rdi
+00000000000032f1	movl	$0x00000001,%edx
+00000000000032f6	callq	0x000090bc	; symbol stub for: _fwrite
+00000000000032fb	cmpl	$__mh_bundle_header,0xffffff4c(%rbp)
+0000000000003302	je	0x0000335b
+0000000000003304	movl	0xffffff4c(%rbp),%eax
+000000000000330a	movslq	%eax,%rdx
+000000000000330d	movq	0xffffff38(%rbp),%rsi
+0000000000003314	movl	$0x00000004,%ecx
+0000000000003319	leaq	0x0000b340(%rip),%rdi
+0000000000003320	callq	0x00009032	; symbol stub for: ___memcpy_chk
+0000000000003325	movl	0xffffff4c(%rbp),%edx
+000000000000332b	leaq	0x0000b332(%rip),%rax
+0000000000003332	movl	%edx,(%rax)
+0000000000003334	movl	0xffffff4c(%rbp),%eax
+000000000000333a	cdqe
+000000000000333c	movq	%rax,%rdx
+000000000000333f	movq	0xffffff38(%rbp),%rax
+0000000000003346	leaq	(%rdx,%rax),%rax
+000000000000334a	movq	%rax,0xffffff38(%rbp)
+0000000000003351	movl	$__mh_bundle_header,0xffffff4c(%rbp)
+000000000000335b	leaq	0x0000b2de(%rip),%rax
+0000000000003362	movq	(%rax),%rdi
+0000000000003365	callq	0x0000909e	; symbol stub for: _fflush
+000000000000336a	movq	0xffffff30(%rbp),%rdi
+0000000000003371	callq	0x000090b0	; symbol stub for: _free
+0000000000003376	leaq	0x0000b283(%rip),%rdi
+000000000000337d	callq	0x0000914c	; symbol stub for: _pthread_mutex_unlock
+0000000000003382	leave
+0000000000003383	ret
+___inline_memcpy_chk:
+0000000000003384	nop
+0000000000003385	nop
+0000000000003386	nop
+0000000000003387	nop
+0000000000003388	nop
+0000000000003389	nop
+000000000000338a	pushq	%rbp
+000000000000338b	movq	%rsp,%rbp
+000000000000338e	subq	$0x20,%rsp
+0000000000003392	movq	%rdi,0xf8(%rbp)
+0000000000003396	movq	%rsi,0xf0(%rbp)
+000000000000339a	movq	%rdx,0xe8(%rbp)
+000000000000339e	movq	$0xffffffff,%rcx
+00000000000033a5	movq	0xe8(%rbp),%rdx
+00000000000033a9	movq	0xf0(%rbp),%rsi
+00000000000033ad	movq	0xf8(%rbp),%rdi
+00000000000033b1	callq	0x00009032	; symbol stub for: ___memcpy_chk
+00000000000033b6	leave
+00000000000033b7	ret
+_dropboxRequest:
+00000000000033b8	nop
+00000000000033b9	nop
+00000000000033ba	nop
+00000000000033bb	nop
+00000000000033bc	nop
+00000000000033bd	nop
+00000000000033be	pushq	%rbp
+00000000000033bf	movq	%rsp,%rbp
+00000000000033c2	subq	$0x50,%rsp
+00000000000033c6	movl	%edi,0xdc(%rbp)
+00000000000033c9	movq	%rsi,0xd0(%rbp)
+00000000000033cd	movl	%edx,0xcc(%rbp)
+00000000000033d0	movq	%rcx,0xc0(%rbp)
+00000000000033d4	movq	%r8,0xb8(%rbp)
+00000000000033d8	movl	$0xffffffff,0xf8(%rbp)
+00000000000033df	leaq	0x0000b13a(%rip),%rdi
+00000000000033e6	callq	0x00009146	; symbol stub for: _pthread_mutex_lock
+00000000000033eb	testl	%eax,%eax
+00000000000033ed	jns	0x000033fb
+00000000000033ef	movl	$0xffffffff,0xb4(%rbp)
+00000000000033f6	jmp	0x00003544
+00000000000033fb	leaq	0xe0(%rbp),%rdi
+00000000000033ff	movl	$__mh_bundle_header,%esi
+0000000000003404	callq	0x000090ce	; symbol stub for: _gettimeofday
+0000000000003409	leaq	0xe0(%rbp),%rdi
+000000000000340d	leaq	0x0000b15c(%rip),%rsi
+0000000000003414	callq	_subtract_timevals
+0000000000003419	movq	0xe0(%rbp),%rax
+000000000000341d	testq	%rax,%rax
+0000000000003420	js	0x00003429
+0000000000003422	movl	0xe8(%rbp),%eax
+0000000000003425	testl	%eax,%eax
+0000000000003427	jns	0x00003441
+0000000000003429	leaq	0x0000b0f0(%rip),%rdi
+0000000000003430	callq	0x0000914c	; symbol stub for: _pthread_mutex_unlock
+0000000000003435	movl	$0xffffffff,0xb4(%rbp)
+000000000000343c	jmp	0x00003544
+0000000000003441	leaq	0x0000b040(%rip),%rax
+0000000000003448	movl	(%rax),%eax
+000000000000344a	testl	%eax,%eax
+000000000000344c	jns	0x00003457
+000000000000344e	callq	_reconnect
+0000000000003453	testb	%al,%al
+0000000000003455	je	0x000034bc
+0000000000003457	movl	$0x00000002,0xf4(%rbp)
+000000000000345e	movl	0xcc(%rbp),%edx
+0000000000003461	movq	0xd0(%rbp),%rsi
+0000000000003465	movl	0xdc(%rbp),%edi
+0000000000003468	callq	_sendRequest
+000000000000346d	movb	%al,0xff(%rbp)
+0000000000003470	cmpq	$__mh_bundle_header,0xc0(%rbp)
+0000000000003475	je	0x0000348d
+0000000000003477	movq	0xb8(%rbp),%rsi
+000000000000347b	movq	0xc0(%rbp),%rdi
+000000000000347f	callq	_getResponse
+0000000000003484	movl	%eax,0xf8(%rbp)
+0000000000003487	cmpl	$__mh_bundle_header,0xf8(%rbp)
+000000000000348b	jns	0x000034bc
+000000000000348d	decl	0xf4(%rbp)
+0000000000003490	cmpl	$__mh_bundle_header,0xf4(%rbp)
+0000000000003494	je	0x000034a1
+0000000000003496	callq	_reconnect
+000000000000349b	testb	%al,%al
+000000000000349d	je	0x000034bc
+000000000000349f	jmp	0x0000345e
+00000000000034a1	leaq	0x0000afe0(%rip),%rax
+00000000000034a8	movl	(%rax),%edi
+00000000000034aa	callq	0x00009080	; symbol stub for: _close
+00000000000034af	leaq	0x0000afd2(%rip),%rax
+00000000000034b6	movl	$0xffffffff,(%rax)
+00000000000034bc	cmpl	$__mh_bundle_header,0xf8(%rbp)
+00000000000034c0	jns	0x00003532
+00000000000034c2	movl	$__mh_bundle_header,%esi
+00000000000034c7	leaq	0x0000b0a2(%rip),%rdi
+00000000000034ce	callq	0x000090ce	; symbol stub for: _gettimeofday
+00000000000034d3	leaq	0x0000b096(%rip),%rax
+00000000000034da	movl	0x08(%rax),%eax
+00000000000034dd	addl	$0x000186a0,%eax
+00000000000034e2	movl	%eax,%edx
+00000000000034e4	leaq	0x0000b085(%rip),%rax
+00000000000034eb	movl	%edx,0x08(%rax)
+00000000000034ee	leaq	0x0000b07b(%rip),%rax
+00000000000034f5	movl	0x08(%rax),%eax
+00000000000034f8	cmpl	$0x000f423f,%eax
+00000000000034fd	jbe	0x00003532
+00000000000034ff	leaq	0x0000b06a(%rip),%rax
+0000000000003506	movq	(%rax),%rax
+0000000000003509	leaq	0x01(%rax),%rdx
+000000000000350d	leaq	0x0000b05c(%rip),%rax
+0000000000003514	movq	%rdx,(%rax)
+0000000000003517	leaq	0x0000b052(%rip),%rax
+000000000000351e	movl	0x08(%rax),%eax
+0000000000003521	subl	$0x000f4240,%eax
+0000000000003526	movl	%eax,%edx
+0000000000003528	leaq	0x0000b041(%rip),%rax
+000000000000352f	movl	%edx,0x08(%rax)
+0000000000003532	leaq	0x0000afe7(%rip),%rdi
+0000000000003539	callq	0x0000914c	; symbol stub for: _pthread_mutex_unlock
+000000000000353e	movl	0xf8(%rbp),%eax
+0000000000003541	movl	%eax,0xb4(%rbp)
+0000000000003544	movl	0xb4(%rbp),%eax
+0000000000003547	leave
+0000000000003548	ret
+_MyCreateBitmapContext:
+0000000000003549	nop
+000000000000354a	nop
+000000000000354b	nop
+000000000000354c	nop
+000000000000354d	nop
+000000000000354e	nop
+000000000000354f	pushq	%rbp
+0000000000003550	movq	%rsp,%rbp
+0000000000003553	subq	$0x40,%rsp
+0000000000003557	movl	%edi,0xdc(%rbp)
+000000000000355a	movl	%esi,0xd8(%rbp)
+000000000000355d	movq	$__mh_bundle_header,0xf0(%rbp)
+0000000000003565	movl	0xdc(%rbp),%eax
+0000000000003568	shll	$0x02,%eax
+000000000000356b	movl	%eax,0xf8(%rbp)
+000000000000356e	movl	0xf8(%rbp),%eax
+0000000000003571	imull	0xd8(%rbp),%eax
+0000000000003575	movl	%eax,0xfc(%rbp)
+0000000000003578	movq	0x00008aa1(%rip),%rax
+000000000000357f	movq	(%rax),%rdi
+0000000000003582	callq	0x00008fcc	; symbol stub for: _CGColorSpaceCreateWithName
+0000000000003587	movq	%rax,0xe8(%rbp)
+000000000000358b	movl	0xfc(%rbp),%eax
+000000000000358e	movslq	%eax,%rdi
+0000000000003591	movl	$0x00000001,%esi
+0000000000003596	callq	0x00009056	; symbol stub for: _calloc
+000000000000359b	movq	%rax,0xe0(%rbp)
+000000000000359f	cmpq	$__mh_bundle_header,0xe0(%rbp)
+00000000000035a4	jne	0x000035d0
+00000000000035a6	movq	0x00008a6b(%rip),%rax
+00000000000035ad	movq	(%rax),%rcx
+00000000000035b0	movl	$0x00000015,%edx
+00000000000035b5	movl	$0x00000001,%esi
+00000000000035ba	leaq	0x000062be(%rip),%rdi
+00000000000035c1	callq	0x000090bc	; symbol stub for: _fwrite
+00000000000035c6	movq	$__mh_bundle_header,0xd0(%rbp)
+00000000000035ce	jmp	0x0000364f
+00000000000035d0	movl	0xf8(%rbp),%eax
+00000000000035d3	movslq	%eax,%rdx
+00000000000035d6	movl	0xd8(%rbp),%eax
+00000000000035d9	movslq	%eax,%rsi
+00000000000035dc	movl	0xdc(%rbp),%eax
+00000000000035df	movslq	%eax,%rdi
+00000000000035e2	movq	0xe8(%rbp),%rax
+00000000000035e6	movq	0xe0(%rbp),%r10
+00000000000035ea	movl	$0x00000001,(%rsp)
+00000000000035f1	movq	%rax,%r9
+00000000000035f4	movq	%rdx,%r8
+00000000000035f7	movl	$0x00000008,%ecx
+00000000000035fc	movq	%rsi,%rdx
+00000000000035ff	movq	%rdi,%rsi
+0000000000003602	movq	%r10,%rdi
+0000000000003605	callq	0x00008fb4	; symbol stub for: _CGBitmapContextCreate
+000000000000360a	movq	%rax,0xf0(%rbp)
+000000000000360e	cmpq	$__mh_bundle_header,0xf0(%rbp)
+0000000000003613	jne	0x0000363e
+0000000000003615	movq	0xe0(%rbp),%rdi
+0000000000003619	callq	0x000090b0	; symbol stub for: _free
+000000000000361e	movq	0x000089f3(%rip),%rax
+0000000000003625	movq	(%rax),%rcx
+0000000000003628	movl	$0x00000014,%edx
+000000000000362d	movl	$0x00000001,%esi
+0000000000003632	leaq	0x0000625c(%rip),%rdi
+0000000000003639	callq	0x000090bc	; symbol stub for: _fwrite
+000000000000363e	movq	0xe8(%rbp),%rdi
+0000000000003642	callq	0x00008fd2	; symbol stub for: _CGColorSpaceRelease
+0000000000003647	movq	0xf0(%rbp),%rax
+000000000000364b	movq	%rax,0xd0(%rbp)
+000000000000364f	movq	0xd0(%rbp),%rax
+0000000000003653	leave
+0000000000003654	ret
+_MyReleaseBitmapContext:
+0000000000003655	nop
+0000000000003656	nop
+0000000000003657	nop
+0000000000003658	nop
+0000000000003659	nop
+000000000000365a	nop
+000000000000365b	pushq	%rbp
+000000000000365c	movq	%rsp,%rbp
+000000000000365f	subq	$0x20,%rsp
+0000000000003663	movq	%rdi,0xe8(%rbp)
+0000000000003667	movq	0xe8(%rbp),%rdi
+000000000000366b	callq	0x00008fc0	; symbol stub for: _CGBitmapContextGetData
+0000000000003670	movq	%rax,0xf8(%rbp)
+0000000000003674	cmpq	$__mh_bundle_header,0xf8(%rbp)
+0000000000003679	je	0x00003684
+000000000000367b	movq	0xf8(%rbp),%rdi
+000000000000367f	callq	0x000090b0	; symbol stub for: _free
+0000000000003684	movq	0xe8(%rbp),%rdi
+0000000000003688	callq	0x00008fde	; symbol stub for: _CGContextRelease
+000000000000368d	leave
+000000000000368e	ret
+_ShouldLoadContextMenus:
+000000000000368f	nop
+0000000000003690	nop
+0000000000003691	nop
+0000000000003692	nop
+0000000000003693	nop
+0000000000003694	nop
+0000000000003695	pushq	%rbp
+0000000000003696	movq	%rsp,%rbp
+0000000000003699	subq	$0x20,%rsp
+000000000000369d	callq	0x00008f48	; symbol stub for: _CFBundleGetMainBundle
+00000000000036a2	movq	%rax,0xf8(%rbp)
+00000000000036a6	cmpq	$__mh_bundle_header,0xf8(%rbp)
+00000000000036ab	jne	0x000036b6
+00000000000036ad	movl	$__mh_bundle_header,0xe8(%rbp)
+00000000000036b4	jmp	0x00003721
+00000000000036b6	movq	0xf8(%rbp),%rdi
+00000000000036ba	callq	0x00008f42	; symbol stub for: _CFBundleGetIdentifier
+00000000000036bf	movq	%rax,0xf0(%rbp)
+00000000000036c3	cmpq	$__mh_bundle_header,0xf0(%rbp)
+00000000000036c8	je	0x0000371a
+00000000000036ca	leaq	0x00008d8f(%rip),%rsi
+00000000000036d1	movq	0xf0(%rbp),%rdi
+00000000000036d5	movl	$__mh_bundle_header,%edx
+00000000000036da	callq	0x00008f78	; symbol stub for: _CFStringCompare
+00000000000036df	testq	%rax,%rax
+00000000000036e2	je	0x000036fe
+00000000000036e4	leaq	0x00008d95(%rip),%rsi
+00000000000036eb	movq	0xf0(%rbp),%rdi
+00000000000036ef	movl	$__mh_bundle_header,%edx
+00000000000036f4	callq	0x00008f78	; symbol stub for: _CFStringCompare
+00000000000036f9	testq	%rax,%rax
+00000000000036fc	jne	0x00003707
+00000000000036fe	movl	$0x00000001,0xec(%rbp)
+0000000000003705	jmp	0x0000370e
+0000000000003707	movl	$__mh_bundle_header,0xec(%rbp)
+000000000000370e	movzbl	0xec(%rbp),%eax
+0000000000003712	movzbl	%al,%eax
+0000000000003715	movl	%eax,0xe8(%rbp)
+0000000000003718	jmp	0x00003721
+000000000000371a	movl	$__mh_bundle_header,0xe8(%rbp)
+0000000000003721	movl	0xe8(%rbp),%eax
+0000000000003724	leave
+0000000000003725	ret
+_ShouldLoadFullBlownHacks:
+0000000000003726	nop
+0000000000003727	nop
+0000000000003728	nop
+0000000000003729	nop
+000000000000372a	nop
+000000000000372b	nop
+000000000000372c	pushq	%rbp
+000000000000372d	movq	%rsp,%rbp
+0000000000003730	subq	$0x20,%rsp
+0000000000003734	callq	0x00008f48	; symbol stub for: _CFBundleGetMainBundle
+0000000000003739	movq	%rax,0xf8(%rbp)
+000000000000373d	cmpq	$__mh_bundle_header,0xf8(%rbp)
+0000000000003742	jne	0x0000374d
+0000000000003744	movl	$__mh_bundle_header,0xec(%rbp)
+000000000000374b	jmp	0x0000378b
+000000000000374d	movq	0xf8(%rbp),%rdi
+0000000000003751	callq	0x00008f42	; symbol stub for: _CFBundleGetIdentifier
+0000000000003756	movq	%rax,0xf0(%rbp)
+000000000000375a	cmpq	$__mh_bundle_header,0xf0(%rbp)
+000000000000375f	je	0x00003784
+0000000000003761	leaq	0x00008cf8(%rip),%rsi
+0000000000003768	movq	0xf0(%rbp),%rdi
+000000000000376c	movl	$__mh_bundle_header,%edx
+0000000000003771	callq	0x00008f78	; symbol stub for: _CFStringCompare
+0000000000003776	testq	%rax,%rax
+0000000000003779	sete	%al
+000000000000377c	movzbl	%al,%eax
+000000000000377f	movl	%eax,0xec(%rbp)
+0000000000003782	jmp	0x0000378b
+0000000000003784	movl	$__mh_bundle_header,0xec(%rbp)
+000000000000378b	movl	0xec(%rbp),%eax
+000000000000378e	leave
+000000000000378f	ret
+_GetSystemVersion:
+0000000000003790	nop
+0000000000003791	nop
+0000000000003792	nop
+0000000000003793	nop
+0000000000003794	nop
+0000000000003795	nop
+0000000000003796	pushq	%rbp
+0000000000003797	movq	%rsp,%rbp
+000000000000379a	subq	$0x40,%rsp
+000000000000379e	movq	%rdi,0xd8(%rbp)
+00000000000037a2	movq	%rsi,0xd0(%rbp)
+00000000000037a6	movq	%rdx,0xc8(%rbp)
+00000000000037aa	leaq	0xf8(%rbp),%rsi
+00000000000037ae	movl	$0x73797376,%edi
+00000000000037b3	callq	0x00009002	; symbol stub for: _Gestalt
+00000000000037b8	movw	%ax,0xfe(%rbp)
+00000000000037bc	cmpw	$__mh_bundle_header,0xfe(%rbp)
+00000000000037c1	setne	%al
+00000000000037c4	movzbl	%al,%eax
+00000000000037c7	testq	%rax,%rax
+00000000000037ca	jne	0x000038e5
+00000000000037d0	movl	0xf8(%rbp),%eax
+00000000000037d3	cmpl	$0x0000103f,%eax
+00000000000037d8	jg	0x00003847
+00000000000037da	cmpq	$__mh_bundle_header,0xd8(%rbp)
+00000000000037df	je	0x0000380f
+00000000000037e1	movl	0xf8(%rbp),%eax
+00000000000037e4	andl	$0x0000f000,%eax
+00000000000037e9	movl	%eax,%edx
+00000000000037eb	sarl	$0x0c,%edx
+00000000000037ee	movl	%edx,%eax
+00000000000037f0	shll	$0x02,%eax
+00000000000037f3	addl	%edx,%eax
+00000000000037f5	addl	%eax,%eax
+00000000000037f7	movl	%eax,%edx
+00000000000037f9	movl	0xf8(%rbp),%eax
+00000000000037fc	andl	$0x00000f00,%eax
+0000000000003801	sarl	$0x08,%eax
+0000000000003804	leal	(%rdx,%rax),%eax
+0000000000003807	movl	%eax,%edx
+0000000000003809	movq	0xd8(%rbp),%rax
+000000000000380d	movl	%edx,(%rax)
+000000000000380f	cmpq	$__mh_bundle_header,0xd0(%rbp)
+0000000000003814	je	0x00003829
+0000000000003816	movl	0xf8(%rbp),%eax
+0000000000003819	andl	$0x000000f0,%eax
+000000000000381e	sarl	$0x04,%eax
+0000000000003821	movl	%eax,%edx
+0000000000003823	movq	0xd0(%rbp),%rax
+0000000000003827	movl	%edx,(%rax)
+0000000000003829	cmpq	$__mh_bundle_header,0xc8(%rbp)
+000000000000382e	je	0x00003918
+0000000000003834	movl	0xf8(%rbp),%eax
+0000000000003837	movl	%eax,%edx
+0000000000003839	andl	$0x0f,%edx
+000000000000383c	movq	0xc8(%rbp),%rax
+0000000000003840	movl	%edx,(%rax)
+0000000000003842	jmp	0x00003918
+0000000000003847	leaq	0xf4(%rbp),%rsi
+000000000000384b	movl	$0x73797331,%edi
+0000000000003850	callq	0x00009002	; symbol stub for: _Gestalt
+0000000000003855	movw	%ax,0xfe(%rbp)
+0000000000003859	cmpw	$__mh_bundle_header,0xfe(%rbp)
+000000000000385e	setne	%al
+0000000000003861	movzbl	%al,%eax
+0000000000003864	testq	%rax,%rax
+0000000000003867	jne	0x000038e5
+0000000000003869	leaq	0xf0(%rbp),%rsi
+000000000000386d	movl	$0x73797332,%edi
+0000000000003872	callq	0x00009002	; symbol stub for: _Gestalt
+0000000000003877	movw	%ax,0xfe(%rbp)
+000000000000387b	cmpw	$__mh_bundle_header,0xfe(%rbp)
+0000000000003880	setne	%al
+0000000000003883	movzbl	%al,%eax
+0000000000003886	testq	%rax,%rax
+0000000000003889	jne	0x000038e5
+000000000000388b	leaq	0xec(%rbp),%rsi
+000000000000388f	movl	$0x73797333,%edi
+0000000000003894	callq	0x00009002	; symbol stub for: _Gestalt
+0000000000003899	movw	%ax,0xfe(%rbp)
+000000000000389d	cmpw	$__mh_bundle_header,0xfe(%rbp)
+00000000000038a2	setne	%al
+00000000000038a5	movzbl	%al,%eax
+00000000000038a8	testq	%rax,%rax
+00000000000038ab	jne	0x000038e5
+00000000000038ad	cmpq	$__mh_bundle_header,0xd8(%rbp)
+00000000000038b2	je	0x000038bf
+00000000000038b4	movl	0xf4(%rbp),%eax
+00000000000038b7	movl	%eax,%edx
+00000000000038b9	movq	0xd8(%rbp),%rax
+00000000000038bd	movl	%edx,(%rax)
+00000000000038bf	cmpq	$__mh_bundle_header,0xd0(%rbp)
+00000000000038c4	je	0x000038d1
+00000000000038c6	movl	0xf0(%rbp),%eax
+00000000000038c9	movl	%eax,%edx
+00000000000038cb	movq	0xd0(%rbp),%rax
+00000000000038cf	movl	%edx,(%rax)
+00000000000038d1	cmpq	$__mh_bundle_header,0xc8(%rbp)
+00000000000038d6	je	0x00003918
+00000000000038d8	movl	0xec(%rbp),%eax
+00000000000038db	movl	%eax,%edx
+00000000000038dd	movq	0xc8(%rbp),%rax
+00000000000038e1	movl	%edx,(%rax)
+00000000000038e3	jmp	0x00003918
+00000000000038e5	cmpq	$__mh_bundle_header,0xd8(%rbp)
+00000000000038ea	je	0x000038f6
+00000000000038ec	movq	0xd8(%rbp),%rax
+00000000000038f0	movl	$0x0000000a,(%rax)
+00000000000038f6	cmpq	$__mh_bundle_header,0xd0(%rbp)
+00000000000038fb	je	0x00003907
+00000000000038fd	movq	0xd0(%rbp),%rax
+0000000000003901	movl	$__mh_bundle_header,(%rax)
+0000000000003907	cmpq	$__mh_bundle_header,0xc8(%rbp)
+000000000000390c	je	0x00003918
+000000000000390e	movq	0xc8(%rbp),%rax
+0000000000003912	movl	$__mh_bundle_header,(%rax)
+0000000000003918	leave
+0000000000003919	ret
+_IconRefFromIconFileNoCache:
+000000000000391a	nop
+000000000000391b	nop
+000000000000391c	nop
+000000000000391d	nop
+000000000000391e	nop
+000000000000391f	nop
+0000000000003920	pushq	%rbp
+0000000000003921	movq	%rsp,%rbp
+0000000000003924	subq	$0x00000090,%rsp
+000000000000392b	movq	%rdi,0xffffff78(%rbp)
+0000000000003932	movq	0x000086c7(%rip),%rax
+0000000000003939	movq	(%rax),%rdx
+000000000000393c	movq	%rdx,0xf8(%rbp)
+0000000000003940	xorl	%edx,%edx
+0000000000003942	movq	0xffffff78(%rbp),%rsi
+0000000000003949	movl	$__mh_bundle_header,%ecx
+000000000000394e	movl	$__mh_bundle_header,%edx
+0000000000003953	movl	$__mh_bundle_header,%edi
+0000000000003958	callq	0x00008fa8	; symbol stub for: _CFURLCreateWithFileSystemPath
+000000000000395d	movq	%rax,0x80(%rbp)
+0000000000003961	cmpq	$__mh_bundle_header,0x80(%rbp)
+0000000000003966	jne	0x00003978
+0000000000003968	movq	$__mh_bundle_header,0xffffff70(%rbp)
+0000000000003973	jmp	0x00003a0a
+0000000000003978	leaq	0xa0(%rbp),%rsi
+000000000000397c	movq	0x80(%rbp),%rdi
+0000000000003980	callq	0x00008fae	; symbol stub for: _CFURLGetFSRef
+0000000000003985	movb	%al,0x9f(%rbp)
+0000000000003988	movq	0x80(%rbp),%rdi
+000000000000398c	callq	0x00008f6c	; symbol stub for: _CFRelease
+0000000000003991	cmpb	$__mh_bundle_header,0x9f(%rbp)
+0000000000003995	jne	0x000039a4
+0000000000003997	movq	$__mh_bundle_header,0xffffff70(%rbp)
+00000000000039a2	jmp	0x00003a0a
+00000000000039a4	leaq	0x88(%rbp),%rsi
+00000000000039a8	leaq	0xa0(%rbp),%rdi
+00000000000039ac	callq	0x00009026	; symbol stub for: _ReadIconFromFSRef
+00000000000039b1	testl	%eax,%eax
+00000000000039b3	je	0x000039c2
+00000000000039b5	movq	$__mh_bundle_header,0xffffff70(%rbp)
+00000000000039c0	jmp	0x00003a0a
+00000000000039c2	movq	$__mh_bundle_header,0x90(%rbp)
+00000000000039ca	movq	0x88(%rbp),%rax
+00000000000039ce	movq	%rax,%rdi
+00000000000039d1	callq	0x0000900e	; symbol stub for: _HLock
+00000000000039d6	movq	0x88(%rbp),%rax
+00000000000039da	movq	(%rax),%rax
+00000000000039dd	movl	0x04(%rax),%eax
+00000000000039e0	movslq	%eax,%rsi
+00000000000039e3	movq	0x88(%rbp),%rax
+00000000000039e7	movq	(%rax),%rdi
+00000000000039ea	leaq	0x90(%rbp),%rdx
+00000000000039ee	callq	0x00009008	; symbol stub for: _GetIconRefFromIconFamilyPtr
+00000000000039f3	movq	0x88(%rbp),%rax
+00000000000039f7	movq	%rax,%rdi
+00000000000039fa	callq	0x00008fea	; symbol stub for: _DisposeHandle
+00000000000039ff	movq	0x90(%rbp),%rcx
+0000000000003a03	movq	%rcx,0xffffff70(%rbp)
+0000000000003a0a	movq	0xffffff70(%rbp),%rax
+0000000000003a11	movq	0x000085e8(%rip),%rdx
+0000000000003a18	movq	0xf8(%rbp),%rcx
+0000000000003a1c	xorq	(%rdx),%rcx
+0000000000003a1f	je	0x00003a26
+0000000000003a21	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000003a26	leave
+0000000000003a27	ret
+_getPreferenceBool:
+0000000000003a28	nop
+0000000000003a29	nop
+0000000000003a2a	nop
+0000000000003a2b	nop
+0000000000003a2c	nop
+0000000000003a2d	nop
+0000000000003a2e	pushq	%rbp
+0000000000003a2f	movq	%rsp,%rbp
+0000000000003a32	pushq	%rbx
+0000000000003a33	subq	$0x28,%rsp
+0000000000003a37	movq	%rdi,0xd8(%rbp)
+0000000000003a3b	movb	%dh,0xd4(%rbp)
+0000000000003a3f	leaq	0x0000a8da(%rip),%rax
+0000000000003a46	movq	(%rax),%rsi
+0000000000003a49	movq	0xd8(%rbp),%rdi
+0000000000003a4d	callq	0x00008f66	; symbol stub for: _CFPreferencesCopyAppValue
+0000000000003a52	movq	%rax,0xe8(%rbp)
+0000000000003a56	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000003a5b	je	0x00003a92
+0000000000003a5d	movq	0xe8(%rbp),%rdi
+0000000000003a61	callq	0x00008f60	; symbol stub for: _CFGetTypeID
+0000000000003a66	movq	%rax,%rbx
+0000000000003a69	callq	0x00008f36	; symbol stub for: _CFBooleanGetTypeID
+0000000000003a6e	cmpq	%rax,%rbx
+0000000000003a71	jne	0x00003a92
+0000000000003a73	movq	0xe8(%rbp),%rdi
+0000000000003a77	callq	0x00008f3c	; symbol stub for: _CFBooleanGetValue
+0000000000003a7c	testb	%al,%al
+0000000000003a7e	je	0x00003a89
+0000000000003a80	movl	$0x00000001,0xd0(%rbp)
+0000000000003a87	jmp	0x00003a99
+0000000000003a89	movl	$__mh_bundle_header,0xd0(%rbp)
+0000000000003a90	jmp	0x00003a99
+0000000000003a92	movzbl	0xd4(%rbp),%eax
+0000000000003a96	movl	%eax,0xd0(%rbp)
+0000000000003a99	movl	0xd0(%rbp),%eax
+0000000000003a9c	addq	$0x28,%rsp
+0000000000003aa0	popq	%rbx
+0000000000003aa1	leave
+0000000000003aa2	ret
+_getPreferenceInt:
+0000000000003aa3	nop
+0000000000003aa4	nop
+0000000000003aa5	nop
+0000000000003aa6	nop
+0000000000003aa7	nop
+0000000000003aa8	nop
+0000000000003aa9	pushq	%rbp
+0000000000003aaa	movq	%rsp,%rbp
+0000000000003aad	pushq	%rbx
+0000000000003aae	subq	$0x28,%rsp
+0000000000003ab2	movq	%rdi,0xd8(%rbp)
+0000000000003ab6	movb	%dh,0xd4(%rbp)
+0000000000003aba	leaq	0x0000a85f(%rip),%rax
+0000000000003ac1	movq	(%rax),%rsi
+0000000000003ac4	movq	0xd8(%rbp),%rdi
+0000000000003ac8	callq	0x00008f66	; symbol stub for: _CFPreferencesCopyAppValue
+0000000000003acd	movq	%rax,0xe8(%rbp)
+0000000000003ad1	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000003ad6	je	0x00003b0d
+0000000000003ad8	movq	0xe8(%rbp),%rdi
+0000000000003adc	callq	0x00008f60	; symbol stub for: _CFGetTypeID
+0000000000003ae1	movq	%rax,%rbx
+0000000000003ae4	callq	0x00008f36	; symbol stub for: _CFBooleanGetTypeID
+0000000000003ae9	cmpq	%rax,%rbx
+0000000000003aec	jne	0x00003b0d
+0000000000003aee	movq	0xe8(%rbp),%rdi
+0000000000003af2	callq	0x00008f3c	; symbol stub for: _CFBooleanGetValue
+0000000000003af7	testb	%al,%al
+0000000000003af9	je	0x00003b04
+0000000000003afb	movl	$0x00000001,0xd0(%rbp)
+0000000000003b02	jmp	0x00003b14
+0000000000003b04	movl	$__mh_bundle_header,0xd0(%rbp)
+0000000000003b0b	jmp	0x00003b14
+0000000000003b0d	movzbl	0xd4(%rbp),%eax
+0000000000003b11	movl	%eax,0xd0(%rbp)
+0000000000003b14	movl	0xd0(%rbp),%eax
+0000000000003b17	addq	$0x28,%rsp
+0000000000003b1b	popq	%rbx
+0000000000003b1c	leave
+0000000000003b1d	ret
+_DEBUG_printf:
+0000000000003b1e	nop
+0000000000003b1f	nop
+0000000000003b20	nop
+0000000000003b21	nop
+0000000000003b22	nop
+0000000000003b23	nop
+0000000000003b24	pushq	%rbp
+0000000000003b25	movq	%rsp,%rbp
+0000000000003b28	subq	$0x000000e0,%rsp
+0000000000003b2f	movq	%rsi,0xffffff58(%rbp)
+0000000000003b36	movq	%rdx,0xffffff60(%rbp)
+0000000000003b3d	movq	%rcx,0xffffff68(%rbp)
+0000000000003b44	movq	%r8,0xffffff70(%rbp)
+0000000000003b4b	movq	%r9,0xffffff78(%rbp)
+0000000000003b52	movzbl	%al,%eax
+0000000000003b55	movq	%rax,0xffffff20(%rbp)
+0000000000003b5c	movq	0xffffff20(%rbp),%rdx
+0000000000003b63	leaq	__mh_bundle_header(,%rdx,4),%rax
+0000000000003b6b	leaq	0x0000003b(%rip),%rdx
+0000000000003b72	movq	%rdx,0xffffff20(%rbp)
+0000000000003b79	subq	%rax,0xffffff20(%rbp)
+0000000000003b80	leaq	0xff(%rbp),%rax
+0000000000003b84	movq	0xffffff20(%rbp),%rdx
+0000000000003b8b	jmp	*%rdx
+0000000000003b8d	movaps	%xmm7,0xf1(%rax)
+0000000000003b91	movaps	%xmm6,0xe1(%rax)
+0000000000003b95	movaps	%xmm5,0xd1(%rax)
+0000000000003b99	movaps	%xmm4,0xc1(%rax)
+0000000000003b9d	movaps	%xmm3,0xb1(%rax)
+0000000000003ba1	movaps	%xmm2,0xa1(%rax)
+0000000000003ba5	movaps	%xmm1,0x91(%rax)
+0000000000003ba9	movaps	%xmm0,0x81(%rax)
+0000000000003bad	movq	%rdi,0xffffff28(%rbp)
+0000000000003bb4	leaq	0xffffff30(%rbp),%rax
+0000000000003bbb	movl	$0x00000008,(%rax)
+0000000000003bc1	leaq	0xffffff30(%rbp),%rax
+0000000000003bc8	movl	$0x00000030,0x04(%rax)
+0000000000003bcf	leaq	0xffffff30(%rbp),%rax
+0000000000003bd6	leaq	0x10(%rbp),%rdx
+0000000000003bda	movq	%rdx,0x08(%rax)
+0000000000003bde	leaq	0xffffff30(%rbp),%rax
+0000000000003be5	leaq	0xffffff50(%rbp),%rdx
+0000000000003bec	movq	%rdx,0x10(%rax)
+0000000000003bf0	leaq	0xffffff30(%rbp),%rsi
+0000000000003bf7	movq	0xffffff28(%rbp),%rdi
+0000000000003bfe	callq	0x000091a0	; symbol stub for: _vprintf
+0000000000003c03	leave
+0000000000003c04	ret
+_CachedCheckIconRef:
+0000000000003c05	nop
+0000000000003c06	nop
+0000000000003c07	nop
+0000000000003c08	nop
+0000000000003c09	nop
+0000000000003c0a	nop
+0000000000003c0b	pushq	%rbp
+0000000000003c0c	movq	%rsp,%rbp
+0000000000003c0f	subq	$0x00000090,%rsp
+0000000000003c16	movq	0x000083e3(%rip),%rax
+0000000000003c1d	movq	(%rax),%rdx
+0000000000003c20	movq	%rdx,0xf8(%rbp)
+0000000000003c24	xorl	%edx,%edx
+0000000000003c26	leaq	0x0000a9b3(%rip),%rax
+0000000000003c2d	movq	(%rax),%rax
+0000000000003c30	testq	%rax,%rax
+0000000000003c33	jne	0x00003cd6
+0000000000003c39	movl	$__mh_bundle_header,0x9c(%rbp)
+0000000000003c40	leaq	0x00008859(%rip),%rax
+0000000000003c47	movq	%rax,0x80(%rbp)
+0000000000003c4b	movq	0x80(%rbp),%rsi
+0000000000003c4f	movl	$__mh_bundle_header,%ecx
+0000000000003c54	movl	$__mh_bundle_header,%edx
+0000000000003c59	movl	$__mh_bundle_header,%edi
+0000000000003c5e	callq	0x00008fa8	; symbol stub for: _CFURLCreateWithFileSystemPath
+0000000000003c63	movq	%rax,0x88(%rbp)
+0000000000003c67	cmpq	$__mh_bundle_header,0x88(%rbp)
+0000000000003c6c	jne	0x00003c7b
+0000000000003c6e	movq	$__mh_bundle_header,0xffffff78(%rbp)
+0000000000003c79	jmp	0x00003ce7
+0000000000003c7b	leaq	0xa0(%rbp),%rsi
+0000000000003c7f	movq	0x88(%rbp),%rdi
+0000000000003c83	callq	0x00008fae	; symbol stub for: _CFURLGetFSRef
+0000000000003c88	movzbl	%al,%eax
+0000000000003c8b	movl	%eax,0x9c(%rbp)
+0000000000003c8e	leaq	0x90(%rbp),%rsi
+0000000000003c92	leaq	0xa0(%rbp),%rdi
+0000000000003c96	callq	0x00009026	; symbol stub for: _ReadIconFromFSRef
+0000000000003c9b	movl	%eax,0x9c(%rbp)
+0000000000003c9e	movq	0x90(%rbp),%rax
+0000000000003ca2	movq	%rax,%rdi
+0000000000003ca5	callq	0x0000900e	; symbol stub for: _HLock
+0000000000003caa	movq	0x90(%rbp),%rax
+0000000000003cae	movq	(%rax),%rax
+0000000000003cb1	movl	0x04(%rax),%eax
+0000000000003cb4	movslq	%eax,%rsi
+0000000000003cb7	movq	0x90(%rbp),%rax
+0000000000003cbb	movq	(%rax),%rdi
+0000000000003cbe	leaq	0x0000a91b(%rip),%rdx
+0000000000003cc5	callq	0x00009008	; symbol stub for: _GetIconRefFromIconFamilyPtr
+0000000000003cca	movq	0x90(%rbp),%rax
+0000000000003cce	movq	%rax,%rdi
+0000000000003cd1	callq	0x00008fea	; symbol stub for: _DisposeHandle
+0000000000003cd6	leaq	0x0000a903(%rip),%rax
+0000000000003cdd	movq	(%rax),%rax
+0000000000003ce0	movq	%rax,0xffffff78(%rbp)
+0000000000003ce7	movq	0xffffff78(%rbp),%rax
+0000000000003cee	movq	0x0000830b(%rip),%rdx
+0000000000003cf5	movq	0xf8(%rbp),%rcx
+0000000000003cf9	xorq	(%rdx),%rcx
+0000000000003cfc	je	0x00003d03
+0000000000003cfe	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000003d03	leave
+0000000000003d04	ret
+_IconCacheInitialize:
+0000000000003d05	nop
+0000000000003d06	nop
+0000000000003d07	nop
+0000000000003d08	nop
+0000000000003d09	nop
+0000000000003d0a	nop
+0000000000003d0b	pushq	%rbp
+0000000000003d0c	movq	%rsp,%rbp
+0000000000003d0f	movl	$__mh_bundle_header,%ecx
+0000000000003d14	movq	0x0000830d(%rip),%rdx
+0000000000003d1b	movl	$__mh_bundle_header,%esi
+0000000000003d20	movl	$__mh_bundle_header,%edi
+0000000000003d25	callq	0x00008f54	; symbol stub for: _CFDictionaryCreateMutable
+0000000000003d2a	movq	%rax,%rdx
+0000000000003d2d	leaq	0x0000a8b4(%rip),%rax
+0000000000003d34	movq	%rdx,(%rax)
+0000000000003d37	leave
+0000000000003d38	ret
+_GetIconRefFromFilePath:
+0000000000003d39	nop
+0000000000003d3a	nop
+0000000000003d3b	nop
+0000000000003d3c	nop
+0000000000003d3d	nop
+0000000000003d3e	nop
+0000000000003d3f	pushq	%rbp
+0000000000003d40	movq	%rsp,%rbp
+0000000000003d43	subq	$0x000000a0,%rsp
+0000000000003d4a	movq	%rdi,0xffffff68(%rbp)
+0000000000003d51	movq	0x000082a8(%rip),%rax
+0000000000003d58	movq	(%rax),%rdx
+0000000000003d5b	movq	%rdx,0xf8(%rbp)
+0000000000003d5f	xorl	%edx,%edx
+0000000000003d61	movl	$__mh_bundle_header,0x98(%rbp)
+0000000000003d68	movq	0xffffff68(%rbp),%rax
+0000000000003d6f	movq	%rax,0xffffff78(%rbp)
+0000000000003d76	movq	0xffffff78(%rbp),%rsi
+0000000000003d7d	movl	$__mh_bundle_header,%ecx
+0000000000003d82	movl	$__mh_bundle_header,%edx
+0000000000003d87	movl	$__mh_bundle_header,%edi
+0000000000003d8c	callq	0x00008fa8	; symbol stub for: _CFURLCreateWithFileSystemPath
+0000000000003d91	movq	%rax,0x80(%rbp)
+0000000000003d95	cmpq	$__mh_bundle_header,0x80(%rbp)
+0000000000003d9a	jne	0x00003dac
+0000000000003d9c	movq	$__mh_bundle_header,0xffffff60(%rbp)
+0000000000003da7	jmp	0x00003e48
+0000000000003dac	leaq	0xa0(%rbp),%rsi
+0000000000003db0	movq	0x80(%rbp),%rdi
+0000000000003db4	callq	0x00008fae	; symbol stub for: _CFURLGetFSRef
+0000000000003db9	movb	%al,0x9f(%rbp)
+0000000000003dbc	cmpb	$__mh_bundle_header,0x9f(%rbp)
+0000000000003dc0	jne	0x00003dcf
+0000000000003dc2	movq	$__mh_bundle_header,0xffffff60(%rbp)
+0000000000003dcd	jmp	0x00003e48
+0000000000003dcf	leaq	0x88(%rbp),%rsi
+0000000000003dd3	leaq	0xa0(%rbp),%rdi
+0000000000003dd7	callq	0x00009026	; symbol stub for: _ReadIconFromFSRef
+0000000000003ddc	movl	%eax,0x98(%rbp)
+0000000000003ddf	cmpl	$__mh_bundle_header,0x98(%rbp)
+0000000000003de3	je	0x00003df2
+0000000000003de5	movq	$__mh_bundle_header,0xffffff60(%rbp)
+0000000000003df0	jmp	0x00003e48
+0000000000003df2	movq	0x88(%rbp),%rax
+0000000000003df6	testq	%rax,%rax
+0000000000003df9	jne	0x00003e08
+0000000000003dfb	movq	$__mh_bundle_header,0xffffff60(%rbp)
+0000000000003e06	jmp	0x00003e48
+0000000000003e08	movq	0x88(%rbp),%rax
+0000000000003e0c	movq	%rax,%rdi
+0000000000003e0f	callq	0x0000900e	; symbol stub for: _HLock
+0000000000003e14	movq	0x88(%rbp),%rax
+0000000000003e18	movq	(%rax),%rax
+0000000000003e1b	movl	0x04(%rax),%eax
+0000000000003e1e	movslq	%eax,%rsi
+0000000000003e21	movq	0x88(%rbp),%rax
+0000000000003e25	movq	(%rax),%rdi
+0000000000003e28	leaq	0x90(%rbp),%rdx
+0000000000003e2c	callq	0x00009008	; symbol stub for: _GetIconRefFromIconFamilyPtr
+0000000000003e31	movq	0x88(%rbp),%rax
+0000000000003e35	movq	%rax,%rdi
+0000000000003e38	callq	0x00008fea	; symbol stub for: _DisposeHandle
+0000000000003e3d	movq	0x90(%rbp),%rcx
+0000000000003e41	movq	%rcx,0xffffff60(%rbp)
+0000000000003e48	movq	0xffffff60(%rbp),%rax
+0000000000003e4f	movq	0x000081aa(%rip),%rdx
+0000000000003e56	movq	0xf8(%rbp),%rcx
+0000000000003e5a	xorq	(%rdx),%rcx
+0000000000003e5d	je	0x00003e64
+0000000000003e5f	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000003e64	leave
+0000000000003e65	ret
+_CachedGetIconRefFromFilePath:
+0000000000003e66	nop
+0000000000003e67	nop
+0000000000003e68	nop
+0000000000003e69	nop
+0000000000003e6a	nop
+0000000000003e6b	nop
+0000000000003e6c	pushq	%rbp
+0000000000003e6d	movq	%rsp,%rbp
+0000000000003e70	subq	$0x20,%rsp
+0000000000003e74	movq	%rdi,0xe8(%rbp)
+0000000000003e78	leaq	0x0000a771(%rip),%rax
+0000000000003e7f	movzbl	(%rax),%eax
+0000000000003e82	testb	%al,%al
+0000000000003e84	jne	0x00003e9a
+0000000000003e86	movl	$__mh_bundle_header,%eax
+0000000000003e8b	callq	_IconCacheInitialize
+0000000000003e90	leaq	0x0000a759(%rip),%rax
+0000000000003e97	movb	$0x01,(%rax)
+0000000000003e9a	leaq	0x0000a747(%rip),%rax
+0000000000003ea1	movq	(%rax),%rdi
+0000000000003ea4	movq	0xe8(%rbp),%rsi
+0000000000003ea8	callq	0x00008f5a	; symbol stub for: _CFDictionaryGetValue
+0000000000003ead	movq	%rax,0xf8(%rbp)
+0000000000003eb1	cmpq	$__mh_bundle_header,0xf8(%rbp)
+0000000000003eb6	je	0x00003ec2
+0000000000003eb8	movq	0xf8(%rbp),%rax
+0000000000003ebc	movq	%rax,0xe0(%rbp)
+0000000000003ec0	jmp	0x00003ef5
+0000000000003ec2	movq	0xe8(%rbp),%rdi
+0000000000003ec6	callq	_GetIconRefFromFilePath
+0000000000003ecb	movq	%rax,0xf8(%rbp)
+0000000000003ecf	cmpq	$__mh_bundle_header,0xf8(%rbp)
+0000000000003ed4	je	0x00003eed
+0000000000003ed6	leaq	0x0000a70b(%rip),%rax
+0000000000003edd	movq	(%rax),%rdi
+0000000000003ee0	movq	0xf8(%rbp),%rdx
+0000000000003ee4	movq	0xe8(%rbp),%rsi
+0000000000003ee8	callq	0x00008f4e	; symbol stub for: _CFDictionaryAddValue
+0000000000003eed	movq	0xf8(%rbp),%rax
+0000000000003ef1	movq	%rax,0xe0(%rbp)
+0000000000003ef5	movq	0xe0(%rbp),%rax
+0000000000003ef9	leave
+0000000000003efa	ret
+_getPathStringFromFSRef:
+0000000000003efb	nop
+0000000000003efc	nop
+0000000000003efd	nop
+0000000000003efe	nop
+0000000000003eff	nop
+0000000000003f00	nop
+0000000000003f01	pushq	%rbp
+0000000000003f02	movq	%rsp,%rbp
+0000000000003f05	addq	$0x80,%rsp
+0000000000003f09	movq	%rdi,0x98(%rbp)
+0000000000003f0d	movq	%rsi,0x90(%rbp)
+0000000000003f11	movq	%rdx,0x88(%rbp)
+0000000000003f15	movb	$__mh_bundle_header,0xff(%rbp)
+0000000000003f19	movq	0x98(%rbp),%rsi
+0000000000003f1d	movl	$__mh_bundle_header,%edi
+0000000000003f22	callq	0x00008fa2	; symbol stub for: _CFURLCreateFromFSRef
+0000000000003f27	movq	%rax,0xf0(%rbp)
+0000000000003f2b	cmpq	$__mh_bundle_header,0xf0(%rbp)
+0000000000003f30	je	0x00003fd0
+0000000000003f36	movq	0xf0(%rbp),%rdi
+0000000000003f3a	movl	$__mh_bundle_header,%esi
+0000000000003f3f	callq	0x00008f9c	; symbol stub for: _CFURLCopyFileSystemPath
+0000000000003f44	movq	%rax,0xe8(%rbp)
+0000000000003f48	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000003f4d	je	0x00003fc7
+0000000000003f4f	movq	0xe8(%rbp),%rdi
+0000000000003f53	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+0000000000003f58	movq	$__mh_bundle_header,0xe0(%rbp)
+0000000000003f60	movq	%rax,0xd8(%rbp)
+0000000000003f64	movq	0xe0(%rbp),%rax
+0000000000003f68	movq	%rax,0xb0(%rbp)
+0000000000003f6c	movq	0xd8(%rbp),%rax
+0000000000003f70	movq	%rax,0xb8(%rbp)
+0000000000003f74	movq	0xb0(%rbp),%rax
+0000000000003f78	movq	%rax,0xa0(%rbp)
+0000000000003f7c	movq	0xb8(%rbp),%rax
+0000000000003f80	movq	%rax,0xa8(%rbp)
+0000000000003f84	movq	0xa0(%rbp),%rax
+0000000000003f88	movq	%rax,0xc0(%rbp)
+0000000000003f8c	movq	0xa8(%rbp),%rax
+0000000000003f90	movq	%rax,0xc8(%rbp)
+0000000000003f94	movq	0x90(%rbp),%rcx
+0000000000003f98	movq	0xc0(%rbp),%rsi
+0000000000003f9c	movq	0xc8(%rbp),%rdx
+0000000000003fa0	movq	0xe8(%rbp),%rdi
+0000000000003fa4	callq	0x00008f90	; symbol stub for: _CFStringGetCharacters
+0000000000003fa9	movq	0xe8(%rbp),%rdi
+0000000000003fad	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+0000000000003fb2	movl	%eax,%edx
+0000000000003fb4	movq	0x88(%rbp),%rax
+0000000000003fb8	movl	%edx,(%rax)
+0000000000003fba	movq	0xe8(%rbp),%rdi
+0000000000003fbe	callq	0x00008f6c	; symbol stub for: _CFRelease
+0000000000003fc3	movb	$0x01,0xff(%rbp)
+0000000000003fc7	movq	0xf0(%rbp),%rdi
+0000000000003fcb	callq	0x00008f6c	; symbol stub for: _CFRelease
+0000000000003fd0	movzbl	0xff(%rbp),%eax
+0000000000003fd4	leave
+0000000000003fd5	ret
+_DropboxIconOverlayProvider:
+0000000000003fd6	nop
+0000000000003fd7	nop
+0000000000003fd8	nop
+0000000000003fd9	nop
+0000000000003fda	nop
+0000000000003fdb	nop
+0000000000003fdc	pushq	%rbp
+0000000000003fdd	movq	%rsp,%rbp
+0000000000003fe0	subq	$0x000017b0,%rsp
+0000000000003fe7	movq	%rdi,0xffffe858(%rbp)
+0000000000003fee	movq	0x0000800b(%rip),%rax
+0000000000003ff5	movq	(%rax),%rdx
+0000000000003ff8	movq	%rdx,0xf8(%rbp)
+0000000000003ffc	xorl	%edx,%edx
+0000000000003ffe	movq	$__mh_bundle_header,0xfffff810(%rbp)
+0000000000004009	leaq	0xfffff81c(%rbp),%rdx
+0000000000004010	leaq	0xffffe860(%rbp),%rsi
+0000000000004017	movq	0xffffe858(%rbp),%rdi
+000000000000401e	callq	_getPathStringFromFSRef
+0000000000004023	testb	%al,%al
+0000000000004025	je	0x000040ab
+000000000000402b	movl	0xfffff81c(%rbp),%edx
+0000000000004031	leaq	0xfffff820(%rbp),%rcx
+0000000000004038	leaq	0xffffe860(%rbp),%rsi
+000000000000403f	movl	$0x000007cf,%r8d
+0000000000004045	movl	$0x00000001,%edi
+000000000000404a	callq	_dropboxRequest
+000000000000404f	movl	%eax,0xfffff81c(%rbp)
+0000000000004055	movl	0xfffff81c(%rbp),%eax
+000000000000405b	testl	%eax,%eax
+000000000000405d	js	0x000040ab
+000000000000405f	movl	0xfffff81c(%rbp),%eax
+0000000000004065	cdqe
+0000000000004067	movb	$__mh_bundle_header,0xfffff820(%rbp,%rax)
+000000000000406f	leaq	0xfffff820(%rbp),%rsi
+0000000000004076	movl	$0x08000100,%edx
+000000000000407b	movl	$__mh_bundle_header,%edi
+0000000000004080	callq	0x00008f7e	; symbol stub for: _CFStringCreateWithCString
+0000000000004085	movq	%rax,0xfffff808(%rbp)
+000000000000408c	movq	0xfffff808(%rbp),%rdi
+0000000000004093	callq	_CachedGetIconRefFromFilePath
+0000000000004098	movq	%rax,0xfffff810(%rbp)
+000000000000409f	movq	0xfffff808(%rbp),%rdi
+00000000000040a6	callq	0x00008f6c	; symbol stub for: _CFRelease
+00000000000040ab	movq	0xfffff810(%rbp),%rax
+00000000000040b2	movq	0x00007f47(%rip),%rdx
+00000000000040b9	movq	0xf8(%rbp),%rcx
+00000000000040bd	xorq	(%rdx),%rcx
+00000000000040c0	je	0x000040c7
+00000000000040c2	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+00000000000040c7	leave
+00000000000040c8	ret
+-[DropboxContextMenuState init]:
+00000000000040c9	nop
+00000000000040ca	nop
+00000000000040cb	nop
+00000000000040cc	nop
+00000000000040cd	nop
+00000000000040ce	nop
+00000000000040cf	pushq	%rbp
+00000000000040d0	movq	%rsp,%rbp
+00000000000040d3	pushq	%rbx
+00000000000040d4	subq	$0x28,%rsp
+00000000000040d8	movq	%rdi,0xd8(%rbp)
+00000000000040dc	movq	%rsi,0xd0(%rbp)
+00000000000040e0	movq	0xd8(%rbp),%rax
+00000000000040e4	movq	%rax,0xe0(%rbp)
+00000000000040e8	movq	0x00009119(%rip),%rax
+00000000000040ef	movq	%rax,0xe8(%rbp)
+00000000000040f3	leaq	0xe0(%rbp),%rdi
+00000000000040f7	movq	0x00008cda(%rip),%rsi
+00000000000040fe	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+0000000000004103	movq	%rax,0xd8(%rbp)
+0000000000004107	cmpq	$__mh_bundle_header,0xd8(%rbp)
+000000000000410c	je	0x0000416b
+000000000000410e	movq	0xd8(%rbp),%rdx
+0000000000004112	leaq	0x000093c7(%rip),%rax
+0000000000004119	movq	(%rax),%rax
+000000000000411c	leaq	(%rdx,%rax),%rax
+0000000000004120	movq	$__mh_bundle_header,(%rax)
+0000000000004127	movq	0xd8(%rbp),%rdx
+000000000000412b	leaq	0x000093be(%rip),%rax
+0000000000004132	movq	(%rax),%rax
+0000000000004135	leaq	(%rdx,%rax),%rax
+0000000000004139	movq	%rax,%rbx
+000000000000413c	movq	0x00008fb5(%rip),%rax
+0000000000004143	movq	%rax,%rdi
+0000000000004146	leaq	0x00008b43(%rip),%rax
+000000000000414d	movq	(%rax),%rax
+0000000000004150	leaq	0x00008b39(%rip),%rsi
+0000000000004157	call	*%rax
+0000000000004159	movq	%rax,%rdi
+000000000000415c	movq	0x00008c75(%rip),%rsi
+0000000000004163	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004168	movq	%rax,(%rbx)
+000000000000416b	movq	0xd8(%rbp),%rax
+000000000000416f	addq	$0x28,%rsp
+0000000000004173	popq	%rbx
+0000000000004174	leave
+0000000000004175	ret
+-[DropboxContextMenuState insertIntoContextMenu:atIndex:]:
+0000000000004176	nop
+0000000000004177	nop
+0000000000004178	nop
+0000000000004179	nop
+000000000000417a	nop
+000000000000417b	nop
+000000000000417c	pushq	%rbp
+000000000000417d	movq	%rsp,%rbp
+0000000000004180	subq	$0x20,%rsp
+0000000000004184	movq	%rdi,0xf8(%rbp)
+0000000000004188	movq	%rsi,0xf0(%rbp)
+000000000000418c	movq	%rdx,0xe8(%rbp)
+0000000000004190	movq	%rcx,0xe0(%rbp)
+0000000000004194	movq	0xf8(%rbp),%rdx
+0000000000004198	leaq	0x00009351(%rip),%rax
+000000000000419f	movq	(%rax),%rax
+00000000000041a2	leaq	(%rdx,%rax),%rax
+00000000000041a6	movq	(%rax),%rax
+00000000000041a9	movq	%rax,%rdi
+00000000000041ac	movq	0x00008c1d(%rip),%rsi
+00000000000041b3	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000041b8	movq	0xf8(%rbp),%rdx
+00000000000041bc	leaq	0x0000931d(%rip),%rax
+00000000000041c3	movq	(%rax),%rax
+00000000000041c6	leaq	(%rdx,%rax),%rax
+00000000000041ca	movq	%rax,%rdx
+00000000000041cd	movq	0xe8(%rbp),%rax
+00000000000041d1	movq	%rax,(%rdx)
+00000000000041d4	movq	0xf8(%rbp),%rdx
+00000000000041d8	leaq	0x00009309(%rip),%rax
+00000000000041df	movq	(%rax),%rax
+00000000000041e2	leaq	(%rdx,%rax),%rax
+00000000000041e6	movq	%rax,%rdx
+00000000000041e9	movq	0xe0(%rbp),%rax
+00000000000041ed	movq	%rax,(%rdx)
+00000000000041f0	movq	0xf8(%rbp),%rdx
+00000000000041f4	leaq	0x000092f5(%rip),%rax
+00000000000041fb	movq	(%rax),%rax
+00000000000041fe	leaq	(%rdx,%rax),%rax
+0000000000004202	movq	(%rax),%rax
+0000000000004205	movq	%rax,%rdi
+0000000000004208	movq	0x00008bb9(%rip),%rsi
+000000000000420f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004214	leave
+0000000000004215	ret
+-[DropboxContextMenuState pushFinderContext:]:
+0000000000004216	nop
+0000000000004217	nop
+0000000000004218	nop
+0000000000004219	nop
+000000000000421a	nop
+000000000000421b	nop
+000000000000421c	pushq	%rbp
+000000000000421d	movq	%rsp,%rbp
+0000000000004220	subq	$0x40,%rsp
+0000000000004224	movq	%rdi,0xd8(%rbp)
+0000000000004228	movq	%rsi,0xd0(%rbp)
+000000000000422c	movq	%rdx,0xc8(%rbp)
+0000000000004230	movq	0xd8(%rbp),%rdx
+0000000000004234	leaq	0x000092b5(%rip),%rax
+000000000000423b	movq	(%rax),%rax
+000000000000423e	leaq	(%rdx,%rax),%rax
+0000000000004242	movq	(%rax),%rax
+0000000000004245	movq	%rax,%rdi
+0000000000004248	movq	0x00008b81(%rip),%rsi
+000000000000424f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004254	movq	0xd8(%rbp),%rdx
+0000000000004258	leaq	0x00009281(%rip),%rax
+000000000000425f	movq	(%rax),%rax
+0000000000004262	leaq	(%rdx,%rax),%rax
+0000000000004266	movq	(%rax),%rax
+0000000000004269	testq	%rax,%rax
+000000000000426c	je	0x00004441
+0000000000004272	movq	0x00008e87(%rip),%rax
+0000000000004279	movq	%rax,%rdi
+000000000000427c	leaq	0x00008a0d(%rip),%rax
+0000000000004283	movq	(%rax),%rax
+0000000000004286	leaq	0x00008a03(%rip),%rsi
+000000000000428d	call	*%rax
+000000000000428f	movq	%rax,%rdi
+0000000000004292	movq	0x00008b27(%rip),%rsi
+0000000000004299	movl	$0x00000001,%edx
+000000000000429e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000042a3	movq	%rax,0xf8(%rbp)
+00000000000042a7	movq	0xf8(%rbp),%rdi
+00000000000042ab	movq	0x00008b06(%rip),%rsi
+00000000000042b2	movq	0xc8(%rbp),%rdx
+00000000000042b6	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000042bb	testb	%al,%al
+00000000000042bd	je	0x00004411
+00000000000042c3	movq	0x00008e3e(%rip),%rax
+00000000000042ca	movq	%rax,%rdi
+00000000000042cd	movq	0x00008adc(%rip),%rsi
+00000000000042d4	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000042d9	movq	%rax,%rdi
+00000000000042dc	leaq	0x000089bd(%rip),%rax
+00000000000042e3	movq	(%rax),%rax
+00000000000042e6	leaq	0x000089b3(%rip),%rsi
+00000000000042ed	call	*%rax
+00000000000042ef	movq	%rax,0xf0(%rbp)
+00000000000042f3	movq	0xd8(%rbp),%rdx
+00000000000042f7	leaq	0x000091e2(%rip),%rax
+00000000000042fe	movq	(%rax),%rax
+0000000000004301	leaq	(%rdx,%rax),%rax
+0000000000004305	movq	(%rax),%rax
+0000000000004308	movq	%rax,%rdi
+000000000000430b	movq	0xd8(%rbp),%rdx
+000000000000430f	leaq	0x000091d2(%rip),%rax
+0000000000004316	movq	(%rax),%rax
+0000000000004319	leaq	(%rdx,%rax),%rax
+000000000000431d	movq	(%rax),%rcx
+0000000000004320	movq	0x00008a81(%rip),%rsi
+0000000000004327	movq	0xf0(%rbp),%rdx
+000000000000432b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004330	movq	0xf0(%rbp),%rdi
+0000000000004334	leaq	0x00008975(%rip),%rax
+000000000000433b	movq	(%rax),%rax
+000000000000433e	leaq	0x0000896b(%rip),%rsi
+0000000000004345	call	*%rax
+0000000000004347	movq	0x00008dba(%rip),%rax
+000000000000434e	movq	%rax,%rdi
+0000000000004351	leaq	0x00008938(%rip),%rax
+0000000000004358	movq	(%rax),%rax
+000000000000435b	leaq	0x0000892e(%rip),%rsi
+0000000000004362	call	*%rax
+0000000000004364	movq	%rax,%rdi
+0000000000004367	leaq	0x00008172(%rip),%rdx
+000000000000436e	leaq	0x00009fb3(%rip),%rax
+0000000000004375	movq	(%rax),%rax
+0000000000004378	movq	0x00008a21(%rip),%rsi
+000000000000437f	movq	%rdx,%r8
+0000000000004382	movl	$__mh_bundle_header,%ecx
+0000000000004387	movq	%rax,%rdx
+000000000000438a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000438f	movq	%rax,%rdi
+0000000000004392	leaq	0x00008907(%rip),%rax
+0000000000004399	movq	(%rax),%rax
+000000000000439c	leaq	0x000088fd(%rip),%rsi
+00000000000043a3	call	*%rax
+00000000000043a5	movq	%rax,0xe8(%rbp)
+00000000000043a9	movq	0xd8(%rbp),%rdx
+00000000000043ad	leaq	0x0000912c(%rip),%rax
+00000000000043b4	movq	(%rax),%rax
+00000000000043b7	leaq	(%rdx,%rax),%rax
+00000000000043bb	movq	(%rax),%rax
+00000000000043be	movq	%rax,%rdi
+00000000000043c1	movq	0xd8(%rbp),%rdx
+00000000000043c5	leaq	0x0000911c(%rip),%rax
+00000000000043cc	movq	(%rax),%rax
+00000000000043cf	leaq	(%rdx,%rax),%rax
+00000000000043d3	movq	(%rax),%rcx
+00000000000043d6	movq	0x000089cb(%rip),%rsi
+00000000000043dd	movq	0xe8(%rbp),%rdx
+00000000000043e1	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000043e6	movq	0xe8(%rbp),%rdi
+00000000000043ea	movq	0xf8(%rbp),%rdx
+00000000000043ee	movq	0x000089a3(%rip),%rsi
+00000000000043f5	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000043fa	movq	0xe8(%rbp),%rdi
+00000000000043fe	leaq	0x000088ab(%rip),%rax
+0000000000004405	movq	(%rax),%rax
+0000000000004408	leaq	0x000088a1(%rip),%rsi
+000000000000440f	call	*%rax
+0000000000004411	movq	0xf8(%rbp),%rdi
+0000000000004415	leaq	0x00008894(%rip),%rax
+000000000000441c	movq	(%rax),%rax
+000000000000441f	leaq	0x0000888a(%rip),%rsi
+0000000000004426	call	*%rax
+0000000000004428	movq	0xd8(%rbp),%rdx
+000000000000442c	leaq	0x000090ad(%rip),%rax
+0000000000004433	movq	(%rax),%rax
+0000000000004436	leaq	(%rdx,%rax),%rax
+000000000000443a	movq	$__mh_bundle_header,(%rax)
+0000000000004441	movq	0xd8(%rbp),%rdx
+0000000000004445	leaq	0x000090a4(%rip),%rax
+000000000000444c	movq	(%rax),%rax
+000000000000444f	leaq	(%rdx,%rax),%rax
+0000000000004453	movq	(%rax),%rax
+0000000000004456	movq	%rax,%rdi
+0000000000004459	movq	0x00008968(%rip),%rsi
+0000000000004460	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004465	leave
+0000000000004466	ret
+-[DropboxMenuContext utisForURLs:error:]:
+0000000000004467	nop
+0000000000004468	nop
+0000000000004469	nop
+000000000000446a	nop
+000000000000446b	nop
+000000000000446c	nop
+000000000000446d	pushq	%rbp
+000000000000446e	movq	%rsp,%rbp
+0000000000004471	pushq	%r12
+0000000000004473	pushq	%rbx
+0000000000004474	subq	$0x00000110,%rsp
+000000000000447b	movq	%rdi,0xffffff18(%rbp)
+0000000000004482	movq	%rsi,0xffffff10(%rbp)
+0000000000004489	movq	%rdx,0xffffff08(%rbp)
+0000000000004490	movq	%rcx,0xffffff00(%rbp)
+0000000000004497	movq	0x00008c72(%rip),%rax
+000000000000449e	movq	%rax,%rbx
+00000000000044a1	movq	0xffffff08(%rbp),%rdi
+00000000000044a8	leaq	0x00008811(%rip),%rax
+00000000000044af	movq	(%rax),%rax
+00000000000044b2	leaq	0x00008807(%rip),%rsi
+00000000000044b9	call	*%rax
+00000000000044bb	movq	0x000088ce(%rip),%rsi
+00000000000044c2	movq	%rax,%rdx
+00000000000044c5	movq	%rbx,%rdi
+00000000000044c8	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000044cd	movq	%rax,%rdi
+00000000000044d0	leaq	0x000087c9(%rip),%rax
+00000000000044d7	movq	(%rax),%rax
+00000000000044da	leaq	0x000087bf(%rip),%rsi
+00000000000044e1	call	*%rax
+00000000000044e3	movq	%rax,0xe8(%rbp)
+00000000000044e7	leaq	0xa0(%rbp),%rdi
+00000000000044eb	cld
+00000000000044ec	movl	$__mh_bundle_header,%edx
+00000000000044f1	movl	$0x00000008,%eax
+00000000000044f6	movl	%eax,%ecx
+00000000000044f8	movq	%rdx,%rax
+00000000000044fb	rep/stosq	%rax,(%edi)
+00000000000044fe	movq	0xffffff08(%rbp),%rax
+0000000000004505	movq	%rax,0xfffffee0(%rbp)
+000000000000450c	leaq	0x000087cd(%rip),%rax
+0000000000004513	movq	(%rax),%rax
+0000000000004516	leaq	0xffffff20(%rbp),%rcx
+000000000000451d	leaq	0xa0(%rbp),%rdx
+0000000000004521	movl	$0x00000010,%r8d
+0000000000004527	leaq	0x000087b2(%rip),%rsi
+000000000000452e	movq	0xfffffee0(%rbp),%rdi
+0000000000004535	call	*%rax
+0000000000004537	movq	%rax,0xfffffee8(%rbp)
+000000000000453e	cmpq	$__mh_bundle_header,0xfffffee8(%rbp)
+0000000000004546	je	0x00004636
+000000000000454c	movq	0xb0(%rbp),%rax
+0000000000004550	movq	(%rax),%rax
+0000000000004553	movq	%rax,0xfffffef0(%rbp)
+000000000000455a	movq	$__mh_bundle_header,0xfffffef8(%rbp)
+0000000000004565	movq	0xb0(%rbp),%rax
+0000000000004569	movq	(%rax),%rax
+000000000000456c	cmpq	0xfffffef0(%rbp),%rax
+0000000000004573	je	0x00004589
+0000000000004575	movq	0xffffff08(%rbp),%rax
+000000000000457c	movq	%rax,%rdi
+000000000000457f	movl	$__mh_bundle_header,%eax
+0000000000004584	callq	0x00009122	; symbol stub for: _objc_enumerationMutation
+0000000000004589	movq	0xa8(%rbp),%rdx
+000000000000458d	movq	0xfffffef8(%rbp),%rax
+0000000000004594	shlq	$0x03,%rax
+0000000000004598	leaq	(%rdx,%rax),%rax
+000000000000459c	movq	(%rax),%rax
+000000000000459f	movq	%rax,0xe0(%rbp)
+00000000000045a3	incq	0xfffffef8(%rbp)
+00000000000045aa	movq	0xe8(%rbp),%rbx
+00000000000045ae	leaq	0x0000871b(%rip),%rax
+00000000000045b5	movq	(%rax),%r12
+00000000000045b8	movq	0xe0(%rbp),%rdi
+00000000000045bc	movq	0x000087c5(%rip),%rsi
+00000000000045c3	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000045c8	movq	%rax,%rdx
+00000000000045cb	leaq	0x000086fe(%rip),%rsi
+00000000000045d2	movq	%rbx,%rdi
+00000000000045d5	call	*%r12
+00000000000045d8	movq	0xfffffee8(%rbp),%rax
+00000000000045df	cmpq	%rax,0xfffffef8(%rbp)
+00000000000045e6	jb	0x100004565
+00000000000045ec	leaq	0x000086ed(%rip),%rax
+00000000000045f3	movq	(%rax),%rax
+00000000000045f6	leaq	0xffffff20(%rbp),%rcx
+00000000000045fd	leaq	0xa0(%rbp),%rdx
+0000000000004601	movl	$0x00000010,%r8d
+0000000000004607	leaq	0x000086d2(%rip),%rsi
+000000000000460e	movq	0xfffffee0(%rbp),%rdi
+0000000000004615	call	*%rax
+0000000000004617	movq	%rax,0xfffffee8(%rbp)
+000000000000461e	cmpq	$__mh_bundle_header,0xfffffee8(%rbp)
+0000000000004626	jne	0x10000455a
+000000000000462c	movq	$__mh_bundle_header,0xe0(%rbp)
+0000000000004634	jmp	0x0000463e
+0000000000004636	movq	$__mh_bundle_header,0xe0(%rbp)
+000000000000463e	leaq	0x00009f43(%rip),%rax
+0000000000004645	movq	(%rax),%rax
+0000000000004648	movq	%rax,%rdi
+000000000000464b	movq	0xe8(%rbp),%rdx
+000000000000464f	movq	0x0000872a(%rip),%rsi
+0000000000004656	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000465b	movq	0xe8(%rbp),%rdi
+000000000000465f	leaq	0x0000864a(%rip),%rax
+0000000000004666	movq	(%rax),%rax
+0000000000004669	leaq	0x00008640(%rip),%rsi
+0000000000004670	call	*%rax
+0000000000004672	leaq	0x00009f17(%rip),%rax
+0000000000004679	movq	(%rax),%rax
+000000000000467c	movq	0x000086f5(%rip),%rsi
+0000000000004683	movq	0xffffff18(%rbp),%rdi
+000000000000468a	movq	0xffffff00(%rbp),%rcx
+0000000000004691	movq	0xffffff08(%rbp),%rdx
+0000000000004698	call	*%rax
+000000000000469a	addq	$0x00000110,%rsp
+00000000000046a1	popq	%rbx
+00000000000046a2	popq	%r12
+00000000000046a4	leave
+00000000000046a5	ret
+-[DropboxNSMenu addItem:]:
+00000000000046a6	nop
+00000000000046a7	nop
+00000000000046a8	nop
+00000000000046a9	nop
+00000000000046aa	nop
+00000000000046ab	nop
+00000000000046ac	pushq	%rbp
+00000000000046ad	movq	%rsp,%rbp
+00000000000046b0	pushq	%rbx
+00000000000046b1	subq	$0x28,%rsp
+00000000000046b5	movq	%rdi,0xe8(%rbp)
+00000000000046b9	movq	%rsi,0xe0(%rbp)
+00000000000046bd	movq	%rdx,0xd8(%rbp)
+00000000000046c1	movq	0xe8(%rbp),%rdi
+00000000000046c5	movq	0x000086a4(%rip),%rsi
+00000000000046cc	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000046d1	movq	%rax,%rdi
+00000000000046d4	leaq	0x00008615(%rip),%rax
+00000000000046db	movq	(%rax),%rax
+00000000000046de	leaq	0x00007e1b(%rip),%rdx
+00000000000046e5	leaq	0x00008604(%rip),%rsi
+00000000000046ec	call	*%rax
+00000000000046ee	testb	%al,%al
+00000000000046f0	jne	0x00004723
+00000000000046f2	movq	0xe8(%rbp),%rdi
+00000000000046f6	movq	0x00008673(%rip),%rsi
+00000000000046fd	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004702	movq	%rax,%rdi
+0000000000004705	leaq	0x000085e4(%rip),%rax
+000000000000470c	movq	(%rax),%rax
+000000000000470f	leaq	0x00007dca(%rip),%rdx
+0000000000004716	leaq	0x000085d3(%rip),%rsi
+000000000000471d	call	*%rax
+000000000000471f	testb	%al,%al
+0000000000004721	je	0x00004796
+0000000000004723	cmpq	$__mh_bundle_header,0xd8(%rbp)
+0000000000004728	je	0x00004796
+000000000000472a	movq	0xd8(%rbp),%rdi
+000000000000472e	movq	0x00008633(%rip),%rsi
+0000000000004735	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000473a	movq	%rax,%rdi
+000000000000473d	callq	0x0000901a	; symbol stub for: _NSStringFromSelector
+0000000000004742	movq	%rax,%rdi
+0000000000004745	leaq	0x000085a4(%rip),%rax
+000000000000474c	movq	(%rax),%rax
+000000000000474f	leaq	0x00007dca(%rip),%rdx
+0000000000004756	leaq	0x00008593(%rip),%rsi
+000000000000475d	call	*%rax
+000000000000475f	testb	%al,%al
+0000000000004761	je	0x00004796
+0000000000004763	leaq	0x00009e1e(%rip),%rax
+000000000000476a	movq	(%rax),%rax
+000000000000476d	movq	%rax,%rbx
+0000000000004770	movq	0xe8(%rbp),%rdi
+0000000000004774	movq	0x000085e5(%rip),%rsi
+000000000000477b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004780	movq	%rax,%rcx
+0000000000004783	movq	0xe8(%rbp),%rdx
+0000000000004787	movq	0x000085ca(%rip),%rsi
+000000000000478e	movq	%rbx,%rdi
+0000000000004791	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004796	leaq	0x00009de3(%rip),%rax
+000000000000479d	movq	(%rax),%rax
+00000000000047a0	movq	0x000085a9(%rip),%rsi
+00000000000047a7	movq	0xe8(%rbp),%rdi
+00000000000047ab	movq	0xd8(%rbp),%rdx
+00000000000047af	call	*%rax
+00000000000047b1	addq	$0x28,%rsp
+00000000000047b5	popq	%rbx
+00000000000047b6	leave
+00000000000047b7	ret
+-[DropboxToolbarController toolbarWillAddItem:]:
+00000000000047b8	nop
+00000000000047b9	nop
+00000000000047ba	nop
+00000000000047bb	nop
+00000000000047bc	nop
+00000000000047bd	nop
+00000000000047be	pushq	%rbp
+00000000000047bf	movq	%rsp,%rbp
+00000000000047c2	subq	$0x20,%rsp
+00000000000047c6	movq	%rdi,0xf8(%rbp)
+00000000000047ca	movq	%rsi,0xf0(%rbp)
+00000000000047ce	movq	%rdx,0xe8(%rbp)
+00000000000047d2	leaq	0x00009de7(%rip),%rax
+00000000000047d9	movq	(%rax),%rax
+00000000000047dc	movq	0x000087ed(%rip),%rsi
+00000000000047e3	movq	0xf8(%rbp),%rdi
+00000000000047e7	movq	0xe8(%rbp),%rdx
+00000000000047eb	call	*%rax
+00000000000047ed	movq	0xe8(%rbp),%rdi
+00000000000047f1	movq	0x000087d0(%rip),%rsi
+00000000000047f8	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000047fd	movq	%rax,%rdi
+0000000000004800	leaq	0x00008509(%rip),%rax
+0000000000004807	movq	(%rax),%rax
+000000000000480a	leaq	0x00007daf(%rip),%rdx
+0000000000004811	leaq	0x000084f8(%rip),%rsi
+0000000000004818	call	*%rax
+000000000000481a	movq	%rax,%rdi
+000000000000481d	movq	0x0000879c(%rip),%rsi
+0000000000004824	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004829	movq	%rax,%rdi
+000000000000482c	leaq	0x000084bd(%rip),%rax
+0000000000004833	movq	(%rax),%rcx
+0000000000004836	leaq	0x00009b0b(%rip),%rax
+000000000000483d	movq	(%rax),%rax
+0000000000004840	movq	%rax,%rdx
+0000000000004843	leaq	0x000084a6(%rip),%rsi
+000000000000484a	call	*%rcx
+000000000000484c	testb	%al,%al
+000000000000484e	je	0x00004893
+0000000000004850	movq	0xe8(%rbp),%rdi
+0000000000004854	movq	0x0000876d(%rip),%rsi
+000000000000485b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004860	movq	%rax,%rdi
+0000000000004863	leaq	0x000084a6(%rip),%rax
+000000000000486a	movq	(%rax),%rax
+000000000000486d	leaq	0x00007d6c(%rip),%rdx
+0000000000004874	leaq	0x00008495(%rip),%rsi
+000000000000487b	call	*%rax
+000000000000487d	movq	%rax,%rdi
+0000000000004880	movq	0x00008731(%rip),%rsi
+0000000000004887	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000488c	movl	%eax,%edi
+000000000000488e	callq	_store_insertion_index
+0000000000004893	leave
+0000000000004894	ret
+-[DropboxToolbarController toolbarDidRemoveItem:]:
+0000000000004895	nop
+0000000000004896	nop
+0000000000004897	nop
+0000000000004898	nop
+0000000000004899	nop
+000000000000489a	nop
+000000000000489b	pushq	%rbp
+000000000000489c	movq	%rsp,%rbp
+000000000000489f	subq	$0x20,%rsp
+00000000000048a3	movq	%rdi,0xf8(%rbp)
+00000000000048a7	movq	%rsi,0xf0(%rbp)
+00000000000048ab	movq	%rdx,0xe8(%rbp)
+00000000000048af	leaq	0x00009d02(%rip),%rax
+00000000000048b6	movq	(%rax),%rax
+00000000000048b9	movq	0x00008710(%rip),%rsi
+00000000000048c0	movq	0xf8(%rbp),%rdi
+00000000000048c4	movq	0xe8(%rbp),%rdx
+00000000000048c8	call	*%rax
+00000000000048ca	movq	0xe8(%rbp),%rdi
+00000000000048ce	movq	0x000086f3(%rip),%rsi
+00000000000048d5	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000048da	movq	%rax,%rdi
+00000000000048dd	leaq	0x0000842c(%rip),%rax
+00000000000048e4	movq	(%rax),%rax
+00000000000048e7	leaq	0x00007cd2(%rip),%rdx
+00000000000048ee	leaq	0x0000841b(%rip),%rsi
+00000000000048f5	call	*%rax
+00000000000048f7	movq	%rax,%rdi
+00000000000048fa	movq	0x000086bf(%rip),%rsi
+0000000000004901	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004906	movq	%rax,%rdi
+0000000000004909	leaq	0x000083e0(%rip),%rax
+0000000000004910	movq	(%rax),%rcx
+0000000000004913	leaq	0x00009a2e(%rip),%rax
+000000000000491a	movq	(%rax),%rax
+000000000000491d	movq	%rax,%rdx
+0000000000004920	leaq	0x000083c9(%rip),%rsi
+0000000000004927	call	*%rcx
+0000000000004929	testb	%al,%al
+000000000000492b	je	0x00004937
+000000000000492d	movl	$0xfffffffe,%edi
+0000000000004932	callq	_store_insertion_index
+0000000000004937	leave
+0000000000004938	ret
+-[DropboxToolbarController toolbarAllowedItemIdentifiers:]:
+0000000000004939	nop
+000000000000493a	nop
+000000000000493b	nop
+000000000000493c	nop
+000000000000493d	nop
+000000000000493e	nop
+000000000000493f	pushq	%rbp
+0000000000004940	movq	%rsp,%rbp
+0000000000004943	subq	$0x30,%rsp
+0000000000004947	movq	%rdi,0xe8(%rbp)
+000000000000494b	movq	%rsi,0xe0(%rbp)
+000000000000494f	movq	%rdx,0xd8(%rbp)
+0000000000004953	leaq	0x00009c56(%rip),%rax
+000000000000495a	movq	(%rax),%rax
+000000000000495d	movq	0x0000864c(%rip),%rsi
+0000000000004964	movq	0xe8(%rbp),%rdi
+0000000000004968	movq	0xd8(%rbp),%rdx
+000000000000496c	call	*%rax
+000000000000496e	movq	%rax,0xf8(%rbp)
+0000000000004972	movq	0xd8(%rbp),%rdi
+0000000000004976	movq	0x0000862b(%rip),%rsi
+000000000000497d	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004982	movq	%rax,%rdi
+0000000000004985	leaq	0x00008364(%rip),%rax
+000000000000498c	movq	(%rax),%rcx
+000000000000498f	leaq	0x000099aa(%rip),%rax
+0000000000004996	movq	(%rax),%rax
+0000000000004999	movq	%rax,%rdx
+000000000000499c	leaq	0x0000834d(%rip),%rsi
+00000000000049a3	call	*%rcx
+00000000000049a5	testb	%al,%al
+00000000000049a7	je	0x000049f5
+00000000000049a9	movq	0xf8(%rbp),%rdi
+00000000000049ad	leaq	0x00009994(%rip),%rax
+00000000000049b4	movq	(%rax),%rax
+00000000000049b7	movq	%rax,%rdx
+00000000000049ba	movq	0x000085df(%rip),%rsi
+00000000000049c1	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000049c6	movl	%eax,%edx
+00000000000049c8	movl	$0xffffffff,%eax
+00000000000049cd	cmpl	%eax,%edx
+00000000000049cf	jne	0x000049f5
+00000000000049d1	movq	0xf8(%rbp),%rdi
+00000000000049d5	leaq	0x000082f4(%rip),%rax
+00000000000049dc	movq	(%rax),%rcx
+00000000000049df	leaq	0x00009962(%rip),%rax
+00000000000049e6	movq	(%rax),%rax
+00000000000049e9	movq	%rax,%rdx
+00000000000049ec	leaq	0x000082dd(%rip),%rsi
+00000000000049f3	call	*%rcx
+00000000000049f5	movq	0xf8(%rbp),%rax
+00000000000049f9	leave
+00000000000049fa	ret
+-[DropboxSmallToolbarImageView drawRect:]:
+00000000000049fb	nop
+00000000000049fc	nop
+00000000000049fd	nop
+00000000000049fe	nop
+00000000000049ff	nop
+0000000000004a00	nop
+0000000000004a01	pushq	%rbp
+0000000000004a02	movq	%rsp,%rbp
+0000000000004a05	subq	$0x40,%rsp
+0000000000004a09	movq	%rdi,0xe8(%rbp)
+0000000000004a0d	movq	%rsi,0xe0(%rbp)
+0000000000004a11	movq	0xe8(%rbp),%rdx
+0000000000004a15	leaq	0x0000909c(%rip),%rax
+0000000000004a1c	movq	(%rax),%rax
+0000000000004a1f	leaq	(%rdx,%rax),%rax
+0000000000004a23	movzbl	(%rax),%eax
+0000000000004a26	testb	%al,%al
+0000000000004a28	je	0x00004a51
+0000000000004a2a	movq	0xe8(%rbp),%rdi
+0000000000004a2e	movq	0xe8(%rbp),%rdx
+0000000000004a32	leaq	0x0000908f(%rip),%rax
+0000000000004a39	movq	(%rax),%rax
+0000000000004a3c	leaq	(%rdx,%rax),%rax
+0000000000004a40	movq	(%rax),%rdx
+0000000000004a43	movq	0x0000854e(%rip),%rsi
+0000000000004a4a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004a4f	jmp	0x00004ac0
+0000000000004a51	movq	0xe8(%rbp),%rdi
+0000000000004a55	movq	0x00008534(%rip),%rsi
+0000000000004a5c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004a61	movq	%rax,%rdi
+0000000000004a64	movq	0x0000851d(%rip),%rsi
+0000000000004a6b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004a70	testb	%al,%al
+0000000000004a72	je	0x00004a9b
+0000000000004a74	movq	0xe8(%rbp),%rdi
+0000000000004a78	movq	0xe8(%rbp),%rdx
+0000000000004a7c	leaq	0x0000903d(%rip),%rax
+0000000000004a83	movq	(%rax),%rax
+0000000000004a86	leaq	(%rdx,%rax),%rax
+0000000000004a8a	movq	(%rax),%rdx
+0000000000004a8d	movq	0x00008504(%rip),%rsi
+0000000000004a94	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004a99	jmp	0x00004ac0
+0000000000004a9b	movq	0xe8(%rbp),%rdi
+0000000000004a9f	movq	0xe8(%rbp),%rdx
+0000000000004aa3	leaq	0x00009026(%rip),%rax
+0000000000004aaa	movq	(%rax),%rax
+0000000000004aad	leaq	(%rdx,%rax),%rax
+0000000000004ab1	movq	(%rax),%rdx
+0000000000004ab4	movq	0x000084dd(%rip),%rsi
+0000000000004abb	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004ac0	movq	0xe8(%rbp),%rax
+0000000000004ac4	movq	%rax,0xf0(%rbp)
+0000000000004ac8	movq	0x00008741(%rip),%rax
+0000000000004acf	movq	%rax,0xf8(%rbp)
+0000000000004ad3	leaq	0xf0(%rbp),%rdi
+0000000000004ad7	movq	0x000084a2(%rip),%rsi
+0000000000004ade	movq	0x10(%rbp),%rax
+0000000000004ae2	movq	%rax,(%rsp)
+0000000000004ae6	movq	0x18(%rbp),%rax
+0000000000004aea	movq	%rax,0x08(%rsp)
+0000000000004aef	movq	0x20(%rbp),%rax
+0000000000004af3	movq	%rax,0x10(%rsp)
+0000000000004af8	movq	0x28(%rbp),%rax
+0000000000004afc	movq	%rax,0x18(%rsp)
+0000000000004b01	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+0000000000004b06	leave
+0000000000004b07	ret
+-[DropboxSmallToolbarImageView initWithMenu:frameSize:]:
+0000000000004b08	nop
+0000000000004b09	nop
+0000000000004b0a	nop
+0000000000004b0b	nop
+0000000000004b0c	nop
+0000000000004b0d	nop
+0000000000004b0e	pushq	%rbp
+0000000000004b0f	movq	%rsp,%rbp
+0000000000004b12	pushq	%r12
+0000000000004b14	pushq	%rbx
+0000000000004b15	subq	$0x60,%rsp
+0000000000004b19	movq	%rdi,0xc8(%rbp)
+0000000000004b1d	movq	%rsi,0xc0(%rbp)
+0000000000004b21	movq	%rdx,0xb8(%rbp)
+0000000000004b25	movq	0xc8(%rbp),%rax
+0000000000004b29	movq	%rax,0xd0(%rbp)
+0000000000004b2d	movq	0x000086dc(%rip),%rax
+0000000000004b34	movq	%rax,0xd8(%rbp)
+0000000000004b38	leaq	0xd0(%rbp),%rdi
+0000000000004b3c	movq	0x00008435(%rip),%rsi
+0000000000004b43	movq	0x10(%rbp),%rax
+0000000000004b47	movq	%rax,(%rsp)
+0000000000004b4b	movq	0x18(%rbp),%rax
+0000000000004b4f	movq	%rax,0x08(%rsp)
+0000000000004b54	movq	0x20(%rbp),%rax
+0000000000004b58	movq	%rax,0x10(%rsp)
+0000000000004b5d	movq	0x28(%rbp),%rax
+0000000000004b61	movq	%rax,0x18(%rsp)
+0000000000004b66	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+0000000000004b6b	movq	%rax,0xc8(%rbp)
+0000000000004b6f	cmpq	$__mh_bundle_header,0xc8(%rbp)
+0000000000004b74	je	0x00004d5c
+0000000000004b7a	movq	0x000085b7(%rip),%rax
+0000000000004b81	movq	%rax,%rdi
+0000000000004b84	leaq	0x00007a75(%rip),%rdx
+0000000000004b8b	movq	0x000083de(%rip),%rsi
+0000000000004b92	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004b97	movq	%rax,0xe8(%rbp)
+0000000000004b9b	movq	0xc8(%rbp),%rdx
+0000000000004b9f	leaq	0x00008f1a(%rip),%rax
+0000000000004ba6	movq	(%rax),%rax
+0000000000004ba9	leaq	(%rdx,%rax),%rax
+0000000000004bad	movq	%rax,%rbx
+0000000000004bb0	movq	0x00008589(%rip),%rax
+0000000000004bb7	movq	%rax,%rdi
+0000000000004bba	leaq	0x000080cf(%rip),%rax
+0000000000004bc1	movq	(%rax),%rax
+0000000000004bc4	leaq	0x000080c5(%rip),%rsi
+0000000000004bcb	call	*%rax
+0000000000004bcd	movq	%rax,%r12
+0000000000004bd0	movq	0xe8(%rbp),%rdi
+0000000000004bd4	movq	0x0000838d(%rip),%rsi
+0000000000004bdb	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004be0	movq	%rax,%rdi
+0000000000004be3	leaq	0x00007a36(%rip),%rdx
+0000000000004bea	movq	0x0000836f(%rip),%rsi
+0000000000004bf1	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004bf6	movq	0x0000835b(%rip),%rsi
+0000000000004bfd	movq	%rax,%rdx
+0000000000004c00	movq	%r12,%rdi
+0000000000004c03	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004c08	movq	%rax,%rdi
+0000000000004c0b	leaq	0x0000808e(%rip),%rax
+0000000000004c12	movq	(%rax),%rax
+0000000000004c15	leaq	0x00008084(%rip),%rsi
+0000000000004c1c	call	*%rax
+0000000000004c1e	movq	%rax,(%rbx)
+0000000000004c21	movq	0xc8(%rbp),%rdx
+0000000000004c25	leaq	0x00008e9c(%rip),%rax
+0000000000004c2c	movq	(%rax),%rax
+0000000000004c2f	leaq	(%rdx,%rax),%rax
+0000000000004c33	movq	%rax,%rbx
+0000000000004c36	movq	0x00008503(%rip),%rax
+0000000000004c3d	movq	%rax,%rdi
+0000000000004c40	leaq	0x00008049(%rip),%rax
+0000000000004c47	movq	(%rax),%rax
+0000000000004c4a	leaq	0x0000803f(%rip),%rsi
+0000000000004c51	call	*%rax
+0000000000004c53	movq	%rax,%r12
+0000000000004c56	movq	0xe8(%rbp),%rdi
+0000000000004c5a	movq	0x00008307(%rip),%rsi
+0000000000004c61	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004c66	movq	%rax,%rdi
+0000000000004c69	leaq	0x000079d0(%rip),%rdx
+0000000000004c70	movq	0x000082e9(%rip),%rsi
+0000000000004c77	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004c7c	movq	0x000082d5(%rip),%rsi
+0000000000004c83	movq	%rax,%rdx
+0000000000004c86	movq	%r12,%rdi
+0000000000004c89	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004c8e	movq	%rax,%rdi
+0000000000004c91	leaq	0x00008008(%rip),%rax
+0000000000004c98	movq	(%rax),%rax
+0000000000004c9b	leaq	0x00007ffe(%rip),%rsi
+0000000000004ca2	call	*%rax
+0000000000004ca4	movq	%rax,(%rbx)
+0000000000004ca7	movq	0xc8(%rbp),%rdx
+0000000000004cab	leaq	0x00008e1e(%rip),%rax
+0000000000004cb2	movq	(%rax),%rax
+0000000000004cb5	leaq	(%rdx,%rax),%rax
+0000000000004cb9	movq	%rax,%rbx
+0000000000004cbc	movq	0x0000847d(%rip),%rax
+0000000000004cc3	movq	%rax,%rdi
+0000000000004cc6	leaq	0x00007fc3(%rip),%rax
+0000000000004ccd	movq	(%rax),%rax
+0000000000004cd0	leaq	0x00007fb9(%rip),%rsi
+0000000000004cd7	call	*%rax
+0000000000004cd9	movq	%rax,%r12
+0000000000004cdc	movq	0xe8(%rbp),%rdi
+0000000000004ce0	movq	0x00008281(%rip),%rsi
+0000000000004ce7	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004cec	movq	%rax,%rdi
+0000000000004cef	leaq	0x0000796a(%rip),%rdx
+0000000000004cf6	movq	0x00008263(%rip),%rsi
+0000000000004cfd	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004d02	movq	0x0000824f(%rip),%rsi
+0000000000004d09	movq	%rax,%rdx
+0000000000004d0c	movq	%r12,%rdi
+0000000000004d0f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004d14	movq	%rax,%rdi
+0000000000004d17	leaq	0x00007f82(%rip),%rax
+0000000000004d1e	movq	(%rax),%rax
+0000000000004d21	leaq	0x00007f78(%rip),%rsi
+0000000000004d28	call	*%rax
+0000000000004d2a	movq	%rax,(%rbx)
+0000000000004d2d	movq	0xc8(%rbp),%rdx
+0000000000004d31	leaq	0x00008da0(%rip),%rax
+0000000000004d38	movq	(%rax),%rax
+0000000000004d3b	leaq	(%rdx,%rax),%rax
+0000000000004d3f	movq	%rax,%rbx
+0000000000004d42	movq	0xb8(%rbp),%rdi
+0000000000004d46	leaq	0x00007f53(%rip),%rax
+0000000000004d4d	movq	(%rax),%rax
+0000000000004d50	leaq	0x00007f49(%rip),%rsi
+0000000000004d57	call	*%rax
+0000000000004d59	movq	%rax,(%rbx)
+0000000000004d5c	movq	0xc8(%rbp),%rax
+0000000000004d60	addq	$0x60,%rsp
+0000000000004d64	popq	%rbx
+0000000000004d65	popq	%r12
+0000000000004d67	leave
+0000000000004d68	ret
+-[DropboxSmallToolbarImageView mouseDown:]:
+0000000000004d69	nop
+0000000000004d6a	nop
+0000000000004d6b	nop
+0000000000004d6c	nop
+0000000000004d6d	nop
+0000000000004d6e	nop
+0000000000004d6f	pushq	%rbp
+0000000000004d70	movq	%rsp,%rbp
+0000000000004d73	pushq	%r13
+0000000000004d75	pushq	%r12
+0000000000004d77	pushq	%rbx
+0000000000004d78	subq	$0x000000d8,%rsp
+0000000000004d7f	movq	%rdi,0xffffff58(%rbp)
+0000000000004d86	movq	%rsi,0xffffff50(%rbp)
+0000000000004d8d	movq	%rdx,0xffffff48(%rbp)
+0000000000004d94	movq	0xffffff58(%rbp),%rdx
+0000000000004d9b	leaq	0x00008d16(%rip),%rax
+0000000000004da2	movq	(%rax),%rax
+0000000000004da5	leaq	(%rdx,%rax),%rax
+0000000000004da9	movb	$0x01,(%rax)
+0000000000004dac	movq	0xffffff58(%rbp),%rdi
+0000000000004db3	movq	0x00008196(%rip),%rsi
+0000000000004dba	movl	$0x00000001,%edx
+0000000000004dbf	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004dc4	movq	0xffffff58(%rbp),%rsi
+0000000000004dcb	movq	0x00008176(%rip),%rdx
+0000000000004dd2	leaq	0xffffff60(%rbp),%rdi
+0000000000004dd9	callq	0x0000913a	; symbol stub for: _objc_msgSend_stret
+0000000000004dde	movsd	0xffffff68(%rbp),%xmm1
+0000000000004de6	movsd	0x00005ce2(%rip),%xmm0
+0000000000004dee	movapd	%xmm1,%xmm2
+0000000000004df2	subsd	%xmm0,%xmm2
+0000000000004df6	movapd	%xmm2,%xmm0
+0000000000004dfa	movq	0xffffff60(%rbp),%rax
+0000000000004e01	movq	%rax,0xd0(%rbp)
+0000000000004e05	movsd	%xmm0,0xc8(%rbp)
+0000000000004e0a	movq	0xd0(%rbp),%rax
+0000000000004e0e	movq	%rax,0x90(%rbp)
+0000000000004e12	movq	0xc8(%rbp),%rax
+0000000000004e16	movq	%rax,0x98(%rbp)
+0000000000004e1a	movq	0x90(%rbp),%rax
+0000000000004e1e	movq	%rax,0x80(%rbp)
+0000000000004e22	movq	0x98(%rbp),%rax
+0000000000004e26	movq	%rax,0x88(%rbp)
+0000000000004e2a	movq	0x80(%rbp),%rax
+0000000000004e2e	movq	%rax,0xb0(%rbp)
+0000000000004e32	movq	0x88(%rbp),%rax
+0000000000004e36	movq	%rax,0xb8(%rbp)
+0000000000004e3a	movq	0x00008307(%rip),%rax
+0000000000004e41	movq	%rax,%rbx
+0000000000004e44	movq	0x00008305(%rip),%rax
+0000000000004e4b	movq	%rax,%rdi
+0000000000004e4e	movq	0x000080db(%rip),%rsi
+0000000000004e55	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004e5a	movq	%rax,%r12
+0000000000004e5d	movq	0xffffff58(%rbp),%rdi
+0000000000004e64	movq	0x00008125(%rip),%rsi
+0000000000004e6b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004e70	movq	%rax,%rdi
+0000000000004e73	movq	0x000080be(%rip),%rsi
+0000000000004e7a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004e7f	movq	%rax,%r13
+0000000000004e82	movq	0xffffff58(%rbp),%rdi
+0000000000004e89	movq	0x000080b0(%rip),%rsi
+0000000000004e90	movsd	0xb0(%rbp),%xmm0
+0000000000004e95	movsd	0xb8(%rbp),%xmm1
+0000000000004e9a	movl	$__mh_bundle_header,%edx
+0000000000004e9f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004ea4	movsd	%xmm0,0xffffff30(%rbp)
+0000000000004eac	movsd	%xmm1,0xffffff38(%rbp)
+0000000000004eb4	movq	0xffffff30(%rbp),%rax
+0000000000004ebb	movq	%rax,0xa0(%rbp)
+0000000000004ebf	movq	0xffffff38(%rbp),%rax
+0000000000004ec6	movq	%rax,0xa8(%rbp)
+0000000000004eca	movq	0x00008057(%rip),%rsi
+0000000000004ed1	movsd	0xa0(%rbp),%xmm0
+0000000000004ed6	movsd	0xa8(%rbp),%xmm1
+0000000000004edb	movq	$__mh_bundle_header,0x10(%rsp)
+0000000000004ee4	movq	$__mh_bundle_header,0x08(%rsp)
+0000000000004eed	movl	$__mh_bundle_header,(%rsp)
+0000000000004ef4	movq	%r12,%r9
+0000000000004ef7	movq	%r13,%r8
+0000000000004efa	xorpd	%xmm2,%xmm2
+0000000000004efe	movl	$0x0000000f,%ecx
+0000000000004f03	movl	$0x0000000f,%edx
+0000000000004f08	movq	%rbx,%rdi
+0000000000004f0b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004f10	movq	%rax,0xd8(%rbp)
+0000000000004f14	movq	0x0000823d(%rip),%rax
+0000000000004f1b	movq	%rax,%rbx
+0000000000004f1e	movq	0x0000823b(%rip),%rax
+0000000000004f25	movq	%rax,%r12
+0000000000004f28	movq	0x00008231(%rip),%rax
+0000000000004f2f	movq	%rax,%rdi
+0000000000004f32	movq	0x00007fe7(%rip),%rsi
+0000000000004f39	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004f3e	movapd	%xmm0,%xmm1
+0000000000004f42	movsd	0x00005b8e(%rip),%xmm0
+0000000000004f4a	movapd	%xmm1,%xmm2
+0000000000004f4e	subsd	%xmm0,%xmm2
+0000000000004f52	movapd	%xmm2,%xmm0
+0000000000004f56	movq	0x00007fbb(%rip),%rsi
+0000000000004f5d	movq	%r12,%rdi
+0000000000004f60	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004f65	movq	%rax,%rsi
+0000000000004f68	movq	0xffffff58(%rbp),%rdx
+0000000000004f6f	leaq	0x00008b62(%rip),%rax
+0000000000004f76	movq	(%rax),%rax
+0000000000004f79	leaq	(%rdx,%rax),%rax
+0000000000004f7d	movq	(%rax),%rax
+0000000000004f80	movq	%rax,%rdx
+0000000000004f83	movq	0x00007f86(%rip),%rax
+0000000000004f8a	movq	0xd8(%rbp),%rcx
+0000000000004f8e	movq	%rsi,%r9
+0000000000004f91	movl	$__mh_bundle_header,%r8d
+0000000000004f97	movq	%rax,%rsi
+0000000000004f9a	movq	%rbx,%rdi
+0000000000004f9d	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004fa2	movq	0xffffff58(%rbp),%rdx
+0000000000004fa9	leaq	0x00008b08(%rip),%rax
+0000000000004fb0	movq	(%rax),%rax
+0000000000004fb3	leaq	(%rdx,%rax),%rax
+0000000000004fb7	movb	$__mh_bundle_header,(%rax)
+0000000000004fba	movq	0xffffff58(%rbp),%rdi
+0000000000004fc1	movq	0x00007f88(%rip),%rsi
+0000000000004fc8	movl	$0x00000001,%edx
+0000000000004fcd	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000004fd2	addq	$0x000000d8,%rsp
+0000000000004fd9	popq	%rbx
+0000000000004fda	popq	%r12
+0000000000004fdc	popq	%r13
+0000000000004fde	leave
+0000000000004fdf	ret
+-[DropboxSmallToolbarImageView dealloc]:
+0000000000004fe0	nop
+0000000000004fe1	nop
+0000000000004fe2	nop
+0000000000004fe3	nop
+0000000000004fe4	nop
+0000000000004fe5	nop
+0000000000004fe6	pushq	%rbp
+0000000000004fe7	movq	%rsp,%rbp
+0000000000004fea	subq	$0x20,%rsp
+0000000000004fee	movq	%rdi,0xe8(%rbp)
+0000000000004ff2	movq	%rsi,0xe0(%rbp)
+0000000000004ff6	movq	0xe8(%rbp),%rdx
+0000000000004ffa	leaq	0x00008ad7(%rip),%rax
+0000000000005001	movq	(%rax),%rax
+0000000000005004	leaq	(%rdx,%rax),%rax
+0000000000005008	movq	(%rax),%rax
+000000000000500b	movq	%rax,%rdi
+000000000000500e	leaq	0x00007c9b(%rip),%rax
+0000000000005015	movq	(%rax),%rax
+0000000000005018	leaq	0x00007c91(%rip),%rsi
+000000000000501f	call	*%rax
+0000000000005021	movq	0xe8(%rbp),%rdx
+0000000000005025	leaq	0x00008a94(%rip),%rax
+000000000000502c	movq	(%rax),%rax
+000000000000502f	leaq	(%rdx,%rax),%rax
+0000000000005033	movq	(%rax),%rax
+0000000000005036	movq	%rax,%rdi
+0000000000005039	leaq	0x00007c70(%rip),%rax
+0000000000005040	movq	(%rax),%rax
+0000000000005043	leaq	0x00007c66(%rip),%rsi
+000000000000504a	call	*%rax
+000000000000504c	movq	0xe8(%rbp),%rdx
+0000000000005050	leaq	0x00008a71(%rip),%rax
+0000000000005057	movq	(%rax),%rax
+000000000000505a	leaq	(%rdx,%rax),%rax
+000000000000505e	movq	(%rax),%rax
+0000000000005061	movq	%rax,%rdi
+0000000000005064	leaq	0x00007c45(%rip),%rax
+000000000000506b	movq	(%rax),%rax
+000000000000506e	leaq	0x00007c3b(%rip),%rsi
+0000000000005075	call	*%rax
+0000000000005077	movq	0xe8(%rbp),%rdx
+000000000000507b	leaq	0x00008a4e(%rip),%rax
+0000000000005082	movq	(%rax),%rax
+0000000000005085	leaq	(%rdx,%rax),%rax
+0000000000005089	movq	(%rax),%rax
+000000000000508c	movq	%rax,%rdi
+000000000000508f	leaq	0x00007c1a(%rip),%rax
+0000000000005096	movq	(%rax),%rax
+0000000000005099	leaq	0x00007c10(%rip),%rsi
+00000000000050a0	call	*%rax
+00000000000050a2	movq	0xe8(%rbp),%rax
+00000000000050a6	movq	%rax,0xf0(%rbp)
+00000000000050aa	movq	0x0000815f(%rip),%rax
+00000000000050b1	movq	%rax,0xf8(%rbp)
+00000000000050b5	leaq	0xf0(%rbp),%rdi
+00000000000050b9	movq	0x00007e48(%rip),%rsi
+00000000000050c0	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+00000000000050c5	leave
+00000000000050c6	ret
+-[DropboxLargeToolbarButton initWithMenu:frameSize:]:
+00000000000050c7	nop
+00000000000050c8	nop
+00000000000050c9	nop
+00000000000050ca	nop
+00000000000050cb	nop
+00000000000050cc	nop
+00000000000050cd	pushq	%rbp
+00000000000050ce	movq	%rsp,%rbp
+00000000000050d1	pushq	%r12
+00000000000050d3	pushq	%rbx
+00000000000050d4	subq	$0x60,%rsp
+00000000000050d8	movq	%rdi,0xc8(%rbp)
+00000000000050dc	movq	%rsi,0xc0(%rbp)
+00000000000050e0	movq	%rdx,0xb8(%rbp)
+00000000000050e4	movq	0xc8(%rbp),%rax
+00000000000050e8	movq	%rax,0xd0(%rbp)
+00000000000050ec	movq	0x00008125(%rip),%rax
+00000000000050f3	movq	%rax,0xd8(%rbp)
+00000000000050f7	leaq	0xd0(%rbp),%rdi
+00000000000050fb	movq	0x00007e76(%rip),%rsi
+0000000000005102	movq	0x10(%rbp),%rax
+0000000000005106	movq	%rax,(%rsp)
+000000000000510a	movq	0x18(%rbp),%rax
+000000000000510e	movq	%rax,0x08(%rsp)
+0000000000005113	movq	0x20(%rbp),%rax
+0000000000005117	movq	%rax,0x10(%rsp)
+000000000000511c	movq	0x28(%rbp),%rax
+0000000000005120	movq	%rax,0x18(%rsp)
+0000000000005125	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+000000000000512a	movq	%rax,0xc8(%rbp)
+000000000000512e	cmpq	$__mh_bundle_header,0xc8(%rbp)
+0000000000005133	je	0x000052b5
+0000000000005139	movq	0x00007ff8(%rip),%rax
+0000000000005140	movq	%rax,%rdi
+0000000000005143	leaq	0x000074b6(%rip),%rdx
+000000000000514a	movq	0x00007e1f(%rip),%rsi
+0000000000005151	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005156	movq	%rax,0xe8(%rbp)
+000000000000515a	movq	0xc8(%rbp),%rdx
+000000000000515e	leaq	0x0000894b(%rip),%rax
+0000000000005165	movq	(%rax),%rax
+0000000000005168	leaq	(%rdx,%rax),%rax
+000000000000516c	movq	%rax,%rbx
+000000000000516f	movq	0x00007fca(%rip),%rax
+0000000000005176	movq	%rax,%rdi
+0000000000005179	leaq	0x00007b10(%rip),%rax
+0000000000005180	movq	(%rax),%rax
+0000000000005183	leaq	0x00007b06(%rip),%rsi
+000000000000518a	call	*%rax
+000000000000518c	movq	%rax,%r12
+000000000000518f	movq	0xe8(%rbp),%rdi
+0000000000005193	movq	0x00007dce(%rip),%rsi
+000000000000519a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000519f	movq	%rax,%rdi
+00000000000051a2	leaq	0x000074d7(%rip),%rdx
+00000000000051a9	movq	0x00007db0(%rip),%rsi
+00000000000051b0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000051b5	movq	0x00007d9c(%rip),%rsi
+00000000000051bc	movq	%rax,%rdx
+00000000000051bf	movq	%r12,%rdi
+00000000000051c2	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000051c7	movq	%rax,%rdi
+00000000000051ca	leaq	0x00007acf(%rip),%rax
+00000000000051d1	movq	(%rax),%rax
+00000000000051d4	leaq	0x00007ac5(%rip),%rsi
+00000000000051db	call	*%rax
+00000000000051dd	movq	%rax,(%rbx)
+00000000000051e0	movq	0xc8(%rbp),%rdi
+00000000000051e4	movq	0x00007d15(%rip),%rsi
+00000000000051eb	movl	$0x0000000b,%edx
+00000000000051f0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000051f5	movq	0xc8(%rbp),%rdi
+00000000000051f9	leaq	0x00009160(%rip),%rax
+0000000000005200	movq	(%rax),%rdx
+0000000000005203	movq	0x00007cee(%rip),%rsi
+000000000000520a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000520f	movq	0xc8(%rbp),%rdi
+0000000000005213	movq	0xc8(%rbp),%rdx
+0000000000005217	leaq	0x00008892(%rip),%rax
+000000000000521e	movq	(%rax),%rax
+0000000000005221	leaq	(%rdx,%rax),%rax
+0000000000005225	movq	(%rax),%rdx
+0000000000005228	movq	0x00007d69(%rip),%rsi
+000000000000522f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005234	movq	0xc8(%rbp),%rdi
+0000000000005238	movq	0x00007ca9(%rip),%rsi
+000000000000523f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005244	movq	%rax,%r12
+0000000000005247	movq	0xc8(%rbp),%rdi
+000000000000524b	movq	0x00007c9e(%rip),%rsi
+0000000000005252	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005257	movq	%rax,%rbx
+000000000000525a	movq	0xc8(%rbp),%rdi
+000000000000525e	movq	0x00007b0b(%rip),%rsi
+0000000000005265	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000526a	movq	%rax,%rsi
+000000000000526d	leaq	0x0000742c(%rip),%rdi
+0000000000005274	movq	%r12,%rcx
+0000000000005277	movq	%rbx,%rdx
+000000000000527a	movl	$__mh_bundle_header,%eax
+000000000000527f	callq	_DBLog
+0000000000005284	movq	0xc8(%rbp),%rdx
+0000000000005288	leaq	0x00008819(%rip),%rax
+000000000000528f	movq	(%rax),%rax
+0000000000005292	leaq	(%rdx,%rax),%rax
+0000000000005296	movq	%rax,%rbx
+0000000000005299	movq	0xb8(%rbp),%rdi
+000000000000529d	leaq	0x000079fc(%rip),%rax
+00000000000052a4	movq	(%rax),%rax
+00000000000052a7	leaq	0x000079f2(%rip),%rsi
+00000000000052ae	call	*%rax
+00000000000052b0	movq	%rax,(%rbx)
+00000000000052b3	jmp	0x000052c6
+00000000000052b5	leaq	0x00007404(%rip),%rdi
+00000000000052bc	movl	$__mh_bundle_header,%eax
+00000000000052c1	callq	_DBLog
+00000000000052c6	movq	0xc8(%rbp),%rax
+00000000000052ca	addq	$0x60,%rsp
+00000000000052ce	popq	%rbx
+00000000000052cf	popq	%r12
+00000000000052d1	leave
+00000000000052d2	ret
+-[DropboxLargeToolbarButton mouseDown:]:
+00000000000052d3	nop
+00000000000052d4	nop
+00000000000052d5	nop
+00000000000052d6	nop
+00000000000052d7	nop
+00000000000052d8	nop
+00000000000052d9	pushq	%rbp
+00000000000052da	movq	%rsp,%rbp
+00000000000052dd	pushq	%r15
+00000000000052df	pushq	%r14
+00000000000052e1	pushq	%r13
+00000000000052e3	pushq	%r12
+00000000000052e5	pushq	%rbx
+00000000000052e6	subq	$0x00000138,%rsp
+00000000000052ed	movq	%rdi,0xffffff08(%rbp)
+00000000000052f4	movq	%rsi,0xffffff00(%rbp)
+00000000000052fb	movq	%rdx,0xfffffef8(%rbp)
+0000000000005302	movq	0xffffff08(%rbp),%rdi
+0000000000005309	movq	0x00007bd0(%rip),%rsi
+0000000000005310	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005315	testb	%al,%al
+0000000000005317	je	0x000055e1
+000000000000531d	movq	0xffffff08(%rbp),%rdx
+0000000000005324	leaq	0x0000877d(%rip),%rax
+000000000000532b	movq	(%rax),%rax
+000000000000532e	leaq	(%rdx,%rax),%rax
+0000000000005332	movq	(%rax),%rax
+0000000000005335	testq	%rax,%rax
+0000000000005338	je	0x000055e1
+000000000000533e	movq	0xffffff08(%rbp),%rdi
+0000000000005345	movq	0x00007b8c(%rip),%rsi
+000000000000534c	movl	$0x00000001,%edx
+0000000000005351	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005356	movq	0xffffff08(%rbp),%rsi
+000000000000535d	movq	0x00007be4(%rip),%rdx
+0000000000005364	leaq	0xffffff50(%rbp),%rdi
+000000000000536b	callq	0x0000913a	; symbol stub for: _objc_msgSend_stret
+0000000000005370	movsd	0xffffff58(%rbp),%xmm0
+0000000000005378	movsd	%xmm0,0xfffffeb8(%rbp)
+0000000000005380	movq	0xffffff08(%rbp),%rsi
+0000000000005387	movq	0x00007bba(%rip),%rdx
+000000000000538e	leaq	0xffffff30(%rbp),%rdi
+0000000000005395	callq	0x0000913a	; symbol stub for: _objc_msgSend_stret
+000000000000539a	movsd	0xffffff48(%rbp),%xmm0
+00000000000053a2	movsd	0xfffffeb8(%rbp),%xmm1
+00000000000053aa	addsd	%xmm0,%xmm1
+00000000000053ae	movsd	0x0000572a(%rip),%xmm0
+00000000000053b6	movapd	%xmm1,%xmm2
+00000000000053ba	addsd	%xmm0,%xmm2
+00000000000053be	movsd	%xmm2,0xfffffec0(%rbp)
+00000000000053c6	movq	0xffffff08(%rbp),%rsi
+00000000000053cd	movq	0x00007b74(%rip),%rdx
+00000000000053d4	leaq	0xffffff10(%rbp),%rdi
+00000000000053db	callq	0x0000913a	; symbol stub for: _objc_msgSend_stret
+00000000000053e0	movq	0xffffff10(%rbp),%rax
+00000000000053e7	movq	%rax,0xc0(%rbp)
+00000000000053eb	movsd	0xfffffec0(%rbp),%xmm0
+00000000000053f3	movsd	%xmm0,0xb8(%rbp)
+00000000000053f8	movq	0xc0(%rbp),%rax
+00000000000053fc	movq	%rax,0x80(%rbp)
+0000000000005400	movq	0xb8(%rbp),%rax
+0000000000005404	movq	%rax,0x88(%rbp)
+0000000000005408	movq	0x80(%rbp),%rax
+000000000000540c	movq	%rax,0xffffff70(%rbp)
+0000000000005413	movq	0x88(%rbp),%rax
+0000000000005417	movq	%rax,0xffffff78(%rbp)
+000000000000541e	movq	0xffffff70(%rbp),%rax
+0000000000005425	movq	%rax,0xa0(%rbp)
+0000000000005429	movq	0xffffff78(%rbp),%rax
+0000000000005430	movq	%rax,0xa8(%rbp)
+0000000000005434	movq	0x00007d0d(%rip),%rax
+000000000000543b	movq	%rax,%rbx
+000000000000543e	movq	0xfffffef8(%rbp),%rdi
+0000000000005445	movq	0x00007a54(%rip),%rsi
+000000000000544c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005451	movss	%xmm0,0xfffffecc(%rbp)
+0000000000005459	movq	0xfffffef8(%rbp),%rdi
+0000000000005460	movq	0x00007a41(%rip),%rsi
+0000000000005467	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000546c	movq	%rax,%r12
+000000000000546f	movq	0xfffffef8(%rbp),%rdi
+0000000000005476	movq	0x00007a33(%rip),%rsi
+000000000000547d	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005482	movq	%rax,%r13
+0000000000005485	movq	0xfffffef8(%rbp),%rdi
+000000000000548c	movq	0x00007a25(%rip),%rsi
+0000000000005493	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005498	movq	%rax,%r14
+000000000000549b	movq	0xfffffef8(%rbp),%rdi
+00000000000054a2	movq	0x00007a8f(%rip),%rsi
+00000000000054a9	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000054ae	movq	%rax,%r15
+00000000000054b1	movq	0xfffffef8(%rbp),%rdi
+00000000000054b8	movq	0x00007a01(%rip),%rsi
+00000000000054bf	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000054c4	movsd	%xmm0,0xfffffed0(%rbp)
+00000000000054cc	movq	0xfffffef8(%rbp),%rdi
+00000000000054d3	movq	0x000079ee(%rip),%rsi
+00000000000054da	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000054df	movq	%rax,0xfffffed8(%rbp)
+00000000000054e6	movq	0xffffff08(%rbp),%rdi
+00000000000054ed	movq	0x00007a4c(%rip),%rsi
+00000000000054f4	movsd	0xa0(%rbp),%xmm0
+00000000000054f9	movsd	0xa8(%rbp),%xmm1
+00000000000054fe	movl	$__mh_bundle_header,%edx
+0000000000005503	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005508	movsd	%xmm0,0xfffffee0(%rbp)
+0000000000005510	movsd	%xmm1,0xfffffee8(%rbp)
+0000000000005518	movq	0xfffffee0(%rbp),%rax
+000000000000551f	movq	%rax,0x90(%rbp)
+0000000000005523	movq	0xfffffee8(%rbp),%rax
+000000000000552a	movq	%rax,0x98(%rbp)
+000000000000552e	movq	0xfffffef8(%rbp),%rdi
+0000000000005535	movq	0x00007994(%rip),%rsi
+000000000000553c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005541	movq	0x00007950(%rip),%rsi
+0000000000005548	movsd	0x90(%rbp),%xmm0
+000000000000554d	movsd	0x98(%rbp),%xmm1
+0000000000005552	movq	%r12,0x08(%rsp)
+0000000000005557	movq	%r13,(%rsp)
+000000000000555b	movss	0xfffffecc(%rbp),%xmm3
+0000000000005563	movq	%r14,%r9
+0000000000005566	movq	%r15,%r8
+0000000000005569	movsd	0xfffffed0(%rbp),%xmm2
+0000000000005571	movq	0xfffffed8(%rbp),%rcx
+0000000000005578	movq	%rax,%rdx
+000000000000557b	movq	%rbx,%rdi
+000000000000557e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005583	movq	%rax,0xc8(%rbp)
+0000000000005587	movq	0x00007bca(%rip),%rax
+000000000000558e	movq	%rax,%r9
+0000000000005591	movq	0xffffff08(%rbp),%rdi
+0000000000005598	movq	0xffffff08(%rbp),%rdx
+000000000000559f	leaq	0x00008502(%rip),%rax
+00000000000055a6	movq	(%rax),%rax
+00000000000055a9	leaq	(%rdx,%rax),%rax
+00000000000055ad	movq	(%rax),%rax
+00000000000055b0	movq	%rax,%rdx
+00000000000055b3	movq	0x000078d6(%rip),%rsi
+00000000000055ba	movq	0xc8(%rbp),%rcx
+00000000000055be	movq	%rdi,%r8
+00000000000055c1	movq	%r9,%rdi
+00000000000055c4	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000055c9	movq	0xffffff08(%rbp),%rdi
+00000000000055d0	movq	0x00007901(%rip),%rsi
+00000000000055d7	movl	$__mh_bundle_header,%edx
+00000000000055dc	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000055e1	addq	$0x00000138,%rsp
+00000000000055e8	popq	%rbx
+00000000000055e9	popq	%r12
+00000000000055eb	popq	%r13
+00000000000055ed	popq	%r14
+00000000000055ef	popq	%r15
+00000000000055f1	leave
+00000000000055f2	ret
+-[DropboxLargeToolbarButton mouseUp:]:
+00000000000055f3	nop
+00000000000055f4	nop
+00000000000055f5	nop
+00000000000055f6	nop
+00000000000055f7	nop
+00000000000055f8	nop
+00000000000055f9	pushq	%rbp
+00000000000055fa	movq	%rsp,%rbp
+00000000000055fd	subq	$0x20,%rsp
+0000000000005601	movq	%rdi,0xf8(%rbp)
+0000000000005605	movq	%rsi,0xf0(%rbp)
+0000000000005609	movq	%rdx,0xe8(%rbp)
+000000000000560d	movq	0xf8(%rbp),%rdi
+0000000000005611	movq	0x000078c8(%rip),%rsi
+0000000000005618	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000561d	testb	%al,%al
+000000000000561f	je	0x00005636
+0000000000005621	movq	0xf8(%rbp),%rdi
+0000000000005625	movq	0x000078ac(%rip),%rsi
+000000000000562c	movl	$__mh_bundle_header,%edx
+0000000000005631	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005636	leave
+0000000000005637	ret
+-[DropboxLargeToolbarButton dealloc]:
+0000000000005638	nop
+0000000000005639	nop
+000000000000563a	nop
+000000000000563b	nop
+000000000000563c	nop
+000000000000563d	nop
+000000000000563e	pushq	%rbp
+000000000000563f	movq	%rsp,%rbp
+0000000000005642	subq	$0x20,%rsp
+0000000000005646	movq	%rdi,0xe8(%rbp)
+000000000000564a	movq	%rsi,0xe0(%rbp)
+000000000000564e	movq	0xe8(%rbp),%rdx
+0000000000005652	leaq	0x0000844f(%rip),%rax
+0000000000005659	movq	(%rax),%rax
+000000000000565c	leaq	(%rdx,%rax),%rax
+0000000000005660	movq	(%rax),%rax
+0000000000005663	movq	%rax,%rdi
+0000000000005666	leaq	0x00007643(%rip),%rax
+000000000000566d	movq	(%rax),%rax
+0000000000005670	leaq	0x00007639(%rip),%rsi
+0000000000005677	call	*%rax
+0000000000005679	movq	0xe8(%rbp),%rdx
+000000000000567d	leaq	0x0000842c(%rip),%rax
+0000000000005684	movq	(%rax),%rax
+0000000000005687	leaq	(%rdx,%rax),%rax
+000000000000568b	movq	(%rax),%rax
+000000000000568e	movq	%rax,%rdi
+0000000000005691	leaq	0x00007618(%rip),%rax
+0000000000005698	movq	(%rax),%rax
+000000000000569b	leaq	0x0000760e(%rip),%rsi
+00000000000056a2	call	*%rax
+00000000000056a4	movq	0xe8(%rbp),%rax
+00000000000056a8	movq	%rax,0xf0(%rbp)
+00000000000056ac	movq	0x00007b65(%rip),%rax
+00000000000056b3	movq	%rax,0xf8(%rbp)
+00000000000056b7	leaq	0xf0(%rbp),%rdi
+00000000000056bb	movq	0x00007846(%rip),%rsi
+00000000000056c2	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+00000000000056c7	leave
+00000000000056c8	ret
+-[DropboxToolbarItem setSizeMode:]:
+00000000000056c9	nop
+00000000000056ca	nop
+00000000000056cb	nop
+00000000000056cc	nop
+00000000000056cd	nop
+00000000000056ce	nop
+00000000000056cf	pushq	%rbp
+00000000000056d0	movq	%rsp,%rbp
+00000000000056d3	subq	$0x00000100,%rsp
+00000000000056da	movq	%rdi,0xffffff38(%rbp)
+00000000000056e1	movq	%rsi,0xffffff30(%rbp)
+00000000000056e8	movq	%rdx,0xffffff28(%rbp)
+00000000000056ef	cmpq	$0x02,0xffffff28(%rbp)
+00000000000056f7	jne	0x000057f3
+00000000000056fd	movl	$__mh_bundle_header,%eax
+0000000000005702	movq	%rax,0xf0(%rbp)
+0000000000005706	movl	$__mh_bundle_header,%eax
+000000000000570b	movq	%rax,0xe8(%rbp)
+000000000000570f	movq	$0x4044000000000000,%rax
+0000000000005719	movq	%rax,0xe0(%rbp)
+000000000000571d	movq	$0x4034000000000000,%rax
+0000000000005727	movq	%rax,0xd8(%rbp)
+000000000000572b	movq	0xf0(%rbp),%rax
+000000000000572f	movq	%rax,0xffffff60(%rbp)
+0000000000005736	movq	0xe8(%rbp),%rax
+000000000000573a	movq	%rax,0xffffff68(%rbp)
+0000000000005741	movq	0xe0(%rbp),%rax
+0000000000005745	movq	%rax,0xffffff70(%rbp)
+000000000000574c	movq	0xd8(%rbp),%rax
+0000000000005750	movq	%rax,0xffffff78(%rbp)
+0000000000005757	movq	0xffffff60(%rbp),%rax
+000000000000575e	movq	%rax,0x80(%rbp)
+0000000000005762	movq	0xffffff68(%rbp),%rax
+0000000000005769	movq	%rax,0x88(%rbp)
+000000000000576d	movq	0xffffff70(%rbp),%rax
+0000000000005774	movq	%rax,0x90(%rbp)
+0000000000005778	movq	0xffffff78(%rbp),%rax
+000000000000577f	movq	%rax,0x98(%rbp)
+0000000000005783	movq	0x000079de(%rip),%rax
+000000000000578a	movq	%rax,%rdi
+000000000000578d	leaq	0x000074fc(%rip),%rax
+0000000000005794	movq	(%rax),%rax
+0000000000005797	leaq	0x000074f2(%rip),%rsi
+000000000000579e	call	*%rax
+00000000000057a0	movq	%rax,%rdi
+00000000000057a3	movq	0xffffff38(%rbp),%rdx
+00000000000057aa	leaq	0x000082ef(%rip),%rax
+00000000000057b1	movq	(%rax),%rax
+00000000000057b4	leaq	(%rdx,%rax),%rax
+00000000000057b8	movq	(%rax),%rdx
+00000000000057bb	movq	0x000076c6(%rip),%rsi
+00000000000057c2	movq	0x80(%rbp),%rax
+00000000000057c6	movq	%rax,(%rsp)
+00000000000057ca	movq	0x88(%rbp),%rax
+00000000000057ce	movq	%rax,0x08(%rsp)
+00000000000057d3	movq	0x90(%rbp),%rax
+00000000000057d7	movq	%rax,0x10(%rsp)
+00000000000057dc	movq	0x98(%rbp),%rax
+00000000000057e0	movq	%rax,0x18(%rsp)
+00000000000057e5	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000057ea	movq	%rax,0xf8(%rbp)
+00000000000057ee	jmp	0x0000591c
+00000000000057f3	movl	$__mh_bundle_header,%eax
+00000000000057f8	movq	%rax,0xd0(%rbp)
+00000000000057fc	movl	$__mh_bundle_header,%eax
+0000000000005801	movq	%rax,0xc8(%rbp)
+0000000000005805	movq	$0x4044000000000000,%rax
+000000000000580f	movq	%rax,0xc0(%rbp)
+0000000000005813	movq	$0x4036000000000000,%rax
+000000000000581d	movq	%rax,0xb8(%rbp)
+0000000000005821	movq	0xd0(%rbp),%rax
+0000000000005825	movq	%rax,0xffffff60(%rbp)
+000000000000582c	movq	0xc8(%rbp),%rax
+0000000000005830	movq	%rax,0xffffff68(%rbp)
+0000000000005837	movq	0xc0(%rbp),%rax
+000000000000583b	movq	%rax,0xffffff70(%rbp)
+0000000000005842	movq	0xb8(%rbp),%rax
+0000000000005846	movq	%rax,0xffffff78(%rbp)
+000000000000584d	movq	0xffffff60(%rbp),%rax
+0000000000005854	movq	%rax,0xffffff40(%rbp)
+000000000000585b	movq	0xffffff68(%rbp),%rax
+0000000000005862	movq	%rax,0xffffff48(%rbp)
+0000000000005869	movq	0xffffff70(%rbp),%rax
+0000000000005870	movq	%rax,0xffffff50(%rbp)
+0000000000005877	movq	0xffffff78(%rbp),%rax
+000000000000587e	movq	%rax,0xffffff58(%rbp)
+0000000000005885	movq	0xffffff40(%rbp),%rax
+000000000000588c	movq	%rax,0x80(%rbp)
+0000000000005890	movq	0xffffff48(%rbp),%rax
+0000000000005897	movq	%rax,0x88(%rbp)
+000000000000589b	movq	0xffffff50(%rbp),%rax
+00000000000058a2	movq	%rax,0x90(%rbp)
+00000000000058a6	movq	0xffffff58(%rbp),%rax
+00000000000058ad	movq	%rax,0x98(%rbp)
+00000000000058b1	movq	0x000078b8(%rip),%rax
+00000000000058b8	movq	%rax,%rdi
+00000000000058bb	leaq	0x000073ce(%rip),%rax
+00000000000058c2	movq	(%rax),%rax
+00000000000058c5	leaq	0x000073c4(%rip),%rsi
+00000000000058cc	call	*%rax
+00000000000058ce	movq	%rax,%rdi
+00000000000058d1	movq	0xffffff38(%rbp),%rdx
+00000000000058d8	leaq	0x000081c1(%rip),%rax
+00000000000058df	movq	(%rax),%rax
+00000000000058e2	leaq	(%rdx,%rax),%rax
+00000000000058e6	movq	(%rax),%rdx
+00000000000058e9	movq	0x00007598(%rip),%rsi
+00000000000058f0	movq	0x80(%rbp),%rax
+00000000000058f4	movq	%rax,(%rsp)
+00000000000058f8	movq	0x88(%rbp),%rax
+00000000000058fc	movq	%rax,0x08(%rsp)
+0000000000005901	movq	0x90(%rbp),%rax
+0000000000005905	movq	%rax,0x10(%rsp)
+000000000000590a	movq	0x98(%rbp),%rax
+000000000000590e	movq	%rax,0x18(%rsp)
+0000000000005913	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005918	movq	%rax,0xf8(%rbp)
+000000000000591c	movq	0xffffff38(%rbp),%rdi
+0000000000005923	movq	0x00007556(%rip),%rsi
+000000000000592a	movq	0xf8(%rbp),%rdx
+000000000000592e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005933	movq	0x90(%rbp),%rax
+0000000000005937	movq	%rax,0xa0(%rbp)
+000000000000593b	movq	0x98(%rbp),%rax
+000000000000593f	movq	%rax,0xa8(%rbp)
+0000000000005943	movsd	0xa8(%rbp),%xmm1
+0000000000005948	movsd	0x00005198(%rip),%xmm0
+0000000000005950	addsd	%xmm1,%xmm0
+0000000000005954	movsd	%xmm0,0xa8(%rbp)
+0000000000005959	movq	0xffffff38(%rbp),%rdi
+0000000000005960	movq	0x00007511(%rip),%rsi
+0000000000005967	movsd	0xa0(%rbp),%xmm0
+000000000000596c	movsd	0xa8(%rbp),%xmm1
+0000000000005971	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005976	movq	0xffffff38(%rbp),%rdi
+000000000000597d	movq	0x000074ec(%rip),%rsi
+0000000000005984	movsd	0xa0(%rbp),%xmm0
+0000000000005989	movsd	0xa8(%rbp),%xmm1
+000000000000598e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005993	leave
+0000000000005994	ret
+-[DropboxToolbarItem initWithSizeMode:]:
+0000000000005995	nop
+0000000000005996	nop
+0000000000005997	nop
+0000000000005998	nop
+0000000000005999	nop
+000000000000599a	nop
+000000000000599b	pushq	%rbp
+000000000000599c	movq	%rsp,%rbp
+000000000000599f	pushq	%rbx
+00000000000059a0	subq	$0x48,%rsp
+00000000000059a4	movq	%rdi,0xc8(%rbp)
+00000000000059a8	movq	%rsi,0xc0(%rbp)
+00000000000059ac	movq	%rdx,0xb8(%rbp)
+00000000000059b0	movq	0xc8(%rbp),%rax
+00000000000059b4	movq	%rax,0xd0(%rbp)
+00000000000059b8	movq	0x00007861(%rip),%rax
+00000000000059bf	movq	%rax,0xd8(%rbp)
+00000000000059c3	leaq	0xd0(%rbp),%rdi
+00000000000059c7	leaq	0x0000897a(%rip),%rax
+00000000000059ce	movq	(%rax),%rdx
+00000000000059d1	movq	0x00007490(%rip),%rsi
+00000000000059d8	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+00000000000059dd	movq	%rax,0xc8(%rbp)
+00000000000059e1	cmpq	$__mh_bundle_header,0xc8(%rbp)
+00000000000059e6	je	0x00005b55
+00000000000059ec	movq	0xc8(%rbp),%rdi
+00000000000059f0	leaq	0x00008969(%rip),%rax
+00000000000059f7	movq	(%rax),%rdx
+00000000000059fa	movq	0x0000745f(%rip),%rsi
+0000000000005a01	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005a06	movq	0xc8(%rbp),%rdi
+0000000000005a0a	leaq	0x0000894f(%rip),%rax
+0000000000005a11	movq	(%rax),%rdx
+0000000000005a14	movq	0x0000743d(%rip),%rsi
+0000000000005a1b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005a20	movq	0xc8(%rbp),%rdi
+0000000000005a24	leaq	0x0000892d(%rip),%rax
+0000000000005a2b	movq	(%rax),%rdx
+0000000000005a2e	movq	0x0000741b(%rip),%rsi
+0000000000005a35	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005a3a	movq	0xc8(%rbp),%rdx
+0000000000005a3e	leaq	0x0000805b(%rip),%rax
+0000000000005a45	movq	(%rax),%rax
+0000000000005a48	leaq	(%rdx,%rax),%rax
+0000000000005a4c	movq	%rax,%rbx
+0000000000005a4f	movq	0x00007722(%rip),%rax
+0000000000005a56	movq	%rax,%rdi
+0000000000005a59	leaq	0x00007230(%rip),%rax
+0000000000005a60	movq	(%rax),%rax
+0000000000005a63	leaq	0x00007226(%rip),%rsi
+0000000000005a6a	call	*%rax
+0000000000005a6c	movq	%rax,%rdi
+0000000000005a6f	movq	0x0000734a(%rip),%rsi
+0000000000005a76	movl	$__mh_bundle_header,%edx
+0000000000005a7b	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005a80	movq	%rax,%rdi
+0000000000005a83	leaq	0x00007216(%rip),%rax
+0000000000005a8a	movq	(%rax),%rax
+0000000000005a8d	leaq	0x0000720c(%rip),%rsi
+0000000000005a94	call	*%rax
+0000000000005a96	movq	%rax,(%rbx)
+0000000000005a99	movq	-[DropboxMenu useMessageResponse:withLength:](%rip),%rax
+0000000000005aa0	movq	%rax,%rdi
+0000000000005aa3	leaq	0x000071e6(%rip),%rax
+0000000000005aaa	movq	(%rax),%rax
+0000000000005aad	leaq	0x000071dc(%rip),%rsi
+0000000000005ab4	call	*%rax
+0000000000005ab6	movq	%rax,%rdi
+0000000000005ab9	movq	0x00007318(%rip),%rsi
+0000000000005ac0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005ac5	movq	%rax,%rdi
+0000000000005ac8	leaq	0x00007251(%rip),%rax
+0000000000005acf	movq	(%rax),%rax
+0000000000005ad2	leaq	0x00007247(%rip),%rsi
+0000000000005ad9	call	*%rax
+0000000000005adb	movq	%rax,0xe8(%rbp)
+0000000000005adf	movq	0xe8(%rbp),%rdi
+0000000000005ae3	movq	0xc8(%rbp),%rdx
+0000000000005ae7	leaq	0x00007fb2(%rip),%rax
+0000000000005aee	movq	(%rax),%rax
+0000000000005af1	leaq	(%rdx,%rax),%rax
+0000000000005af5	movq	(%rax),%rax
+0000000000005af8	movq	%rax,%rdx
+0000000000005afb	movq	0x00007296(%rip),%rsi
+0000000000005b02	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005b07	movq	0xe8(%rbp),%rbx
+0000000000005b0b	movq	0xc8(%rbp),%rdi
+0000000000005b0f	movq	0x00007332(%rip),%rsi
+0000000000005b16	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005b1b	movq	0x000073d6(%rip),%rsi
+0000000000005b22	movq	%rax,%rdx
+0000000000005b25	movq	%rbx,%rdi
+0000000000005b28	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005b2d	movq	0xc8(%rbp),%rdi
+0000000000005b31	movq	0x00007308(%rip),%rsi
+0000000000005b38	movq	0xe8(%rbp),%rdx
+0000000000005b3c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005b41	movq	0xc8(%rbp),%rdi
+0000000000005b45	movq	0x000072ec(%rip),%rsi
+0000000000005b4c	movq	0xb8(%rbp),%rdx
+0000000000005b50	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005b55	movq	0xc8(%rbp),%rax
+0000000000005b59	addq	$0x48,%rsp
+0000000000005b5d	popq	%rbx
+0000000000005b5e	leave
+0000000000005b5f	ret
+-[DropboxToolbarItem dealloc]:
+0000000000005b60	nop
+0000000000005b61	nop
+0000000000005b62	nop
+0000000000005b63	nop
+0000000000005b64	nop
+0000000000005b65	nop
+0000000000005b66	pushq	%rbp
+0000000000005b67	movq	%rsp,%rbp
+0000000000005b6a	subq	$0x20,%rsp
+0000000000005b6e	movq	%rdi,0xe8(%rbp)
+0000000000005b72	movq	%rsi,0xe0(%rbp)
+0000000000005b76	movq	0xe8(%rbp),%rdx
+0000000000005b7a	leaq	0x00007f1f(%rip),%rax
+0000000000005b81	movq	(%rax),%rax
+0000000000005b84	leaq	(%rdx,%rax),%rax
+0000000000005b88	movq	(%rax),%rax
+0000000000005b8b	movq	%rax,%rdi
+0000000000005b8e	leaq	0x0000711b(%rip),%rax
+0000000000005b95	movq	(%rax),%rax
+0000000000005b98	leaq	0x00007111(%rip),%rsi
+0000000000005b9f	call	*%rax
+0000000000005ba1	movq	0xe8(%rbp),%rax
+0000000000005ba5	movq	%rax,0xf0(%rbp)
+0000000000005ba9	movq	0x00007670(%rip),%rax
+0000000000005bb0	movq	%rax,0xf8(%rbp)
+0000000000005bb4	leaq	0xf0(%rbp),%rdi
+0000000000005bb8	movq	0x00007349(%rip),%rsi
+0000000000005bbf	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+0000000000005bc4	leave
+0000000000005bc5	ret
+-[DropboxToolbar _notifyView_MovedFromIndex:toIndex:]:
+0000000000005bc6	nop
+0000000000005bc7	nop
+0000000000005bc8	nop
+0000000000005bc9	nop
+0000000000005bca	nop
+0000000000005bcb	nop
+0000000000005bcc	pushq	%rbp
+0000000000005bcd	movq	%rsp,%rbp
+0000000000005bd0	pushq	%rbx
+0000000000005bd1	subq	$0x38,%rsp
+0000000000005bd5	movq	%rdi,0xd8(%rbp)
+0000000000005bd9	movq	%rsi,0xd0(%rbp)
+0000000000005bdd	movq	%rdx,0xc8(%rbp)
+0000000000005be1	movq	%rcx,0xc0(%rbp)
+0000000000005be5	movq	0xd8(%rbp),%rdi
+0000000000005be9	movq	0x00007240(%rip),%rsi
+0000000000005bf0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005bf5	movq	%rax,0xe0(%rbp)
+0000000000005bf9	movl	$__mh_bundle_header,0xec(%rbp)
+0000000000005c00	jmp	0x00005c62
+0000000000005c02	movq	0xe0(%rbp),%rdi
+0000000000005c06	leaq	_get_insertion_index(%rip),%rax
+0000000000005c0d	movq	(%rax),%rcx
+0000000000005c10	movl	0xec(%rbp),%eax
+0000000000005c13	movslq	%eax,%rdx
+0000000000005c16	leaq	0x00007113(%rip),%rsi
+0000000000005c1d	call	*%rcx
+0000000000005c1f	movq	%rax,%rdi
+0000000000005c22	movq	0x00007397(%rip),%rsi
+0000000000005c29	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005c2e	movq	%rax,%rdi
+0000000000005c31	leaq	0x000070b8(%rip),%rax
+0000000000005c38	movq	(%rax),%rcx
+0000000000005c3b	leaq	0x00008706(%rip),%rax
+0000000000005c42	movq	(%rax),%rax
+0000000000005c45	movq	%rax,%rdx
+0000000000005c48	leaq	0x000070a1(%rip),%rsi
+0000000000005c4f	call	*%rcx
+0000000000005c51	testb	%al,%al
+0000000000005c53	je	0x00005c5f
+0000000000005c55	movl	0xec(%rbp),%edi
+0000000000005c58	callq	_store_insertion_index
+0000000000005c5d	jmp	0x00005c88
+0000000000005c5f	incl	0xec(%rbp)
+0000000000005c62	movl	0xec(%rbp),%eax
+0000000000005c65	movslq	%eax,%rbx
+0000000000005c68	movq	0xe0(%rbp),%rdi
+0000000000005c6c	leaq	0x0000704d(%rip),%rax
+0000000000005c73	movq	(%rax),%rax
+0000000000005c76	leaq	0x00007043(%rip),%rsi
+0000000000005c7d	call	*%rax
+0000000000005c7f	cmpq	%rax,%rbx
+0000000000005c82	jb	0x100005c02
+0000000000005c88	leaq	0x00008911(%rip),%rax
+0000000000005c8f	movq	(%rax),%rax
+0000000000005c92	movq	0x0000718f(%rip),%rsi
+0000000000005c99	movq	0xd8(%rbp),%rdi
+0000000000005c9d	movq	0xc0(%rbp),%rcx
+0000000000005ca1	movq	0xc8(%rbp),%rdx
+0000000000005ca5	call	*%rax
+0000000000005ca7	addq	$0x38,%rsp
+0000000000005cab	popq	%rbx
+0000000000005cac	leave
+0000000000005cad	ret
+-[DropboxToolbar _newItemFromItemIdentifier:propertyListRepresentation:requireImmediateLoad:willBeInsertedIntoToolbar:]:
+0000000000005cae	nop
+0000000000005caf	nop
+0000000000005cb0	nop
+0000000000005cb1	nop
+0000000000005cb2	nop
+0000000000005cb3	nop
+0000000000005cb4	pushq	%rbp
+0000000000005cb5	movq	%rsp,%rbp
+0000000000005cb8	pushq	%rbx
+0000000000005cb9	subq	$0x48,%rsp
+0000000000005cbd	movq	%rdi,0xd8(%rbp)
+0000000000005cc1	movq	%rsi,0xd0(%rbp)
+0000000000005cc5	movq	%rdx,0xc8(%rbp)
+0000000000005cc9	movq	%rcx,0xc0(%rbp)
+0000000000005ccd	movl	%r8d,%eax
+0000000000005cd0	movl	%r9d,%edx
+0000000000005cd3	movb	%al,0xbc(%rbp)
+0000000000005cd6	movb	%dl,0xb8(%rbp)
+0000000000005cd9	movq	0xc8(%rbp),%rdi
+0000000000005cdd	leaq	0x0000700c(%rip),%rax
+0000000000005ce4	movq	(%rax),%rcx
+0000000000005ce7	leaq	0x0000865a(%rip),%rax
+0000000000005cee	movq	(%rax),%rax
+0000000000005cf1	movq	%rax,%rdx
+0000000000005cf4	leaq	0x00006ff5(%rip),%rsi
+0000000000005cfb	call	*%rcx
+0000000000005cfd	testb	%al,%al
+0000000000005cff	je	0x00005d49
+0000000000005d01	movq	0x00007480(%rip),%rax
+0000000000005d08	movq	%rax,%rdi
+0000000000005d0b	leaq	0x00006f7e(%rip),%rax
+0000000000005d12	movq	(%rax),%rax
+0000000000005d15	leaq	0x00006f74(%rip),%rsi
+0000000000005d1c	call	*%rax
+0000000000005d1e	movq	%rax,%rbx
+0000000000005d21	movq	0xd8(%rbp),%rdi
+0000000000005d25	movq	0x000070f4(%rip),%rsi
+0000000000005d2c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005d31	movq	0x000070e0(%rip),%rsi
+0000000000005d38	movq	%rax,%rdx
+0000000000005d3b	movq	%rbx,%rdi
+0000000000005d3e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005d43	movq	%rax,0xb0(%rbp)
+0000000000005d47	jmp	0x00005d8c
+0000000000005d49	leaq	0x00008848(%rip),%rax
+0000000000005d50	movq	(%rax),%rax
+0000000000005d53	movq	%rax,%r11
+0000000000005d56	movsbl	0xb8(%rbp),%eax
+0000000000005d5a	movsbl	0xbc(%rbp),%esi
+0000000000005d5e	movq	0x000070ab(%rip),%rdi
+0000000000005d65	movq	0xd8(%rbp),%r10
+0000000000005d69	movq	0xc0(%rbp),%rcx
+0000000000005d6d	movq	0xc8(%rbp),%rdx
+0000000000005d71	movl	%eax,%r9d
+0000000000005d74	movl	%esi,%r8d
+0000000000005d77	movq	%rdi,%rsi
+0000000000005d7a	movq	%r10,%rdi
+0000000000005d7d	call	*%r11
+0000000000005d80	movq	%rax,0xe8(%rbp)
+0000000000005d84	movq	0xe8(%rbp),%rax
+0000000000005d88	movq	%rax,0xb0(%rbp)
+0000000000005d8c	movq	0xb0(%rbp),%rax
+0000000000005d90	addq	$0x48,%rsp
+0000000000005d94	popq	%rbx
+0000000000005d95	leave
+0000000000005d96	ret
+-[DropboxToolbar setSizeMode:]:
+0000000000005d97	nop
+0000000000005d98	nop
+0000000000005d99	nop
+0000000000005d9a	nop
+0000000000005d9b	nop
+0000000000005d9c	nop
+0000000000005d9d	pushq	%rbp
+0000000000005d9e	movq	%rsp,%rbp
+0000000000005da1	pushq	%rbx
+0000000000005da2	subq	$0x00000118,%rsp
+0000000000005da9	movq	%rdi,0xffffff18(%rbp)
+0000000000005db0	movq	%rsi,0xffffff10(%rbp)
+0000000000005db7	movq	%rdx,0xffffff08(%rbp)
+0000000000005dbe	leaq	0xa0(%rbp),%rdi
+0000000000005dc2	cld
+0000000000005dc3	movl	$__mh_bundle_header,%edx
+0000000000005dc8	movl	$0x00000008,%eax
+0000000000005dcd	movl	%eax,%ecx
+0000000000005dcf	movq	%rdx,%rax
+0000000000005dd2	rep/stosq	%rax,(%edi)
+0000000000005dd5	movq	0xffffff18(%rbp),%rax
+0000000000005ddc	movq	%rax,0xfffffee0(%rbp)
+0000000000005de3	movq	0x00007046(%rip),%rsi
+0000000000005dea	movq	0xfffffee0(%rbp),%rdi
+0000000000005df1	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005df6	movq	%rax,0xfffffee8(%rbp)
+0000000000005dfd	leaq	0x00006edc(%rip),%rax
+0000000000005e04	movq	(%rax),%rax
+0000000000005e07	leaq	0xffffff20(%rbp),%rcx
+0000000000005e0e	leaq	0xa0(%rbp),%rdx
+0000000000005e12	movl	$0x00000010,%r8d
+0000000000005e18	leaq	0x00006ec1(%rip),%rsi
+0000000000005e1f	movq	0xfffffee8(%rbp),%rdi
+0000000000005e26	call	*%rax
+0000000000005e28	movq	%rax,0xfffffef0(%rbp)
+0000000000005e2f	cmpq	$__mh_bundle_header,0xfffffef0(%rbp)
+0000000000005e37	je	0x00005f5a
+0000000000005e3d	movq	0xb0(%rbp),%rax
+0000000000005e41	movq	(%rax),%rax
+0000000000005e44	movq	%rax,0xfffffef8(%rbp)
+0000000000005e4b	movq	$__mh_bundle_header,0xffffff00(%rbp)
+0000000000005e56	movq	0xb0(%rbp),%rax
+0000000000005e5a	movq	(%rax),%rax
+0000000000005e5d	cmpq	0xfffffef8(%rbp),%rax
+0000000000005e64	je	0x00005e86
+0000000000005e66	movq	0x00006fc3(%rip),%rsi
+0000000000005e6d	movq	0xfffffee0(%rbp),%rdi
+0000000000005e74	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005e79	movq	%rax,%rdi
+0000000000005e7c	movl	$__mh_bundle_header,%eax
+0000000000005e81	callq	0x00009122	; symbol stub for: _objc_enumerationMutation
+0000000000005e86	movq	0xa8(%rbp),%rdx
+0000000000005e8a	movq	0xffffff00(%rbp),%rax
+0000000000005e91	shlq	$0x03,%rax
+0000000000005e95	leaq	(%rdx,%rax),%rax
+0000000000005e99	movq	(%rax),%rax
+0000000000005e9c	movq	%rax,0xe8(%rbp)
+0000000000005ea0	incq	0xffffff00(%rbp)
+0000000000005ea7	movq	0xe8(%rbp),%rdi
+0000000000005eab	leaq	0x00006e4e(%rip),%rax
+0000000000005eb2	movq	(%rax),%rax
+0000000000005eb5	leaq	0x00006e44(%rip),%rsi
+0000000000005ebc	call	*%rax
+0000000000005ebe	movq	%rax,%rbx
+0000000000005ec1	movq	0x000072c0(%rip),%rax
+0000000000005ec8	movq	%rax,%rdi
+0000000000005ecb	leaq	0x00006e2e(%rip),%rax
+0000000000005ed2	movq	(%rax),%rax
+0000000000005ed5	leaq	0x00006e24(%rip),%rsi
+0000000000005edc	call	*%rax
+0000000000005ede	cmpq	%rax,%rbx
+0000000000005ee1	jne	0x00005efc
+0000000000005ee3	movq	0xe8(%rbp),%rdi
+0000000000005ee7	movq	0x00006f4a(%rip),%rsi
+0000000000005eee	movq	0xffffff08(%rbp),%rdx
+0000000000005ef5	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005efa	jmp	0x00005f62
+0000000000005efc	movq	0xfffffef0(%rbp),%rax
+0000000000005f03	cmpq	%rax,0xffffff00(%rbp)
+0000000000005f0a	jb	0x100005e56
+0000000000005f10	leaq	0x00006dc9(%rip),%rax
+0000000000005f17	movq	(%rax),%rax
+0000000000005f1a	leaq	0xffffff20(%rbp),%rcx
+0000000000005f21	leaq	0xa0(%rbp),%rdx
+0000000000005f25	movl	$0x00000010,%r8d
+0000000000005f2b	leaq	0x00006dae(%rip),%rsi
+0000000000005f32	movq	0xfffffee8(%rbp),%rdi
+0000000000005f39	call	*%rax
+0000000000005f3b	movq	%rax,0xfffffef0(%rbp)
+0000000000005f42	cmpq	$__mh_bundle_header,0xfffffef0(%rbp)
+0000000000005f4a	jne	0x100005e4b
+0000000000005f50	movq	$__mh_bundle_header,0xe8(%rbp)
+0000000000005f58	jmp	0x00005f62
+0000000000005f5a	movq	$__mh_bundle_header,0xe8(%rbp)
+0000000000005f62	leaq	0x0000863f(%rip),%rax
+0000000000005f69	movq	(%rax),%rax
+0000000000005f6c	movq	0x00006ec5(%rip),%rsi
+0000000000005f73	movq	0xffffff18(%rbp),%rdi
+0000000000005f7a	movq	0xffffff08(%rbp),%rdx
+0000000000005f81	call	*%rax
+0000000000005f83	addq	$0x00000118,%rsp
+0000000000005f8a	popq	%rbx
+0000000000005f8b	leave
+0000000000005f8c	ret
+_InsertDBItem:
+0000000000005f8d	nop
+0000000000005f8e	nop
+0000000000005f8f	nop
+0000000000005f90	nop
+0000000000005f91	nop
+0000000000005f92	nop
+0000000000005f93	pushq	%rbp
+0000000000005f94	movq	%rsp,%rbp
+0000000000005f97	pushq	%rbx
+0000000000005f98	subq	$0x68,%rsp
+0000000000005f9c	movq	0x0000608d(%rip),%rax
+0000000000005fa3	movq	(%rax),%rdi
+0000000000005fa6	movq	0x00006e5b(%rip),%rsi
+0000000000005fad	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005fb2	movq	%rax,0xe0(%rbp)
+0000000000005fb6	movq	$__mh_bundle_header,0xd8(%rbp)
+0000000000005fbe	jmp	0x000062f7
+0000000000005fc3	movq	0xe0(%rbp),%rdi
+0000000000005fc7	leaq	0x00006d62(%rip),%rax
+0000000000005fce	movq	(%rax),%rax
+0000000000005fd1	movq	0xd8(%rbp),%rdx
+0000000000005fd5	leaq	0x00006d54(%rip),%rsi
+0000000000005fdc	call	*%rax
+0000000000005fde	movq	%rax,%rdi
+0000000000005fe1	movq	0x00006e18(%rip),%rsi
+0000000000005fe8	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000005fed	movq	%rax,0xd0(%rbp)
+0000000000005ff1	cmpq	$__mh_bundle_header,0xd0(%rbp)
+0000000000005ff6	je	0x000062f3
+0000000000005ffc	movq	0xd0(%rbp),%rdi
+0000000000006000	movq	0x00006fa1(%rip),%rsi
+0000000000006007	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000600c	movq	%rax,%rdi
+000000000000600f	leaq	0x00006cda(%rip),%rax
+0000000000006016	movq	(%rax),%rcx
+0000000000006019	leaq	0x00008320(%rip),%rax
+0000000000006020	movq	(%rax),%rax
+0000000000006023	movq	%rax,%rdx
+0000000000006026	leaq	0x00006cc3(%rip),%rsi
+000000000000602d	call	*%rcx
+000000000000602f	testb	%al,%al
+0000000000006031	je	0x000062f3
+0000000000006037	movq	0xd0(%rbp),%rdi
+000000000000603b	movq	0x00006dee(%rip),%rsi
+0000000000006042	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000006047	movq	%rax,%rdi
+000000000000604a	leaq	0x00006c4f(%rip),%rax
+0000000000006051	movq	(%rax),%rax
+0000000000006054	leaq	0x00006c45(%rip),%rsi
+000000000000605b	call	*%rax
+000000000000605d	movq	%rax,0xc8(%rbp)
+0000000000006061	movq	0xc8(%rbp),%rdi
+0000000000006065	leaq	0x00006c54(%rip),%rax
+000000000000606c	movq	(%rax),%rax
+000000000000606f	leaq	0x00006c4a(%rip),%rsi
+0000000000006076	call	*%rax
+0000000000006078	movl	%eax,0xe8(%rbp)
+000000000000607b	movq	$0xffffffff,0xc0(%rbp)
+0000000000006083	movq	$0xffffffff,0xb8(%rbp)
+000000000000608b	movq	$0xffffffff,0xb0(%rbp)
+0000000000006093	movq	$0xffffffff,0xa8(%rbp)
+000000000000609b	movb	$__mh_bundle_header,0xef(%rbp)
+000000000000609f	movq	$__mh_bundle_header,0xa0(%rbp)
+00000000000060a7	jmp	0x0000621d
+00000000000060ac	movq	0xc8(%rbp),%rdi
+00000000000060b0	leaq	0x00006c79(%rip),%rax
+00000000000060b7	movq	(%rax),%rax
+00000000000060ba	movq	0xa0(%rbp),%rdx
+00000000000060be	leaq	0x00006c6b(%rip),%rsi
+00000000000060c5	call	*%rax
+00000000000060c7	movq	%rax,%rdi
+00000000000060ca	leaq	0x00006bcf(%rip),%rax
+00000000000060d1	movq	(%rax),%rax
+00000000000060d4	leaq	0x00006bc5(%rip),%rsi
+00000000000060db	call	*%rax
+00000000000060dd	movq	%rax,0x98(%rbp)
+00000000000060e1	movq	0x98(%rbp),%rdi
+00000000000060e5	movq	0x00006ed4(%rip),%rsi
+00000000000060ec	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000060f1	movq	%rax,%rdi
+00000000000060f4	leaq	0x00006bf5(%rip),%rax
+00000000000060fb	movq	(%rax),%rcx
+00000000000060fe	movq	0x00005f33(%rip),%rax
+0000000000006105	movq	(%rax),%rax
+0000000000006108	movq	%rax,%rdx
+000000000000610b	leaq	0x00006bde(%rip),%rsi
+0000000000006112	call	*%rcx
+0000000000006114	testb	%al,%al
+0000000000006116	je	0x00006133
+0000000000006118	cmpb	$__mh_bundle_header,0xef(%rbp)
+000000000000611c	jne	0x00006202
+0000000000006122	movq	0xa0(%rbp),%rax
+0000000000006126	movq	%rax,0xb0(%rbp)
+000000000000612a	movb	$0x01,0xef(%rbp)
+000000000000612e	jmp	0x00006202
+0000000000006133	movb	$__mh_bundle_header,0xef(%rbp)
+0000000000006137	movq	0x98(%rbp),%rdi
+000000000000613b	movq	0x00006e7e(%rip),%rsi
+0000000000006142	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000006147	movq	%rax,%rdi
+000000000000614a	leaq	0x00006b9f(%rip),%rax
+0000000000006151	movq	(%rax),%rcx
+0000000000006154	leaq	0x000081f5(%rip),%rax
+000000000000615b	movq	(%rax),%rax
+000000000000615e	movq	%rax,%rdx
+0000000000006161	leaq	0x00006b88(%rip),%rsi
+0000000000006168	call	*%rcx
+000000000000616a	testb	%al,%al
+000000000000616c	je	0x0000617b
+000000000000616e	movq	0xa0(%rbp),%rax
+0000000000006172	movq	%rax,0xc0(%rbp)
+0000000000006176	jmp	0x00006202
+000000000000617b	movq	0x98(%rbp),%rdi
+000000000000617f	movq	0x00006e3a(%rip),%rsi
+0000000000006186	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000618b	movq	%rax,%rdi
+000000000000618e	leaq	0x00006b5b(%rip),%rax
+0000000000006195	movq	(%rax),%rcx
+0000000000006198	movq	0x00005ea1(%rip),%rax
+000000000000619f	movq	(%rax),%rax
+00000000000061a2	movq	%rax,%rdx
+00000000000061a5	leaq	0x00006b44(%rip),%rsi
+00000000000061ac	call	*%rcx
+00000000000061ae	testb	%al,%al
+00000000000061b0	je	0x00006202
+00000000000061b2	cmpq	$0xff,0xb8(%rbp)
+00000000000061b7	jne	0x000061c3
+00000000000061b9	movq	0xa0(%rbp),%rax
+00000000000061bd	movq	%rax,0xb8(%rbp)
+00000000000061c1	jmp	0x00006202
+00000000000061c3	movq	0x98(%rbp),%rdi
+00000000000061c7	movq	0x00006df2(%rip),%rsi
+00000000000061ce	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000061d3	movq	%rax,%rdi
+00000000000061d6	leaq	0x00006b13(%rip),%rax
+00000000000061dd	movq	(%rax),%rcx
+00000000000061e0	leaq	0x00008161(%rip),%rax
+00000000000061e7	movq	(%rax),%rax
+00000000000061ea	movq	%rax,%rdx
+00000000000061ed	leaq	0x00006afc(%rip),%rsi
+00000000000061f4	call	*%rcx
+00000000000061f6	testb	%al,%al
+00000000000061f8	je	0x00006202
+00000000000061fa	movq	0xa0(%rbp),%rax
+00000000000061fe	movq	%rax,0xa8(%rbp)
+0000000000006202	movq	0x98(%rbp),%rdi
+0000000000006206	leaq	0x00006aa3(%rip),%rax
+000000000000620d	movq	(%rax),%rax
+0000000000006210	leaq	0x00006a99(%rip),%rsi
+0000000000006217	call	*%rax
+0000000000006219	incq	0xa0(%rbp)
+000000000000621d	movl	0xe8(%rbp),%eax
+0000000000006220	cdqe
+0000000000006222	cmpq	0xa0(%rbp),%rax
+0000000000006226	jg	0x1000060ac
+000000000000622c	movq	0xc8(%rbp),%rdi
+0000000000006230	leaq	0x00006a79(%rip),%rax
+0000000000006237	movq	(%rax),%rax
+000000000000623a	leaq	0x00006a6f(%rip),%rsi
+0000000000006241	call	*%rax
+0000000000006243	cmpq	$0xff,0xa8(%rbp)
+0000000000006248	jle	0x00006254
+000000000000624a	movq	$0xffffffff,0xa0(%rbp)
+0000000000006252	jmp	0x000062cc
+0000000000006254	movl	$__mh_bundle_header,%eax
+0000000000006259	callq	_get_insertion_index
+000000000000625e	cdqe
+0000000000006260	movq	%rax,0x90(%rbp)
+0000000000006264	leaq	0x00006475(%rip),%rdi
+000000000000626b	movq	0x90(%rbp),%rsi
+000000000000626f	movl	$__mh_bundle_header,%eax
+0000000000006274	callq	_DBLog
+0000000000006279	cmpq	$0xff,0x90(%rbp)
+000000000000627e	je	0x0000628b
+0000000000006280	movl	0xe8(%rbp),%eax
+0000000000006283	cdqe
+0000000000006285	cmpq	0x90(%rbp),%rax
+0000000000006289	jge	0x000062c4
+000000000000628b	cmpq	$0xff,0xc0(%rbp)
+0000000000006290	jle	0x0000629f
+0000000000006292	movq	0xc0(%rbp),%rax
+0000000000006296	incq	%rax
+0000000000006299	movq	%rax,0xa0(%rbp)
+000000000000629d	jmp	0x000062cc
+000000000000629f	cmpq	$0xff,0xb0(%rbp)
+00000000000062a4	jle	0x000062b0
+00000000000062a6	movq	0xb0(%rbp),%rax
+00000000000062aa	movq	%rax,0xa0(%rbp)
+00000000000062ae	jmp	0x000062cc
+00000000000062b0	cmpq	$0xff,0xb8(%rbp)
+00000000000062b5	jle	0x000062cc
+00000000000062b7	movq	0xb8(%rbp),%rax
+00000000000062bb	incq	%rax
+00000000000062be	movq	%rax,0xa0(%rbp)
+00000000000062c2	jmp	0x000062cc
+00000000000062c4	movq	0x90(%rbp),%rax
+00000000000062c8	movq	%rax,0xa0(%rbp)
+00000000000062cc	cmpq	$0xff,0xa0(%rbp)
+00000000000062d1	jle	0x0000631b
+00000000000062d3	movq	0xd0(%rbp),%rdi
+00000000000062d7	leaq	0x0000806a(%rip),%rax
+00000000000062de	movq	(%rax),%rdx
+00000000000062e1	movq	0x00006b10(%rip),%rsi
+00000000000062e8	movq	0xa0(%rbp),%rcx
+00000000000062ec	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000062f1	jmp	0x0000631b
+00000000000062f3	incq	0xd8(%rbp)
+00000000000062f7	movq	0xd8(%rbp),%rbx
+00000000000062fb	movq	0xe0(%rbp),%rdi
+00000000000062ff	leaq	0x000069ba(%rip),%rax
+0000000000006306	movq	(%rax),%rax
+0000000000006309	leaq	0x000069b0(%rip),%rsi
+0000000000006310	call	*%rax
+0000000000006312	cmpq	%rax,%rbx
+0000000000006315	jb	0x100005fc3
+000000000000631b	addq	$0x68,%rsp
+000000000000631f	popq	%rbx
+0000000000006320	leave
+0000000000006321	ret
+___ToolbarOverride_block_invoke_1:
+0000000000006322	nop
+0000000000006323	nop
+0000000000006324	nop
+0000000000006325	nop
+0000000000006326	nop
+0000000000006327	nop
+0000000000006328	pushq	%rbp
+0000000000006329	movq	%rsp,%rbp
+000000000000632c	subq	$0x10,%rsp
+0000000000006330	movq	%rdi,0xf8(%rbp)
+0000000000006334	movl	$__mh_bundle_header,%eax
+0000000000006339	callq	_InsertDBItem
+000000000000633e	leave
+000000000000633f	ret
+_DebugAE:
+0000000000006340	nop
+0000000000006341	nop
+0000000000006342	nop
+0000000000006343	nop
+0000000000006344	nop
+0000000000006345	nop
+0000000000006346	pushq	%rbp
+0000000000006347	movq	%rsp,%rbp
+000000000000634a	subq	$0x20,%rsp
+000000000000634e	movq	%rdi,0xe8(%rbp)
+0000000000006352	leaq	0xf8(%rbp),%rsi
+0000000000006356	movq	0xe8(%rbp),%rdi
+000000000000635a	callq	0x00008f0c	; symbol stub for: _AEPrintDescToHandle
+000000000000635f	movq	0xf8(%rbp),%rax
+0000000000006363	movq	(%rax),%rcx
+0000000000006366	leaq	0x00006393(%rip),%rdx
+000000000000636d	movl	$__mh_bundle_header,%esi
+0000000000006372	movl	$__mh_bundle_header,%edi
+0000000000006377	movl	$__mh_bundle_header,%eax
+000000000000637c	callq	0x00008f8a	; symbol stub for: _CFStringCreateWithFormat
+0000000000006381	movq	%rax,0xf0(%rbp)
+0000000000006385	movq	0xf0(%rbp),%rdi
+0000000000006389	callq	0x00008f72	; symbol stub for: _CFShow
+000000000000638e	cmpq	$__mh_bundle_header,0xf0(%rbp)
+0000000000006393	je	0x0000639e
+0000000000006395	movq	0xf0(%rbp),%rdi
+0000000000006399	callq	0x00008f6c	; symbol stub for: _CFRelease
+000000000000639e	movq	0xf8(%rbp),%rdi
+00000000000063a2	callq	0x00008fea	; symbol stub for: _DisposeHandle
+00000000000063a7	leave
+00000000000063a8	ret
+_BuildPath:
+00000000000063a9	nop
+00000000000063aa	nop
+00000000000063ab	nop
+00000000000063ac	nop
+00000000000063ad	nop
+00000000000063ae	nop
+00000000000063af	pushq	%rbp
+00000000000063b0	movq	%rsp,%rbp
+00000000000063b3	subq	$0x000002f0,%rsp
+00000000000063ba	movq	%rdi,0xfffffd28(%rbp)
+00000000000063c1	movq	0x00005c38(%rip),%rax
+00000000000063c8	movq	(%rax),%rdx
+00000000000063cb	movq	%rdx,0xf8(%rbp)
+00000000000063cf	xorl	%edx,%edx
+00000000000063d1	movq	$__mh_bundle_header,0xffffff70(%rbp)
+00000000000063dc	leaq	0xffffff78(%rbp),%rcx
+00000000000063e3	leaq	0x98(%rbp),%rdx
+00000000000063e7	movq	0xfffffd28(%rbp),%rdi
+00000000000063ee	movl	$0x66726f6d,%esi
+00000000000063f3	callq	0x00008f1e	; symbol stub for: _AESizeOfParam
+00000000000063f8	movw	%ax,0x9e(%rbp)
+00000000000063fc	cmpw	$__mh_bundle_header,0x9e(%rbp)
+0000000000006401	setne	%al
+0000000000006404	movzbl	%al,%eax
+0000000000006407	testq	%rax,%rax
+000000000000640a	jne	0x000068c9
+0000000000006410	movl	0x98(%rbp),%eax
+0000000000006413	cmpl	$0x6e756c6c,%eax
+0000000000006418	jne	0x000066bc
+000000000000641e	leaq	0x90(%rbp),%rdx
+0000000000006422	leaq	0x98(%rbp),%rcx
+0000000000006426	movq	0xfffffd28(%rbp),%rdi
+000000000000642d	leaq	0xffffff78(%rbp),%rax
+0000000000006434	movq	%rax,(%rsp)
+0000000000006438	movl	$0x00000004,%r9d
+000000000000643e	movq	%rdx,%r8
+0000000000006441	movl	$0x74797065,%edx
+0000000000006446	movl	$0x77616e74,%esi
+000000000000644b	callq	0x00008f06	; symbol stub for: _AEGetParamPtr
+0000000000006450	movw	%ax,0x9e(%rbp)
+0000000000006454	cmpw	$__mh_bundle_header,0x9e(%rbp)
+0000000000006459	setne	%al
+000000000000645c	movzbl	%al,%eax
+000000000000645f	testq	%rax,%rax
+0000000000006462	jne	0x000068c9
+0000000000006468	movl	0x90(%rbp),%eax
+000000000000646b	cmpl	$0x70726f70,%eax
+0000000000006470	jne	0x000064ea
+0000000000006472	leaq	0x94(%rbp),%rdx
+0000000000006476	leaq	0x98(%rbp),%rcx
+000000000000647a	movq	0xfffffd28(%rbp),%rdi
+0000000000006481	leaq	0xffffff78(%rbp),%rax
+0000000000006488	movq	%rax,(%rsp)
+000000000000648c	movl	$0x00000004,%r9d
+0000000000006492	movq	%rdx,%r8
+0000000000006495	movl	$0x74797065,%edx
+000000000000649a	movl	$0x73656c64,%esi
+000000000000649f	callq	0x00008f06	; symbol stub for: _AEGetParamPtr
+00000000000064a4	movw	%ax,0x9e(%rbp)
+00000000000064a8	cmpw	$__mh_bundle_header,0x9e(%rbp)
+00000000000064ad	setne	%al
+00000000000064b0	movzbl	%al,%eax
+00000000000064b3	testq	%rax,%rax
+00000000000064b6	jne	0x000068c9
+00000000000064bc	movl	0x94(%rbp),%eax
+00000000000064bf	cmpl	$0x7364736b,%eax
+00000000000064c4	jne	0x000068c9
+00000000000064ca	movl	$0x00000001,%edi
+00000000000064cf	callq	0x000090ec	; symbol stub for: _malloc
+00000000000064d4	movq	%rax,0xffffff70(%rbp)
+00000000000064db	movq	0xffffff70(%rbp),%rax
+00000000000064e2	movb	$__mh_bundle_header,(%rax)
+00000000000064e5	jmp	0x000068c9
+00000000000064ea	movl	0x90(%rbp),%eax
+00000000000064ed	cmpl	$0x63646973,%eax
+00000000000064f2	je	0x00006502
+00000000000064f4	movl	0x90(%rbp),%eax
+00000000000064f7	cmpl	$0x636f626a,%eax
+00000000000064fc	jne	0x000068c9
+0000000000006502	leaq	0xffffff30(%rbp),%rcx
+0000000000006509	movq	0xfffffd28(%rbp),%rdi
+0000000000006510	movl	$0x75747874,%edx
+0000000000006515	movl	$0x73656c64,%esi
+000000000000651a	callq	0x00008f00	; symbol stub for: _AEGetParamDesc
+000000000000651f	movw	%ax,0x9e(%rbp)
+0000000000006523	cmpw	$__mh_bundle_header,0x9e(%rbp)
+0000000000006528	setne	%al
+000000000000652b	movzbl	%al,%eax
+000000000000652e	testq	%rax,%rax
+0000000000006531	jne	0x000068c9
+0000000000006537	leaq	0xffffff30(%rbp),%rdi
+000000000000653e	callq	0x00008ef4	; symbol stub for: _AEGetDescDataSize
+0000000000006543	movq	%rax,0xffffff68(%rbp)
+000000000000654a	movq	0xffffff68(%rbp),%rdi
+0000000000006551	callq	0x000090ec	; symbol stub for: _malloc
+0000000000006556	movq	%rax,0xffffff60(%rbp)
+000000000000655d	movq	0xffffff68(%rbp),%rdx
+0000000000006564	movq	0xffffff60(%rbp),%rsi
+000000000000656b	leaq	0xffffff30(%rbp),%rdi
+0000000000006572	callq	0x00008eee	; symbol stub for: _AEGetDescData
+0000000000006577	leaq	0xffffff30(%rbp),%rdi
+000000000000657e	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006583	movq	$0x00000001,0xffffff58(%rbp)
+000000000000658e	jmp	0x00006644
+0000000000006593	leaq	0xfffffd30(%rbp),%rdx
+000000000000659a	leaq	0x9c(%rbp),%rsi
+000000000000659e	movq	0xffffff58(%rbp),%rdi
+00000000000065a5	leaq	0xa0(%rbp),%rax
+00000000000065a9	movq	%rax,(%rsp)
+00000000000065ad	movq	%rdx,%r9
+00000000000065b0	movl	$__mh_bundle_header,%r8d
+00000000000065b6	movl	$__mh_bundle_header,%ecx
+00000000000065bb	movq	%rsi,%rdx
+00000000000065be	movq	%rdi,%rsi
+00000000000065c1	movl	$__mh_bundle_header,%edi
+00000000000065c6	callq	0x00008ff0	; symbol stub for: _FSGetVolumeInfo
+00000000000065cb	movw	%ax,0x9e(%rbp)
+00000000000065cf	cmpw	$__mh_bundle_header,0x9e(%rbp)
+00000000000065d4	jne	0x0000663d
+00000000000065d6	movq	0xffffff68(%rbp),%rdx
+00000000000065dd	movzwl	0xfffffd30(%rbp),%eax
+00000000000065e4	movzwl	%ax,%eax
+00000000000065e7	addq	%rax,%rax
+00000000000065ea	cmpq	%rax,%rdx
+00000000000065ed	jne	0x0000663d
+00000000000065ef	movl	$__mh_bundle_header,0x8c(%rbp)
+00000000000065f6	jmp	0x0000661f
+00000000000065f8	movl	0x8c(%rbp),%eax
+00000000000065fb	cdqe
+00000000000065fd	addq	%rax,%rax
+0000000000006600	addq	0xffffff60(%rbp),%rax
+0000000000006607	movzwl	(%rax),%edx
+000000000000660a	movl	0x8c(%rbp),%eax
+000000000000660d	cdqe
+000000000000660f	movzwl	0xfffffd32(%rbp,%rax,2),%eax
+0000000000006617	cmpw	%ax,%dx
+000000000000661a	jne	0x0000662e
+000000000000661c	incl	0x8c(%rbp)
+000000000000661f	movzwl	0xfffffd30(%rbp),%eax
+0000000000006626	movzwl	%ax,%eax
+0000000000006629	cmpl	0x8c(%rbp),%eax
+000000000000662c	jg	0x000065f8
+000000000000662e	movzwl	0xfffffd30(%rbp),%eax
+0000000000006635	movzwl	%ax,%eax
+0000000000006638	cmpl	0x8c(%rbp),%eax
+000000000000663b	je	0x0000664f
+000000000000663d	incq	0xffffff58(%rbp)
+0000000000006644	cmpw	$0xdd,0x9e(%rbp)
+0000000000006649	jne	0x100006593
+000000000000664f	movq	0xffffff60(%rbp),%rdi
+0000000000006656	callq	0x000090b0	; symbol stub for: _free
+000000000000665b	cmpw	$0xdd,0x9e(%rbp)
+0000000000006660	je	0x000068c9
+0000000000006666	movl	$0x00000080,0x84(%rbp)
+000000000000666d	shll	0x84(%rbp)
+0000000000006670	cmpq	$__mh_bundle_header,0xffffff70(%rbp)
+0000000000006678	je	0x00006686
+000000000000667a	movq	0xffffff70(%rbp),%rdi
+0000000000006681	callq	0x000090b0	; symbol stub for: _free
+0000000000006686	movl	0x84(%rbp),%eax
+0000000000006689	movslq	%eax,%rdi
+000000000000668c	callq	0x000090ec	; symbol stub for: _malloc
+0000000000006691	movq	%rax,0xffffff70(%rbp)
+0000000000006698	movl	0x84(%rbp),%edx
+000000000000669b	movq	0xffffff70(%rbp),%rsi
+00000000000066a2	leaq	0xa0(%rbp),%rdi
+00000000000066a6	callq	0x00008ffc	; symbol stub for: _FSRefMakePath
+00000000000066ab	movl	%eax,0x88(%rbp)
+00000000000066ae	cmpl	$0xfffff7c2,0x88(%rbp)
+00000000000066b5	je	0x0000666d
+00000000000066b7	jmp	0x000068c9
+00000000000066bc	movl	0x98(%rbp),%eax
+00000000000066bf	cmpl	$0x6f626a20,%eax
+00000000000066c4	jne	0x000068c9
+00000000000066ca	leaq	0xfffffd30(%rbp),%rcx
+00000000000066d1	movq	0xfffffd28(%rbp),%rdi
+00000000000066d8	movl	$0x6f626a20,%edx
+00000000000066dd	movl	$0x66726f6d,%esi
+00000000000066e2	callq	0x00008f00	; symbol stub for: _AEGetParamDesc
+00000000000066e7	movw	%ax,0x9e(%rbp)
+00000000000066eb	cmpw	$__mh_bundle_header,0x9e(%rbp)
+00000000000066f0	setne	%al
+00000000000066f3	movzbl	%al,%eax
+00000000000066f6	testq	%rax,%rax
+00000000000066f9	jne	0x000068c9
+00000000000066ff	leaq	0xfffffd30(%rbp),%rdi
+0000000000006706	callq	_BuildPath
+000000000000670b	movq	%rax,0xffffff50(%rbp)
+0000000000006712	leaq	0xfffffd30(%rbp),%rdi
+0000000000006719	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+000000000000671e	cmpq	$__mh_bundle_header,0xffffff50(%rbp)
+0000000000006726	je	0x000068c9
+000000000000672c	leaq	0xffffff30(%rbp),%rcx
+0000000000006733	movq	0xfffffd28(%rbp),%rdi
+000000000000673a	movl	$0x75746638,%edx
+000000000000673f	movl	$0x73656c64,%esi
+0000000000006744	callq	0x00008f00	; symbol stub for: _AEGetParamDesc
+0000000000006749	movw	%ax,0x9e(%rbp)
+000000000000674d	cmpw	$__mh_bundle_header,0x9e(%rbp)
+0000000000006752	setne	%al
+0000000000006755	movzbl	%al,%eax
+0000000000006758	testq	%rax,%rax
+000000000000675b	jne	0x000068bd
+0000000000006761	leaq	0xffffff30(%rbp),%rdi
+0000000000006768	callq	0x00008ef4	; symbol stub for: _AEGetDescDataSize
+000000000000676d	movq	%rax,0xffffff48(%rbp)
+0000000000006774	movq	0xffffff50(%rbp),%rdi
+000000000000677b	callq	0x00009182	; symbol stub for: _strlen
+0000000000006780	movq	%rax,0xffffff40(%rbp)
+0000000000006787	movq	0xffffff48(%rbp),%rax
+000000000000678e	addq	0xffffff40(%rbp),%rax
+0000000000006795	leaq	0x02(%rax),%rdi
+0000000000006799	callq	0x000090ec	; symbol stub for: _malloc
+000000000000679e	movq	%rax,0xffffff70(%rbp)
+00000000000067a5	movq	$0xffffffff,%rax
+00000000000067ac	cmpq	$0xff,%rax
+00000000000067b0	je	0x000067d5
+00000000000067b2	movq	$0xffffffff,%rcx
+00000000000067b9	movq	0xffffff40(%rbp),%rdx
+00000000000067c0	movq	0xffffff50(%rbp),%rsi
+00000000000067c7	movq	0xffffff70(%rbp),%rdi
+00000000000067ce	callq	0x00009032	; symbol stub for: ___memcpy_chk
+00000000000067d3	jmp	0x000067ef
+00000000000067d5	movq	0xffffff40(%rbp),%rdx
+00000000000067dc	movq	0xffffff50(%rbp),%rsi
+00000000000067e3	movq	0xffffff70(%rbp),%rdi
+00000000000067ea	callq	___inline_memcpy_chk
+00000000000067ef	movq	$0xffffffff,%rax
+00000000000067f6	cmpq	$0xff,%rax
+00000000000067fa	je	0x00006827
+00000000000067fc	movq	$0xffffffff,%rcx
+0000000000006803	movq	0xffffff40(%rbp),%rax
+000000000000680a	movq	%rax,%rdi
+000000000000680d	addq	0xffffff70(%rbp),%rdi
+0000000000006814	movl	$0x00000001,%edx
+0000000000006819	leaq	0x00003b30(%rip),%rsi
+0000000000006820	callq	0x00009032	; symbol stub for: ___memcpy_chk
+0000000000006825	jmp	0x00006849
+0000000000006827	movq	0xffffff40(%rbp),%rax
+000000000000682e	movq	%rax,%rdi
+0000000000006831	addq	0xffffff70(%rbp),%rdi
+0000000000006838	movl	$0x00000001,%edx
+000000000000683d	leaq	0x00003b0c(%rip),%rsi
+0000000000006844	callq	___inline_memcpy_chk
+0000000000006849	movq	0xffffff40(%rbp),%rax
+0000000000006850	addq	0xffffff70(%rbp),%rax
+0000000000006857	leaq	0x01(%rax),%rsi
+000000000000685b	movq	0xffffff48(%rbp),%rdx
+0000000000006862	leaq	0xffffff30(%rbp),%rdi
+0000000000006869	callq	0x00008eee	; symbol stub for: _AEGetDescData
+000000000000686e	movw	%ax,0x9e(%rbp)
+0000000000006872	cmpw	$__mh_bundle_header,0x9e(%rbp)
+0000000000006877	jne	0x0000689a
+0000000000006879	movq	0xffffff70(%rbp),%rdx
+0000000000006880	incq	%rdx
+0000000000006883	movq	0xffffff48(%rbp),%rax
+000000000000688a	addq	0xffffff40(%rbp),%rax
+0000000000006891	leaq	(%rdx,%rax),%rax
+0000000000006895	movb	$__mh_bundle_header,(%rax)
+0000000000006898	jmp	0x000068b1
+000000000000689a	movq	0xffffff70(%rbp),%rdi
+00000000000068a1	callq	0x000090b0	; symbol stub for: _free
+00000000000068a6	movq	$__mh_bundle_header,0xffffff70(%rbp)
+00000000000068b1	leaq	0xffffff30(%rbp),%rdi
+00000000000068b8	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+00000000000068bd	movq	0xffffff50(%rbp),%rdi
+00000000000068c4	callq	0x000090b0	; symbol stub for: _free
+00000000000068c9	movq	0xffffff70(%rbp),%rax
+00000000000068d0	movq	0x00005729(%rip),%rdx
+00000000000068d7	movq	0xf8(%rbp),%rcx
+00000000000068db	xorq	(%rdx),%rcx
+00000000000068de	je	0x000068e5
+00000000000068e0	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+00000000000068e5	leave
+00000000000068e6	ret
+___inline_memcpy_chk:
+00000000000068e7	nop
+00000000000068e8	nop
+00000000000068e9	nop
+00000000000068ea	nop
+00000000000068eb	nop
+00000000000068ec	nop
+00000000000068ed	pushq	%rbp
+00000000000068ee	movq	%rsp,%rbp
+00000000000068f1	subq	$0x20,%rsp
+00000000000068f5	movq	%rdi,0xf8(%rbp)
+00000000000068f9	movq	%rsi,0xf0(%rbp)
+00000000000068fd	movq	%rdx,0xe8(%rbp)
+0000000000006901	movq	$0xffffffff,%rcx
+0000000000006908	movq	0xe8(%rbp),%rdx
+000000000000690c	movq	0xf0(%rbp),%rsi
+0000000000006910	movq	0xf8(%rbp),%rdi
+0000000000006914	callq	0x00009032	; symbol stub for: ___memcpy_chk
+0000000000006919	leave
+000000000000691a	ret
+_GetFinderContext:
+000000000000691b	nop
+000000000000691c	nop
+000000000000691d	nop
+000000000000691e	nop
+000000000000691f	nop
+0000000000006920	nop
+0000000000006921	pushq	%rbp
+0000000000006922	movq	%rsp,%rbp
+0000000000006925	pushq	%rbx
+0000000000006926	subq	$0x00000128,%rsp
+000000000000692d	movq	%rdi,0xfffffee8(%rbp)
+0000000000006934	movl	%esi,0xfffffee4(%rbp)
+000000000000693a	movq	$__mh_bundle_header,0xd0(%rbp)
+0000000000006942	cmpl	$__mh_bundle_header,0xfffffee4(%rbp)
+0000000000006949	je	0x00006960
+000000000000694b	cmpl	$0x01,0xfffffee4(%rbp)
+0000000000006952	je	0x00006960
+0000000000006954	movl	$0x00000001,0xfffffee0(%rbp)
+000000000000695e	jmp	0x0000696a
+0000000000006960	movl	$__mh_bundle_header,0xfffffee0(%rbp)
+000000000000696a	movslq	0xfffffee0(%rbp),%rax
+0000000000006971	testq	%rax,%rax
+0000000000006974	jne	0x00006e62
+000000000000697a	movl	$__mh_bundle_header,0xc0(%rbp)
+0000000000006981	movl	$0x00000002,0xc4(%rbp)
+0000000000006988	leaq	0xa0(%rbp),%rcx
+000000000000698c	leaq	0xc0(%rbp),%rsi
+0000000000006990	movl	$0x00000008,%edx
+0000000000006995	movl	$0x70736e20,%edi
+000000000000699a	callq	0x00008ee2	; symbol stub for: _AECreateDesc
+000000000000699f	movw	%ax,0xee(%rbp)
+00000000000069a3	cmpw	$__mh_bundle_header,0xee(%rbp)
+00000000000069a8	setne	%al
+00000000000069ab	movzbl	%al,%eax
+00000000000069ae	testq	%rax,%rax
+00000000000069b1	jne	0x00006e62
+00000000000069b7	cmpl	$0x01,0xfffffee4(%rbp)
+00000000000069be	jne	0x000069c9
+00000000000069c0	movl	$0x66767467,0xe8(%rbp)
+00000000000069c7	jmp	0x000069d0
+00000000000069c9	movl	$0x73656c65,0xe8(%rbp)
+00000000000069d0	movl	$0x6675726c,0xe4(%rbp)
+00000000000069d7	leaq	0x90(%rbp),%rax
+00000000000069db	leaq	0xa0(%rbp),%rdx
+00000000000069df	movq	%rax,%r9
+00000000000069e2	movl	$__mh_bundle_header,%r8d
+00000000000069e8	movl	$0xffffffff,%ecx
+00000000000069ed	movl	$0x67657464,%esi
+00000000000069f2	movl	$0x636f7265,%edi
+00000000000069f7	callq	0x00008edc	; symbol stub for: _AECreateAppleEvent
+00000000000069fc	movw	%ax,0xee(%rbp)
+0000000000006a00	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006a05	setne	%al
+0000000000006a08	movzbl	%al,%eax
+0000000000006a0b	testq	%rax,%rax
+0000000000006a0e	jne	0x00006e59
+0000000000006a14	cmpl	$0x01,0xfffffee4(%rbp)
+0000000000006a1b	jne	0x00006ad1
+0000000000006a21	movl	$0x00000001,0xdc(%rbp)
+0000000000006a28	leaq	0xffffff70(%rbp),%rcx
+0000000000006a2f	leaq	0xdc(%rbp),%rsi
+0000000000006a33	movl	$0x00000004,%edx
+0000000000006a38	movl	$0x6c6f6e67,%edi
+0000000000006a3d	callq	0x00008ee2	; symbol stub for: _AECreateDesc
+0000000000006a42	movw	%ax,0xee(%rbp)
+0000000000006a46	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006a4b	setne	%al
+0000000000006a4e	movzbl	%al,%eax
+0000000000006a51	testq	%rax,%rax
+0000000000006a54	jne	0x00006e50
+0000000000006a5a	leaq	0xffffff60(%rbp),%rcx
+0000000000006a61	movl	$__mh_bundle_header,%edx
+0000000000006a66	movl	$__mh_bundle_header,%esi
+0000000000006a6b	movl	$0x6e756c6c,%edi
+0000000000006a70	callq	0x00008ee2	; symbol stub for: _AECreateDesc
+0000000000006a75	movw	%ax,0xee(%rbp)
+0000000000006a79	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006a7e	setne	%al
+0000000000006a81	movzbl	%al,%eax
+0000000000006a84	testq	%rax,%rax
+0000000000006a87	jne	0x00006e3b
+0000000000006a8d	leaq	0x80(%rbp),%rax
+0000000000006a91	leaq	0xffffff70(%rbp),%rcx
+0000000000006a98	leaq	0xffffff60(%rbp),%rsi
+0000000000006a9f	movq	%rax,%r9
+0000000000006aa2	movl	$0x00000001,%r8d
+0000000000006aa8	movl	$0x696e6478,%edx
+0000000000006aad	movl	$0x6377696e,%edi
+0000000000006ab2	callq	0x00008fe4	; symbol stub for: _CreateObjSpecifier
+0000000000006ab7	movw	%ax,0xee(%rbp)
+0000000000006abb	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006ac0	setne	%al
+0000000000006ac3	movzbl	%al,%eax
+0000000000006ac6	testq	%rax,%rax
+0000000000006ac9	jne	0x00006e26
+0000000000006acf	jmp	0x00006b01
+0000000000006ad1	leaq	0x80(%rbp),%rcx
+0000000000006ad5	movl	$__mh_bundle_header,%edx
+0000000000006ada	movl	$__mh_bundle_header,%esi
+0000000000006adf	movl	$0x6e756c6c,%edi
+0000000000006ae4	callq	0x00008ee2	; symbol stub for: _AECreateDesc
+0000000000006ae9	movw	%ax,0xee(%rbp)
+0000000000006aed	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006af2	setne	%al
+0000000000006af5	movzbl	%al,%eax
+0000000000006af8	testq	%rax,%rax
+0000000000006afb	jne	0x00006e26
+0000000000006b01	leaq	0xffffff50(%rbp),%rcx
+0000000000006b08	leaq	0xe8(%rbp),%rsi
+0000000000006b0c	movl	$0x00000004,%edx
+0000000000006b11	movl	$0x74797065,%edi
+0000000000006b16	callq	0x00008ee2	; symbol stub for: _AECreateDesc
+0000000000006b1b	movw	%ax,0xee(%rbp)
+0000000000006b1f	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006b24	setne	%al
+0000000000006b27	movzbl	%al,%eax
+0000000000006b2a	testq	%rax,%rax
+0000000000006b2d	jne	0x00006e1d
+0000000000006b33	leaq	0xffffff40(%rbp),%rax
+0000000000006b3a	leaq	0xffffff50(%rbp),%rcx
+0000000000006b41	leaq	0x80(%rbp),%rsi
+0000000000006b45	movq	%rax,%r9
+0000000000006b48	movl	$0x00000001,%r8d
+0000000000006b4e	movl	$0x70726f70,%edx
+0000000000006b53	movl	$0x70726f70,%edi
+0000000000006b58	callq	0x00008fe4	; symbol stub for: _CreateObjSpecifier
+0000000000006b5d	movw	%ax,0xee(%rbp)
+0000000000006b61	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006b66	setne	%al
+0000000000006b69	movzbl	%al,%eax
+0000000000006b6c	testq	%rax,%rax
+0000000000006b6f	jne	0x00006e11
+0000000000006b75	leaq	0xffffff40(%rbp),%rdx
+0000000000006b7c	leaq	0x90(%rbp),%rdi
+0000000000006b80	movl	$0x2d2d2d2d,%esi
+0000000000006b85	callq	0x00008f12	; symbol stub for: _AEPutParamDesc
+0000000000006b8a	movw	%ax,0xee(%rbp)
+0000000000006b8e	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006b93	setne	%al
+0000000000006b96	movzbl	%al,%eax
+0000000000006b99	testq	%rax,%rax
+0000000000006b9c	jne	0x00006e05
+0000000000006ba2	leaq	0xffffff30(%rbp),%rcx
+0000000000006ba9	leaq	0xe4(%rbp),%rsi
+0000000000006bad	movl	$0x00000004,%edx
+0000000000006bb2	movl	$0x74797065,%edi
+0000000000006bb7	callq	0x00008ee2	; symbol stub for: _AECreateDesc
+0000000000006bbc	movw	%ax,0xee(%rbp)
+0000000000006bc0	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006bc5	setne	%al
+0000000000006bc8	movzbl	%al,%eax
+0000000000006bcb	testq	%rax,%rax
+0000000000006bce	jne	0x00006e05
+0000000000006bd4	leaq	0xffffff20(%rbp),%rdx
+0000000000006bdb	leaq	0xffffff30(%rbp),%rdi
+0000000000006be2	movl	$0x6c697374,%esi
+0000000000006be7	callq	0x00008ed0	; symbol stub for: _AECoerceDesc
+0000000000006bec	movw	%ax,0xee(%rbp)
+0000000000006bf0	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006bf5	setne	%al
+0000000000006bf8	movzbl	%al,%eax
+0000000000006bfb	testq	%rax,%rax
+0000000000006bfe	jne	0x00006df9
+0000000000006c04	leaq	0xffffff30(%rbp),%rdi
+0000000000006c0b	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006c10	leaq	0xffffff20(%rbp),%rdx
+0000000000006c17	leaq	0x90(%rbp),%rdi
+0000000000006c1b	movl	$0x72747970,%esi
+0000000000006c20	callq	0x00008f12	; symbol stub for: _AEPutParamDesc
+0000000000006c25	movw	%ax,0xee(%rbp)
+0000000000006c29	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006c2e	setne	%al
+0000000000006c31	movzbl	%al,%eax
+0000000000006c34	testq	%rax,%rax
+0000000000006c37	jne	0x00006ded
+0000000000006c3d	leaq	0xffffff10(%rbp),%rsi
+0000000000006c44	leaq	0x90(%rbp),%rdi
+0000000000006c48	movq	$__mh_bundle_header,(%rsp)
+0000000000006c50	movl	$__mh_bundle_header,%r9d
+0000000000006c56	movl	$0xffffffff,%r8d
+0000000000006c5c	movl	$__mh_bundle_header,%ecx
+0000000000006c61	movl	$0x00000003,%edx
+0000000000006c66	callq	0x00008f18	; symbol stub for: _AESend
+0000000000006c6b	movw	%ax,0xee(%rbp)
+0000000000006c6f	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006c74	setne	%al
+0000000000006c77	movzbl	%al,%eax
+0000000000006c7a	testq	%rax,%rax
+0000000000006c7d	jne	0x00006ded
+0000000000006c83	leaq	0xffffff00(%rbp),%rcx
+0000000000006c8a	leaq	0xffffff10(%rbp),%rdi
+0000000000006c91	movl	$0x6c697374,%edx
+0000000000006c96	movl	$0x2d2d2d2d,%esi
+0000000000006c9b	callq	0x00008f00	; symbol stub for: _AEGetParamDesc
+0000000000006ca0	movw	%ax,0xee(%rbp)
+0000000000006ca4	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006ca9	setne	%al
+0000000000006cac	movzbl	%al,%eax
+0000000000006caf	testq	%rax,%rax
+0000000000006cb2	jne	0x00006de1
+0000000000006cb8	leaq	0xb8(%rbp),%rsi
+0000000000006cbc	leaq	0xffffff00(%rbp),%rdi
+0000000000006cc3	callq	0x00008ed6	; symbol stub for: _AECountItems
+0000000000006cc8	movw	%ax,0xee(%rbp)
+0000000000006ccc	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006cd1	setne	%al
+0000000000006cd4	movzbl	%al,%eax
+0000000000006cd7	testq	%rax,%rax
+0000000000006cda	jne	0x00006de1
+0000000000006ce0	movq	0xb8(%rbp),%rax
+0000000000006ce4	leaq	__mh_bundle_header(,%rax,8),%rdi
+0000000000006cec	callq	0x000090ec	; symbol stub for: _malloc
+0000000000006cf1	movq	%rax,0xd0(%rbp)
+0000000000006cf5	movq	0xb8(%rbp),%rdx
+0000000000006cf9	movq	0xfffffee8(%rbp),%rax
+0000000000006d00	movq	%rdx,(%rax)
+0000000000006d03	movl	$__mh_bundle_header,0xe0(%rbp)
+0000000000006d0a	jmp	0x00006dc2
+0000000000006d0f	movl	0xe0(%rbp),%eax
+0000000000006d12	incl	%eax
+0000000000006d14	movslq	%eax,%rsi
+0000000000006d17	leaq	0xfffffef0(%rbp),%rax
+0000000000006d1e	leaq	0xdc(%rbp),%rcx
+0000000000006d22	leaq	0xffffff00(%rbp),%rdi
+0000000000006d29	movq	%rax,%r8
+0000000000006d2c	movl	$0x6f626a20,%edx
+0000000000006d31	callq	0x00008efa	; symbol stub for: _AEGetNthDesc
+0000000000006d36	movw	%ax,0xee(%rbp)
+0000000000006d3a	cmpw	$__mh_bundle_header,0xee(%rbp)
+0000000000006d3f	jne	0x00006dab
+0000000000006d41	leaq	0xfffffef0(%rbp),%rdi
+0000000000006d48	callq	_BuildPath
+0000000000006d4d	movq	%rax,0xb0(%rbp)
+0000000000006d51	cmpq	$__mh_bundle_header,0xb0(%rbp)
+0000000000006d56	je	0x00006d89
+0000000000006d58	movl	0xe0(%rbp),%eax
+0000000000006d5b	cdqe
+0000000000006d5d	shlq	$0x03,%rax
+0000000000006d61	movq	%rax,%rbx
+0000000000006d64	addq	0xd0(%rbp),%rbx
+0000000000006d68	movq	0x000052d9(%rip),%rax
+0000000000006d6f	movq	(%rax),%rdi
+0000000000006d72	movq	0xb0(%rbp),%rsi
+0000000000006d76	callq	0x00008f84	; symbol stub for: _CFStringCreateWithFileSystemRepresentation
+0000000000006d7b	movq	%rax,(%rbx)
+0000000000006d7e	movq	0xb0(%rbp),%rdi
+0000000000006d82	callq	0x000090b0	; symbol stub for: _free
+0000000000006d87	jmp	0x00006d9d
+0000000000006d89	movl	0xe0(%rbp),%eax
+0000000000006d8c	cdqe
+0000000000006d8e	shlq	$0x03,%rax
+0000000000006d92	addq	0xd0(%rbp),%rax
+0000000000006d96	movq	$__mh_bundle_header,(%rax)
+0000000000006d9d	leaq	0xfffffef0(%rbp),%rdi
+0000000000006da4	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006da9	jmp	0x00006dbf
+0000000000006dab	movl	0xe0(%rbp),%eax
+0000000000006dae	cdqe
+0000000000006db0	shlq	$0x03,%rax
+0000000000006db4	addq	0xd0(%rbp),%rax
+0000000000006db8	movq	$__mh_bundle_header,(%rax)
+0000000000006dbf	incl	0xe0(%rbp)
+0000000000006dc2	movl	0xe0(%rbp),%eax
+0000000000006dc5	movslq	%eax,%rdx
+0000000000006dc8	movq	0xb8(%rbp),%rax
+0000000000006dcc	cmpq	%rax,%rdx
+0000000000006dcf	jl	0x100006d0f
+0000000000006dd5	leaq	0xffffff00(%rbp),%rdi
+0000000000006ddc	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006de1	leaq	0xffffff10(%rbp),%rdi
+0000000000006de8	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006ded	leaq	0xffffff20(%rbp),%rdi
+0000000000006df4	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006df9	leaq	0xffffff30(%rbp),%rdi
+0000000000006e00	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e05	leaq	0xffffff40(%rbp),%rdi
+0000000000006e0c	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e11	leaq	0xffffff50(%rbp),%rdi
+0000000000006e18	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e1d	leaq	0x80(%rbp),%rdi
+0000000000006e21	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e26	cmpl	$0x01,0xfffffee4(%rbp)
+0000000000006e2d	jne	0x00006e3b
+0000000000006e2f	leaq	0xffffff60(%rbp),%rdi
+0000000000006e36	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e3b	cmpl	$0x01,0xfffffee4(%rbp)
+0000000000006e42	jne	0x00006e50
+0000000000006e44	leaq	0xffffff70(%rbp),%rdi
+0000000000006e4b	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e50	leaq	0x90(%rbp),%rdi
+0000000000006e54	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e59	leaq	0xa0(%rbp),%rdi
+0000000000006e5d	callq	0x00008ee8	; symbol stub for: _AEDisposeDesc
+0000000000006e62	movq	0xd0(%rbp),%rax
+0000000000006e66	addq	$0x00000128,%rsp
+0000000000006e6d	popq	%rbx
+0000000000006e6e	leave
+0000000000006e6f	ret
+_FreeFinderContext:
+0000000000006e70	nop
+0000000000006e71	nop
+0000000000006e72	nop
+0000000000006e73	nop
+0000000000006e74	nop
+0000000000006e75	nop
+0000000000006e76	pushq	%rbp
+0000000000006e77	movq	%rsp,%rbp
+0000000000006e7a	subq	$0x20,%rsp
+0000000000006e7e	movq	%rdi,0xe8(%rbp)
+0000000000006e82	movq	%rsi,0xe0(%rbp)
+0000000000006e86	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000006e8b	je	0x00006ed7
+0000000000006e8d	movl	$__mh_bundle_header,0xfc(%rbp)
+0000000000006e94	jmp	0x00006ec3
+0000000000006e96	movl	0xfc(%rbp),%eax
+0000000000006e99	cdqe
+0000000000006e9b	shlq	$0x03,%rax
+0000000000006e9f	addq	0xe8(%rbp),%rax
+0000000000006ea3	movq	(%rax),%rax
+0000000000006ea6	testq	%rax,%rax
+0000000000006ea9	je	0x00006ec0
+0000000000006eab	movl	0xfc(%rbp),%eax
+0000000000006eae	cdqe
+0000000000006eb0	shlq	$0x03,%rax
+0000000000006eb4	addq	0xe8(%rbp),%rax
+0000000000006eb8	movq	(%rax),%rdi
+0000000000006ebb	callq	0x00008f6c	; symbol stub for: _CFRelease
+0000000000006ec0	incl	0xfc(%rbp)
+0000000000006ec3	movl	0xfc(%rbp),%eax
+0000000000006ec6	cdqe
+0000000000006ec8	cmpq	0xe0(%rbp),%rax
+0000000000006ecc	jl	0x00006e96
+0000000000006ece	movq	0xe8(%rbp),%rdi
+0000000000006ed2	callq	0x000090b0	; symbol stub for: _free
+0000000000006ed7	leave
+0000000000006ed8	ret
+_from_hex:
+0000000000006ed9	nop
+0000000000006eda	nop
+0000000000006edb	nop
+0000000000006edc	nop
+0000000000006edd	nop
+0000000000006ede	nop
+0000000000006edf	pushq	%rbp
+0000000000006ee0	movq	%rsp,%rbp
+0000000000006ee3	subq	$0x10,%rsp
+0000000000006ee7	movb	%bh,0xfc(%rbp)
+0000000000006eeb	movsbl	0xfc(%rbp),%edi
+0000000000006eef	callq	_isdigit
+0000000000006ef4	testl	%eax,%eax
+0000000000006ef6	je	0x00006f07
+0000000000006ef8	movzbl	0xfc(%rbp),%eax
+0000000000006efc	subl	$0x30,%eax
+0000000000006eff	movsbl	%al,%eax
+0000000000006f02	movl	%eax,0xf8(%rbp)
+0000000000006f05	jmp	0x00006f19
+0000000000006f07	movsbl	0xfc(%rbp),%edi
+0000000000006f0b	callq	_tolower
+0000000000006f10	subl	$0x57,%eax
+0000000000006f13	movsbl	%al,%eax
+0000000000006f16	movl	%eax,0xf8(%rbp)
+0000000000006f19	movl	0xf8(%rbp),%eax
+0000000000006f1c	leave
+0000000000006f1d	ret
+_isdigit:
+0000000000006f1e	nop
+0000000000006f1f	nop
+0000000000006f20	nop
+0000000000006f21	nop
+0000000000006f22	nop
+0000000000006f23	nop
+0000000000006f24	pushq	%rbp
+0000000000006f25	movq	%rsp,%rbp
+0000000000006f28	subq	$0x10,%rsp
+0000000000006f2c	movl	%edi,0xfc(%rbp)
+0000000000006f2f	movl	0xfc(%rbp),%edi
+0000000000006f32	movl	$0x00000400,%esi
+0000000000006f37	callq	___isctype
+0000000000006f3c	leave
+0000000000006f3d	ret
+___isctype:
+0000000000006f3e	nop
+0000000000006f3f	nop
+0000000000006f40	nop
+0000000000006f41	nop
+0000000000006f42	nop
+0000000000006f43	nop
+0000000000006f44	pushq	%rbp
+0000000000006f45	movq	%rsp,%rbp
+0000000000006f48	movl	%edi,0xfc(%rbp)
+0000000000006f4b	movq	%rsi,0xf0(%rbp)
+0000000000006f4f	cmpl	$__mh_bundle_header,0xfc(%rbp)
+0000000000006f53	js	0x00006f82
+0000000000006f55	cmpl	$0x000000ff,0xfc(%rbp)
+0000000000006f5c	jg	0x00006f82
+0000000000006f5e	movl	0xfc(%rbp),%eax
+0000000000006f61	movq	0x000050e8(%rip),%rdx
+0000000000006f68	cdqe
+0000000000006f6a	movl	0x3c(%rdx,%rax,4),%eax
+0000000000006f6e	movl	%eax,%eax
+0000000000006f70	andq	0xf0(%rbp),%rax
+0000000000006f74	testq	%rax,%rax
+0000000000006f77	je	0x00006f82
+0000000000006f79	movl	$0x00000001,0xec(%rbp)
+0000000000006f80	jmp	0x00006f89
+0000000000006f82	movl	$__mh_bundle_header,0xec(%rbp)
+0000000000006f89	movl	0xec(%rbp),%eax
+0000000000006f8c	leave
+0000000000006f8d	ret
+_tolower:
+0000000000006f8e	nop
+0000000000006f8f	nop
+0000000000006f90	nop
+0000000000006f91	nop
+0000000000006f92	nop
+0000000000006f93	nop
+0000000000006f94	pushq	%rbp
+0000000000006f95	movq	%rsp,%rbp
+0000000000006f98	subq	$0x10,%rsp
+0000000000006f9c	movl	%edi,0xfc(%rbp)
+0000000000006f9f	movl	0xfc(%rbp),%edi
+0000000000006fa2	callq	0x00009044	; symbol stub for: ___tolower
+0000000000006fa7	leave
+0000000000006fa8	ret
+_GhettoURLDecode:
+0000000000006fa9	nop
+0000000000006faa	nop
+0000000000006fab	nop
+0000000000006fac	nop
+0000000000006fad	nop
+0000000000006fae	nop
+0000000000006faf	pushq	%rbp
+0000000000006fb0	movq	%rsp,%rbp
+0000000000006fb3	pushq	%rbx
+0000000000006fb4	subq	$0x38,%rsp
+0000000000006fb8	movq	%rdi,0xd8(%rbp)
+0000000000006fbc	movq	%rsi,0xd0(%rbp)
+0000000000006fc0	movl	%edx,0xcc(%rbp)
+0000000000006fc3	movq	0xd8(%rbp),%rax
+0000000000006fc7	movq	%rax,0xe8(%rbp)
+0000000000006fcb	jmp	0x0000702b
+0000000000006fcd	movq	0xd0(%rbp),%rax
+0000000000006fd1	movzbl	(%rax),%eax
+0000000000006fd4	cmpb	$0x25,%al
+0000000000006fd6	jne	0x00007016
+0000000000006fd8	movq	0xd0(%rbp),%rax
+0000000000006fdc	incq	%rax
+0000000000006fdf	movzbl	(%rax),%eax
+0000000000006fe2	movsbl	%al,%edi
+0000000000006fe5	callq	_from_hex
+0000000000006fea	movsbl	%al,%eax
+0000000000006fed	shll	$0x04,%eax
+0000000000006ff0	movl	%eax,%ebx
+0000000000006ff2	movq	0xd0(%rbp),%rax
+0000000000006ff6	addq	$0x02,%rax
+0000000000006ffa	movzbl	(%rax),%eax
+0000000000006ffd	movsbl	%al,%edi
+0000000000007000	callq	_from_hex
+0000000000007005	movl	%ebx,%edx
+0000000000007007	orl	%eax,%edx
+0000000000007009	movq	0xd8(%rbp),%rax
+000000000000700d	movb	%dl,(%rax)
+000000000000700f	addq	$0x03,0xd0(%rbp)
+0000000000007014	jmp	0x00007027
+0000000000007016	movq	0xd0(%rbp),%rax
+000000000000701a	movzbl	(%rax),%edx
+000000000000701d	movq	0xd8(%rbp),%rax
+0000000000007021	movb	%dl,(%rax)
+0000000000007023	incq	0xd0(%rbp)
+0000000000007027	incq	0xd8(%rbp)
+000000000000702b	movq	0xd8(%rbp),%rdx
+000000000000702f	movq	0xe8(%rbp),%rax
+0000000000007033	subq	%rax,%rdx
+0000000000007036	movl	0xcc(%rbp),%eax
+0000000000007039	cdqe
+000000000000703b	cmpq	%rax,%rdx
+000000000000703e	jge	0x0000704b
+0000000000007040	movq	0xd0(%rbp),%rax
+0000000000007044	movzbl	(%rax),%eax
+0000000000007047	testb	%al,%al
+0000000000007049	jne	0x00006fcd
+000000000000704b	movq	0xd8(%rbp),%rdx
+000000000000704f	movq	0xe8(%rbp),%rax
+0000000000007053	subq	%rax,%rdx
+0000000000007056	movl	0xcc(%rbp),%eax
+0000000000007059	cdqe
+000000000000705b	cmpq	%rax,%rdx
+000000000000705e	jge	0x0000707c
+0000000000007060	movq	0xd8(%rbp),%rax
+0000000000007064	movb	$__mh_bundle_header,(%rax)
+0000000000007067	movq	0xd8(%rbp),%rax
+000000000000706b	movl	%eax,%edx
+000000000000706d	movq	0xe8(%rbp),%rax
+0000000000007071	movl	%edx,%ecx
+0000000000007073	subl	%eax,%ecx
+0000000000007075	movl	%ecx,%eax
+0000000000007077	movl	%eax,0xc8(%rbp)
+000000000000707a	jmp	0x00007083
+000000000000707c	movl	$0xffffffff,0xc8(%rbp)
+0000000000007083	movl	0xc8(%rbp),%eax
+0000000000007086	addq	$0x38,%rsp
+000000000000708a	popq	%rbx
+000000000000708b	leave
+000000000000708c	ret
+_toolbar_index_path:
+000000000000708d	nop
+000000000000708e	nop
+000000000000708f	nop
+0000000000007090	nop
+0000000000007091	nop
+0000000000007092	nop
+0000000000007093	pushq	%rbp
+0000000000007094	movq	%rsp,%rbp
+0000000000007097	pushq	%rbx
+0000000000007098	subq	$0x38,%rsp
+000000000000709c	leaq	0x000032b5(%rip),%rdi
+00000000000070a3	callq	0x000090c2	; symbol stub for: _getenv
+00000000000070a8	movq	%rax,0xe8(%rbp)
+00000000000070ac	leaq	0x000032ad(%rip),%rax
+00000000000070b3	movq	%rax,0xe0(%rbp)
+00000000000070b7	movq	0xe8(%rbp),%rdi
+00000000000070bb	callq	0x00009182	; symbol stub for: _strlen
+00000000000070c0	movq	%rax,%rbx
+00000000000070c3	movq	0xe0(%rbp),%rdi
+00000000000070c7	callq	0x00009182	; symbol stub for: _strlen
+00000000000070cc	leaq	(%rbx,%rax),%rax
+00000000000070d0	incq	%rax
+00000000000070d3	movq	%rax,0xd8(%rbp)
+00000000000070d7	movq	0xd8(%rbp),%rdi
+00000000000070db	callq	0x000090ec	; symbol stub for: _malloc
+00000000000070e0	movq	%rax,0xd0(%rbp)
+00000000000070e4	movq	$0xffffffff,%rcx
+00000000000070eb	movq	0xe8(%rbp),%rdx
+00000000000070ef	movq	0xd8(%rbp),%rsi
+00000000000070f3	movq	0xd0(%rbp),%rdi
+00000000000070f7	movq	0xe0(%rbp),%rax
+00000000000070fb	movq	%rax,(%rsp)
+00000000000070ff	movq	%rdx,%r9
+0000000000007102	leaq	0x0000327c(%rip),%r8
+0000000000007109	movl	$__mh_bundle_header,%edx
+000000000000710e	movl	$__mh_bundle_header,%eax
+0000000000007113	callq	0x00009038	; symbol stub for: ___snprintf_chk
+0000000000007118	movq	0xd0(%rbp),%rax
+000000000000711c	addq	$0x38,%rsp
+0000000000007120	popq	%rbx
+0000000000007121	leave
+0000000000007122	ret
+_get_insertion_index:
+0000000000007123	nop
+0000000000007124	nop
+0000000000007125	nop
+0000000000007126	nop
+0000000000007127	nop
+0000000000007128	nop
+0000000000007129	pushq	%rbp
+000000000000712a	movq	%rsp,%rbp
+000000000000712d	subq	$0x20,%rsp
+0000000000007131	movq	$0xffffffff,0xf0(%rbp)
+0000000000007139	movl	$__mh_bundle_header,%eax
+000000000000713e	callq	_toolbar_index_path
+0000000000007143	movq	%rax,0xe8(%rbp)
+0000000000007147	movq	0xe8(%rbp),%rdi
+000000000000714b	leaq	0x00003238(%rip),%rsi
+0000000000007152	callq	0x000090a4	; symbol stub for: _fopen
+0000000000007157	movq	%rax,0xe0(%rbp)
+000000000000715b	cmpq	$__mh_bundle_header,0xe0(%rbp)
+0000000000007160	je	0x00007191
+0000000000007162	leaq	0xfc(%rbp),%rdx
+0000000000007166	movq	0xe0(%rbp),%rdi
+000000000000716a	leaq	0x0000321b(%rip),%rsi
+0000000000007171	movl	$__mh_bundle_header,%eax
+0000000000007176	callq	0x000090b6	; symbol stub for: _fscanf
+000000000000717b	testl	%eax,%eax
+000000000000717d	je	0x00007188
+000000000000717f	movl	0xfc(%rbp),%eax
+0000000000007182	cdqe
+0000000000007184	movq	%rax,0xf0(%rbp)
+0000000000007188	movq	0xe0(%rbp),%rdi
+000000000000718c	callq	0x00009092	; symbol stub for: _fclose
+0000000000007191	movq	0xe8(%rbp),%rdi
+0000000000007195	callq	0x000090b0	; symbol stub for: _free
+000000000000719a	movq	0xf0(%rbp),%rax
+000000000000719e	leave
+000000000000719f	ret
+_store_insertion_index:
+00000000000071a0	nop
+00000000000071a1	nop
+00000000000071a2	nop
+00000000000071a3	nop
+00000000000071a4	nop
+00000000000071a5	nop
+00000000000071a6	pushq	%rbp
+00000000000071a7	movq	%rsp,%rbp
+00000000000071aa	subq	$0x20,%rsp
+00000000000071ae	movl	%edi,0xec(%rbp)
+00000000000071b1	movl	$__mh_bundle_header,%eax
+00000000000071b6	callq	_toolbar_index_path
+00000000000071bb	movq	%rax,0xf8(%rbp)
+00000000000071bf	movq	0xf8(%rbp),%rdi
+00000000000071c3	leaq	0x000031c5(%rip),%rsi
+00000000000071ca	callq	0x000090a4	; symbol stub for: _fopen
+00000000000071cf	movq	%rax,0xf0(%rbp)
+00000000000071d3	cmpq	$__mh_bundle_header,0xf0(%rbp)
+00000000000071d8	sete	%al
+00000000000071db	movzbl	%al,%eax
+00000000000071de	testq	%rax,%rax
+00000000000071e1	jne	0x00007204
+00000000000071e3	movl	0xec(%rbp),%edx
+00000000000071e6	movq	0xf0(%rbp),%rdi
+00000000000071ea	leaq	0x0000319b(%rip),%rsi
+00000000000071f1	movl	$__mh_bundle_header,%eax
+00000000000071f6	callq	0x000090aa	; symbol stub for: _fprintf
+00000000000071fb	movq	0xf0(%rbp),%rdi
+00000000000071ff	callq	0x00009092	; symbol stub for: _fclose
+0000000000007204	movq	0xf8(%rbp),%rdi
+0000000000007208	callq	0x000090b0	; symbol stub for: _free
+000000000000720d	leave
+000000000000720e	ret
+-[DropboxMenuItem verb]:
+000000000000720f	nop
+0000000000007210	nop
+0000000000007211	nop
+0000000000007212	nop
+0000000000007213	nop
+0000000000007214	nop
+0000000000007215	pushq	%rbp
+0000000000007216	movq	%rsp,%rbp
+0000000000007219	movq	%rdi,0xf8(%rbp)
+000000000000721d	movq	%rsi,0xf0(%rbp)
+0000000000007221	movq	0xf8(%rbp),%rdx
+0000000000007225	leaq	0x00006b24(%rip),%rax
+000000000000722c	movq	(%rax),%rax
+000000000000722f	leaq	(%rdx,%rax),%rax
+0000000000007233	movq	(%rax),%rax
+0000000000007236	leave
+0000000000007237	ret
+-[DropboxMenuItem initWithTitle:verb:]:
+0000000000007238	nop
+0000000000007239	nop
+000000000000723a	nop
+000000000000723b	nop
+000000000000723c	nop
+000000000000723d	nop
+000000000000723e	pushq	%rbp
+000000000000723f	movq	%rsp,%rbp
+0000000000007242	subq	$0x30,%rsp
+0000000000007246	movq	%rdi,0xe8(%rbp)
+000000000000724a	movq	%rsi,0xe0(%rbp)
+000000000000724e	movq	%rdx,0xd8(%rbp)
+0000000000007252	movq	%rcx,0xd0(%rbp)
+0000000000007256	movq	0xe8(%rbp),%rax
+000000000000725a	movq	%rax,0xf0(%rbp)
+000000000000725e	movq	0x00005fc3(%rip),%rax
+0000000000007265	movq	%rax,0xf8(%rbp)
+0000000000007269	leaq	0xf0(%rbp),%rdi
+000000000000726d	leaq	0x0000526c(%rip),%rax
+0000000000007274	movq	0x00005dcd(%rip),%rcx
+000000000000727b	movq	0x00005b1e(%rip),%rsi
+0000000000007282	movq	0xd8(%rbp),%rdx
+0000000000007286	movq	%rax,%r8
+0000000000007289	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+000000000000728e	movq	%rax,0xe8(%rbp)
+0000000000007292	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000007297	je	0x000072b5
+0000000000007299	movq	0xe8(%rbp),%rdx
+000000000000729d	leaq	0x00006aac(%rip),%rax
+00000000000072a4	movq	(%rax),%rax
+00000000000072a7	leaq	(%rdx,%rax),%rax
+00000000000072ab	movq	%rax,%rdx
+00000000000072ae	movq	0xd0(%rbp),%rax
+00000000000072b2	movq	%rax,(%rdx)
+00000000000072b5	movq	0xe8(%rbp),%rax
+00000000000072b9	leave
+00000000000072ba	ret
+-[DropboxMenuItem dealloc]:
+00000000000072bb	nop
+00000000000072bc	nop
+00000000000072bd	nop
+00000000000072be	nop
+00000000000072bf	nop
+00000000000072c0	nop
+00000000000072c1	pushq	%rbp
+00000000000072c2	movq	%rsp,%rbp
+00000000000072c5	subq	$0x20,%rsp
+00000000000072c9	movq	%rdi,0xe8(%rbp)
+00000000000072cd	movq	%rsi,0xe0(%rbp)
+00000000000072d1	movq	0xe8(%rbp),%rdx
+00000000000072d5	leaq	0x00006a74(%rip),%rax
+00000000000072dc	movq	(%rax),%rax
+00000000000072df	leaq	(%rdx,%rax),%rax
+00000000000072e3	movq	(%rax),%rdi
+00000000000072e6	callq	0x000090b0	; symbol stub for: _free
+00000000000072eb	movq	0xe8(%rbp),%rax
+00000000000072ef	movq	%rax,0xf0(%rbp)
+00000000000072f3	movq	0x00005f2e(%rip),%rax
+00000000000072fa	movq	%rax,0xf8(%rbp)
+00000000000072fe	leaq	0xf0(%rbp),%rdi
+0000000000007302	movq	0x00005bff(%rip),%rsi
+0000000000007309	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+000000000000730e	leave
+000000000000730f	ret
+-[DropboxMenu menuItemSelected:]:
+0000000000007310	nop
+0000000000007311	nop
+0000000000007312	nop
+0000000000007313	nop
+0000000000007314	nop
+0000000000007315	nop
+0000000000007316	pushq	%rbp
+0000000000007317	movq	%rsp,%rbp
+000000000000731a	subq	$0x00000460,%rsp
+0000000000007321	movq	%rdi,0xfffffbb8(%rbp)
+0000000000007328	movq	%rsi,0xfffffbb0(%rbp)
+000000000000732f	movq	%rdx,0xfffffba8(%rbp)
+0000000000007336	movq	0x00004cc3(%rip),%rax
+000000000000733d	movq	(%rax),%rdx
+0000000000007340	movq	%rdx,0xf8(%rbp)
+0000000000007344	xorl	%edx,%edx
+0000000000007346	movq	0xfffffba8(%rbp),%rdi
+000000000000734d	movq	0x00005cec(%rip),%rsi
+0000000000007354	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007359	movq	%rax,%rsi
+000000000000735c	movq	0x00004ce5(%rip),%rax
+0000000000007363	movq	(%rax),%rdi
+0000000000007366	movl	$0x08000100,%edx
+000000000000736b	callq	0x00008f7e	; symbol stub for: _CFStringCreateWithCString
+0000000000007370	movq	%rax,0xfffffbe0(%rbp)
+0000000000007377	movq	$__mh_bundle_header,0xfffffbc0(%rbp)
+0000000000007382	movq	0xfffffbe0(%rbp),%rdi
+0000000000007389	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+000000000000738e	movq	%rax,0xfffffbc8(%rbp)
+0000000000007395	movq	0xfffffbc8(%rbp),%rax
+000000000000739c	leaq	(%rax,%rax),%rdi
+00000000000073a0	callq	0x000090ec	; symbol stub for: _malloc
+00000000000073a5	movq	%rax,0xfffffbd8(%rbp)
+00000000000073ac	movq	0xfffffbd8(%rbp),%rcx
+00000000000073b3	movq	0xfffffbc0(%rbp),%rsi
+00000000000073ba	movq	0xfffffbc8(%rbp),%rdx
+00000000000073c1	movq	0xfffffbe0(%rbp),%rdi
+00000000000073c8	callq	0x00008f90	; symbol stub for: _CFStringGetCharacters
+00000000000073cd	movq	0xfffffbc8(%rbp),%rax
+00000000000073d4	movl	%eax,0xfffffba0(%rbp)
+00000000000073da	movq	0xfffffbb8(%rbp),%rdx
+00000000000073e1	leaq	0x00006960(%rip),%rax
+00000000000073e8	movq	(%rax),%rax
+00000000000073eb	leaq	(%rdx,%rax),%rax
+00000000000073ef	movzbl	(%rax),%eax
+00000000000073f2	testb	%al,%al
+00000000000073f4	je	0x00007402
+00000000000073f6	movl	$0x00000004,0xfffffba4(%rbp)
+0000000000007400	jmp	0x0000740c
+0000000000007402	movl	$0x00000007,0xfffffba4(%rbp)
+000000000000740c	leaq	0xfffffbf0(%rbp),%rcx
+0000000000007413	movq	0xfffffbd8(%rbp),%rsi
+000000000000741a	movl	$0x000003ff,%r8d
+0000000000007420	movl	0xfffffba0(%rbp),%edx
+0000000000007426	movl	0xfffffba4(%rbp),%edi
+000000000000742c	callq	_dropboxRequest
+0000000000007431	movl	%eax,0xfffffbec(%rbp)
+0000000000007437	cmpl	$__mh_bundle_header,0xfffffbec(%rbp)
+000000000000743e	js	0x00007450
+0000000000007440	movl	0xfffffbec(%rbp),%eax
+0000000000007446	cdqe
+0000000000007448	movb	$__mh_bundle_header,0xfffffbf0(%rbp,%rax)
+0000000000007450	movq	0xfffffbd8(%rbp),%rdi
+0000000000007457	callq	0x000090b0	; symbol stub for: _free
+000000000000745c	movq	0xfffffbe0(%rbp),%rdi
+0000000000007463	callq	0x00008f6c	; symbol stub for: _CFRelease
+0000000000007468	movq	0x00004b91(%rip),%rax
+000000000000746f	movq	0xf8(%rbp),%rdx
+0000000000007473	xorq	(%rax),%rdx
+0000000000007476	je	0x0000747d
+0000000000007478	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+000000000000747d	leave
+000000000000747e	ret
+-[DropboxMenu eatMenuDescriptor:withLength:fillMenu:]:
+000000000000747f	nop
+0000000000007480	nop
+0000000000007481	nop
+0000000000007482	nop
+0000000000007483	nop
+0000000000007484	nop
+0000000000007485	pushq	%rbp
+0000000000007486	movq	%rsp,%rbp
+0000000000007489	subq	$0x70,%rsp
+000000000000748d	movq	%rdi,0xb8(%rbp)
+0000000000007491	movq	%rsi,0xb0(%rbp)
+0000000000007495	movq	%rdx,0xa8(%rbp)
+0000000000007499	movl	%ecx,0xa4(%rbp)
+000000000000749c	movq	%r8,0x98(%rbp)
+00000000000074a0	leaq	0x000052b9(%rip),%rdi
+00000000000074a7	movq	0xa8(%rbp),%rsi
+00000000000074ab	movl	$__mh_bundle_header,%eax
+00000000000074b0	callq	_DBLog
+00000000000074b5	movq	0xa8(%rbp),%rax
+00000000000074b9	movq	%rax,0xf0(%rbp)
+00000000000074bd	jmp	0x000076b9
+00000000000074c2	leaq	0xf0(%rbp),%rdi
+00000000000074c6	leaq	0x00002ef6(%rip),%rsi
+00000000000074cd	callq	0x00009188	; symbol stub for: _strsep
+00000000000074d2	movq	%rax,0xe8(%rbp)
+00000000000074d6	movq	0xf0(%rbp),%rax
+00000000000074da	movl	%eax,%edx
+00000000000074dc	movq	0xe8(%rbp),%rax
+00000000000074e0	movl	%edx,%ecx
+00000000000074e2	subl	%eax,%ecx
+00000000000074e4	movl	%ecx,%eax
+00000000000074e6	movl	%eax,%edx
+00000000000074e8	movq	0xe8(%rbp),%rsi
+00000000000074ec	movq	0xe8(%rbp),%rdi
+00000000000074f0	callq	_GhettoURLDecode
+00000000000074f5	movq	0x00005cb4(%rip),%rax
+00000000000074fc	movq	%rax,%rdi
+00000000000074ff	movq	0x00005b32(%rip),%rsi
+0000000000007506	movq	0xe8(%rbp),%rdx
+000000000000750a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000750f	movq	%rax,0xd8(%rbp)
+0000000000007513	leaq	0xf0(%rbp),%rdi
+0000000000007517	leaq	0x00002ea5(%rip),%rsi
+000000000000751e	callq	0x00009188	; symbol stub for: _strsep
+0000000000007523	movq	%rax,0xe0(%rbp)
+0000000000007527	leaq	0xf0(%rbp),%rdi
+000000000000752b	leaq	0x00002e93(%rip),%rsi
+0000000000007532	callq	0x00009188	; symbol stub for: _strsep
+0000000000007537	movq	%rax,0xe8(%rbp)
+000000000000753b	movq	0xf0(%rbp),%rax
+000000000000753f	testq	%rax,%rax
+0000000000007542	jne	0x00007552
+0000000000007544	movq	0xe8(%rbp),%rdi
+0000000000007548	callq	0x00009182	; symbol stub for: _strlen
+000000000000754d	movl	%eax,0xfc(%rbp)
+0000000000007550	jmp	0x00007565
+0000000000007552	movq	0xf0(%rbp),%rax
+0000000000007556	movl	%eax,%edx
+0000000000007558	movq	0xe8(%rbp),%rax
+000000000000755c	movl	%edx,%ecx
+000000000000755e	subl	%eax,%ecx
+0000000000007560	movl	%ecx,%eax
+0000000000007562	movl	%eax,0xfc(%rbp)
+0000000000007565	movl	0xfc(%rbp),%eax
+0000000000007568	incl	%eax
+000000000000756a	movslq	%eax,%rdi
+000000000000756d	callq	0x000090ec	; symbol stub for: _malloc
+0000000000007572	movq	%rax,0xd0(%rbp)
+0000000000007576	movl	0xfc(%rbp),%edx
+0000000000007579	incl	%edx
+000000000000757b	movq	0xe8(%rbp),%rsi
+000000000000757f	movq	0xd0(%rbp),%rdi
+0000000000007583	callq	_GhettoURLDecode
+0000000000007588	movq	0x00005c29(%rip),%rax
+000000000000758f	movq	%rax,%rdi
+0000000000007592	leaq	0x000056f7(%rip),%rax
+0000000000007599	movq	(%rax),%rax
+000000000000759c	leaq	0x000056ed(%rip),%rsi
+00000000000075a3	call	*%rax
+00000000000075a5	movq	%rax,%rdi
+00000000000075a8	movq	0x00005a81(%rip),%rsi
+00000000000075af	movq	0xd0(%rbp),%rcx
+00000000000075b3	movq	0xd8(%rbp),%rdx
+00000000000075b7	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000075bc	movq	%rax,0xc8(%rbp)
+00000000000075c0	movq	0x98(%rbp),%rdi
+00000000000075c4	movq	0xc8(%rbp),%rdx
+00000000000075c8	movq	0x00005781(%rip),%rsi
+00000000000075cf	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000075d4	movq	0xc8(%rbp),%rdi
+00000000000075d8	movq	0xb8(%rbp),%rdx
+00000000000075dc	movq	0x00005a45(%rip),%rsi
+00000000000075e3	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000075e8	movq	0xe8(%rbp),%rax
+00000000000075ec	movl	%eax,%edx
+00000000000075ee	movq	0xe0(%rbp),%rax
+00000000000075f2	movl	%edx,%ecx
+00000000000075f4	subl	%eax,%ecx
+00000000000075f6	movl	%ecx,%eax
+00000000000075f8	movl	%eax,%edx
+00000000000075fa	movq	0xe0(%rbp),%rsi
+00000000000075fe	movq	0xe0(%rbp),%rdi
+0000000000007602	callq	_GhettoURLDecode
+0000000000007607	movl	%eax,0xf8(%rbp)
+000000000000760a	movq	0xe0(%rbp),%rdi
+000000000000760e	movl	$0x0000007e,%esi
+0000000000007613	callq	0x00009170	; symbol stub for: _strchr
+0000000000007618	testq	%rax,%rax
+000000000000761b	je	0x000076a2
+0000000000007621	movq	0x00005b98(%rip),%rax
+0000000000007628	movq	%rax,%rdi
+000000000000762b	leaq	0x0000565e(%rip),%rax
+0000000000007632	movq	(%rax),%rax
+0000000000007635	leaq	0x00005654(%rip),%rsi
+000000000000763c	call	*%rax
+000000000000763e	movq	%rax,%rdi
+0000000000007641	movq	0x000059d8(%rip),%rsi
+0000000000007648	movq	0xd8(%rbp),%rdx
+000000000000764c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007651	movq	%rax,0xc0(%rbp)
+0000000000007655	movq	0xb8(%rbp),%rdi
+0000000000007659	movq	0x000059b8(%rip),%rsi
+0000000000007660	movq	0xc0(%rbp),%rax
+0000000000007664	movl	0xf8(%rbp),%ecx
+0000000000007667	movq	0xe0(%rbp),%rdx
+000000000000766b	movq	%rax,%r8
+000000000000766e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007673	movq	0x98(%rbp),%rdi
+0000000000007677	movq	0xc8(%rbp),%rcx
+000000000000767b	movq	0x0000598e(%rip),%rsi
+0000000000007682	movq	0xc0(%rbp),%rdx
+0000000000007686	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000768b	movq	0xc0(%rbp),%rdi
+000000000000768f	leaq	0x0000561a(%rip),%rax
+0000000000007696	movq	(%rax),%rax
+0000000000007699	leaq	0x00005610(%rip),%rsi
+00000000000076a0	call	*%rax
+00000000000076a2	movq	0xc8(%rbp),%rdi
+00000000000076a6	leaq	0x00005603(%rip),%rax
+00000000000076ad	movq	(%rax),%rax
+00000000000076b0	leaq	0x000055f9(%rip),%rsi
+00000000000076b7	call	*%rax
+00000000000076b9	movq	0xf0(%rbp),%rax
+00000000000076bd	testq	%rax,%rax
+00000000000076c0	je	0x000076de
+00000000000076c2	movq	0xf0(%rbp),%rax
+00000000000076c6	movq	%rax,%rdx
+00000000000076c9	movq	0xa8(%rbp),%rax
+00000000000076cd	subq	%rax,%rdx
+00000000000076d0	movl	0xa4(%rbp),%eax
+00000000000076d3	cdqe
+00000000000076d5	cmpq	%rax,%rdx
+00000000000076d8	jl	0x1000074c2
+00000000000076de	leave
+00000000000076df	ret
+-[DropboxMenu useMessageResponse:withLength:]:
+00000000000076e0	nop
+00000000000076e1	nop
+00000000000076e2	nop
+00000000000076e3	nop
+00000000000076e4	nop
+00000000000076e5	nop
+00000000000076e6	pushq	%rbp
+00000000000076e7	movq	%rsp,%rbp
+00000000000076ea	subq	$0x30,%rsp
+00000000000076ee	movq	%rdi,0xe8(%rbp)
+00000000000076f2	movq	%rsi,0xe0(%rbp)
+00000000000076f6	movq	%rdx,0xd8(%rbp)
+00000000000076fa	movl	%ecx,0xd4(%rbp)
+00000000000076fd	movq	0xd8(%rbp),%rax
+0000000000007701	movzbl	(%rax),%eax
+0000000000007704	movsbl	%al,%ecx
+0000000000007707	leaq	0x00005072(%rip),%rdi
+000000000000770e	movl	0xd4(%rbp),%edx
+0000000000007711	movq	0xd8(%rbp),%rsi
+0000000000007715	movl	$__mh_bundle_header,%eax
+000000000000771a	callq	_DBLog
+000000000000771f	movq	0xe8(%rbp),%rdi
+0000000000007723	movq	0x00005636(%rip),%rsi
+000000000000772a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000772f	movq	%rax,0xf0(%rbp)
+0000000000007733	movl	$__mh_bundle_header,0xfc(%rbp)
+000000000000773a	jmp	0x00007754
+000000000000773c	movq	0xe8(%rbp),%rdi
+0000000000007740	movq	0x000058c1(%rip),%rsi
+0000000000007747	movl	$__mh_bundle_header,%edx
+000000000000774c	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007751	incl	0xfc(%rbp)
+0000000000007754	movl	0xfc(%rbp),%eax
+0000000000007757	cdqe
+0000000000007759	cmpq	0xf0(%rbp),%rax
+000000000000775d	jl	0x0000773c
+000000000000775f	movq	0xd8(%rbp),%rdi
+0000000000007763	leaq	0x00002c74(%rip),%rsi
+000000000000776a	callq	0x00009176	; symbol stub for: _strcmp
+000000000000776f	testl	%eax,%eax
+0000000000007771	je	0x000077cf
+0000000000007773	cmpl	$__mh_bundle_header,0xd4(%rbp)
+0000000000007777	jg	0x000077ab
+0000000000007779	movq	0xe8(%rbp),%rdi
+000000000000777d	leaq	0x00004d5c(%rip),%rdx
+0000000000007784	leaq	0x00006c1d(%rip),%rax
+000000000000778b	movq	(%rax),%rax
+000000000000778e	movq	0x0000586b(%rip),%rsi
+0000000000007795	movq	%rdx,%r8
+0000000000007798	movl	$__mh_bundle_header,%ecx
+000000000000779d	movq	%rax,%rdx
+00000000000077a0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000077a5	movb	$__mh_bundle_header,0xd3(%rbp)
+00000000000077a9	jmp	0x000077ff
+00000000000077ab	movq	0xe8(%rbp),%rdi
+00000000000077af	movq	0xe8(%rbp),%rax
+00000000000077b3	movq	0x0000585e(%rip),%rsi
+00000000000077ba	movl	0xd4(%rbp),%ecx
+00000000000077bd	movq	0xd8(%rbp),%rdx
+00000000000077c1	movq	%rax,%r8
+00000000000077c4	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000077c9	movb	$0x01,0xd3(%rbp)
+00000000000077cd	jmp	0x000077ff
+00000000000077cf	movq	0xe8(%rbp),%rdi
+00000000000077d3	leaq	0x00004d06(%rip),%rdx
+00000000000077da	leaq	0x00006bcf(%rip),%rax
+00000000000077e1	movq	(%rax),%rax
+00000000000077e4	movq	0x00005815(%rip),%rsi
+00000000000077eb	movq	%rdx,%r8
+00000000000077ee	movl	$__mh_bundle_header,%ecx
+00000000000077f3	movq	%rax,%rdx
+00000000000077f6	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000077fb	movb	$__mh_bundle_header,0xd3(%rbp)
+00000000000077ff	movzbl	0xd3(%rbp),%eax
+0000000000007803	leave
+0000000000007804	ret
+-[DropboxMenu initContextMenu:]:
+0000000000007805	nop
+0000000000007806	nop
+0000000000007807	nop
+0000000000007808	nop
+0000000000007809	nop
+000000000000780a	nop
+000000000000780b	pushq	%rbp
+000000000000780c	movq	%rsp,%rbp
+000000000000780f	subq	$0x00000490,%rsp
+0000000000007816	movq	%rdi,0xfffffb98(%rbp)
+000000000000781d	movq	%rsi,0xfffffb90(%rbp)
+0000000000007824	movq	%rdx,0xfffffb88(%rbp)
+000000000000782b	movq	0x000047ce(%rip),%rax
+0000000000007832	movq	(%rax),%rdx
+0000000000007835	movq	%rdx,0xf8(%rbp)
+0000000000007839	xorl	%edx,%edx
+000000000000783b	movl	$__mh_bundle_header,0xfffffbec(%rbp)
+0000000000007845	cmpq	$__mh_bundle_header,0xfffffb88(%rbp)
+000000000000784d	je	0x00007872
+000000000000784f	movq	0xfffffb88(%rbp),%rdi
+0000000000007856	leaq	0x00005463(%rip),%rax
+000000000000785d	movq	(%rax),%rax
+0000000000007860	leaq	0x00005459(%rip),%rsi
+0000000000007867	call	*%rax
+0000000000007869	testq	%rax,%rax
+000000000000786c	jne	0x00007a99
+0000000000007872	movq	$__mh_bundle_header,0xfffffbd0(%rbp)
+000000000000787d	leaq	0xfffffbd0(%rbp),%rdi
+0000000000007884	movl	$0x00000001,%esi
+0000000000007889	callq	_GetFinderContext
+000000000000788e	movq	%rax,0xfffffbc8(%rbp)
+0000000000007895	movq	0xfffffbd0(%rbp),%rax
+000000000000789c	cmpq	$0x01,%rax
+00000000000078a0	jg	0x000078b2
+00000000000078a2	movq	0xfffffbd0(%rbp),%rcx
+00000000000078a9	movq	%rcx,0xfffffb78(%rbp)
+00000000000078b0	jmp	0x000078bd
+00000000000078b2	movq	$__mh_bundle_header,0xfffffb78(%rbp)
+00000000000078bd	movq	0xfffffb78(%rbp),%rax
+00000000000078c4	movq	%rax,0xfffffbc0(%rbp)
+00000000000078cb	movl	$__mh_bundle_header,0xfffffbe4(%rbp)
+00000000000078d5	movl	$__mh_bundle_header,0xfffffbe8(%rbp)
+00000000000078df	jmp	0x00007930
+00000000000078e1	movl	0xfffffbe8(%rbp),%eax
+00000000000078e7	cdqe
+00000000000078e9	shlq	$0x03,%rax
+00000000000078ed	addq	0xfffffbc8(%rbp),%rax
+00000000000078f4	movq	(%rax),%rax
+00000000000078f7	testq	%rax,%rax
+00000000000078fa	je	0x0000792a
+00000000000078fc	movl	0xfffffbe8(%rbp),%eax
+0000000000007902	cdqe
+0000000000007904	shlq	$0x03,%rax
+0000000000007908	addq	0xfffffbc8(%rbp),%rax
+000000000000790f	movq	(%rax),%rdi
+0000000000007912	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+0000000000007917	movl	%eax,%edx
+0000000000007919	movl	0xfffffbec(%rbp),%eax
+000000000000791f	leal	(%rdx,%rax),%eax
+0000000000007922	incl	%eax
+0000000000007924	movl	%eax,0xfffffbec(%rbp)
+000000000000792a	incl	0xfffffbe8(%rbp)
+0000000000007930	movl	0xfffffbe8(%rbp),%eax
+0000000000007936	cdqe
+0000000000007938	cmpq	0xfffffbc0(%rbp),%rax
+000000000000793f	jl	0x000078e1
+0000000000007941	movl	0xfffffbec(%rbp),%eax
+0000000000007947	cdqe
+0000000000007949	leaq	(%rax,%rax),%rdi
+000000000000794d	callq	0x000090ec	; symbol stub for: _malloc
+0000000000007952	movq	%rax,0xfffffbd8(%rbp)
+0000000000007959	movl	$__mh_bundle_header,0xfffffbe8(%rbp)
+0000000000007963	jmp	0x00007a6c
+0000000000007968	movl	0xfffffbe8(%rbp),%eax
+000000000000796e	cdqe
+0000000000007970	shlq	$0x03,%rax
+0000000000007974	addq	0xfffffbc8(%rbp),%rax
+000000000000797b	movq	(%rax),%rax
+000000000000797e	testq	%rax,%rax
+0000000000007981	je	0x00007a66
+0000000000007987	movl	0xfffffbe8(%rbp),%eax
+000000000000798d	cdqe
+000000000000798f	shlq	$0x03,%rax
+0000000000007993	addq	0xfffffbc8(%rbp),%rax
+000000000000799a	movq	(%rax),%rsi
+000000000000799d	leaq	0x00004dfc(%rip),%rdi
+00000000000079a4	movl	$__mh_bundle_header,%eax
+00000000000079a9	callq	_DBLog
+00000000000079ae	movq	$__mh_bundle_header,0xfffffba0(%rbp)
+00000000000079b9	movl	0xfffffbe8(%rbp),%eax
+00000000000079bf	cdqe
+00000000000079c1	shlq	$0x03,%rax
+00000000000079c5	addq	0xfffffbc8(%rbp),%rax
+00000000000079cc	movq	(%rax),%rdi
+00000000000079cf	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+00000000000079d4	movq	%rax,0xfffffba8(%rbp)
+00000000000079db	movl	0xfffffbe4(%rbp),%eax
+00000000000079e1	cdqe
+00000000000079e3	addq	%rax,%rax
+00000000000079e6	movq	%rax,%rcx
+00000000000079e9	addq	0xfffffbd8(%rbp),%rcx
+00000000000079f0	movl	0xfffffbe8(%rbp),%eax
+00000000000079f6	cdqe
+00000000000079f8	shlq	$0x03,%rax
+00000000000079fc	addq	0xfffffbc8(%rbp),%rax
+0000000000007a03	movq	(%rax),%rdi
+0000000000007a06	movq	0xfffffba0(%rbp),%rsi
+0000000000007a0d	movq	0xfffffba8(%rbp),%rdx
+0000000000007a14	callq	0x00008f90	; symbol stub for: _CFStringGetCharacters
+0000000000007a19	movq	0xfffffba8(%rbp),%rax
+0000000000007a20	movl	%eax,%edx
+0000000000007a22	movl	0xfffffbe4(%rbp),%eax
+0000000000007a28	leal	(%rdx,%rax),%eax
+0000000000007a2b	movl	%eax,0xfffffbe4(%rbp)
+0000000000007a31	movl	0xfffffbe8(%rbp),%eax
+0000000000007a37	movslq	%eax,%rdx
+0000000000007a3a	movq	0xfffffbc0(%rbp),%rax
+0000000000007a41	decq	%rax
+0000000000007a44	cmpq	%rax,%rdx
+0000000000007a47	jge	0x00007a66
+0000000000007a49	movl	0xfffffbe4(%rbp),%eax
+0000000000007a4f	cdqe
+0000000000007a51	addq	%rax,%rax
+0000000000007a54	addq	0xfffffbd8(%rbp),%rax
+0000000000007a5b	movw	$0x007c,(%rax)
+0000000000007a60	incl	0xfffffbe4(%rbp)
+0000000000007a66	incl	0xfffffbe8(%rbp)
+0000000000007a6c	movl	0xfffffbe8(%rbp),%eax
+0000000000007a72	cdqe
+0000000000007a74	cmpq	0xfffffbc0(%rbp),%rax
+0000000000007a7b	jl	0x100007968
+0000000000007a81	movq	0xfffffbd0(%rbp),%rsi
+0000000000007a88	movq	0xfffffbc8(%rbp),%rdi
+0000000000007a8f	callq	_FreeFinderContext
+0000000000007a94	jmp	0x00007b9b
+0000000000007a99	movq	0xfffffb88(%rbp),%rdi
+0000000000007aa0	leaq	0x00005219(%rip),%rax
+0000000000007aa7	movq	(%rax),%rax
+0000000000007aaa	leaq	0x0000520f(%rip),%rsi
+0000000000007ab1	call	*%rax
+0000000000007ab3	cmpq	$0x01,%rax
+0000000000007ab7	ja	0x00007af2
+0000000000007ab9	movq	0xfffffb88(%rbp),%rdi
+0000000000007ac0	leaq	0x00004cf9(%rip),%rdx
+0000000000007ac7	movq	0x0000552a(%rip),%rsi
+0000000000007ace	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007ad3	movq	%rax,%rdi
+0000000000007ad6	leaq	0x000051c3(%rip),%rax
+0000000000007add	movq	(%rax),%rax
+0000000000007ae0	leaq	0x000051b9(%rip),%rsi
+0000000000007ae7	call	*%rax
+0000000000007ae9	movq	%rax,0xfffffb80(%rbp)
+0000000000007af0	jmp	0x00007b00
+0000000000007af2	leaq	0x000049e7(%rip),%rdx
+0000000000007af9	movq	%rdx,0xfffffb80(%rbp)
+0000000000007b00	movq	0xfffffb80(%rbp),%rcx
+0000000000007b07	movq	%rcx,0xfffffbb8(%rbp)
+0000000000007b0e	movq	0xfffffbb8(%rbp),%rdi
+0000000000007b15	leaq	0x00005224(%rip),%rax
+0000000000007b1c	movq	(%rax),%rax
+0000000000007b1f	leaq	0x0000521a(%rip),%rsi
+0000000000007b26	call	*%rax
+0000000000007b28	movl	%eax,0xfffffbec(%rbp)
+0000000000007b2e	movl	0xfffffbec(%rbp),%eax
+0000000000007b34	cdqe
+0000000000007b36	leaq	(%rax,%rax),%rdi
+0000000000007b3a	callq	0x000090ec	; symbol stub for: _malloc
+0000000000007b3f	movq	%rax,0xfffffbd8(%rbp)
+0000000000007b46	movq	$__mh_bundle_header,0xfffffba0(%rbp)
+0000000000007b51	movl	0xfffffbec(%rbp),%eax
+0000000000007b57	cdqe
+0000000000007b59	movq	%rax,0xfffffba8(%rbp)
+0000000000007b60	movq	0xfffffbb8(%rbp),%rdi
+0000000000007b67	movq	0xfffffbd8(%rbp),%rcx
+0000000000007b6e	movq	0xfffffba0(%rbp),%rsi
+0000000000007b75	movq	0xfffffba8(%rbp),%rdx
+0000000000007b7c	callq	0x00008f90	; symbol stub for: _CFStringGetCharacters
+0000000000007b81	movq	0xfffffbb8(%rbp),%rdi
+0000000000007b88	leaq	0x00005121(%rip),%rax
+0000000000007b8f	movq	(%rax),%rax
+0000000000007b92	leaq	0x00005117(%rip),%rsi
+0000000000007b99	call	*%rax
+0000000000007b9b	movl	$__mh_bundle_header,0xfffffbe0(%rbp)
+0000000000007ba5	leaq	0xfffffbf0(%rbp),%rcx
+0000000000007bac	movl	0xfffffbec(%rbp),%edx
+0000000000007bb2	movq	0xfffffbd8(%rbp),%rsi
+0000000000007bb9	movl	$0x000003ff,%r8d
+0000000000007bbf	movl	$0x00000003,%edi
+0000000000007bc4	callq	_dropboxRequest
+0000000000007bc9	movl	%eax,0xfffffbe0(%rbp)
+0000000000007bcf	cmpl	$__mh_bundle_header,0xfffffbe0(%rbp)
+0000000000007bd6	js	0x00007be8
+0000000000007bd8	movl	0xfffffbe0(%rbp),%eax
+0000000000007bde	cdqe
+0000000000007be0	movb	$__mh_bundle_header,0xfffffbf0(%rbp,%rax)
+0000000000007be8	movq	0xfffffbd8(%rbp),%rdi
+0000000000007bef	callq	0x000090b0	; symbol stub for: _free
+0000000000007bf4	movq	0xfffffb98(%rbp),%rdi
+0000000000007bfb	movq	0x000053ee(%rip),%rsi
+0000000000007c02	movl	0xfffffbe0(%rbp),%ecx
+0000000000007c08	leaq	0xfffffbf0(%rbp),%rdx
+0000000000007c0f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007c14	movq	0x000043e5(%rip),%rdx
+0000000000007c1b	movq	0xf8(%rbp),%rcx
+0000000000007c1f	xorq	(%rdx),%rcx
+0000000000007c22	je	0x00007c29
+0000000000007c24	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000007c29	leave
+0000000000007c2a	ret
+-[DropboxMenu menuNeedsUpdate:]:
+0000000000007c2b	nop
+0000000000007c2c	nop
+0000000000007c2d	nop
+0000000000007c2e	nop
+0000000000007c2f	nop
+0000000000007c30	nop
+0000000000007c31	pushq	%rbp
+0000000000007c32	movq	%rsp,%rbp
+0000000000007c35	subq	$0x00000470,%rsp
+0000000000007c3c	movq	%rdi,0xfffffba8(%rbp)
+0000000000007c43	movq	%rsi,0xfffffba0(%rbp)
+0000000000007c4a	movq	%rdx,0xfffffb98(%rbp)
+0000000000007c51	movq	0x000043a8(%rip),%rax
+0000000000007c58	movq	(%rax),%rdx
+0000000000007c5b	movq	%rdx,0xf8(%rbp)
+0000000000007c5f	xorl	%edx,%edx
+0000000000007c61	movq	0xfffffba8(%rbp),%rdx
+0000000000007c68	leaq	0x000060d9(%rip),%rax
+0000000000007c6f	movq	(%rax),%rax
+0000000000007c72	leaq	(%rdx,%rax),%rax
+0000000000007c76	movzbl	(%rax),%eax
+0000000000007c79	testb	%al,%al
+0000000000007c7b	jne	0x00007f5d
+0000000000007c81	movq	$__mh_bundle_header,0xfffffbd8(%rbp)
+0000000000007c8c	leaq	0xfffffbd8(%rbp),%rdi
+0000000000007c93	movl	$__mh_bundle_header,%esi
+0000000000007c98	callq	_GetFinderContext
+0000000000007c9d	movq	%rax,0xfffffbd0(%rbp)
+0000000000007ca4	movq	0xfffffbd8(%rbp),%rax
+0000000000007cab	testq	%rax,%rax
+0000000000007cae	jne	0x00007cdb
+0000000000007cb0	movq	0xfffffbd8(%rbp),%rsi
+0000000000007cb7	movq	0xfffffbd0(%rbp),%rdi
+0000000000007cbe	callq	_FreeFinderContext
+0000000000007cc3	leaq	0xfffffbd8(%rbp),%rdi
+0000000000007cca	movl	$0x00000001,%esi
+0000000000007ccf	callq	_GetFinderContext
+0000000000007cd4	movq	%rax,0xfffffbd0(%rbp)
+0000000000007cdb	movq	0xfffffbd8(%rbp),%rax
+0000000000007ce2	cmpq	$0x01,%rax
+0000000000007ce6	jg	0x00007cf8
+0000000000007ce8	movq	0xfffffbd8(%rbp),%rax
+0000000000007cef	movq	%rax,0xfffffb90(%rbp)
+0000000000007cf6	jmp	0x00007d03
+0000000000007cf8	movq	$__mh_bundle_header,0xfffffb90(%rbp)
+0000000000007d03	movq	0xfffffb90(%rbp),%rdx
+0000000000007d0a	movq	%rdx,0xfffffbc8(%rbp)
+0000000000007d11	movl	$__mh_bundle_header,0xfffffbec(%rbp)
+0000000000007d1b	movl	$__mh_bundle_header,0xfffffbe8(%rbp)
+0000000000007d25	movl	$__mh_bundle_header,0xfffffbe0(%rbp)
+0000000000007d2f	movl	$__mh_bundle_header,0xfffffbe4(%rbp)
+0000000000007d39	jmp	0x00007d8a
+0000000000007d3b	movl	0xfffffbe4(%rbp),%eax
+0000000000007d41	cdqe
+0000000000007d43	shlq	$0x03,%rax
+0000000000007d47	addq	0xfffffbd0(%rbp),%rax
+0000000000007d4e	movq	(%rax),%rax
+0000000000007d51	testq	%rax,%rax
+0000000000007d54	je	0x00007d84
+0000000000007d56	movl	0xfffffbe4(%rbp),%eax
+0000000000007d5c	cdqe
+0000000000007d5e	shlq	$0x03,%rax
+0000000000007d62	addq	0xfffffbd0(%rbp),%rax
+0000000000007d69	movq	(%rax),%rdi
+0000000000007d6c	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+0000000000007d71	movl	%eax,%edx
+0000000000007d73	movl	0xfffffbec(%rbp),%eax
+0000000000007d79	leal	(%rdx,%rax),%eax
+0000000000007d7c	incl	%eax
+0000000000007d7e	movl	%eax,0xfffffbec(%rbp)
+0000000000007d84	incl	0xfffffbe4(%rbp)
+0000000000007d8a	movl	0xfffffbe4(%rbp),%eax
+0000000000007d90	cdqe
+0000000000007d92	cmpq	0xfffffbc8(%rbp),%rax
+0000000000007d99	jl	0x00007d3b
+0000000000007d9b	movl	0xfffffbec(%rbp),%eax
+0000000000007da1	cdqe
+0000000000007da3	leaq	(%rax,%rax),%rdi
+0000000000007da7	callq	0x000090ec	; symbol stub for: _malloc
+0000000000007dac	movq	%rax,0xfffffbc0(%rbp)
+0000000000007db3	movl	$__mh_bundle_header,0xfffffbe4(%rbp)
+0000000000007dbd	jmp	0x00007ec6
+0000000000007dc2	movl	0xfffffbe4(%rbp),%eax
+0000000000007dc8	cdqe
+0000000000007dca	shlq	$0x03,%rax
+0000000000007dce	addq	0xfffffbd0(%rbp),%rax
+0000000000007dd5	movq	(%rax),%rax
+0000000000007dd8	testq	%rax,%rax
+0000000000007ddb	je	0x00007ec0
+0000000000007de1	movl	0xfffffbe4(%rbp),%eax
+0000000000007de7	cdqe
+0000000000007de9	shlq	$0x03,%rax
+0000000000007ded	addq	0xfffffbd0(%rbp),%rax
+0000000000007df4	movq	(%rax),%rsi
+0000000000007df7	leaq	0x000049a2(%rip),%rdi
+0000000000007dfe	movl	$__mh_bundle_header,%eax
+0000000000007e03	callq	_DBLog
+0000000000007e08	movq	$__mh_bundle_header,0xfffffbb0(%rbp)
+0000000000007e13	movl	0xfffffbe4(%rbp),%eax
+0000000000007e19	cdqe
+0000000000007e1b	shlq	$0x03,%rax
+0000000000007e1f	addq	0xfffffbd0(%rbp),%rax
+0000000000007e26	movq	(%rax),%rdi
+0000000000007e29	callq	0x00008f96	; symbol stub for: _CFStringGetLength
+0000000000007e2e	movq	%rax,0xfffffbb8(%rbp)
+0000000000007e35	movl	0xfffffbe0(%rbp),%eax
+0000000000007e3b	cdqe
+0000000000007e3d	addq	%rax,%rax
+0000000000007e40	movq	%rax,%rcx
+0000000000007e43	addq	0xfffffbc0(%rbp),%rcx
+0000000000007e4a	movl	0xfffffbe4(%rbp),%eax
+0000000000007e50	cdqe
+0000000000007e52	shlq	$0x03,%rax
+0000000000007e56	addq	0xfffffbd0(%rbp),%rax
+0000000000007e5d	movq	(%rax),%rdi
+0000000000007e60	movq	0xfffffbb0(%rbp),%rsi
+0000000000007e67	movq	0xfffffbb8(%rbp),%rdx
+0000000000007e6e	callq	0x00008f90	; symbol stub for: _CFStringGetCharacters
+0000000000007e73	movq	0xfffffbb8(%rbp),%rax
+0000000000007e7a	movl	%eax,%edx
+0000000000007e7c	movl	0xfffffbe0(%rbp),%eax
+0000000000007e82	leal	(%rdx,%rax),%eax
+0000000000007e85	movl	%eax,0xfffffbe0(%rbp)
+0000000000007e8b	movl	0xfffffbe4(%rbp),%eax
+0000000000007e91	movslq	%eax,%rdx
+0000000000007e94	movq	0xfffffbc8(%rbp),%rax
+0000000000007e9b	decq	%rax
+0000000000007e9e	cmpq	%rax,%rdx
+0000000000007ea1	jge	0x00007ec0
+0000000000007ea3	movl	0xfffffbe0(%rbp),%eax
+0000000000007ea9	cdqe
+0000000000007eab	addq	%rax,%rax
+0000000000007eae	addq	0xfffffbc0(%rbp),%rax
+0000000000007eb5	movw	$0x007c,(%rax)
+0000000000007eba	incl	0xfffffbe0(%rbp)
+0000000000007ec0	incl	0xfffffbe4(%rbp)
+0000000000007ec6	movl	0xfffffbe4(%rbp),%eax
+0000000000007ecc	cdqe
+0000000000007ece	cmpq	0xfffffbc8(%rbp),%rax
+0000000000007ed5	jl	0x100007dc2
+0000000000007edb	leaq	0xfffffbf0(%rbp),%rcx
+0000000000007ee2	movl	0xfffffbe0(%rbp),%edx
+0000000000007ee8	movq	0xfffffbc0(%rbp),%rsi
+0000000000007eef	movl	$0x000003ff,%r8d
+0000000000007ef5	movl	$0x00000006,%edi
+0000000000007efa	callq	_dropboxRequest
+0000000000007eff	movl	%eax,0xfffffbe8(%rbp)
+0000000000007f05	cmpl	$__mh_bundle_header,0xfffffbe8(%rbp)
+0000000000007f0c	js	0x00007f1e
+0000000000007f0e	movl	0xfffffbe8(%rbp),%eax
+0000000000007f14	cdqe
+0000000000007f16	movb	$__mh_bundle_header,0xfffffbf0(%rbp,%rax)
+0000000000007f1e	movq	0xfffffbc0(%rbp),%rdi
+0000000000007f25	callq	0x000090b0	; symbol stub for: _free
+0000000000007f2a	movq	0xfffffbd8(%rbp),%rsi
+0000000000007f31	movq	0xfffffbd0(%rbp),%rdi
+0000000000007f38	callq	_FreeFinderContext
+0000000000007f3d	movq	0xfffffba8(%rbp),%rdi
+0000000000007f44	movq	0x000050a5(%rip),%rsi
+0000000000007f4b	movl	0xfffffbe8(%rbp),%ecx
+0000000000007f51	leaq	0xfffffbf0(%rbp),%rdx
+0000000000007f58	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007f5d	movq	0x0000409c(%rip),%rax
+0000000000007f64	movq	0xf8(%rbp),%rdx
+0000000000007f68	xorq	(%rax),%rdx
+0000000000007f6b	je	0x00007f72
+0000000000007f6d	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000007f72	leave
+0000000000007f73	ret
+-[DropboxMenu initWithContextMenuBehavior:]:
+0000000000007f74	nop
+0000000000007f75	nop
+0000000000007f76	nop
+0000000000007f77	nop
+0000000000007f78	nop
+0000000000007f79	nop
+0000000000007f7a	pushq	%rbp
+0000000000007f7b	movq	%rsp,%rbp
+0000000000007f7e	subq	$0x30,%rsp
+0000000000007f82	movq	%rdi,0xe8(%rbp)
+0000000000007f86	movq	%rsi,0xe0(%rbp)
+0000000000007f8a	movb	%dl,0xdc(%rbp)
+0000000000007f8d	movq	0xe8(%rbp),%rax
+0000000000007f91	movq	%rax,0xf0(%rbp)
+0000000000007f95	movq	0x00005294(%rip),%rax
+0000000000007f9c	movq	%rax,0xf8(%rbp)
+0000000000007fa0	leaq	0xf0(%rbp),%rdi
+0000000000007fa4	leaq	0x000063f5(%rip),%rax
+0000000000007fab	movq	(%rax),%rdx
+0000000000007fae	movq	0x0000506b(%rip),%rsi
+0000000000007fb5	callq	0x00009134	; symbol stub for: _objc_msgSendSuper2
+0000000000007fba	movq	%rax,0xe8(%rbp)
+0000000000007fbe	cmpq	$__mh_bundle_header,0xe8(%rbp)
+0000000000007fc3	je	0x0000801a
+0000000000007fc5	movq	0xe8(%rbp),%rdx
+0000000000007fc9	leaq	0x00005d78(%rip),%rax
+0000000000007fd0	movq	(%rax),%rax
+0000000000007fd3	addq	%rax,%rdx
+0000000000007fd6	movzbl	0xdc(%rbp),%eax
+0000000000007fda	movb	%al,(%rdx)
+0000000000007fdc	movq	0xe8(%rbp),%rdi
+0000000000007fe0	movq	0x00005001(%rip),%rsi
+0000000000007fe7	movl	$__mh_bundle_header,%edx
+0000000000007fec	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000007ff1	movq	0xe8(%rbp),%rdi
+0000000000007ff5	movq	0x00004fe4(%rip),%rsi
+0000000000007ffc	movl	$0x00000001,%edx
+0000000000008001	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008006	movq	0xe8(%rbp),%rdi
+000000000000800a	movq	0xe8(%rbp),%rdx
+000000000000800e	movq	0x00004fc3(%rip),%rsi
+0000000000008015	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000801a	movq	0xe8(%rbp),%rax
+000000000000801e	leave
+000000000000801f	ret
+_TextureMappingRelease:
+0000000000008020	nop
+0000000000008021	nop
+0000000000008022	nop
+0000000000008023	nop
+0000000000008024	nop
+0000000000008025	nop
+0000000000008026	pushq	%rbp
+0000000000008027	movq	%rsp,%rbp
+000000000000802a	subq	$0x10,%rsp
+000000000000802e	movq	%rdi,0xf8(%rbp)
+0000000000008032	movq	%rsi,0xf0(%rbp)
+0000000000008036	movq	0xf0(%rbp),%rdi
+000000000000803a	callq	0x000090b0	; symbol stub for: _free
+000000000000803f	leave
+0000000000008040	ret
+_TextureMappingEqual:
+0000000000008041	nop
+0000000000008042	nop
+0000000000008043	nop
+0000000000008044	nop
+0000000000008045	nop
+0000000000008046	nop
+0000000000008047	pushq	%rbp
+0000000000008048	movq	%rsp,%rbp
+000000000000804b	movq	%rdi,0xf8(%rbp)
+000000000000804f	movq	%rsi,0xf0(%rbp)
+0000000000008053	movq	0xf8(%rbp),%rax
+0000000000008057	cmpq	0xf0(%rbp),%rax
+000000000000805b	sete	%al
+000000000000805e	movzbl	%al,%eax
+0000000000008061	leave
+0000000000008062	ret
+_CachedCGImageRefToIconRef:
+0000000000008063	nop
+0000000000008064	nop
+0000000000008065	nop
+0000000000008066	nop
+0000000000008067	nop
+0000000000008068	nop
+0000000000008069	pushq	%rbp
+000000000000806a	movq	%rsp,%rbp
+000000000000806d	pushq	%rbx
+000000000000806e	subq	$0x00000098,%rsp
+0000000000008075	movq	%rdi,0x88(%rbp)
+0000000000008079	movq	0x00003f80(%rip),%rax
+0000000000008080	movq	(%rax),%rdx
+0000000000008083	movq	%rdx,0xe8(%rbp)
+0000000000008087	xorl	%edx,%edx
+0000000000008089	movq	%rsp,%rax
+000000000000808c	movq	%rax,0x80(%rbp)
+0000000000008090	leaq	0x00006539(%rip),%rax
+0000000000008097	movq	(%rax),%rdi
+000000000000809a	movq	0x88(%rbp),%rsi
+000000000000809e	callq	0x00008f5a	; symbol stub for: _CFDictionaryGetValue
+00000000000080a3	movq	%rax,0xc8(%rbp)
+00000000000080a7	cmpq	$__mh_bundle_header,0xc8(%rbp)
+00000000000080ac	je	0x000080be
+00000000000080ae	movq	0xc8(%rbp),%rcx
+00000000000080b2	movq	%rcx,0xffffff70(%rbp)
+00000000000080b9	jmp	0x000082b8
+00000000000080be	movl	$0x00000028,%edi
+00000000000080c3	callq	0x000090ec	; symbol stub for: _malloc
+00000000000080c8	movq	%rax,0xc8(%rbp)
+00000000000080cc	leaq	0x0000640d(%rip),%rax
+00000000000080d3	movl	(%rax),%edx
+00000000000080d5	leaq	0x00006404(%rip),%rax
+00000000000080dc	movl	(%rax),%eax
+00000000000080de	imull	%edx,%eax
+00000000000080e1	cdqe
+00000000000080e3	shlq	$0x02,%rax
+00000000000080e7	addq	$0x0f,%rax
+00000000000080eb	addq	$0x0f,%rax
+00000000000080ef	shrq	$0x04,%rax
+00000000000080f3	shlq	$0x04,%rax
+00000000000080f7	subq	%rax,%rsp
+00000000000080fa	leaq	0x10(%rsp),%rax
+00000000000080ff	movq	%rax,0xffffff78(%rbp)
+0000000000008106	movq	0xffffff78(%rbp),%rax
+000000000000810d	addq	$0x0f,%rax
+0000000000008111	shrq	$0x04,%rax
+0000000000008115	shlq	$0x04,%rax
+0000000000008119	movq	%rax,0xffffff78(%rbp)
+0000000000008120	movq	0xffffff78(%rbp),%rdx
+0000000000008127	movq	%rdx,0xb0(%rbp)
+000000000000812b	movl	$__mh_bundle_header,0xe4(%rbp)
+0000000000008132	jmp	0x0000828c
+0000000000008137	movl	0xe4(%rbp),%eax
+000000000000813a	leaq	0x0000639f(%rip),%rdx
+0000000000008141	movl	%eax,%eax
+0000000000008143	movl	(%rdx,%rax,4),%ecx
+0000000000008146	movl	0xe4(%rbp),%eax
+0000000000008149	leaq	0x00006390(%rip),%rdx
+0000000000008150	movl	%eax,%eax
+0000000000008152	movl	(%rdx,%rax,4),%eax
+0000000000008155	imull	%ecx,%eax
+0000000000008158	cdqe
+000000000000815a	leaq	__mh_bundle_header(,%rax,4),%rsi
+0000000000008162	movq	0xb0(%rbp),%rdi
+0000000000008166	callq	0x00009050	; symbol stub for: _bzero
+000000000000816b	callq	0x00008fc6	; symbol stub for: _CGColorSpaceCreateDeviceRGB
+0000000000008170	movq	%rax,0xc0(%rbp)
+0000000000008174	movl	0xe4(%rbp),%eax
+0000000000008177	leaq	0x00006362(%rip),%rdx
+000000000000817e	movl	%eax,%eax
+0000000000008180	movl	(%rdx,%rax,4),%eax
+0000000000008183	cdqe
+0000000000008185	leaq	__mh_bundle_header(,%rax,4),%rcx
+000000000000818d	movl	0xe4(%rbp),%eax
+0000000000008190	leaq	0x00006349(%rip),%rdx
+0000000000008197	movl	%eax,%eax
+0000000000008199	movl	(%rdx,%rax,4),%eax
+000000000000819c	movslq	%eax,%r10
+000000000000819f	movl	0xe4(%rbp),%eax
+00000000000081a2	leaq	0x00006337(%rip),%rdx
+00000000000081a9	movl	%eax,%eax
+00000000000081ab	movl	(%rdx,%rax,4),%eax
+00000000000081ae	movslq	%eax,%rsi
+00000000000081b1	movq	0xb0(%rbp),%rdi
+00000000000081b5	movq	0xc0(%rbp),%rax
+00000000000081b9	movl	$0x00000001,(%rsp)
+00000000000081c0	movq	%rax,%r9
+00000000000081c3	movq	%rcx,%r8
+00000000000081c6	movl	$0x00000008,%ecx
+00000000000081cb	movq	%r10,%rdx
+00000000000081ce	callq	0x00008fb4	; symbol stub for: _CGBitmapContextCreate
+00000000000081d3	movq	%rax,0xb8(%rbp)
+00000000000081d7	movl	0xe4(%rbp),%eax
+00000000000081da	leaq	0x000062ff(%rip),%rdx
+00000000000081e1	movl	%eax,%eax
+00000000000081e3	movl	(%rdx,%rax,4),%eax
+00000000000081e6	cvtsi2sd	%eax,%xmm1
+00000000000081ea	movl	0xe4(%rbp),%eax
+00000000000081ed	leaq	0x000062ec(%rip),%rdx
+00000000000081f4	movl	%eax,%eax
+00000000000081f6	movl	(%rdx,%rax,4),%eax
+00000000000081f9	cvtsi2sd	%eax,%xmm0
+00000000000081fd	leaq	0x90(%rbp),%rdi
+0000000000008201	movapd	%xmm1,%xmm3
+0000000000008205	movapd	%xmm0,%xmm2
+0000000000008209	xorpd	%xmm1,%xmm1
+000000000000820d	xorpd	%xmm0,%xmm0
+0000000000008211	callq	_CGRectMake
+0000000000008216	movw	$__mh_bundle_header,0xd0(%rbp)
+000000000000821c	movw	$__mh_bundle_header,0xd2(%rbp)
+0000000000008222	movw	$__mh_bundle_header,0xd4(%rbp)
+0000000000008228	leaq	0xd0(%rbp),%rdx
+000000000000822c	leaq	0x90(%rbp),%rsi
+0000000000008230	movq	0xb8(%rbp),%rdi
+0000000000008234	movq	0x88(%rbp),%rax
+0000000000008238	movq	%rax,(%rsp)
+000000000000823c	movl	$__mh_bundle_header,%r9d
+0000000000008242	movq	%rdx,%r8
+0000000000008245	movl	$__mh_bundle_header,%ecx
+000000000000824a	movl	$__mh_bundle_header,%edx
+000000000000824f	callq	0x00009020	; symbol stub for: _PlotIconRefInContext
+0000000000008254	movq	0xb8(%rbp),%rdi
+0000000000008258	callq	0x00008fd8	; symbol stub for: _CGContextFlush
+000000000000825d	movl	0xe4(%rbp),%eax
+0000000000008260	shlq	$0x03,%rax
+0000000000008264	movq	%rax,%rbx
+0000000000008267	addq	0xc8(%rbp),%rbx
+000000000000826b	movq	0xb8(%rbp),%rdi
+000000000000826f	callq	0x00008fba	; symbol stub for: _CGBitmapContextCreateImage
+0000000000008274	movq	%rax,(%rbx)
+0000000000008277	movq	0xc0(%rbp),%rdi
+000000000000827b	callq	0x00008fd2	; symbol stub for: _CGColorSpaceRelease
+0000000000008280	movq	0xb8(%rbp),%rdi
+0000000000008284	callq	0x00008fde	; symbol stub for: _CGContextRelease
+0000000000008289	incl	0xe4(%rbp)
+000000000000828c	cmpl	$0x04,0xe4(%rbp)
+0000000000008290	jbe	0x100008137
+0000000000008296	leaq	0x00006333(%rip),%rax
+000000000000829d	movq	(%rax),%rdi
+00000000000082a0	movq	0xc8(%rbp),%rdx
+00000000000082a4	movq	0x88(%rbp),%rsi
+00000000000082a8	callq	0x00008f4e	; symbol stub for: _CFDictionaryAddValue
+00000000000082ad	movq	0xc8(%rbp),%rcx
+00000000000082b1	movq	%rcx,0xffffff70(%rbp)
+00000000000082b8	movq	0x80(%rbp),%rsp
+00000000000082bc	movq	0xffffff70(%rbp),%rax
+00000000000082c3	movq	0x00003d36(%rip),%rdx
+00000000000082ca	movq	0xe8(%rbp),%rcx
+00000000000082ce	xorq	(%rdx),%rcx
+00000000000082d1	je	0x000082d8
+00000000000082d3	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+00000000000082d8	movq	0xf8(%rbp),%rbx
+00000000000082dc	leave
+00000000000082dd	ret
+_CGRectMake:
+00000000000082de	nop
+00000000000082df	nop
+00000000000082e0	nop
+00000000000082e1	nop
+00000000000082e2	nop
+00000000000082e3	nop
+00000000000082e4	pushq	%rbp
+00000000000082e5	movq	%rsp,%rbp
+00000000000082e8	movsd	%xmm0,0xd8(%rbp)
+00000000000082ed	movsd	%xmm1,0xd0(%rbp)
+00000000000082f2	movsd	%xmm2,0xc8(%rbp)
+00000000000082f7	movsd	%xmm3,0xc0(%rbp)
+00000000000082fc	movq	0xd8(%rbp),%rax
+0000000000008300	movq	%rax,0xe0(%rbp)
+0000000000008304	movq	0xd0(%rbp),%rax
+0000000000008308	movq	%rax,0xe8(%rbp)
+000000000000830c	movq	0xc8(%rbp),%rax
+0000000000008310	movq	%rax,0xf0(%rbp)
+0000000000008314	movq	0xc0(%rbp),%rax
+0000000000008318	movq	%rax,0xf8(%rbp)
+000000000000831c	movq	0xe0(%rbp),%rax
+0000000000008320	movq	%rax,(%rdi)
+0000000000008323	movq	0xe8(%rbp),%rax
+0000000000008327	movq	%rax,0x08(%rdi)
+000000000000832b	movq	0xf0(%rbp),%rax
+000000000000832f	movq	%rax,0x10(%rdi)
+0000000000008333	movq	0xf8(%rbp),%rax
+0000000000008337	movq	%rax,0x18(%rdi)
+000000000000833b	movq	%rdi,%rax
+000000000000833e	leave
+000000000000833f	ret
+-[DropboxIKImageBrowserCell layerForType:]:
+0000000000008340	nop
+0000000000008341	nop
+0000000000008342	nop
+0000000000008343	nop
+0000000000008344	nop
+0000000000008345	nop
+0000000000008346	pushq	%rbp
+0000000000008347	movq	%rsp,%rbp
+000000000000834a	subq	$0x00000150,%rsp
+0000000000008351	movq	%rdi,0xfffffee8(%rbp)
+0000000000008358	movq	%rsi,0xfffffee0(%rbp)
+000000000000835f	movq	%rdx,0xfffffed8(%rbp)
+0000000000008366	movq	0x00003c93(%rip),%rax
+000000000000836d	movq	(%rax),%rdx
+0000000000008370	movq	%rdx,0xf8(%rbp)
+0000000000008374	xorl	%edx,%edx
+0000000000008376	leaq	0x0000624b(%rip),%rax
+000000000000837d	movq	(%rax),%rax
+0000000000008380	movq	0x00004d19(%rip),%rsi
+0000000000008387	movq	0xfffffee8(%rbp),%rdi
+000000000000838e	movq	0xfffffed8(%rbp),%rdx
+0000000000008395	call	*%rax
+0000000000008397	movq	%rax,0x90(%rbp)
+000000000000839b	movq	0x00003cb6(%rip),%rax
+00000000000083a2	movq	(%rax),%rax
+00000000000083a5	cmpq	%rax,0xfffffed8(%rbp)
+00000000000083ac	jne	0x0000866a
+00000000000083b2	movq	0xfffffee8(%rbp),%rdi
+00000000000083b9	movq	0x00004cd8(%rip),%rsi
+00000000000083c0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000083c5	cmpl	$0x02,%eax
+00000000000083c8	jne	0x0000866a
+00000000000083ce	movq	0xfffffee8(%rbp),%rdi
+00000000000083d5	movq	0x00004cb4(%rip),%rsi
+00000000000083dc	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000083e1	movq	%rax,0x88(%rbp)
+00000000000083e5	movq	0x88(%rbp),%rdi
+00000000000083e9	movq	0x00004c98(%rip),%rsi
+00000000000083f0	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000083f5	movq	%rax,%rdi
+00000000000083f8	movq	0x00004c81(%rip),%rsi
+00000000000083ff	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008404	movq	%rax,%rdi
+0000000000008407	leaq	0xa0(%rbp),%rsi
+000000000000840b	movl	$__mh_bundle_header,%edx
+0000000000008410	callq	0x00008ff6	; symbol stub for: _FSPathMakeRef
+0000000000008415	movq	0xfffffee8(%rbp),%rsi
+000000000000841c	movq	0x00004c55(%rip),%rdx
+0000000000008423	leaq	0xffffff50(%rbp),%rdi
+000000000000842a	callq	0x0000913a	; symbol stub for: _objc_msgSend_stret
+000000000000842f	movl	$0x00000004,0x9c(%rbp)
+0000000000008436	jmp	0x0000847f
+0000000000008438	movl	0x9c(%rbp),%eax
+000000000000843b	leaq	0x0000609e(%rip),%rdx
+0000000000008442	movl	%eax,%eax
+0000000000008444	movl	(%rdx,%rax,4),%eax
+0000000000008447	cvtsi2sd	%eax,%xmm1
+000000000000844b	movsd	0xffffff60(%rbp),%xmm0
+0000000000008453	ucomisd	%xmm0,%xmm1
+0000000000008457	jae	0x0000845b
+0000000000008459	jmp	0x0000847c
+000000000000845b	movl	0x9c(%rbp),%eax
+000000000000845e	leaq	0x0000607b(%rip),%rdx
+0000000000008465	movl	%eax,%eax
+0000000000008467	movl	(%rdx,%rax,4),%eax
+000000000000846a	cvtsi2sd	%eax,%xmm1
+000000000000846e	movsd	0xffffff68(%rbp),%xmm0
+0000000000008476	ucomisd	%xmm0,%xmm1
+000000000000847a	jae	0x00008485
+000000000000847c	decl	0x9c(%rbp)
+000000000000847f	cmpl	$__mh_bundle_header,0x9c(%rbp)
+0000000000008483	jne	0x00008438
+0000000000008485	leaq	0xa0(%rbp),%rdi
+0000000000008489	callq	_DropboxIconOverlayProvider
+000000000000848e	movq	%rax,0x80(%rbp)
+0000000000008492	cmpq	$__mh_bundle_header,0x80(%rbp)
+0000000000008497	je	0x0000866a
+000000000000849d	movq	0x80(%rbp),%rdi
+00000000000084a1	callq	_CachedCGImageRefToIconRef
+00000000000084a6	movq	%rax,%rdx
+00000000000084a9	movl	0x9c(%rbp),%eax
+00000000000084ac	shlq	$0x03,%rax
+00000000000084b0	leaq	(%rdx,%rax),%rax
+00000000000084b4	movq	(%rax),%rax
+00000000000084b7	movq	%rax,0xffffff78(%rbp)
+00000000000084be	movq	0xfffffee8(%rbp),%rsi
+00000000000084c5	movq	0x00004ba4(%rip),%rdx
+00000000000084cc	leaq	0xffffff30(%rbp),%rdi
+00000000000084d3	callq	0x0000913a	; symbol stub for: _objc_msgSend_stret
+00000000000084d8	movq	0x00004ce9(%rip),%rax
+00000000000084df	movq	%rax,%rdi
+00000000000084e2	movq	0x00004b7f(%rip),%rsi
+00000000000084e9	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000084ee	movq	%rax,0xffffff70(%rbp)
+00000000000084f5	movq	0xffffff70(%rbp),%rdi
+00000000000084fc	movq	0xffffff78(%rbp),%rdx
+0000000000008503	movq	0x00004b56(%rip),%rsi
+000000000000850a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000850f	movsd	0xffffff68(%rbp),%xmm2
+0000000000008517	movsd	0xffffff60(%rbp),%xmm4
+000000000000851f	movsd	0xffffff58(%rbp),%xmm1
+0000000000008527	movsd	0xffffff38(%rbp),%xmm0
+000000000000852f	movapd	%xmm1,%xmm5
+0000000000008533	subsd	%xmm0,%xmm5
+0000000000008537	movsd	0xffffff50(%rbp),%xmm1
+000000000000853f	movsd	0xffffff30(%rbp),%xmm0
+0000000000008547	movapd	%xmm1,%xmm3
+000000000000854b	subsd	%xmm0,%xmm3
+000000000000854f	movapd	%xmm3,%xmm0
+0000000000008553	leaq	0xffffff10(%rbp),%rdi
+000000000000855a	movapd	%xmm2,%xmm3
+000000000000855e	movapd	%xmm4,%xmm2
+0000000000008562	movapd	%xmm5,%xmm1
+0000000000008566	callq	_CGRectMake
+000000000000856b	movq	0xffffff70(%rbp),%rdi
+0000000000008572	movq	0x00004adf(%rip),%rsi
+0000000000008579	movq	0xffffff10(%rbp),%rax
+0000000000008580	movq	%rax,(%rsp)
+0000000000008584	movq	0xffffff18(%rbp),%rax
+000000000000858b	movq	%rax,0x08(%rsp)
+0000000000008590	movq	0xffffff20(%rbp),%rax
+0000000000008597	movq	%rax,0x10(%rsp)
+000000000000859c	movq	0xffffff28(%rbp),%rax
+00000000000085a3	movq	%rax,0x18(%rsp)
+00000000000085a8	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000085ad	cmpq	$__mh_bundle_header,0x90(%rbp)
+00000000000085b2	jne	0x00008653
+00000000000085b8	movq	0x00004c09(%rip),%rax
+00000000000085bf	movq	%rax,%rdi
+00000000000085c2	leaq	0x000046c7(%rip),%rax
+00000000000085c9	movq	(%rax),%rax
+00000000000085cc	leaq	0x000046bd(%rip),%rsi
+00000000000085d3	call	*%rax
+00000000000085d5	movq	%rax,%rdi
+00000000000085d8	movq	0x000047f9(%rip),%rsi
+00000000000085df	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000085e4	movq	%rax,0x90(%rbp)
+00000000000085e8	movsd	0xffffff48(%rbp),%xmm0
+00000000000085f0	movsd	0xffffff40(%rbp),%xmm1
+00000000000085f8	leaq	0xfffffef0(%rbp),%rdi
+00000000000085ff	movapd	%xmm0,%xmm3
+0000000000008603	movapd	%xmm1,%xmm2
+0000000000008607	xorpd	%xmm1,%xmm1
+000000000000860b	xorpd	%xmm0,%xmm0
+000000000000860f	callq	_CGRectMake
+0000000000008614	movq	0x90(%rbp),%rdi
+0000000000008618	movq	0x00004a39(%rip),%rsi
+000000000000861f	movq	0xfffffef0(%rbp),%rax
+0000000000008626	movq	%rax,(%rsp)
+000000000000862a	movq	0xfffffef8(%rbp),%rax
+0000000000008631	movq	%rax,0x08(%rsp)
+0000000000008636	movq	0xffffff00(%rbp),%rax
+000000000000863d	movq	%rax,0x10(%rsp)
+0000000000008642	movq	0xffffff08(%rbp),%rax
+0000000000008649	movq	%rax,0x18(%rsp)
+000000000000864e	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008653	movq	0x90(%rbp),%rdi
+0000000000008657	movq	0x000049f2(%rip),%rsi
+000000000000865e	movq	0xffffff70(%rbp),%rdx
+0000000000008665	callq	0x0000912e	; symbol stub for: _objc_msgSend
+000000000000866a	movq	0x90(%rbp),%rax
+000000000000866e	movq	0x0000398b(%rip),%rdx
+0000000000008675	movq	0xf8(%rbp),%rcx
+0000000000008679	xorq	(%rdx),%rcx
+000000000000867c	je	0x00008683
+000000000000867e	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000008683	leave
+0000000000008684	ret
+-[DropboxIKImageBrowserCell cellState]:
+0000000000008685	nop
+0000000000008686	nop
+0000000000008687	nop
+0000000000008688	nop
+0000000000008689	nop
+000000000000868a	nop
+000000000000868b	pushq	%rbp
+000000000000868c	movq	%rsp,%rbp
+000000000000868f	movq	%rdi,0xf8(%rbp)
+0000000000008693	movq	%rsi,0xf0(%rbp)
+0000000000008697	movl	$__mh_bundle_header,%eax
+000000000000869c	leave
+000000000000869d	ret
+-[DropboxIKImageBrowserCell frame]:
+000000000000869e	nop
+000000000000869f	nop
+00000000000086a0	nop
+00000000000086a1	nop
+00000000000086a2	nop
+00000000000086a3	nop
+00000000000086a4	pushq	%rbp
+00000000000086a5	movq	%rsp,%rbp
+00000000000086a8	movq	%rsi,0xd8(%rbp)
+00000000000086ac	movq	%rdx,0xd0(%rbp)
+00000000000086b0	movq	0xe0(%rbp),%rax
+00000000000086b4	movq	%rax,(%rdi)
+00000000000086b7	movq	0xe8(%rbp),%rax
+00000000000086bb	movq	%rax,0x08(%rdi)
+00000000000086bf	movq	0xf0(%rbp),%rax
+00000000000086c3	movq	%rax,0x10(%rdi)
+00000000000086c7	movq	0xf8(%rbp),%rax
+00000000000086cb	movq	%rax,0x18(%rdi)
+00000000000086cf	movq	%rdi,%rax
+00000000000086d2	leave
+00000000000086d3	ret
+-[DropboxIKImageBrowserCell imageFrame]:
+00000000000086d4	nop
+00000000000086d5	nop
+00000000000086d6	nop
+00000000000086d7	nop
+00000000000086d8	nop
+00000000000086d9	nop
+00000000000086da	pushq	%rbp
+00000000000086db	movq	%rsp,%rbp
+00000000000086de	movq	%rsi,0xd8(%rbp)
+00000000000086e2	movq	%rdx,0xd0(%rbp)
+00000000000086e6	movq	0xe0(%rbp),%rax
+00000000000086ea	movq	%rax,(%rdi)
+00000000000086ed	movq	0xe8(%rbp),%rax
+00000000000086f1	movq	%rax,0x08(%rdi)
+00000000000086f5	movq	0xf0(%rbp),%rax
+00000000000086f9	movq	%rax,0x10(%rdi)
+00000000000086fd	movq	0xf8(%rbp),%rax
+0000000000008701	movq	%rax,0x18(%rdi)
+0000000000008705	movq	%rdi,%rax
+0000000000008708	leave
+0000000000008709	ret
+-[DropboxIKImageBrowserCell representedItem]:
+000000000000870a	nop
+000000000000870b	nop
+000000000000870c	nop
+000000000000870d	nop
+000000000000870e	nop
+000000000000870f	nop
+0000000000008710	pushq	%rbp
+0000000000008711	movq	%rsp,%rbp
+0000000000008714	movq	%rdi,0xf8(%rbp)
+0000000000008718	movq	%rsi,0xf0(%rbp)
+000000000000871c	movl	$__mh_bundle_header,%eax
+0000000000008721	leave
+0000000000008722	ret
+-[DropboxIKImageBrowserCell browser]:
+0000000000008723	nop
+0000000000008724	nop
+0000000000008725	nop
+0000000000008726	nop
+0000000000008727	nop
+0000000000008728	nop
+0000000000008729	pushq	%rbp
+000000000000872a	movq	%rsp,%rbp
+000000000000872d	movq	%rdi,0xf8(%rbp)
+0000000000008731	movq	%rsi,0xf0(%rbp)
+0000000000008735	movl	$__mh_bundle_header,%eax
+000000000000873a	leave
+000000000000873b	ret
+-[DummyClass _dropboxDidInject]:
+000000000000873c	nop
+000000000000873d	nop
+000000000000873e	nop
+000000000000873f	nop
+0000000000008740	nop
+0000000000008741	nop
+0000000000008742	pushq	%rbp
+0000000000008743	movq	%rsp,%rbp
+0000000000008746	movq	%rdi,0xf8(%rbp)
+000000000000874a	movq	%rsi,0xf0(%rbp)
+000000000000874e	leave
+000000000000874f	ret
+-[DropboxTListViewIconAndTextCell drawIconWithFrame:]:
+0000000000008750	nop
+0000000000008751	nop
+0000000000008752	nop
+0000000000008753	nop
+0000000000008754	nop
+0000000000008755	nop
+0000000000008756	pushq	%rbp
+0000000000008757	movq	%rsp,%rbp
+000000000000875a	pushq	%rbx
+000000000000875b	subq	$0x000000f8,%rsp
+0000000000008762	movq	%rdi,0xffffff48(%rbp)
+0000000000008769	movq	%rsi,0xffffff40(%rbp)
+0000000000008770	movq	0x00003889(%rip),%rax
+0000000000008777	movq	(%rax),%rdx
+000000000000877a	movq	%rdx,0xe8(%rbp)
+000000000000877e	xorl	%edx,%edx
+0000000000008780	leaq	0x00005e51(%rip),%rax
+0000000000008787	movq	(%rax),%rax
+000000000000878a	movq	%rax,%rdx
+000000000000878d	movq	0x0000493c(%rip),%rsi
+0000000000008794	movq	0xffffff48(%rbp),%rdi
+000000000000879b	movq	0x10(%rbp),%rax
+000000000000879f	movq	%rax,(%rsp)
+00000000000087a3	movq	0x18(%rbp),%rax
+00000000000087a7	movq	%rax,0x08(%rsp)
+00000000000087ac	movq	0x20(%rbp),%rax
+00000000000087b0	movq	%rax,0x10(%rsp)
+00000000000087b5	movq	0x28(%rbp),%rax
+00000000000087b9	movq	%rax,0x18(%rsp)
+00000000000087be	call	*%rdx
+00000000000087c0	leaq	0x0000217b(%rip),%rdi
+00000000000087c7	callq	0x00009128	; symbol stub for: _objc_getClass
+00000000000087cc	movq	%rax,%rbx
+00000000000087cf	movq	0xffffff48(%rbp),%rdi
+00000000000087d6	movq	0x000048eb(%rip),%rsi
+00000000000087dd	movl	$__mh_bundle_header,%eax
+00000000000087e2	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000087e7	movq	0x000048d2(%rip),%rsi
+00000000000087ee	movq	%rax,%rdx
+00000000000087f1	movq	%rbx,%rdi
+00000000000087f4	movl	$__mh_bundle_header,%eax
+00000000000087f9	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000087fe	movq	%rax,0x88(%rbp)
+0000000000008802	movq	0x88(%rbp),%rdi
+0000000000008806	movq	0x0000487b(%rip),%rsi
+000000000000880d	movl	$__mh_bundle_header,%eax
+0000000000008812	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008817	movq	%rax,%rdi
+000000000000881a	movq	0x0000485f(%rip),%rsi
+0000000000008821	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008826	movq	%rax,%rdi
+0000000000008829	leaq	0x90(%rbp),%rsi
+000000000000882d	movl	$__mh_bundle_header,%edx
+0000000000008832	callq	0x00008ff6	; symbol stub for: _FSPathMakeRef
+0000000000008837	leaq	0x90(%rbp),%rdi
+000000000000883b	callq	_DropboxIconOverlayProvider
+0000000000008840	movq	%rax,0x80(%rbp)
+0000000000008844	movq	0x0000499d(%rip),%rax
+000000000000884b	movq	%rax,%rdi
+000000000000884e	leaq	0x0000443b(%rip),%rax
+0000000000008855	movq	(%rax),%rax
+0000000000008858	leaq	0x00004431(%rip),%rsi
+000000000000885f	call	*%rax
+0000000000008861	movq	%rax,%rdi
+0000000000008864	movq	0x0000484d(%rip),%rsi
+000000000000886b	movq	0x80(%rbp),%rdx
+000000000000886f	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008874	movq	%rax,0xffffff78(%rbp)
+000000000000887b	movq	0xffffff48(%rbp),%rdi
+0000000000008882	leaq	0x00004477(%rip),%rax
+0000000000008889	movq	(%rax),%rax
+000000000000888c	leaq	0x0000446d(%rip),%rsi
+0000000000008893	call	*%rax
+0000000000008895	movq	%rax,%rbx
+0000000000008898	leaq	0x000020aa(%rip),%rdi
+000000000000889f	callq	0x00009128	; symbol stub for: _objc_getClass
+00000000000088a4	cmpq	%rax,%rbx
+00000000000088a7	jne	0x000088cf
+00000000000088a9	movq	0x18(%rbp),%rax
+00000000000088ad	movq	%rax,0xffffff58(%rbp)
+00000000000088b4	movsd	0x10(%rbp),%xmm1
+00000000000088b9	movsd	0x0000222f(%rip),%xmm0
+00000000000088c1	addsd	%xmm1,%xmm0
+00000000000088c5	movsd	%xmm0,0xffffff50(%rbp)
+00000000000088cd	jmp	0x00008901
+00000000000088cf	movsd	0x10(%rbp),%xmm1
+00000000000088d4	movsd	0x0000221c(%rip),%xmm0
+00000000000088dc	addsd	%xmm1,%xmm0
+00000000000088e0	movsd	%xmm0,0xffffff50(%rbp)
+00000000000088e8	movsd	0x18(%rbp),%xmm1
+00000000000088ed	movsd	0x000021f3(%rip),%xmm0
+00000000000088f5	addsd	%xmm1,%xmm0
+00000000000088f9	movsd	%xmm0,0xffffff58(%rbp)
+0000000000008901	movq	$0x4030000000000000,%rax
+000000000000890b	movq	%rax,0xffffff60(%rbp)
+0000000000008912	movq	$0x4030000000000000,%rax
+000000000000891c	movq	%rax,0xffffff68(%rbp)
+0000000000008923	movq	0xffffff78(%rbp),%rdi
+000000000000892a	movq	0x0000477f(%rip),%rsi
+0000000000008931	movq	0x00003728(%rip),%rdx
+0000000000008938	movq	(%rdx),%rax
+000000000000893b	movq	%rax,0x20(%rsp)
+0000000000008940	movq	0x08(%rdx),%rax
+0000000000008944	movq	%rax,0x28(%rsp)
+0000000000008949	movq	0x10(%rdx),%rax
+000000000000894d	movq	%rax,0x30(%rsp)
+0000000000008952	movq	0x18(%rdx),%rax
+0000000000008956	movq	%rax,0x38(%rsp)
+000000000000895b	movq	0xffffff50(%rbp),%rax
+0000000000008962	movq	%rax,(%rsp)
+0000000000008966	movq	0xffffff58(%rbp),%rax
+000000000000896d	movq	%rax,0x08(%rsp)
+0000000000008972	movq	0xffffff60(%rbp),%rax
+0000000000008979	movq	%rax,0x10(%rsp)
+000000000000897e	movq	0xffffff68(%rbp),%rax
+0000000000008985	movq	%rax,0x18(%rsp)
+000000000000898a	movl	$__mh_bundle_header,%r8d
+0000000000008990	movl	$0x00000001,%ecx
+0000000000008995	movsd	0x0000214b(%rip),%xmm0
+000000000000899d	movl	$0x00000002,%edx
+00000000000089a2	callq	0x0000912e	; symbol stub for: _objc_msgSend
+00000000000089a7	movq	0x00003652(%rip),%rax
+00000000000089ae	movq	0xe8(%rbp),%rdx
+00000000000089b2	xorq	(%rax),%rdx
+00000000000089b5	je	0x000089bc
+00000000000089b7	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+00000000000089bc	addq	$0x000000f8,%rsp
+00000000000089c3	popq	%rbx
+00000000000089c4	leave
+00000000000089c5	ret
+_myMD5:
+00000000000089c6	nop
+00000000000089c7	nop
+00000000000089c8	nop
+00000000000089c9	nop
+00000000000089ca	nop
+00000000000089cb	nop
+00000000000089cc	pushq	%rbp
+00000000000089cd	movq	%rsp,%rbp
+00000000000089d0	addq	$0x80,%rsp
+00000000000089d4	movq	%rdi,0x98(%rbp)
+00000000000089d8	movl	%esi,0x94(%rbp)
+00000000000089db	movq	%rdx,0x88(%rbp)
+00000000000089df	leaq	0xa0(%rbp),%rdi
+00000000000089e3	callq	0x00008f2a	; symbol stub for: _CC_MD5_Init
+00000000000089e8	movl	0x94(%rbp),%edx
+00000000000089eb	movq	0x98(%rbp),%rsi
+00000000000089ef	leaq	0xa0(%rbp),%rdi
+00000000000089f3	callq	0x00008f30	; symbol stub for: _CC_MD5_Update
+00000000000089f8	leaq	0xa0(%rbp),%rsi
+00000000000089fc	movq	0x88(%rbp),%rdi
+0000000000008a00	callq	0x00008f24	; symbol stub for: _CC_MD5_Final
+0000000000008a05	movq	0x88(%rbp),%rax
+0000000000008a09	leave
+0000000000008a0a	ret
+_DBLog:
+0000000000008a0b	nop
+0000000000008a0c	nop
+0000000000008a0d	nop
+0000000000008a0e	nop
+0000000000008a0f	nop
+0000000000008a10	nop
+0000000000008a11	pushq	%rbp
+0000000000008a12	movq	%rsp,%rbp
+0000000000008a15	subq	$0x00000120,%rsp
+0000000000008a1c	movq	%rsi,0xffffff58(%rbp)
+0000000000008a23	movq	%rdx,0xffffff60(%rbp)
+0000000000008a2a	movq	%rcx,0xffffff68(%rbp)
+0000000000008a31	movq	%r8,0xffffff70(%rbp)
+0000000000008a38	movq	%r9,0xffffff78(%rbp)
+0000000000008a3f	movzbl	%al,%eax
+0000000000008a42	movq	%rax,0xfffffee0(%rbp)
+0000000000008a49	movq	0xfffffee0(%rbp),%rdx
+0000000000008a50	leaq	__mh_bundle_header(,%rdx,4),%rax
+0000000000008a58	leaq	0x0000003b(%rip),%rdx
+0000000000008a5f	movq	%rdx,0xfffffee0(%rbp)
+0000000000008a66	subq	%rax,0xfffffee0(%rbp)
+0000000000008a6d	leaq	0xff(%rbp),%rax
+0000000000008a71	movq	0xfffffee0(%rbp),%rdx
+0000000000008a78	jmp	*%rdx
+0000000000008a7a	movaps	%xmm7,0xf1(%rax)
+0000000000008a7e	movaps	%xmm6,0xe1(%rax)
+0000000000008a82	movaps	%xmm5,0xd1(%rax)
+0000000000008a86	movaps	%xmm4,0xc1(%rax)
+0000000000008a8a	movaps	%xmm3,0xb1(%rax)
+0000000000008a8e	movaps	%xmm2,0xa1(%rax)
+0000000000008a92	movaps	%xmm1,0x91(%rax)
+0000000000008a96	movaps	%xmm0,0x81(%rax)
+0000000000008a9a	movq	%rdi,0xfffffee8(%rbp)
+0000000000008aa1	movq	0x00003558(%rip),%rax
+0000000000008aa8	movq	(%rax),%rdx
+0000000000008aab	movq	%rdx,0xffffff48(%rbp)
+0000000000008ab2	xorl	%edx,%edx
+0000000000008ab4	leaq	0xfffffef0(%rbp),%rax
+0000000000008abb	movl	$0x00000008,(%rax)
+0000000000008ac1	leaq	0xfffffef0(%rbp),%rax
+0000000000008ac8	movl	$0x00000030,0x04(%rax)
+0000000000008acf	leaq	0xfffffef0(%rbp),%rax
+0000000000008ad6	leaq	0x10(%rbp),%rdx
+0000000000008ada	movq	%rdx,0x08(%rax)
+0000000000008ade	leaq	0xfffffef0(%rbp),%rax
+0000000000008ae5	leaq	0xffffff50(%rbp),%rdx
+0000000000008aec	movq	%rdx,0x10(%rax)
+0000000000008af0	movq	0x00004701(%rip),%rax
+0000000000008af7	movq	%rax,%rdi
+0000000000008afa	leaq	0x0000418f(%rip),%rax
+0000000000008b01	movq	(%rax),%rax
+0000000000008b04	leaq	0x00004185(%rip),%rsi
+0000000000008b0b	call	*%rax
+0000000000008b0d	movq	%rax,%rdi
+0000000000008b10	movq	0x000045d9(%rip),%rsi
+0000000000008b17	leaq	0xfffffef0(%rbp),%rcx
+0000000000008b1e	movq	0xfffffee8(%rbp),%rdx
+0000000000008b25	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008b2a	movq	%rax,%rdi
+0000000000008b2d	leaq	0x0000416c(%rip),%rax
+0000000000008b34	movq	(%rax),%rax
+0000000000008b37	leaq	0x00004162(%rip),%rsi
+0000000000008b3e	call	*%rax
+0000000000008b40	movq	%rax,0xffffff28(%rbp)
+0000000000008b47	leaq	0x000059c2(%rip),%rax
+0000000000008b4e	movl	(%rax),%eax
+0000000000008b50	cmpl	$0xff,%eax
+0000000000008b53	jne	0x00008bcb
+0000000000008b55	leaq	0x00001ec9(%rip),%rdi
+0000000000008b5c	callq	0x000090c2	; symbol stub for: _getenv
+0000000000008b61	movq	%rax,0xffffff20(%rbp)
+0000000000008b68	cmpq	$__mh_bundle_header,0xffffff20(%rbp)
+0000000000008b70	je	0x00008bbe
+0000000000008b72	movq	0xffffff20(%rbp),%rdi
+0000000000008b79	callq	0x00009182	; symbol stub for: _strlen
+0000000000008b7e	movl	%eax,%esi
+0000000000008b80	leaq	0xffffff30(%rbp),%rdx
+0000000000008b87	movq	0xffffff20(%rbp),%rdi
+0000000000008b8e	callq	_myMD5
+0000000000008b93	leaq	0xffffff30(%rbp),%rdi
+0000000000008b9a	movl	$0x00000010,%edx
+0000000000008b9f	leaq	0x0000595a(%rip),%rsi
+0000000000008ba6	callq	0x000090f2	; symbol stub for: _memcmp
+0000000000008bab	testl	%eax,%eax
+0000000000008bad	sete	%al
+0000000000008bb0	movzbl	%al,%edx
+0000000000008bb3	leaq	0x00005956(%rip),%rax
+0000000000008bba	movl	%edx,(%rax)
+0000000000008bbc	jmp	0x00008bcb
+0000000000008bbe	leaq	0x0000594b(%rip),%rax
+0000000000008bc5	movl	$__mh_bundle_header,(%rax)
+0000000000008bcb	leaq	0x0000593e(%rip),%rax
+0000000000008bd2	movl	(%rax),%eax
+0000000000008bd4	testl	%eax,%eax
+0000000000008bd6	je	0x00008bf0
+0000000000008bd8	leaq	0x00003bc1(%rip),%rdi
+0000000000008bdf	movq	0xffffff28(%rbp),%rsi
+0000000000008be6	movl	$__mh_bundle_header,%eax
+0000000000008beb	callq	0x00009014	; symbol stub for: _NSLog
+0000000000008bf0	movq	0x00004609(%rip),%rax
+0000000000008bf7	movq	%rax,%rdi
+0000000000008bfa	movq	0x000044e7(%rip),%rsi
+0000000000008c01	xorpd	%xmm0,%xmm0
+0000000000008c05	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008c0a	movq	%rax,%rdi
+0000000000008c0d	leaq	0x0000408c(%rip),%rax
+0000000000008c14	movq	(%rax),%rax
+0000000000008c17	leaq	0x00004082(%rip),%rsi
+0000000000008c1e	call	*%rax
+0000000000008c20	movq	%rax,0xffffff18(%rbp)
+0000000000008c27	movq	0x000045ca(%rip),%rax
+0000000000008c2e	movq	%rax,%rdi
+0000000000008c31	leaq	0x00003ba8(%rip),%rdx
+0000000000008c38	movq	0x000044a1(%rip),%rsi
+0000000000008c3f	movq	0xffffff28(%rbp),%rax
+0000000000008c46	movq	0xffffff18(%rbp),%rcx
+0000000000008c4d	movq	%rax,%r8
+0000000000008c50	movl	$__mh_bundle_header,%eax
+0000000000008c55	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008c5a	movq	%rax,%rdi
+0000000000008c5d	leaq	0x0000403c(%rip),%rax
+0000000000008c64	movq	(%rax),%rax
+0000000000008c67	leaq	0x00004032(%rip),%rsi
+0000000000008c6e	call	*%rax
+0000000000008c70	movq	%rax,0xffffff10(%rbp)
+0000000000008c77	movq	0xffffff10(%rbp),%rdi
+0000000000008c7e	movq	0x00004453(%rip),%rsi
+0000000000008c85	movl	$0x00000004,%edx
+0000000000008c8a	callq	0x0000912e	; symbol stub for: _objc_msgSend
+0000000000008c8f	movq	%rax,%rdi
+0000000000008c92	movl	$__mh_bundle_header,%eax
+0000000000008c97	callq	_dbtrace
+0000000000008c9c	movq	0xffffff18(%rbp),%rdi
+0000000000008ca3	leaq	0x00004006(%rip),%rax
+0000000000008caa	movq	(%rax),%rax
+0000000000008cad	leaq	0x00003ffc(%rip),%rsi
+0000000000008cb4	call	*%rax
+0000000000008cb6	movq	0xffffff28(%rbp),%rdi
+0000000000008cbd	leaq	0x00003fec(%rip),%rax
+0000000000008cc4	movq	(%rax),%rax
+0000000000008cc7	leaq	0x00003fe2(%rip),%rsi
+0000000000008cce	call	*%rax
+0000000000008cd0	movq	0xffffff10(%rbp),%rdi
+0000000000008cd7	leaq	0x00003fd2(%rip),%rax
+0000000000008cde	movq	(%rax),%rax
+0000000000008ce1	leaq	0x00003fc8(%rip),%rsi
+0000000000008ce8	call	*%rax
+0000000000008cea	movq	0x0000330f(%rip),%rax
+0000000000008cf1	movq	0xffffff48(%rbp),%rdx
+0000000000008cf8	xorq	(%rax),%rdx
+0000000000008cfb	je	0x00008d02
+0000000000008cfd	callq	0x0000903e	; symbol stub for: ___stack_chk_fail
+0000000000008d02	leave
+0000000000008d03	ret
+_help_reverse_class:
+0000000000008d04	nop
+0000000000008d05	nop
+0000000000008d06	nop
+0000000000008d07	nop
+0000000000008d08	nop
+0000000000008d09	nop
+0000000000008d0a	pushq	%rbp
+0000000000008d0b	movq	%rsp,%rbp
+0000000000008d0e	pushq	%r12
+0000000000008d10	pushq	%rbx
+0000000000008d11	subq	$0x40,%rsp
+0000000000008d15	movq	%rdi,0xb8(%rbp)
+0000000000008d19	movb	%dh,0xb4(%rbp)
+0000000000008d1d	cmpq	$__mh_bundle_header,0xb8(%rbp)
+0000000000008d22	jne	0x00008d3a
+0000000000008d24	leaq	0x00003ad5(%rip),%rdi
+0000000000008d2b	movl	$__mh_bundle_header,%eax
+0000000000008d30	callq	0x00009014	; symbol stub for: _NSLog
+0000000000008d35	jmp	0x00008ec7
+0000000000008d3a	leaq	0xec(%rbp),%rsi
+0000000000008d3e	movq	0xb8(%rbp),%rdi
+0000000000008d42	callq	0x00009068	; symbol stub for: _class_copyMethodList
+0000000000008d47	movq	%rax,0xd0(%rbp)
+0000000000008d4b	movl	$__mh_bundle_header,0xe8(%rbp)
+0000000000008d52	jmp	0x00008e11
+0000000000008d57	movl	0xe8(%rbp),%eax
+0000000000008d5a	shlq	$0x03,%rax
+0000000000008d5e	addq	0xd0(%rbp),%rax
+0000000000008d62	movq	(%rax),%rdi
+0000000000008d65	callq	0x00009110	; symbol stub for: _method_getName
+0000000000008d6a	movq	%rax,%rdi
+0000000000008d6d	callq	0x0000901a	; symbol stub for: _NSStringFromSelector
+0000000000008d72	movq	%rax,%rbx
+0000000000008d75	movq	0xb8(%rbp),%rdi
+0000000000008d79	callq	0x00009074	; symbol stub for: _class_getName
+0000000000008d7e	movq	%rax,%r12
+0000000000008d81	movl	0xe8(%rbp),%eax
+0000000000008d84	shlq	$0x03,%rax
+0000000000008d88	addq	0xd0(%rbp),%rax
+0000000000008d8c	movq	(%rax),%rdi
+0000000000008d8f	callq	0x000090fe	; symbol stub for: _method_copyReturnType
+0000000000008d94	movq	%rax,%rsi
+0000000000008d97	leaq	0x00003a82(%rip),%rdi
+0000000000008d9e	movq	%rbx,%rcx
+0000000000008da1	movq	%r12,%rdx
+0000000000008da4	movl	$__mh_bundle_header,%eax
+0000000000008da9	callq	0x00009014	; symbol stub for: _NSLog
+0000000000008dae	cmpb	$__mh_bundle_header,0xb4(%rbp)
+0000000000008db2	je	0x00008e0e
+0000000000008db4	movl	0xe8(%rbp),%eax
+0000000000008db7	shlq	$0x03,%rax
+0000000000008dbb	addq	0xd0(%rbp),%rax
+0000000000008dbf	movq	(%rax),%rdi
+0000000000008dc2	callq	0x00009116	; symbol stub for: _method_getNumberOfArguments
+0000000000008dc7	movl	%eax,0xe4(%rbp)
+0000000000008dca	movl	$0x00000002,0xe0(%rbp)
+0000000000008dd1	jmp	0x00008e06
+0000000000008dd3	movl	0xe8(%rbp),%eax
+0000000000008dd6	shlq	$0x03,%rax
+0000000000008dda	addq	0xd0(%rbp),%rax
+0000000000008dde	movq	(%rax),%rdi
+0000000000008de1	movl	0xe0(%rbp),%esi
+0000000000008de4	callq	0x000090f8	; symbol stub for: _method_copyArgumentType
+0000000000008de9	movl	0xe0(%rbp),%esi
+0000000000008dec	subl	$0x02,%esi
+0000000000008def	leaq	0x00003a4a(%rip),%rdi
+0000000000008df6	movq	%rax,%rdx
+0000000000008df9	movl	$__mh_bundle_header,%eax
+0000000000008dfe	callq	0x00009014	; symbol stub for: _NSLog
+0000000000008e03	incl	0xe0(%rbp)
+0000000000008e06	movl	0xe0(%rbp),%eax
+0000000000008e09	cmpl	0xe4(%rbp),%eax
+0000000000008e0c	jb	0x00008dd3
+0000000000008e0e	incl	0xe8(%rbp)
+0000000000008e11	movl	0xec(%rbp),%eax
+0000000000008e14	cmpl	%eax,0xe8(%rbp)
+0000000000008e17	jb	0x100008d57
+0000000000008e1d	leaq	0xec(%rbp),%rsi
+0000000000008e21	movq	0xb8(%rbp),%rdi
+0000000000008e25	callq	0x00009062	; symbol stub for: _class_copyIvarList
+0000000000008e2a	movq	%rax,0xc8(%rbp)
+0000000000008e2e	movl	$__mh_bundle_header,0xdc(%rbp)
+0000000000008e35	jmp	0x00008e89
+0000000000008e37	movl	0xdc(%rbp),%eax
+0000000000008e3a	shlq	$0x03,%rax
+0000000000008e3e	addq	0xc8(%rbp),%rax
+0000000000008e42	movq	(%rax),%rdi
+0000000000008e45	callq	0x000090e0	; symbol stub for: _ivar_getName
+0000000000008e4a	movq	%rax,%rbx
+0000000000008e4d	movq	0xb8(%rbp),%rdi
+0000000000008e51	callq	0x00009074	; symbol stub for: _class_getName
+0000000000008e56	movq	%rax,%r12
+0000000000008e59	movl	0xdc(%rbp),%eax
+0000000000008e5c	shlq	$0x03,%rax
+0000000000008e60	addq	0xc8(%rbp),%rax
+0000000000008e64	movq	(%rax),%rdi
+0000000000008e67	callq	0x000090e6	; symbol stub for: _ivar_getTypeEncoding
+0000000000008e6c	movq	%rax,%rsi
+0000000000008e6f	leaq	0x000039ea(%rip),%rdi
+0000000000008e76	movq	%rbx,%rcx
+0000000000008e79	movq	%r12,%rdx
+0000000000008e7c	movl	$__mh_bundle_header,%eax
+0000000000008e81	callq	0x00009014	; symbol stub for: _NSLog
+0000000000008e86	incl	0xdc(%rbp)
+0000000000008e89	movl	0xec(%rbp),%eax
+0000000000008e8c	cmpl	%eax,0xdc(%rbp)
+0000000000008e8f	jb	0x00008e37
+0000000000008e91	movq	0xb8(%rbp),%rdi
+0000000000008e95	callq	0x0000907a	; symbol stub for: _class_getSuperclass
+0000000000008e9a	movq	%rax,0xc0(%rbp)
+0000000000008e9e	movq	0xc0(%rbp),%rdi
+0000000000008ea2	callq	0x00009074	; symbol stub for: _class_getName
+0000000000008ea7	movq	%rax,%rdi
+0000000000008eaa	leaq	0x0000197e(%rip),%rsi
+0000000000008eb1	callq	0x00009176	; symbol stub for: _strcmp
+0000000000008eb6	testl	%eax,%eax
+0000000000008eb8	je	0x00008ec7
+0000000000008eba	movsbl	0xb4(%rbp),%esi
+0000000000008ebe	movq	0xc0(%rbp),%rdi
+0000000000008ec2	callq	_help_reverse_class
+0000000000008ec7	addq	$0x40,%rsp
+0000000000008ecb	popq	%rbx
+0000000000008ecc	popq	%r12
+0000000000008ece	leave
+0000000000008ecf	ret
