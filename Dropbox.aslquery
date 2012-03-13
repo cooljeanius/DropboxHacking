@@ -19,5 +19,14 @@
 		<key>value</key>
 		<string>dbfseventsd</string>
 	</dict>
+	<string>or</string>
+	<dict>
+		<key>key</key>
+		<string>Message</string>
+		<key>op</key>
+		<integer>97</integer>
+		<key>value</key>
+		<string>Dropbox: </string>
+	</dict>
 </array>
 </plist>

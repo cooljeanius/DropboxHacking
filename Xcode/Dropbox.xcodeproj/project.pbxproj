@@ -179,6 +179,16 @@
 		A559D57E150D018900B9EEF9 /* unichar.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D577150D018900B9EEF9 /* unichar.h */; };
 		A559D57F150D018900B9EEF9 /* wxcrtbase.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D578150D018900B9EEF9 /* wxcrtbase.h */; };
 		A559D585150D020B00B9EEF9 /* defs.h in Headers */ = {isa = PBXBuildFile; fileRef = A559D584150D020B00B9EEF9 /* defs.h */; };
+		A5C7477A150E7792007FFB7A /* pbdevelopment.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C74779150E7792007FFB7A /* pbdevelopment.plist */; };
+		A5C74782150E7989007FFB7A /* DropboxReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C74781150E7989007FFB7A /* DropboxReasmScratchwork */; };
+		A5C7478C150E7E6A007FFB7A /* DropboxBundleReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C7478B150E7E6A007FFB7A /* DropboxBundleReasmScratchwork */; };
+		A5C74797150E7FF2007FFB7A /* mach_inject_bundle_stub_ReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C7478E150E7FF2007FFB7A /* mach_inject_bundle_stub_ReasmScratchwork */; };
+		A5C74798150E7FF2007FFB7A /* libQCRReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C7478F150E7FF2007FFB7A /* libQCRReasmScratchwork */; };
+		A5C74799150E7FF2007FFB7A /* FinderLoadCMStubReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C74790150E7FF2007FFB7A /* FinderLoadCMStubReasmScratchwork */; };
+		A5C7479A150E7FF2007FFB7A /* FinderLoadCMReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C74791150E7FF2007FFB7A /* FinderLoadCMReasmScratchwork */; };
+		A5C7479B150E7FF2007FFB7A /* FinderLoadBundleReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C74792150E7FF2007FFB7A /* FinderLoadBundleReasmScratchwork */; };
+		A5C7479C150E7FF2007FFB7A /* DropboxpythonReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C74793150E7FF2007FFB7A /* DropboxpythonReasmScratchwork */; };
+		A5C7479D150E7FF2007FFB7A /* DropboxPluginReasmScratchwork in Resources */ = {isa = PBXBuildFile; fileRef = A5C74794150E7FF2007FFB7A /* DropboxPluginReasmScratchwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -412,6 +422,16 @@
 		A559D577150D018900B9EEF9 /* unichar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unichar.h; sourceTree = "<group>"; };
 		A559D578150D018900B9EEF9 /* wxcrtbase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wxcrtbase.h; sourceTree = "<group>"; };
 		A559D584150D020B00B9EEF9 /* defs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		A5C74779150E7792007FFB7A /* pbdevelopment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pbdevelopment.plist; sourceTree = "<group>"; };
+		A5C74781150E7989007FFB7A /* DropboxReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxReasmScratchwork; sourceTree = "<group>"; };
+		A5C7478B150E7E6A007FFB7A /* DropboxBundleReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxBundleReasmScratchwork; sourceTree = "<group>"; };
+		A5C7478E150E7FF2007FFB7A /* mach_inject_bundle_stub_ReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mach_inject_bundle_stub_ReasmScratchwork; sourceTree = "<group>"; };
+		A5C7478F150E7FF2007FFB7A /* libQCRReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libQCRReasmScratchwork; sourceTree = "<group>"; };
+		A5C74790150E7FF2007FFB7A /* FinderLoadCMStubReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinderLoadCMStubReasmScratchwork; sourceTree = "<group>"; };
+		A5C74791150E7FF2007FFB7A /* FinderLoadCMReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinderLoadCMReasmScratchwork; sourceTree = "<group>"; };
+		A5C74792150E7FF2007FFB7A /* FinderLoadBundleReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinderLoadBundleReasmScratchwork; sourceTree = "<group>"; };
+		A5C74793150E7FF2007FFB7A /* DropboxpythonReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxpythonReasmScratchwork; sourceTree = "<group>"; };
+		A5C74794150E7FF2007FFB7A /* DropboxPluginReasmScratchwork */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxPluginReasmScratchwork; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,6 +452,7 @@
 		A515EDFA150C9E48005473E3 = {
 			isa = PBXGroup;
 			children = (
+				A5C747A3150E8011007FFB7A /* Reasmscratchwork */,
 				A559D427150CF4DE00B9EEF9 /* README.md */,
 				A559D423150CF4C100B9EEF9 /* libSDropboxSDK.a */,
 				A5261302150CC304001C727E /* Dropbox.m */,
@@ -444,6 +465,7 @@
 				A515EE82150CA2A2005473E3 /* Dropbox_1.xcclassmodel */,
 				A52612FA150CC079001C727E /* Dropbox.h */,
 				A52612FB150CC079001C727E /* Dropbox.c */,
+				A5C74779150E7792007FFB7A /* pbdevelopment.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -843,6 +865,22 @@
 			path = private;
 			sourceTree = "<group>";
 		};
+		A5C747A3150E8011007FFB7A /* Reasmscratchwork */ = {
+			isa = PBXGroup;
+			children = (
+				A5C7478E150E7FF2007FFB7A /* mach_inject_bundle_stub_ReasmScratchwork */,
+				A5C7478F150E7FF2007FFB7A /* libQCRReasmScratchwork */,
+				A5C74790150E7FF2007FFB7A /* FinderLoadCMStubReasmScratchwork */,
+				A5C74791150E7FF2007FFB7A /* FinderLoadCMReasmScratchwork */,
+				A5C74792150E7FF2007FFB7A /* FinderLoadBundleReasmScratchwork */,
+				A5C74793150E7FF2007FFB7A /* DropboxpythonReasmScratchwork */,
+				A5C74794150E7FF2007FFB7A /* DropboxPluginReasmScratchwork */,
+				A5C7478B150E7E6A007FFB7A /* DropboxBundleReasmScratchwork */,
+				A5C74781150E7989007FFB7A /* DropboxReasmScratchwork */,
+			);
+			name = Reasmscratchwork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1072,6 +1110,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A559D428150CF4DE00B9EEF9 /* README.md in Resources */,
+				A5C7477A150E7792007FFB7A /* pbdevelopment.plist in Resources */,
+				A5C74782150E7989007FFB7A /* DropboxReasmScratchwork in Resources */,
+				A5C7478C150E7E6A007FFB7A /* DropboxBundleReasmScratchwork in Resources */,
+				A5C74797150E7FF2007FFB7A /* mach_inject_bundle_stub_ReasmScratchwork in Resources */,
+				A5C74798150E7FF2007FFB7A /* libQCRReasmScratchwork in Resources */,
+				A5C74799150E7FF2007FFB7A /* FinderLoadCMStubReasmScratchwork in Resources */,
+				A5C7479A150E7FF2007FFB7A /* FinderLoadCMReasmScratchwork in Resources */,
+				A5C7479B150E7FF2007FFB7A /* FinderLoadBundleReasmScratchwork in Resources */,
+				A5C7479C150E7FF2007FFB7A /* DropboxpythonReasmScratchwork in Resources */,
+				A5C7479D150E7FF2007FFB7A /* DropboxPluginReasmScratchwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

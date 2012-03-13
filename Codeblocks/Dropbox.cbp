@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Dropbox" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Dropbox" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Dropbox" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../CDStructures.h" />
+		<Unit filename="../DropboxBundleDisasm.s" />
+		<Unit filename="../DropboxContextMenuState.h" />
+		<Unit filename="../DropboxDisasm.s" />
+		<Unit filename="../DropboxHelperInstallerDisasm.s" />
+		<Unit filename="../DropboxIKImageBrowserCell.h" />
+		<Unit filename="../DropboxLargeToolbarButton.h" />
+		<Unit filename="../DropboxMenu.h" />
+		<Unit filename="../DropboxMenuContext.h" />
+		<Unit filename="../DropboxMenuItem.h" />
+		<Unit filename="../DropboxNSMenu.h" />
+		<Unit filename="../DropboxPluginDisasm.s" />
+		<Unit filename="../DropboxSmallToolbarImageView.h" />
+		<Unit filename="../DropboxTListViewIconAndTextCell.h" />
+		<Unit filename="../DropboxToolbar.h" />
+		<Unit filename="../DropboxToolbarController.h" />
+		<Unit filename="../DropboxToolbarItem.h" />
+		<Unit filename="../DummyClass.h" />
+		<Unit filename="../External Headers/NSButton.h" />
+		<Unit filename="../External Headers/NSCell-OAExtensions.h" />
+		<Unit filename="../External Headers/NSCell.h" />
+		<Unit filename="../External Headers/NSImageView.h" />
+		<Unit filename="../External Headers/NSMenu.h" />
+		<Unit filename="../External Headers/NSMenuItem+Hackery.h" />
+		<Unit filename="../External Headers/NSMenuItem.h" />
+		<Unit filename="../External Headers/NSObject.h" />
+		<Unit filename="../External Headers/NSToolbar-OAExtensions.h" />
+		<Unit filename="../External Headers/NSToolbar.h" />
+		<Unit filename="../External Headers/NSToolbarAdditions.h" />
+		<Unit filename="../External Headers/NSToolbarFrameworkPrivate.h" />
+		<Unit filename="../External Headers/NSToolbarItem-OAExtensions.h" />
+		<Unit filename="../External Headers/NSToolbarItem.h" />
+		<Unit filename="../External Headers/NSToolbarItemGroup.h" />
+		<Unit filename="../External Headers/NSToolbarPrivate.h" />
+		<Unit filename="../External Headers/wx/ObjcAssociate.h" />
+		<Unit filename="../External Headers/wx/buffer.h" />
+		<Unit filename="../External Headers/wx/cocoa/ObjcAssociate.h" />
+		<Unit filename="../External Headers/wx/cocoa/ObjcRef.h" />
+		<Unit filename="../External Headers/wx/cocoa/objc/NSMenu.h" />
+		<Unit filename="../External Headers/wx/cocoa/objc/NSSlider.h" />
+		<Unit filename="../External Headers/wx/cocoa/objc/NSView.h" />
+		<Unit filename="../External Headers/wx/cocoa/objc/NSWindow.h" />
+		<Unit filename="../External Headers/wx/cocoa/objc/objc_uniquifying.h" />
+		<Unit filename="../External Headers/wx/defs.h" />
+		<Unit filename="../External Headers/wx/hashmap.h" />
+		<Unit filename="../External Headers/wx/osx/accel.h" />
+		<Unit filename="../External Headers/wx/osx/anybutton.h" />
+		<Unit filename="../External Headers/wx/osx/app.h" />
+		<Unit filename="../External Headers/wx/osx/bitmap.h" />
+		<Unit filename="../External Headers/wx/osx/bmpbuttn.h" />
+		<Unit filename="../External Headers/wx/osx/brush.h" />
+		<Unit filename="../External Headers/wx/osx/button.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/chkconf.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/dataview.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/drawer.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/evtloop.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/mimetype.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/private.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/private/mactext.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/private/overlay.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/private/print.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/private/timer.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/region.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/statbmp.h" />
+		<Unit filename="../External Headers/wx/osx/carbon/uma.h" />
+		<Unit filename="../External Headers/wx/osx/checkbox.h" />
+		<Unit filename="../External Headers/wx/osx/checklst.h" />
+		<Unit filename="../External Headers/wx/osx/chkconf.h" />
+		<Unit filename="../External Headers/wx/osx/choice.h" />
+		<Unit filename="../External Headers/wx/osx/clipbrd.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/chkconf.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/dataview.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/evtloop.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/private.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/private/markuptoattr.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/private/overlay.h" />
+		<Unit filename="../External Headers/wx/osx/cocoa/private/textimpl.h" />
+		<Unit filename="../External Headers/wx/osx/colordlg.h" />
+		<Unit filename="../External Headers/wx/osx/colour.h" />
+		<Unit filename="../External Headers/wx/osx/combobox.h" />
+		<Unit filename="../External Headers/wx/osx/config_xcode.h" />
+		<Unit filename="../External Headers/wx/osx/control.h" />
+		<Unit filename="../External Headers/wx/osx/core/cfdataref.h" />
+		<Unit filename="../External Headers/wx/osx/core/cfref.h" />
+		<Unit filename="../External Headers/wx/osx/core/cfstring.h" />
+		<Unit filename="../External Headers/wx/osx/core/colour.h" />
+		<Unit filename="../External Headers/wx/osx/core/dataview.h" />
+		<Unit filename="../External Headers/wx/osx/core/hid.h" />
+		<Unit filename="../External Headers/wx/osx/core/joystick.h" />
+		<Unit filename="../External Headers/wx/osx/core/mimetype.h" />
+		<Unit filename="../External Headers/wx/osx/core/private.h" />
+		<Unit filename="../External Headers/wx/osx/core/private/strconv_cf.h" />
+		<Unit filename="../External Headers/wx/osx/core/private/timer.h" />
+		<Unit filename="../External Headers/wx/osx/core/stdpaths.h" />
+		<Unit filename="../External Headers/wx/osx/cursor.h" />
+		<Unit filename="../External Headers/wx/osx/dataform.h" />
+		<Unit filename="../External Headers/wx/osx/dataobj.h" />
+		<Unit filename="../External Headers/wx/osx/dataobj2.h" />
+		<Unit filename="../External Headers/wx/osx/dataview.h" />
+		<Unit filename="../External Headers/wx/osx/dc.h" />
+		<Unit filename="../External Headers/wx/osx/dcclient.h" />
+		<Unit filename="../External Headers/wx/osx/dcmemory.h" />
+		<Unit filename="../External Headers/wx/osx/dcprint.h" />
+		<Unit filename="../External Headers/wx/osx/dcscreen.h" />
+		<Unit filename="../External Headers/wx/osx/dialog.h" />
+		<Unit filename="../External Headers/wx/osx/dirdlg.h" />
+		<Unit filename="../External Headers/wx/osx/dnd.h" />
+		<Unit filename="../External Headers/wx/osx/dvrenderer.h" />
+		<Unit filename="../External Headers/wx/osx/dvrenderers.h" />
+		<Unit filename="../External Headers/wx/osx/evtloop.h" />
+		<Unit filename="../External Headers/wx/osx/evtloopsrc.h" />
+		<Unit filename="../External Headers/wx/osx/filedlg.h" />
+		<Unit filename="../External Headers/wx/osx/font.h" />
+		<Unit filename="../External Headers/wx/osx/fontdlg.h" />
+		<Unit filename="../External Headers/wx/osx/frame.h" />
+		<Unit filename="../External Headers/wx/osx/gauge.h" />
+		<Unit filename="../External Headers/wx/osx/glcanvas.h" />
+		<Unit filename="../External Headers/wx/osx/helpxxxx.h" />
+		<Unit filename="../External Headers/wx/osx/icon.h" />
+		<Unit filename="../External Headers/wx/osx/imaglist.h" />
+		<Unit filename="../External Headers/wx/osx/iphone/chkconf.h" />
+		<Unit filename="../External Headers/wx/osx/iphone/private.h" />
+		<Unit filename="../External Headers/wx/osx/iphone/private/textimpl.h" />
+		<Unit filename="../External Headers/wx/osx/joystick.h" />
+		<Unit filename="../External Headers/wx/osx/listbox.h" />
+		<Unit filename="../External Headers/wx/osx/listctrl.h" />
+		<Unit filename="../External Headers/wx/osx/mdi.h" />
+		<Unit filename="../External Headers/wx/osx/menu.h" />
+		<Unit filename="../External Headers/wx/osx/menuitem.h" />
+		<Unit filename="../External Headers/wx/osx/metafile.h" />
+		<Unit filename="../External Headers/wx/osx/mimetype.h" />
+		<Unit filename="../External Headers/wx/osx/minifram.h" />
+		<Unit filename="../External Headers/wx/osx/msgdlg.h" />
+		<Unit filename="../External Headers/wx/osx/nonownedwnd.h" />
+		<Unit filename="../External Headers/wx/osx/notebook.h" />
+		<Unit filename="../External Headers/wx/osx/palette.h" />
+		<Unit filename="../External Headers/wx/osx/pen.h" />
+		<Unit filename="../External Headers/wx/osx/pnghand.h" />
+		<Unit filename="../External Headers/wx/osx/pngread.h" />
+		<Unit filename="../External Headers/wx/osx/popupwin.h" />
+		<Unit filename="../External Headers/wx/osx/printdlg.h" />
+		<Unit filename="../External Headers/wx/osx/printmac.h" />
+		<Unit filename="../External Headers/wx/osx/private.h" />
+		<Unit filename="../External Headers/wx/osx/private/glgrab.h" />
+		<Unit filename="../External Headers/wx/osx/private/print.h" />
+		<Unit filename="../External Headers/wx/osx/private/timer.h" />
+		<Unit filename="../External Headers/wx/osx/radiobox.h" />
+		<Unit filename="../External Headers/wx/osx/radiobut.h" />
+		<Unit filename="../External Headers/wx/osx/region.h" />
+		<Unit filename="../External Headers/wx/osx/scrolbar.h" />
+		<Unit filename="../External Headers/wx/osx/setup0.h" />
+		<Unit filename="../External Headers/wx/osx/slider.h" />
+		<Unit filename="../External Headers/wx/osx/sound.h" />
+		<Unit filename="../External Headers/wx/osx/spinbutt.h" />
+		<Unit filename="../External Headers/wx/osx/spinctrl.h" />
+		<Unit filename="../External Headers/wx/osx/srchctrl.h" />
+		<Unit filename="../External Headers/wx/osx/statbmp.h" />
+		<Unit filename="../External Headers/wx/osx/statbox.h" />
+		<Unit filename="../External Headers/wx/osx/statline.h" />
+		<Unit filename="../External Headers/wx/osx/stattext.h" />
+		<Unit filename="../External Headers/wx/osx/statusbr.h" />
+		<Unit filename="../External Headers/wx/osx/taskbarosx.h" />
+		<Unit filename="../External Headers/wx/osx/textctrl.h" />
+		<Unit filename="../External Headers/wx/osx/textentry.h" />
+		<Unit filename="../External Headers/wx/osx/tglbtn.h" />
+		<Unit filename="../External Headers/wx/osx/toolbar.h" />
+		<Unit filename="../External Headers/wx/osx/tooltip.h" />
+		<Unit filename="../External Headers/wx/osx/toplevel.h" />
+		<Unit filename="../External Headers/wx/osx/treectrl.h" />
+		<Unit filename="../External Headers/wx/osx/uma.h" />
+		<Unit filename="../External Headers/wx/osx/webview_webkit.h" />
+		<Unit filename="../External Headers/wx/osx/webviewhistoryitem_webkit.h" />
+		<Unit filename="../External Headers/wx/osx/window.h" />
+		<Unit filename="../External Headers/wx/setup.h" />
+		<Unit filename="../External Headers/wx/strconv.h" />
+		<Unit filename="../External Headers/wx/string.h" />
+		<Unit filename="../External Headers/wx/stringimpl.h" />
+		<Unit filename="../External Headers/wx/stringops.h" />
+		<Unit filename="../External Headers/wx/strvararg.h" />
+		<Unit filename="../External Headers/wx/unichar.h" />
+		<Unit filename="../External Headers/wx/wxcrt.h" />
+		<Unit filename="../External Headers/wx/wxcrtbase.h" />
+		<Unit filename="../FinderLoadBundleDisasm.s" />
+		<Unit filename="../FinderLoadCMDisasm.s" />
+		<Unit filename="../FinderLoadCMStubDisasm.s" />
+		<Unit filename="../NSMenuDelegate-Protocol.h" />
+		<Unit filename="../NSObject-Protocol.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/Base64Transcoder.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBAccountInfo.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBDefines.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBError.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBJSON.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBJsonBase.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBJsonParser.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBJsonWriter.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBLog.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBMetadata.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBQuota.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBRequest.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBRestClient.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DBSession.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/DropboxSDK.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/JSON.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPDebug.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuth.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthAPI.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthAPIRequestLoader.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthAuthenticationMethod.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthAuthenticationMethodOAuth.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthConnection.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthCredentialConcreteStore+KeychainAdditions.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthCredentialConcreteStore.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthCredentialStore.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthParameterFactory.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthSignatureParameter.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthURLRequest.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPOAuthURLResponse.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/MPURLRequestParameter.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSDictionary+Dropbox.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSObject+DBJSON.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSString+DBJSON.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSString+Dropbox.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSString+URLEscapingAdditions.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSURL+MPURLParameterAdditions.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/NSURLResponse+Encoding.h" />
+		<Unit filename="../Resources/Frameworks/DropboxSDK.framework/Headers/UIAlertView+Dropbox.h" />
+		<Unit filename="../Xcode/Dropbox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="../Xcode/Dropbox.h" />
+		<Unit filename="../dbfseventsddisasm.s" />
+		<Unit filename="../dropboxpythondisasm.s" />
+		<Unit filename="../libQCRdisasm.s" />
+		<Unit filename="../libSDropboxSDKDisasm.s" />
+		<Unit filename="../mach_inject_bundle_stub_disasm.s" />
+		<Unit filename="../symdisasm.s" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
