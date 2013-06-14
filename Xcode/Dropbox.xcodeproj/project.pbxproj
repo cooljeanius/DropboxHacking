@@ -44,6 +44,15 @@
 		A515EE4A150CA075005473E3 /* crt1.10.6.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = crt1.10.6.o; path = /usr/lib/crt1.10.6.o; sourceTree = "<absolute>"; };
 		A515EE4C150CA096005473E3 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = /System/Library/Frameworks/Python.framework; sourceTree = "<absolute>"; };
 		A515EE82150CA2A2005473E3 /* Dropbox_1.xcclassmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcclassmodel; path = Dropbox_1.xcclassmodel; sourceTree = "<group>"; };
+		A5959478176B78FE00FB5565 /* DropboxBundleReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxBundleReasmScratchwork.txt; sourceTree = "<group>"; };
+		A5959479176B78FE00FB5565 /* DropboxPluginReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxPluginReasmScratchwork.txt; sourceTree = "<group>"; };
+		A595947A176B78FE00FB5565 /* DropboxpythonReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxpythonReasmScratchwork.txt; sourceTree = "<group>"; };
+		A595947B176B78FE00FB5565 /* DropboxReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DropboxReasmScratchwork.txt; sourceTree = "<group>"; };
+		A595947C176B78FE00FB5565 /* FinderLoadBundleReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinderLoadBundleReasmScratchwork.txt; sourceTree = "<group>"; };
+		A595947D176B78FE00FB5565 /* FinderLoadCMReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinderLoadCMReasmScratchwork.txt; sourceTree = "<group>"; };
+		A595947E176B78FE00FB5565 /* FinderLoadCMStubReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FinderLoadCMStubReasmScratchwork.txt; sourceTree = "<group>"; };
+		A595947F176B78FE00FB5565 /* libQCRReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libQCRReasmScratchwork.txt; sourceTree = "<group>"; };
+		A5959480176B78FE00FB5565 /* mach_inject_bundle_stub_ReasmScratchwork.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mach_inject_bundle_stub_ReasmScratchwork.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +106,15 @@
 		A515EE39150C9F6F005473E3 /* assembly */ = {
 			isa = PBXGroup;
 			children = (
+				A5959478176B78FE00FB5565 /* DropboxBundleReasmScratchwork.txt */,
+				A5959479176B78FE00FB5565 /* DropboxPluginReasmScratchwork.txt */,
+				A595947A176B78FE00FB5565 /* DropboxpythonReasmScratchwork.txt */,
+				A595947B176B78FE00FB5565 /* DropboxReasmScratchwork.txt */,
+				A595947C176B78FE00FB5565 /* FinderLoadBundleReasmScratchwork.txt */,
+				A595947D176B78FE00FB5565 /* FinderLoadCMReasmScratchwork.txt */,
+				A595947E176B78FE00FB5565 /* FinderLoadCMStubReasmScratchwork.txt */,
+				A595947F176B78FE00FB5565 /* libQCRReasmScratchwork.txt */,
+				A5959480176B78FE00FB5565 /* mach_inject_bundle_stub_ReasmScratchwork.txt */,
 				A515EE0C150C9E68005473E3 /* dbfseventsddisasm.s */,
 				A515EE0D150C9E68005473E3 /* DropboxBundleDisasm.s */,
 				A515EE0E150C9E68005473E3 /* DropboxDisasm.s */,
@@ -160,7 +178,7 @@
 				ORGANIZATIONNAME = "George Washington University";
 			};
 			buildConfigurationList = A515EDFF150C9E48005473E3 /* Build configuration list for PBXProject "Dropbox" */;
-			compatibilityVersion = "Xcode 2.4";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -194,7 +212,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ADDITIONAL_SDKS = "10.4u 10.5 10.6";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GENERATE_PROFILING_CODE = YES;
+				LD_GENERATE_MAP_FILE = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Debug;
 		};

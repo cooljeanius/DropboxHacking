@@ -1,5 +1,4 @@
 /Users/localadmin/Dropbox/Public/Dropbox/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/.git
 /Users/localadmin/Dropbox/Public/Dropbox/unzippedtarballs/.DS_Store
 /Users/localadmin/Dropbox/Public/Dropbox/Xcode/.DS_Store
 /Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/.DS_Store
@@ -13,3 +12,24 @@
 /Users/localadmin/Dropbox/Public/Dropbox/Resources/.DS_Store
 /Users/localadmin/Dropbox/Public/Dropbox/Resources/DropboxBundle/.DS_Store
 /Users/localadmin/Dropbox/Public/Dropbox/Resources/mach_inject_bundle_stub/.DS_Store
+/Users/localadmin/Dropbox/Public/Dropbox/Resources/Frameworks/.DS_Store
+/Users/localadmin/Dropbox/Public/Dropbox/Resources/Frameworks/DropboxSDK.framework/.DS_Store
+
+Xcode/Dropbox.xcodeproj/ericgallager.perspectivev3
+*.perspectivev3
+*.pbxuser
+
+*.DS_Store
+.DS_Store*
+build/*
+Xcode/build/*
+*.build
+-1
+*.cbTemp
+*.layout
+*.a
+./*/*/gdb.txt
+
+# Normally all *.pyc files would be gitignored but here they're all I have to work with...
+./*.pyc
+
