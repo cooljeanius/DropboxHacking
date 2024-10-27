@@ -35,3 +35,8 @@ Xcode/build/*
 
 # Normally all *.pyc files would be gitignored, but here they are/were all I have to work with...
 !*.pyc
+
+# Ghidra stuff:
+*.gpr
+*.lock
+*.bak
