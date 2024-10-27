@@ -1,23 +1,26 @@
-/Users/localadmin/Dropbox/Public/Dropbox/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/unzippedtarballs/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Debug/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Debug/dropbox.o.build/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Debug/dropbox.o.build/Objects-normal/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Dropbox.pbxindex/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.xcodeproj/ericgallager.pbxuser
-/Users/localadmin/Dropbox/Public/Dropbox/Xcode/Dropbox.xcodeproj/ericgallager.perspectivev3
-/Users/localadmin/Dropbox/Public/Dropbox/Resources/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Resources/DropboxBundle/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Resources/mach_inject_bundle_stub/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Resources/Frameworks/.DS_Store
-/Users/localadmin/Dropbox/Public/Dropbox/Resources/Frameworks/DropboxSDK.framework/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/unzippedtarballs/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/build/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Debug/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Debug/dropbox.o.build/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/build/*.build/Debug/*.o.build/Objects-normal/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/build/Dropbox.build/Dropbox.pbxindex/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Xcode/Dropbox.xcodeproj/ericgallager.pbxuser
+/Users/*/Dropbox/Public/Dropbox/Xcode/Dropbox.xcodeproj/ericgallager.perspectivev3
+/Users/*/Dropbox/Public/Dropbox/Resources/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Resources/DropboxBundle/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Resources/mach_inject_bundle_stub/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Resources/Frameworks/.DS_Store
+/Users/*/Dropbox/Public/Dropbox/Resources/Frameworks/DropboxSDK.framework/.DS_Store
 
 Xcode/Dropbox.xcodeproj/ericgallager.perspectivev3
 *.perspectivev3
 *.pbxuser
+*.xcuserstate
+*/xcuserdata/*
+*.xcuserdatad
 
 *.DS_Store
 .DS_Store*
@@ -30,6 +33,5 @@ Xcode/build/*
 *.a
 ./*/*/gdb.txt
 
-# Normally all *.pyc files would be gitignored but here they're all I have to work with...
-./*.pyc
-
+# Normally all *.pyc files would be gitignored, but here they are/were all I have to work with...
+!*.pyc
